@@ -36,7 +36,7 @@ function AppContent() {
   }, [location]);
 
   return (
-    <>
+    <> 
         <div id="main">
           <Routes>
             {/* <Route exact path="/" Component={Home} />
