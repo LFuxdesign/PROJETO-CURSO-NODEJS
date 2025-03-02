@@ -34,7 +34,7 @@
                 "pathVideoModulo": "",
                 "paragrafo":[
                     {
-                        "texto": ""
+                        "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express."
                     },
                     {
                         "texto": ""
