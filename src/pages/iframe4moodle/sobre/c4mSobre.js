@@ -3,7 +3,7 @@ import "./c4mSobre.css";
 import Curso from "../../../conteudo/curso.json"
 import { Link } from "react-router-dom";
 
-import { ReactComponent as ImageSection } from "../../../assets/imgSobre.svg"
+import { ReactComponent as ImageSection } from "/public/assets/imgSobre.svg"
 
 export default function c4mSobre() {
     return (
