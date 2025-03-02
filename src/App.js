@@ -37,7 +37,7 @@ function AppContent() {
   }, [location]);
 
   return (
-    <>
+    <> 
         <div id="main">
           <Routes>
             <Route exact path="/iframe4moodle/sobre" Component={c4mSobre} />
