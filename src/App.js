@@ -1,11 +1,9 @@
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Routes,
   useLocation,
-  useNavigate,
 } from "react-router-dom";
 import c4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
 import "./App.css";
@@ -37,10 +35,10 @@ function AppContent() {
   }, [location]);
 
   return (
-    <>
+    <> 
         <div id="main">
           <Routes>
-            <Route exact path="/iframe4moodle/sobre" Component={c4mSobre} />
+            <Route exact path="/c4m/sobre" Component={c4mSobre} />
 
             
             {/* <Route exact path="/" Component={Home} />
