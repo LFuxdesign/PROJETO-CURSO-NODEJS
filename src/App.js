@@ -7,6 +7,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
+import c4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
 import "./App.css";
 
 function App() {
@@ -39,15 +40,12 @@ function AppContent() {
     <> 
         <div id="main">
           <Routes>
+            <Route exact path="/iframe4moodle/sobre" Component={c4mSobre} />
+
+            
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />
-            <Route exact path="/nota" Component={Nota} />
-            <Route exact path="/novanota" Component={Nota} />
-            <Route exact path="/pasta" Component={HomePasta} />
-            <Route exact path="/login" Component={Login} />
-            <Route exact path="/registro" Component={Register} />
-            <Route exact path="/termos" Component={Termos} /> */}
-            {/* <Route exact path="*" Component={Pg404} /> */}
+            */}
           </Routes>
         </div>
         {/* <Footer /> */}
