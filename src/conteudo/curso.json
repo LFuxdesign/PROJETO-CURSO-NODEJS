@@ -8,6 +8,18 @@
             "colors":{
                 "main": "#3784D1",
                 "background": "#C4DBF2"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -16,6 +28,18 @@
             "colors":{
                 "main": "#9E1515",
                 "background": "#E3B8B8"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -24,6 +48,18 @@
             "colors":{
                 "main": "#4B9E15",
                 "background": "#D4EEC3"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -32,6 +68,18 @@
             "colors":{
                 "main": "#9D5816",
                 "background": "#EBD4BE"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -40,6 +88,18 @@
             "colors":{
                 "main": "#49148B",
                 "background": "#D2BEEB"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -48,6 +108,18 @@
             "colors":{
                 "main": "#14538A",
                 "background": "#9DBFDD"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -56,6 +128,18 @@
             "colors":{
                 "main": "#870F36",
                 "background": "#E1B6C4"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         },
         {
@@ -64,6 +148,18 @@
             "colors":{
                 "main": "#133C7A",
                 "background": "#D1D5DB"
+            },
+            "conteudos":{
+                "pathImgModulo": "",
+                "pathVideoModulo": "",
+                "paragrafo":[
+                    {
+                        "texto": ""
+                    },
+                    {
+                        "texto": ""
+                    }
+                ]
             }
         }
     ]
