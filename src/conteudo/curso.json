@@ -37,7 +37,7 @@
                         "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express."
                     },
                     {
-                        "texto": ""
+                        "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev."
                     }
                 ]
             }
