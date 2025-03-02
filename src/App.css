@@ -1,0 +1,804 @@
+:root {
+  --bgWhite: #F9F3E7;
+  --fonte: system-ui;
+  --black: #0d0d0d;
+  --ease-in-out: cubic-bezier(0.68, 0.12, 0.34, 0.8);
+  --low-txt-color: #978C76;
+  --animations: cubic-bezier(0.68, 0.12, 0.34, 0.8);
+  --darkBlue: #2d3541;
+  --animation-menu-duration: .5s;
+}
+
+.App,
+#editor,
+#viewer {
+  padding-top: 130px;
+}
+
+.App {
+  align-items: center;
+  flex-direction: column;
+}
+
+#applicationMenu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 450px;
+  max-width: 100vw;
+  height: 100vh;
+  background: #FEFBF5;
+  z-index: 999998;
+  box-shadow: 0px 0px 20px #0001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--animation-menu-duration) cubic-bezier(0.69, -0.07, 0.35, 1.07);
+  transform: translateX(105%);
+}
+
+#applicationMenu.show {
+  transform: translateX(0);
+}
+
+#applicationMenu #profileArea {
+  top: 150px;
+  width: 60%;
+  transition: .3s var(--ease-in-out);
+}
+
+#applicationMenu #profileArea #profilePicture img {
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #0001;
+}
+
+#applicationMenu #actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+}
+
+#applicationMenu #actions button {
+  width: 100%;
+  cursor: pointer;
+  background: var(--bgWhite);
+}
+
+#applicationMenu #actions button,
+#applicationMenu #profileArea div {
+  height: 65px;
+  border-radius: 10px;
+  transition: all .3s var(--ease-in-out);
+  border: 1px solid #0000;
+  font-family: 'roboto', 'montserrat', sans-serif, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue';
+  font-weight: bold;
+}
+
+#applicationMenu #actions button {
+  font-size: 18px;
+  color: var(--low-txt-color);
+}
+
+#applicationMenu #actions button:hover {
+  transform: scale(1.02);
+  border: 1px solid rgba(151, 140, 118, 0.40);
+  color: var(--bgWhite);
+  background: var(--low-txt-color);
+}
+
+#applicationMenu #profileArea,
+#applicationMenu #actions {
+  position: absolute;
+}
+
+#applicationMenu #actions {
+  bottom: 40px;
+}
+
+#applicationMenu #profileArea #containerProfile {
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#applicationMenu #profileArea #containerProfile #profilePicture {
+  height: 80%;
+}
+
+#applicationMenu #profileArea #containerProfile #textContent {
+  word-wrap: break-word;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  min-height: 80px;
+  max-height: 100px;
+  z-index: 999999;
+  background: #FEFBF5;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  transition: all .5s var(--ease-in-out);
+  transform: translateZ(0);
+  will-change: transform, width, justify-content, opacity;
+}
+
+header #profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  will-change: opacity;
+}
+
+header #profile img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+header #menu div {
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--low-txt-color);
+  transition: all var(--animation-menu-duration) cubic-bezier(0.69, -0.07, 0.35, 1.07);
+  will-change: transform, width, height, opacity;
+}
+
+header #menu div:last-child {
+  width: 10px;
+  left: 0;
+  transform: translateY(16px);
+}
+
+header #menu div:first-child {
+  width: 40px;
+  left: 0;
+  transform: translateY(-16px);
+}
+
+header #menu div:nth-child(2).active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+header #menu div:last-child.active {
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+header #menu div:first-child.active {
+  transform: translateY(3px) rotate(45deg);
+}
+
+header #menu div.active:not(:nth-child(2)) {
+  width: 40px;
+}
+
+header #search {
+  align-items: center;
+  justify-content: center;
+  transform: translateX(calc(60px - 20px + 1.5vw));
+  will-change: transform, width;
+}
+
+header a,
+header #search,
+header #actions {
+  transition: all .3s var(--ease-in-out);
+}
+
+
+.inputTxt,
+textarea {
+  width: 35vw;
+  max-width: 575px;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--bgWhite);
+  text-align: center;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+header #search label,
+form label {
+  position: absolute;
+  color: var(--low-txt-color);
+  cursor: text;
+  transition: .15s all var(--ease-in-out);
+}
+
+header #search input{
+  border: 1px solid #fff0;
+  transition: border .3s var(--ease-in-out);
+}
+
+header #search input:focus-visible{
+  border: 1px solid var(--low-txt-color);
+}
+
+header #loginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  color: #000;
+  background: #0000;
+  border: 1px solid #000;
+  letter-spacing: .5px;
+  border-radius: 10px;
+  font-family: 'montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header #loginBtn:hover {
+  border: 1px solid #0000;
+  color: #fff;
+  background: #000
+}
+
+@media (width < 700px) {
+
+  header.hidden a,
+  header.hidden #actions {
+    transform: translateY(-100%);
+  }
+
+  header.hidden #search {
+    transform: translateY(-100%) translateX(calc(60px - 20px + 1.5vw));
+  }
+
+  header.hidden #search {
+    transition-delay: .1s;
+  }
+
+  header.hidden #actions {
+    transition-delay: .2s
+  }
+
+  header.hidden {
+    transform: translateY(-100%);
+    transition-delay: .2s;
+  }
+
+}
+
+.inputTxt:focus-visible+label,
+.inputTxt:not(:placeholder-shown)+label,
+.inputTxt:focus-visible+label,
+textarea:focus-visible+label,
+textarea:not(:placeholder-shown)+label,
+textarea:focus-visible+label {
+  opacity: 0;
+  transform: translateY(-5px);
+
+}
+
+section {
+  width: 90vw;
+}
+
+#pastas {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.sectionNames {
+  margin-left: 3%;
+}
+
+.sectionNames #notasId {
+  margin-left: 25px;
+  width: 100px;
+  padding: 2px;
+}
+
+.sectionNames h5 {
+  font-size: 17px;
+  pointer-events: none;
+  font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sectionNames .btnsectionNames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  padding: 2px 10px;
+  width: 115px;
+  cursor: pointer;
+  background: var(--bgWhite);
+  transition: all .2s var(--ease-in-out);
+}
+
+.sectionNames .btnsectionNames:hover {
+  padding: 2px 10px;
+  width: 115px;
+  border: 1px solid var(--low-txt-color);
+}
+
+.sectionNames .btnsectionNames svg {
+  transform: rotate(-90deg);
+  pointer-events: none;
+  transition: all .2s var(--ease-in-out);
+}
+
+
+.sectionNames .btnsectionNames.show svg {
+  transform: rotate(0deg);
+}
+
+.tituloCateg {
+  width: 245px;
+  height: 40px;
+  background: var(--bgWhite);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.pasta {
+  position: relative;
+  min-width: 110px;
+  height: 110px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bgWhite);
+  border-radius: 15px;
+  padding: 0 15px;
+  animation: entryAni .5s var(--animations);
+}
+
+.pasta:hover {
+  transform: scale(1.02) !important;
+}
+
+.pasta span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #262626;
+  text-align: center;
+}
+
+#notas {
+  align-items: flex-start;
+  will-change: width, height, opacity, transform;
+}
+
+.sectionNotas {
+  gap: 40px;
+  flex-direction: column;
+  will-change: width;
+}
+
+#pastas,
+.sectionNotas {
+  max-width: 2000px;
+}
+
+.nota {
+  cursor: pointer;
+  width: 21vw;
+  min-width: 310px;
+  max-width: 170px;
+  border-radius: 12px;
+  background: var(--bgWhite);
+  overflow: hidden;
+  animation: entryAni .5s var(--animations);
+  will-change: transform, opacity, contents, width, height;
+}
+
+.nota,
+.nota * {
+  text-rendering: optimizeLegibility;
+  image-rendering: pixelated;
+  transform-style: preserve-3d;
+}
+
+.nota:hover {
+  transform: scale(1.02) !important;
+}
+
+.nota .headerNota h1,
+.nota .bodyNota p {
+  color: var(--black);
+}
+
+.nota .headerNota .tituloNota {
+  width: 100%;
+  display: box;
+  display: -webkit-box;
+  word-break: break-word;
+  text-wrap: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  transform: translateZ(0);
+  will-change: transform, contents, width, height, text-overflow, word-break, line-clamp, -webkit-line-clamp; 
+}
+
+.headerNota {
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0px 20px;
+}
+
+.headerNota div div {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.headerNota div div:hover {
+  background: #2f2f2f
+}
+
+.nota .bodyNota {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.nota .bodyNota p {
+  width: 100%;
+  display: box;
+  display: -webkit-box;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-orient: vertical;
+  line-clamp: 15;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 15;
+  transform: translateZ(0);
+  will-change: transform, contents, width, height, word-break, text-overflow, line-clamp, -webkit-line-clamp; 
+}
+
+#blocos{
+  will-change: width;
+}
+
+#pastas,
+#blocos,
+#notas,
+.nota,
+.nota *,
+.pasta,
+.pasta::before,
+#main,
+.App,
+#editor,
+#viewer {
+  transition: all .2s var(--ease-in-out) !important;
+}
+
+#controles span {
+  font-size: 14px;
+}
+
+#headerPageEditor #returnBtn {
+  padding: 12px;
+  transition: .3s var(--ease-in-out);
+  background: var(--bgWhite);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entryAnimation {
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: forwards entryAni .5s var(--animations);
+}
+
+
+.addNota {
+  transition: all .2s cubic-bezier(0.74, 0.38, 0.04, 1.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--bgWhite);
+  border: 1px solid var(--low-txt-color);
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #0002;
+  width: 34px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 4vh;
+  right: 4vw;
+  z-index: 999997;
+  animation: entryAni .5s var(--animations);
+}
+
+.addNota:hover {
+  transform: scale(1.03) !important;
+}
+
+#addNota svg,
+#addNota svg * {
+  pointer-events: none;
+}
+
+.notaContainer {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -20px;
+  /* gutter size offset */
+  width: auto;
+  padding-bottom: 40px;
+  margin-left: 2%;
+  transform: translateZ(0);
+  will-change: transform, contents, width, height, opacity; 
+}
+
+.notaContainerColumn {
+  padding-left: 20px;
+  /* gutter size */
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: unset !important;
+  will-change: transform, contents, width, height, opacity; 
+}
+
+.notaContainerColumn:first-child {
+  padding-left: 10px;
+}
+
+#pastas .containerPastas {
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 85%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 5px;
+  padding-bottom: 10px;
+  margin-left: 6%;
+  transition: all .3s var(--ease-in-out);
+  height: 120px;
+  transform: translateZ(0);
+  will-change: transform, contents, width, overflow-x;
+}
+
+#pastas .containerPastas.invisible {
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#pastas .containerPastas::-webkit-scrollbar {
+  height: 5px;
+}
+
+@keyframes addNotaAni {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes entryAni {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@media(width < 1410px) {
+  #notasFrame {
+    max-width: unset;
+  }
+}
+
+@media(height <=768px) {
+
+  .App,
+  #editor,
+  #viewer {
+    padding-top: 110px;
+  }
+
+  #blocos {
+    gap: 20px !important;
+  }
+
+  #pastas,
+  #notas,
+  .sectionNotas {
+    gap: 20px;
+  }
+
+}
+
+@media (height <=700px) {
+  .addNota {
+    width: 25px;
+    height: 25px;
+  }
+
+  .addNota svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (height <=450px) {
+  .addNota {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+  }
+
+  #applicationMenu #profileArea{
+    top: 80px;
+  }
+
+  .addNota svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media(height <=390px){
+  #applicationMenu #actions{
+    flex-direction: row;
+  }
+  #applicationMenu #actions button{
+    height: 60px;
+    width: 70%;
+  }
+}
+
+@media(width <=1040px) {
+  .nota {
+    width: 40vw;
+    max-width: unset;
+    will-change: width;
+    transform: translateZ(0);
+  }
+
+  .nota * {
+    transform: translateZ(0);
+  }
+}
+
+@media (width <=710px) {
+  .nota {
+    width: 41vw;
+    min-width: unset;
+  }
+}
+
+@media (width < 695px) {
+  #profile {
+    display: none;
+  }
+
+  header #search {
+    transform: translateX(25px);
+  }
+}
+
+@media (width < 600px) {
+  .addNota {
+    width: 25px;
+    height: 25px;
+  }
+
+  .addNota svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (width < 500px) {
+  header #search.unlogged {
+    transform: translateX(5px);
+  }
+
+  header #actions a {
+    width: 85px;
+  }
+
+  header #search input {
+    padding: 0 15px;
+  }
+
+  header #menu {
+    transform: scale(.7);
+  }
+
+  header a svg {
+    transform: scale(.7);
+  }
+
+  .bodyNota {
+    font-size: 14px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .tituloNota {
+    font-size: large;
+  }
+
+  .pasta {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pasta svg {
+    width: 62px;
+    height: 47px;
+  }
+
+  header #menu {
+    margin-left: 55px;
+  }
+
+  #pastas .containerPastas {
+    margin-left: 0%;
+    width: 91%;
+  }
+}
+
+@media (width < 320px) {
+  header #search label {
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 133px;
+    text-wrap: nowrap;
+  }
+
+  header #search input {
+    min-width: 100px;
+  }
+}
