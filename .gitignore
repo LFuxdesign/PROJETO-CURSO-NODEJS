@@ -10,12 +10,10 @@
 
 # production
 .png
-.svg
 .jpg
 .jpeg
 
 /build
-/src/assets
 /api
 /.cert
 /src/pages/terms
