@@ -29,7 +29,7 @@
 }
 
 body {
-  background: #FEFBF5;
+  background: var(--bgWhite);
   overflow-x: hidden;
 }
 
@@ -123,6 +123,12 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.App {
+  padding-top: 130px;
+  align-items: center;
+  flex-direction: column;
 }
 /* 
 input {
