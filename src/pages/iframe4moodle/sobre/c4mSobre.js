@@ -20,7 +20,7 @@ export default function c4mSobre() {
                     </div>
                     <div id="subtitle">
                         <h2>
-                            {Curso.modulos[0].conteudos.paragrafo[0].texto}
+                            {Curso.modulos[0].conteudos.paragrafo[1].texto}
                         </h2>
                     </div>
                 </div>
