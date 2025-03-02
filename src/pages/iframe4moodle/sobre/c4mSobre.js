@@ -24,7 +24,6 @@ export default function c4mSobre() {
                         </h2>
                     </div>
                 </div>
-                <Link to={"https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1"}><div className="flexCenter"><span>Iniciar</span></div></Link>
             </div>
             <ImageSection id="imageDesktop" />
 

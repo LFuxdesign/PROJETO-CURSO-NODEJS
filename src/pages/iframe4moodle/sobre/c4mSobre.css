@@ -45,13 +45,6 @@
     font-weight: normal;
 }
 
-.content4moodle.sobre .content a div {
-    width: 350px;
-    height: 88px;
-    background: linear-gradient(45deg, #2B72FF, #6C63FF);
-    border-radius: var(--default-radius);
-}
-
 .content4moodle.sobre .content a div span{
     color: #fff;
     font-size: 28px;
@@ -77,12 +70,6 @@
     .content4moodle.sobre #title svg{
         width: 155px;
         top: -2px;
-    }
-    .content4moodle.sobre .content a div {
-        width: 200px;
-        height: 70px;
-        background: linear-gradient(45deg, #2B72FF, #6C63FF);
-        border-radius: var(--default-radius);
     }
     .content4moodle.sobre #subtitle h2{
         font-size: 20px;
