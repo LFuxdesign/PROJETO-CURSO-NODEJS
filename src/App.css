@@ -1,7 +1,15 @@
 :root {
   --bgWhite: #fff;
   --black: #0d0d0d;
+  --default-radius: 20px;
   --ease-in-out: cubic-bezier(0.68, 0.12, 0.34, 0.8);
   --animations: cubic-bezier(0.68, 0.12, 0.34, 0.8);
   --animation-menu-duration: .5s;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }

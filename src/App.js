@@ -1,14 +1,13 @@
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Routes,
   useLocation,
-  useNavigate,
 } from "react-router-dom";
 import c4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
 import "./App.css";
+import c4mModulosResumo from "./pages/iframe4moodle/modulos/c4mModulosResumo";
 
 function App() {
   return (
@@ -40,8 +39,8 @@ function AppContent() {
     <> 
         <div id="main">
           <Routes>
-            <Route exact path="/iframe4moodle/sobre" Component={c4mSobre} />
-
+            <Route exact path="/c4m/sobre" Component={c4mSobre} />
+            <Route exact path="/c4m/modulosResumo" Component={c4mModulosResumo} />
             
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />
