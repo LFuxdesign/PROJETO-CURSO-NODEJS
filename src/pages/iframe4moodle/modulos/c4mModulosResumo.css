@@ -1,11 +1,16 @@
+.content4moodle.modulosResumo {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+        url(/public/assets/background_resumo.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .content4moodle.modulosResumo .gridCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 colunas */
     grid-template-rows: repeat(2, auto);
-    /* 2 linhas */
     gap: 10px;
-    /* Espaço entre os itens */
 }
 
 .content4moodle.modulosResumo .gridCards .card {
@@ -30,56 +35,66 @@
     font-size: 14px;
 }
 
-@media (width<1440px){
+@media (width<1440px) {
     .content4moodle.modulosResumo .content {
         width: 34%;
     }
-    .content4moodle.modulosResumo .content *{
+
+    .content4moodle.modulosResumo .content * {
         max-width: 100%;
     }
 }
-@media (width<1280px){
-    .content4moodle.modulosResumo{
+
+@media (width<1280px) {
+    .content4moodle.modulosResumo {
         flex-direction: column;
-        align-items: center!important;
+        align-items: center !important;
         padding-top: 7.5vh;
         gap: 20px;
     }
-    .content4moodle.modulosResumo .content{
+
+    .content4moodle.modulosResumo .content {
         width: 838px;
     }
-    .content4moodle.modulosResumo #cta div{
+
+    .content4moodle.modulosResumo #cta div {
         width: 100%;
     }
 }
-@media (width<860px){
-    .content4moodle.modulosResumo .gridCards{
+
+@media (width<860px) {
+    .content4moodle.modulosResumo .gridCards {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(auto, auto)
     }
-    .content4moodle.modulosResumo .content{
+
+    .content4moodle.modulosResumo .content {
         width: 626px;
     }
+
     .content4moodle {
         max-width: 100%;
     }
 }
 
-@media (width<645px){
-    .content4moodle.modulosResumo .gridCards{
+@media (width<645px) {
+    .content4moodle.modulosResumo .gridCards {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto, auto)
     }
-    .content4moodle.modulosResumo .content{
+
+    .content4moodle.modulosResumo .content {
         width: 414px;
     }
 }
-@media (width<430px){
-    .content4moodle.modulosResumo .gridCards{
+
+@media (width<430px) {
+    .content4moodle.modulosResumo .gridCards {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(auto, auto)
     }
-    .content4moodle.modulosResumo .content{
+
+    .content4moodle.modulosResumo .content {
         width: 80vw;
     }
 }
