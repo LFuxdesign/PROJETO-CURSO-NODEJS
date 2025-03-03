@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    backdrop-filter: blur(6px);
 }
 
 .content4moodle #cta div{
