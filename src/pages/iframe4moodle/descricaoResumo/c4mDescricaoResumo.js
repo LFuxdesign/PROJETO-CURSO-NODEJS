@@ -1,4 +1,4 @@
-import "./c4mModulosResumo.css";
+import "./c4mDescricaoResumo.css";
 import "../c4m.css"
 
 import Curso from "../../../conteudo/curso.json"
