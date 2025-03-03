@@ -18,6 +18,11 @@ export default function c4mModulosResumo() {
                             {Curso.descricao}
                         </h2>
                     </div>
+                    <a href="https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1" target="_top" className="btnLink linkDesk">
+                        <div className="flexCenter">
+                            <span>Iniciar</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div className="gridCards">
@@ -26,8 +31,8 @@ export default function c4mModulosResumo() {
                         return (
                             <div className="card flexCenter flexColumn">
                                 <div className="cardHeader flexCenter">
-                                    <h1 className="num" style={{color:modulo.colors.main}}>{index + 1}.</h1>
-                                    <h1 className="titulo" style={{fontSize: (modulo.titulo).split(" ")[1].length < 11 ? "17px" : "14px"}}> {modulo.titulo} </h1>
+                                    <h1 className="num" style={{ color: modulo.colors.main }}>{index + 1}.</h1>
+                                    <h1 className="titulo" style={{ fontSize: (modulo.titulo).split(" ")[1].length < 11 ? "17px" : "14px" }}> {modulo.titulo} </h1>
                                 </div>
                                 <span className="descricao"> {modulo.descricao} </span>
                             </div>
@@ -35,6 +40,11 @@ export default function c4mModulosResumo() {
                     })
                 }
             </div>
+            <a href="https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1" target="_top" className="btnLink linkMobile flexCenter">
+                <div className="flexCenter">
+                    <span>Iniciar</span>
+                </div>
+            </a>
         </div>
     );
 }

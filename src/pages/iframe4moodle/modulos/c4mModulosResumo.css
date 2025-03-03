@@ -6,6 +6,27 @@
     background-repeat: no-repeat;
 }
 
+.content4moodle.modulosResumo .linkMobile div, .content4moodle.modulosResumo .linkDesk div{
+    width: min-content!important;
+}
+
+.content4moodle.modulosResumo .linkMobile div:hover, .content4moodle.modulosResumo .linkDesk div:hover{
+    transform: scale(1.015);
+}
+
+.content4moodle.modulosResumo .linkMobile div{
+    margin-bottom: 30px;
+}
+
+.content4moodle.modulosResumo .linkMobile{
+    display: none;
+}
+
+.content4moodle.modulosResumo .linkDesk div{
+    padding: 20px 0;
+    width: 97%!important;
+}
+
 .content4moodle.modulosResumo .gridCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -53,6 +74,14 @@
         gap: 20px;
     }
 
+    .content4moodle.modulosResumo .linkDesk{
+        display: none;
+    }
+
+    .content4moodle.modulosResumo .linkMobile{
+        display: unset;
+    }
+
     .content4moodle.modulosResumo .content {
         width: 838px;
     }
@@ -85,6 +114,9 @@
 
     .content4moodle.modulosResumo .content {
         width: 414px;
+    }
+    .content4moodle.modulosResumo .linkMobile div{
+        width: 60vw!important;
     }
 }
 

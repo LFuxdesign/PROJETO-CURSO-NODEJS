@@ -23,6 +23,11 @@ export default function c4mSobre() {
                         </h2>
                     </div>
                 </div>
+                <a href="https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1" target="_top" className="btnLink">
+                    <div>
+                        <span>Iniciar</span>
+                    </div>
+                </a>
             </div>
             <ImageSection id="imageDesktop" alt="" />
 
