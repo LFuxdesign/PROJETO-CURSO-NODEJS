@@ -18,11 +18,6 @@ export default function c4mDescricaoResumo() {
                             {Curso.descricao}
                         </h2>
                     </div>
-                    <a href="https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1" target="_top" className="btnLink linkDesk">
-                        <div className="flexCenter">
-                            <span>Iniciar</span>
-                        </div>
-                    </a>
                 </div>
             </div>
             <div className="gridCards">
@@ -40,11 +35,6 @@ export default function c4mDescricaoResumo() {
                     })
                 }
             </div>
-            <a href="https://moodlecursos.ic.ufmt.br/course/view.php?id=25#section-1" target="_top" className="btnLink linkMobile flexCenter">
-                <div className="flexCenter">
-                    <span>Iniciar</span>
-                </div>
-            </a>
         </div>
     );
 }
