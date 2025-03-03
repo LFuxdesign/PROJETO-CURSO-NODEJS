@@ -41,7 +41,7 @@ function AppContent() {
         <div id="main">
           <Routes>
             <Route exact path="/c4m/sobre" Component={c4mSobre} />
-            <Route exact path="/c4m/modulosResumo" Component={c4mDescricaoResumo} />
+            <Route exact path="/c4m/descricaoResumo" Component={c4mDescricaoResumo} />
             
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />
