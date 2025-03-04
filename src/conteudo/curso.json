@@ -5,27 +5,68 @@
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
-            "colors":{
+            "colors": {
                 "main": "#3784D1",
                 "background": "#C4DBF2",
                 "highlight": "#1283F4"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "texto": " Nodejs é praticamente um compilador de código javascript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "O que é Node.js?",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": " Nodejs é praticamente um compilador de código javascript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install nodejs.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install nodejs.",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Como começar um projeto Node.js e as configurações iniciais",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Executando o primeiro script",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -33,29 +74,106 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
-            "colors":{
+            "colors": {
                 "main": "#9E1515",
                 "background": "#E3B8B8",
                 "highlight": "#E71A1A"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express.",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev.",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Conceito de dependências",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como instalar pacotes do Node.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como remover pacotes do Node.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -63,29 +181,68 @@
         {
             "titulo": "🧑‍💻 Fundamentos do JavaScript no Node.js",
             "descricao": "Revise os principais conceitos do JavaScript, e, entenda o quais são as diferenças que existem entre CommonJS e ESModules.",
-            "colors":{
+            "colors": {
                 "main": "#4B9E15",
                 "background": "#D4EEC3",
                 "highlight": "#68EC13"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Caracteristicas e limitações comuns do JavaScript",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Principais conceitos do JavaScript",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Diferenças entre CommonJS e ESModules",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -93,29 +250,86 @@
         {
             "titulo": "📂 Manipulação de Arquivos e Módulos",
             "descricao": "Explore o sistema de módulos do Node.js, aprenda a criar e importar módulos próprios e manipule arquivos utilizando o módulo fs para leitura e escrita.",
-            "colors":{
+            "colors": {
                 "main": "#9D5816",
                 "background": "#EBD4BE",
                 "highlight": "#F28318"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Conceito de Módulos do Node.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Dependências",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Criar, exportar e importar módulos próprios",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Manipulação de arquivos utilizando o módulo fs para leitura e escrita",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -123,29 +337,68 @@
         {
             "titulo": "🌐 Criando um Servidor Web com Express.js",
             "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
-            "colors":{
+            "colors": {
                 "main": "#49148B",
                 "background": "#D2BEEB",
                 "highlight": "#7515ED"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Introdução ao Express.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Desenvolva um servidor web com Express.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos de definições de rota",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -153,29 +406,104 @@
         {
             "titulo": "🔧 Trabalhando com Banco de Dados",
             "descricao": "Conecte sua aplicação a bancos de dados MySQL ou Firebase, aprenda a realizar consultas e operações básicas para armazenar e recuperar informações.",
-            "colors":{
+            "colors": {
                 "main": "#14538A",
                 "background": "#9DBFDD",
                 "highlight": "#1A88E8"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Conceitos básicos do banco de dados SQL",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Conecte sua aplicação ao banco de dados MySQL",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos básicos do banco de dados NoSQL",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Primeiros passos com Firebase",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conecte sua aplicação ao banco de dados Firebase",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -183,29 +511,140 @@
         {
             "titulo": "🔄 APIs RESTful com Node.js",
             "descricao": "Estruture uma API RESTful completa com Express.js, implemente um CRUD funcional e aprenda a enviar e receber dados em formato JSON.",
-            "colors":{
+            "colors": {
                 "main": "#870F36",
                 "background": "#E1B6C4",
                 "highlight": "#EA1A5E"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Conceitos de API",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "O que são APIs RESTful",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Estruturação de uma API RESTful com Express.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é CRUD?",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Implemente um sistema CRUD funcional com Node.js",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é JSON?",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Enviar e receber dados em formato JSON",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -213,29 +652,104 @@
         {
             "titulo": "🎯 Deploy e Boas Práticas",
             "descricao": "Gerencie variáveis de ambiente com dotenv, utilize Git para versionamento do código e publique sua aplicação na internet usando a plataforma Vercel.",
-            "colors":{
+            "colors": {
                 "main": "#133C7A",
                 "background": "#D1D5DB",
                 "highlight": "#1265E2"
             },
-            "conteudos":{
-                "sessoes":[],
+            "conteudos": {
                 "pathImgModulo": "",
                 "pathVideoModulo": "",
-                "paragrafo":[
+                "sessoes": [
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "O que são variáveis de ambiente",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "pathImgSuperior": "",
-                        "pathVideoSuperior": "",
-                        "texto": "",
-                        "pathImgInferior": "",
-                        "pathVideoInferior": ""
+                        "titulo": "Gerenciamento de variáveis de ambiente no Node.js com a biblioteca dotenv",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é Git e a importância do versionamento de código",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Introdução ao GitHub e configuração do GitHub no VS Code",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos de Deployment e como realizar o Deploy de uma aplicação Node.js na plataforma Vercel",
+                        "descricao": "",
+                        "paragrafo": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
