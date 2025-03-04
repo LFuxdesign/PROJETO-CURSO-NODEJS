@@ -8,7 +8,7 @@ import {
 import C4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
 import "./App.css";
 import C4mDescricaoResumo from "./pages/iframe4moodle/descricaoResumo/c4mDescricaoResumo";
-import C4mModuloCurso from "./pages/iframe4moodle/modulos/moduloCurso/c4mModuloCurso";
+import ViewModuloCurso from "./pages/moduloCurso/viewModuloCurso";
 
 
 function App() {
@@ -43,7 +43,7 @@ function AppContent() {
           <Routes>
             <Route exact path="/c4m/sobre" Component={C4mSobre} />
             <Route exact path="/c4m/descricaoResumo" Component={C4mDescricaoResumo} />
-            <Route exact path="/c4m/moduloCurso" Component={C4mModuloCurso} />
+            <Route exact path="/moduloCurso" Component={ViewModuloCurso} />
 
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />

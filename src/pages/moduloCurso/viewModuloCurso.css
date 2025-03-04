@@ -1,0 +1,13 @@
+.content4moodle.moduloCurso{
+    width: 85vw;
+    height: 95vh;
+    padding-top: 5vh;
+}
+
+.content4moodle.moduloCurso .header h1{
+    max-width: 903px
+}
+
+.content4moodle.moduloCurso .content{
+    display: flex;
+}
