@@ -5,7 +5,7 @@ import Curso from "../../../conteudo/curso.json"
 
 import { ReactComponent as ImageSection } from "../../../assets/imgSobre.svg"
 
-export default function c4mSobre() {
+export default function C4mSobre() {
     return (
         <div className="content4moodle sobre flexCenter">
             <div className="content flex flexColumn">

@@ -5,9 +5,10 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import c4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
+import C4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
 import "./App.css";
-import c4mDescricaoResumo from "./pages/iframe4moodle/descricaoResumo/c4mDescricaoResumo";
+import C4mDescricaoResumo from "./pages/iframe4moodle/descricaoResumo/c4mDescricaoResumo";
+import C4mModuloCurso from "./pages/iframe4moodle/modulos/moduloCurso/c4mModuloCurso";
 
 
 function App() {
@@ -40,9 +41,10 @@ function AppContent() {
     <> 
         <div id="main">
           <Routes>
-            <Route exact path="/c4m/sobre" Component={c4mSobre} />
-            <Route exact path="/c4m/descricaoResumo" Component={c4mDescricaoResumo} />
-            
+            <Route exact path="/c4m/sobre" Component={C4mSobre} />
+            <Route exact path="/c4m/descricaoResumo" Component={C4mDescricaoResumo} />
+            <Route exact path="/c4m/moduloCurso" Component={C4mModuloCurso} />
+
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />
             */}
