@@ -17,7 +17,8 @@ export default function C4mModuloCurso() {
 
     const [viewedModules, setViewedModules] = useState(() => {
         const LSViewedModules = localStorage.getItem("viewedModules");
-        return LSViewedModules ? JSON.parse(LSViewedModules) : Array(Curso.modulos.length).fill(false);
+        const formattedLSViewedModules = JSON.parse(LSViewedModules);
+        return LSViewedModules && (formattedLSViewedModules.length == Curso.modulos.length) ? formattedLSViewedModules : Array(Curso.modulos.length).fill(false);
     });
 
     const [moduloAtual, setModuloAtual] = useState(Curso.modulos[idModulo - 1]);
