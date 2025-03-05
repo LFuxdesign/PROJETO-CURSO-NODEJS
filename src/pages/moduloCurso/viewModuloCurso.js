@@ -137,7 +137,7 @@ export default function ViewModuloCurso() {
                                         <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>{sessao.descricao}</span>
                                     </div>
                                     <div className="info flex flexColumn" style={{ gap: "10px" }}>
-                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>{sessao.viewed ? "iniciado dia" : "não iniciado"}</p>
+                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>{viewedModules[idModulo - 1].sessoes[index].viewed ? "iniciado dia" : "não iniciado"}</p>
                                         <div className="dia flexCenter">
                                             {
                                                 (() => {
