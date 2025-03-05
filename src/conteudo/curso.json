@@ -1,23 +1,78 @@
 {
     "tituloCurso": "Introdução ao <svg width=\"2500\" height=\"708\" viewBox=\"0 0 512 145\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMinYMin meet\"><g fill=\"#83CD29\"><path d=\"M471.05 51.611c-1.244 0-2.454.257-3.525.863l-33.888 19.57c-2.193 1.264-3.526 3.65-3.526 6.189v39.069c0 2.537 1.333 4.92 3.526 6.187l8.85 5.109c4.3 2.119 5.885 2.086 7.842 2.086 6.366 0 10.001-3.863 10.001-10.576V81.542c0-.545-.472-.935-1.007-.935h-4.245c-.544 0-1.007.39-1.007.935v38.566c0 2.975-3.1 5.968-8.13 3.453l-9.21-5.396c-.326-.177-.576-.49-.576-.863v-39.07c0-.37.247-.747.576-.935L470.547 57.8a.998.998 0 0 1 1.007 0l33.817 19.498c.322.194.576.553.576.936v39.069c0 .373-.188.755-.504.935l-33.889 19.498c-.29.173-.69.173-1.007 0l-8.706-5.18a.905.905 0 0 0-.863 0c-2.403 1.362-2.855 1.52-5.109 2.302-.555.194-1.398.495.288 1.44l11.368 6.69a6.995 6.995 0 0 0 3.526.936 6.949 6.949 0 0 0 3.525-.935l33.889-19.499c2.193-1.275 3.525-3.65 3.525-6.187v-39.07c0-2.538-1.332-4.92-3.525-6.187l-33.889-19.57c-1.062-.607-2.28-.864-3.525-.864z\" /><path d=\"M480.116 79.528c-9.65 0-15.397 4.107-15.397 10.937 0 7.408 5.704 9.444 14.966 10.36 11.08 1.085 11.943 2.712 11.943 4.893 0 3.783-3.016 5.396-10.144 5.396-8.957 0-10.925-2.236-11.584-6.691-.078-.478-.447-.864-.936-.864h-4.389c-.54 0-1.007.466-1.007 1.008 0 5.703 3.102 12.447 17.916 12.447 10.723 0 16.908-4.209 16.908-11.584 0-7.31-4.996-9.273-15.398-10.648-10.51-1.391-11.512-2.072-11.512-4.533 0-2.032.85-4.75 8.634-4.75 6.954 0 9.524 1.5 10.577 6.189.092.44.48.791.935.791h4.39c.27 0 .532-.166.719-.36.184-.207.314-.44.288-.719-.68-8.074-6.064-11.872-16.909-11.872z\" /></g><path d=\"M271.821.383a2.181 2.181 0 0 0-1.08.287 2.18 2.18 0 0 0-1.079 1.871v55.042c0 .54-.251 1.024-.719 1.295a1.501 1.501 0 0 1-1.511 0l-8.994-5.18a4.31 4.31 0 0 0-4.317 0l-35.903 20.721c-1.342.775-2.158 2.264-2.158 3.814v41.443c0 1.548.817 2.966 2.158 3.741l35.903 20.722a4.3 4.3 0 0 0 4.317 0l35.903-20.722a4.308 4.308 0 0 0 2.159-3.741V16.356a4.386 4.386 0 0 0-2.23-3.814L272.9.598c-.335-.187-.707-.22-1.079-.215zM40.861 52.115c-.684.027-1.328.147-1.942.503L3.015 73.34a4.3 4.3 0 0 0-2.158 3.741L.929 132.7c0 .773.399 1.492 1.079 1.87a2.096 2.096 0 0 0 2.159 0l21.297-12.231c1.349-.802 2.23-2.196 2.23-3.742V92.623c0-1.55.815-2.972 2.159-3.742l9.065-5.252a4.251 4.251 0 0 1 2.159-.576c.74 0 1.5.185 2.158.576l9.066 5.252a4.296 4.296 0 0 1 2.159 3.742v25.973c0 1.546.89 2.95 2.23 3.742l21.297 12.232a2.096 2.096 0 0 0 2.159 0 2.164 2.164 0 0 0 1.08-1.871l.07-55.618a4.28 4.28 0 0 0-2.158-3.741L43.235 52.618c-.607-.356-1.253-.475-1.942-.503h-.432zm322.624.503c-.75 0-1.485.19-2.158.576l-35.903 20.722a4.306 4.306 0 0 0-2.159 3.741V119.1c0 1.559.878 2.971 2.23 3.742l35.616 20.29c1.315.75 2.921.807 4.245.07l21.585-12.015c.685-.38 1.148-1.09 1.151-1.87a2.126 2.126 0 0 0-1.079-1.871l-36.119-20.722c-.676-.386-1.151-1.167-1.151-1.943v-12.95c0-.775.48-1.485 1.151-1.871l11.224-6.476a2.155 2.155 0 0 1 2.159 0L375.5 89.96a2.152 2.152 0 0 1 1.08 1.87v10.217a2.15 2.15 0 0 0 1.079 1.87c.673.389 1.487.39 2.158 0L401.331 91.4a4.325 4.325 0 0 0 2.159-3.742v-10c0-1.545-.82-2.966-2.159-3.742l-35.687-20.722a4.279 4.279 0 0 0-2.159-.575zm-107.35 30.939c.188 0 .408.046.576.143l12.304 7.123c.334.193.576.55.576.935v14.246c0 .387-.24.743-.576.936l-12.304 7.123a1.088 1.088 0 0 1-1.079 0l-12.303-7.123c-.335-.194-.576-.549-.576-.936V91.758c0-.386.242-.74.576-.935l12.303-7.122a.948.948 0 0 1 .504-.143v-.001z\" fill=\"#404137\" /><path d=\"M148.714 52.402c-.748 0-1.488.19-2.158.576l-35.903 20.65c-1.343.773-2.159 2.265-2.159 3.813v41.443c0 1.55.817 2.966 2.159 3.742l35.903 20.721a4.297 4.297 0 0 0 4.317 0l35.903-20.721a4.308 4.308 0 0 0 2.158-3.742V77.441c0-1.55-.816-3.04-2.158-3.813l-35.903-20.65a4.297 4.297 0 0 0-2.159-.576zM363.413 89.385c-.143 0-.302 0-.431.072l-6.907 4.029a.84.84 0 0 0-.432.72v7.914c0 .298.172.571.432.72l6.907 3.957c.259.15.535.15.791 0l6.907-3.958a.846.846 0 0 0 .432-.719v-7.915a.846.846 0 0 0-.432-.719l-6.907-4.03c-.128-.075-.216-.07-.36-.07z\" fill=\"#83CD29\" /></svg>, o front-end que virou back-end",
-    "descricao": "Neste curso, você aprenderá o tudo o que precisa para começar a programar em node.js e tirar suas ideias do papel, com uma didática simples, prática e eficiente!",
+    "descricao": "Neste curso, você aprenderá o tudo o que precisa para começar a programar em Node.js e tirar suas ideias do papel, com uma didática simples, prática e eficiente!",
     "modulos": [
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
-            "colors":{
+            "colors": {
                 "main": "#3784D1",
                 "background": "#C4DBF2"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": " Nodejs é praticamente um compilador de código javascript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…"
+                        "titulo": "O que é Node.js?",
+                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": " Nodejs é praticamente um compilador de código JavaScript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install nodejs."
+                        "titulo": "Como começar um projeto Node.js e as configurações iniciais",
+                        "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Executando o primeiro script",
+                        "descricao": "Escreva e execute seu primeiro script no terminal, entendendo os conceitos basicos de JavaScript e Node.js.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -25,19 +80,118 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
-            "colors":{
+            "colors": {
                 "main": "#9E1515",
                 "background": "#E3B8B8"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express."
+                        "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
+                        "descricao": "Entenda o papel do npm e do yarn, como funcionam os pacotes e sua importância na gestão de dependências.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev."
+                        "titulo": "Conceito de dependências",
+                        "descricao": "Aprenda o que são dependências, a diferença entre dependências de produção e desenvolvimento e como gerenciá-las.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como instalar pacotes do Node.js",
+                        "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como remover pacotes do Node.js",
+                        "descricao": "Aprenda a desinstalar pacotes corretamente, garantindo a limpeza do projeto e a organização das dependências.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#F28318",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
+                        "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#7515ED",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -45,19 +199,74 @@
         {
             "titulo": "🧑‍💻 Fundamentos do JavaScript no Node.js",
             "descricao": "Revise os principais conceitos do JavaScript, e, entenda o quais são as diferenças que existem entre CommonJS e ESModules.",
-            "colors":{
+            "colors": {
                 "main": "#4B9E15",
                 "background": "#D4EEC3"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "Caracteristicas e limitações comuns do JavaScript",
+                        "descricao": "Explore as principais características e limitações do JavaScript, como sua natureza assíncrona e o gerenciamento de escopo.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "Principais conceitos do JavaScript",
+                        "descricao": "Compreenda conceitos chave do JavaScript, como variáveis, funções, objetos, arrays e a manipulação do DOM.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Diferenças entre CommonJS e ESModules",
+                        "descricao": "Aprenda as diferenças entre os sistemas de módulos CommonJS e ESModules, e como cada um é usado no Node.js.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -65,19 +274,95 @@
         {
             "titulo": "📂 Manipulação de Arquivos e Módulos",
             "descricao": "Explore o sistema de módulos do Node.js, aprenda a criar e importar módulos próprios e manipule arquivos utilizando o módulo fs para leitura e escrita.",
-            "colors":{
+            "colors": {
                 "main": "#9D5816",
                 "background": "#EBD4BE"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "Conceito de Módulos do Node.js",
+                        "descricao": "Entenda o conceito de módulos no Node.js e como eles permitem a organização e reutilização de código.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#F28318",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "Dependências",
+                        "descricao": "Aprenda como gerenciar dependências externas em seu projeto e utilizá-las através de módulos no Node.js.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Criar, exportar e importar módulos próprios",
+                        "descricao": "Veja como criar seus próprios módulos, exportar funcionalidades e importá-las em outros arquivos.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Manipulação de arquivos utilizando o módulo fs para leitura e escrita",
+                        "descricao": "Aprenda a utilizar o módulo fs do Node.js para ler e escrever arquivos de forma síncrona e assíncrona.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -85,19 +370,74 @@
         {
             "titulo": "🌐 Criando um Servidor Web com Express.js",
             "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
-            "colors":{
+            "colors": {
                 "main": "#49148B",
                 "background": "#D2BEEB"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "Introdução ao Express.js",
+                        "descricao": "Conheça o Express.js, um framework para Node.js, que facilita a criação de servidores e APIs com recursos poderosos e simplificados.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#7515ED",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "Desenvolva um servidor web com Express.js",
+                        "descricao": "Aprenda a criar um servidor web básico utilizando o Express.js, configurando rotas e respondendo a requisições HTTP.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos de definições de rota",
+                        "descricao": "Entenda o conceito de rotas no Express.js, como defini-las e manipulá-las para responder a diferentes tipos de requisições.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -105,19 +445,116 @@
         {
             "titulo": "🔧 Trabalhando com Banco de Dados",
             "descricao": "Conecte sua aplicação a bancos de dados MySQL ou Firebase, aprenda a realizar consultas e operações básicas para armazenar e recuperar informações.",
-            "colors":{
+            "colors": {
                 "main": "#14538A",
                 "background": "#9DBFDD"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "Conceitos básicos do banco de dados SQL",
+                        "descricao": "Aprenda o que é Banco de Dados e alguns dos conceitos fundamentais de bancos de dados relacionais SQL, como tabelas, chaves primárias e SQL queries.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1ABBE8",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "Conecte sua aplicação ao banco de dados MySQL",
+                        "descricao": "Veja como conectar seu projeto Node.js a um banco de dados MySQL e realizar operações básicas de leitura e escrita.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos básicos do banco de dados NoSQL",
+                        "descricao": "Entenda os princípios dos bancos de dados NoSQL, como a flexibilidade e escalabilidade, e como eles se diferenciam dos SQL.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Primeiros passos com Firebase",
+                        "descricao": "Explore o Firebase, sua configuração e como ele pode ser usado para armazenar dados em tempo real no seu projeto.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conecte sua aplicação ao banco de dados Firebase",
+                        "descricao": "Aprenda a integrar seu aplicativo Node.js com o Firebase para criar e ler dados de forma eficiente.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#F28318",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -125,19 +562,158 @@
         {
             "titulo": "🔄 APIs RESTful com Node.js",
             "descricao": "Estruture uma API RESTful completa com Express.js, implemente um CRUD funcional e aprenda a enviar e receber dados em formato JSON.",
-            "colors":{
+            "colors": {
                 "main": "#870F36",
                 "background": "#E1B6C4"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "Conceitos de API",
+                        "descricao": "Entenda o que são APIs, sua importância e como elas permitem a comunicação entre diferentes sistemas e aplicativos.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#EA1A5E",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "O que são APIs RESTful",
+                        "descricao": "Aprenda sobre APIs RESTful, seus princípios e como elas utilizam métodos HTTP para operar em recursos de maneira eficiente.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Estruturação de uma API RESTful com Express.js",
+                        "descricao": "Descubra como estruturar uma API RESTful com o Express.js, criando rotas e manipulando requisições e respostas.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é CRUD?",
+                        "descricao": "Compreenda o conceito de CRUD (Create, Read, Update, Delete) e sua aplicação em sistemas de gerenciamento de dados.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Implemente um sistema CRUD funcional com Node.js",
+                        "descricao": "Aprenda a implementar um sistema CRUD completo usando Node.js, Express.js e um banco de dados para persistir dados.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#F28318",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é JSON?",
+                        "descricao": "Saiba o que é o JSON (JavaScript Object Notation) e como ele é usado para troca de dados entre servidor e cliente.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#7515ED",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Enviar e receber dados em formato JSON",
+                        "descricao": "Aprenda como enviar e receber dados em formato JSON em uma API, utilizando o Express.js para facilitar a comunicação.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1A88E8",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -145,19 +721,116 @@
         {
             "titulo": "🎯 Deploy e Boas Práticas",
             "descricao": "Gerencie variáveis de ambiente com dotenv, utilize Git para versionamento do código e publique sua aplicação na internet usando a plataforma Vercel.",
-            "colors":{
+            "colors": {
                 "main": "#133C7A",
                 "background": "#D1D5DB"
             },
-            "conteudos":{
-                "pathImgModulo": "",
-                "pathVideoModulo": "",
-                "paragrafo":[
+            "conteudos": {
+                "sessoes": [
                     {
-                        "texto": ""
+                        "titulo": "O que são variáveis de ambiente",
+                        "descricao": "Entenda o conceito de variáveis de ambiente, sua importância para a configuração de aplicações e como elas ajudam a manter informações sensíveis fora do código.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1265E2",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     },
                     {
-                        "texto": ""
+                        "titulo": "Gerenciamento de variáveis de ambiente no Node.js com a biblioteca dotenv",
+                        "descricao": "Aprenda a usar a biblioteca dotenv no Node.js para carregar variáveis de ambiente de um arquivo .env, mantendo a segurança e flexibilidade no seu projeto.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "O que é Git e a importância do versionamento de código",
+                        "descricao": "Compreenda o Git, suas funcionalidades e como o versionamento de código ajuda na colaboração e controle de mudanças no seu projeto.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Introdução ao GitHub e configuração do GitHub no VS Code",
+                        "descricao": "Saiba como usar o GitHub para hospedar repositórios e configurar o Git no VS Code, facilitando o controle de versão e o trabalho em equipe.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Conceitos de Deployment e como realizar o Deploy de uma aplicação Node.js na plataforma Vercel",
+                        "descricao": "Entenda o que é deployment e como realizar o deploy de uma aplicação Node.js utilizando a plataforma Vercel para tornar sua aplicação acessível online.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#F28318",
+                        "paragrafos": [
+                            {
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
                     }
                 ]
             }

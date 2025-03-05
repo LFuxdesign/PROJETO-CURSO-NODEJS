@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Curso introdutório de Node.js",
+  "name": "Um site criado por dois estudantes de Ciência da Computação da UFMT que receberam o desafio de criar um curso gratuito introdutório de Node.js, e, enfim, desafio aceito e curso no ar, aproveitem!",
   "icons": [
     {
       "src": "favicon.ico",
