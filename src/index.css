@@ -40,7 +40,7 @@ a {
 @font-face {
   font-family: 'comfortaa';
   src: url('./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format('truetype-variations');
-  font-weight: 100 900;
+  font-weight: 100 999;
   font-optical-sizing: auto;
   font-style: normal;
 }

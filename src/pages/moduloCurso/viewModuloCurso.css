@@ -68,11 +68,95 @@
 
 .content4moodle.moduloCurso .content .conteudoSessao{
     width: 70%;
+    margin-bottom: 40px;
+    gap: 40px;
 }
-.content4moodle.moduloCurso .content .conteudoSessao #videoSessao{
-    width: 85%!important;
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias, .content4moodle.moduloCurso .content .conteudoSessao .textContent{
+    width: 85%;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias{
+    gap: 20px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--default-radius);
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
+    aspect-ratio: unset!important;
+    max-height: 275px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias #videoSessao, .content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
     height: unset!important;
     aspect-ratio: 16 / 9;
     border-radius: var(--default-radius);
     overflow: hidden;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .textContent{
+    gap: 25px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .textContent .title{
+    font-size: 40px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .textContent .paragrafos p{
+    font-size: 20px;
+    line-height: 144%;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .disclaimer{
+    justify-content: space-between;
+    width: 100%;
+    gap: 1px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: var(--default-radius);
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .disclaimer span{
+    font-size: 11px;
+    font-weight: bolder;
+    max-width: 95%;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar{
+    width: 210px;
+    height: 44px;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: var(--default-radius);
+    overflow: hidden;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .bg{
+    width: 100%;
+    position: absolute;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightColor{
+    height: 44px;
+    position: absolute;
+    background: var(--default-gradient);
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-37%) translateX(-50%);
+    width: max-content;
 }
