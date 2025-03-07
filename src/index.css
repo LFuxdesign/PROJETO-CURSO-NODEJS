@@ -107,6 +107,38 @@ input {
   flex-direction: column;
 }
 
+.entryAnimation {
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: forwards entryAni .5s var(--animations);
+}
+
+.entryAnimation.opacityAni{
+  opacity: 0;
+  animation: forwards entryAniOpacity 1s var(--animations)!important;
+}
+
+@keyframes entryAni {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entryAniOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 /* a:visited{
   color: unset;
 } */
