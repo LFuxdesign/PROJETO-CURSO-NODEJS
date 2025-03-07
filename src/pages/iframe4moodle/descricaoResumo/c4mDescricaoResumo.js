@@ -9,22 +9,22 @@ export default function C4mDescricaoResumo() {
         <div className="content4moodle modulosResumo flexCenter">
             <div className="content flex flexColumn">
                 <div id="cta">
-                    <div id="title">
+                    <div id="title" className="entryAnimation">
                         <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
 
                     </div>
-                    <div id="subtitle">
+                    <div id="subtitle" className="entryAnimation" style={{animationDelay: ".25s"}}>
                         <h2>
                             {Curso.descricao}
                         </h2>
                     </div>
                 </div>
             </div>
-            <div className="gridCards">
+            <div className="gridCards entryAnimation">
                 {
                     Curso.modulos.map((modulo, index) => {
                         return (
-                            <div key={index} className="card flexCenter flexColumn">
+                            <div key={index} className="card flexCenter flexColumn entryAnimation" style={{animationDelay: (.10 * (index+1) + "s")}}>
                                 <div className="cardHeader flexCenter">
                                     <h1 className="num" style={{ color: modulo.colors.main }}>{index + 1}.</h1>
                                     <h1 className="titulo" style={{ fontSize: (modulo.titulo).split(" ")[1].length < 11 ? "17px" : "14px" }}> {modulo.titulo} </h1>

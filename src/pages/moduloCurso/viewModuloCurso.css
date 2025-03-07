@@ -29,6 +29,8 @@
     border-radius: var(--default-radius);
     padding: 20px;
     justify-content: space-between;
+    filter: saturate(0);
+    transition: all 1s var(--ease-in-out);
 }
 
 .content4moodle.moduloCurso .runningCourses .cardCurso .subtitulo, .content4moodle.moduloCurso .runningCourses .cardCurso span, .content4moodle.moduloCurso .runningCourses .cardCurso p, .content4moodle.moduloCurso .runningCourses .cardCurso .titulo{
@@ -151,6 +153,31 @@
     height: 44px;
     position: absolute;
     background: var(--default-gradient);
+    transition: all 1s var(--ease-in-out);
+    width: 0;
+    border-radius: 20px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightColor::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    opacity: 0.7;
+    transform: translateX(-100%);
+    animation: wave 4s infinite var(--ease-in-out);
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar span{

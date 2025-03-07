@@ -32,7 +32,7 @@ function AppContent() {
           "erro ao limpar delay da animação de entrada dos elementos"
         );
       }
-    }, 2000);
+    }, 10000);
 
     return () => clearTimeout(counter);
   }, [location]);
