@@ -36,7 +36,7 @@
                         "titulo": "Como começar um projeto Node.js e as configurações iniciais",
                         "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "https://youtu.be/3GzPQ1LScjo",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
@@ -47,7 +47,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
