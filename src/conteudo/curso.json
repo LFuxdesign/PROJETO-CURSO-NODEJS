@@ -26,7 +26,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js.",
+                                "texto": "No desenvolvimento web a linguagem de programação javascript é extremamente utilizada e padronizada. A linguagem de programação JavaScript foi desenvolvida em 1995 e virou predominante no desenvolvimento de página web responsável pela interação com o usuário/cliente, no entanto para o lado do servidor o mesmo fracassou em sua função, pois a performance era extremamente baixa em relação a outra linguagem também possíveis para essa função. Mas como já era predominante a linguagem JavaScript na web, não era muito conveniente ter que aprender outra linguagem para programa o servidor, sendo assim o Nodejs foi desenvolvido para rodar códigos JavaScript no lado do servidor, o Ryan Dahl uso como inspiração o processo de carga de arquivos Flickr e também ao perceber que os servidores como o Apache gerenciavam muitas conexão de forma ineficaz, então exergo a possibilidade de ser o criador do ambiente capaz dessa façanha de gerenciar milhares de conexão simultâneas sem se tornar bloqueantes. O lançamento foi em 05/2009, usava o motor V8 JavaScript da Google, a novidade foi o loop de eventos assíncrono, que o permiti o Nodejs executar operações de entrada e saída sem bloquear, mas claro o quer impressionou a comunidade foi a capacidade de lidar com as conexão simultâneas. A popularidade se deu no ano seguinte muito por causa das novidades, capacidades e claro a carga da predominância do JavaScript no universo Web.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -36,19 +36,26 @@
                         "titulo": "Como começar um projeto Node.js e as configurações iniciais",
                         "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "https://youtu.be/3GzPQ1LScjo",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js.",
                                 "pathImgInferior": "",
-                                "pathVideoInferior": ""
+                                "pathVideoInferior": "https://www.youtube.com/watch?v=tpzFsrEJm1A"
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos.",
                                 "pathImgInferior": "",
+                                "pathVideoInferior": "https://youtu.be/DiNLHjzn818"
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS Code o link é nada mas que https://code.visualstudio.com/ logo na pagina principal estará as opção de download.",
+                                "pathImgInferior": "/assets/Exemplo/Ex1.png",
                                 "pathVideoInferior": ""
                             }
                         ]
