@@ -6,7 +6,7 @@ import Curso from "../../../conteudo/curso.json"
 
 export default function C4mDescricaoResumo() {
     return (
-        <div className="content4moodle modulosResumo flexCenter">
+        <div className="content4moodle modulosResumo flexCenter transition">
             <div className="content flex flexColumn">
                 <div id="cta">
                     <div id="title" className="entryAnimation">

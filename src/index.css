@@ -139,6 +139,27 @@ input {
     opacity: 1;
   }
 }
+
+.transition{
+  transition: all .5s var(--ease-in-out);
+}
+
+@keyframes outAnimation {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
+.hide{
+  visibility: hidden;
+}
+
 /* a:visited{
   color: unset;
 } */

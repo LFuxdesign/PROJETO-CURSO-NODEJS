@@ -3,8 +3,7 @@ import "./viewModuloCurso.css";
 import Curso from "../../conteudo/curso.json"
 
 import { useSearchParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import ReactPlayer from "react-player/lazy";
+import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player";
 
 
@@ -125,6 +124,36 @@ export default function ViewModuloCurso() {
         setAnimationTimeout(true)
     }, 50);
 
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const atualizarLargura = () => setScreenWidth(window.innerWidth);
+
+        window.addEventListener("resize", atualizarLargura);
+
+        return () => window.removeEventListener("resize", atualizarLargura);
+    }, []);
+
+
+    const refDisclaimer = useRef();
+    const [expandOnDisclaimerHide, setExpandOnDisclaimerHide] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            refDisclaimer?.current?.classList.add("disclaimerOutAnimation")
+            setTimeout(() => {
+                refDisclaimer?.current?.classList.add("disclaimerHide")
+            }, 50);
+        }, 10000);
+    }, [])
+
+    useEffect(()=>{
+        setTimeout(() => {
+            if(screenWidth <= 500)
+            setExpandOnDisclaimerHide(true)
+        }, 10000);
+    }, [screenWidth])
+
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
             <section className="header entryAnimation opacityAni">
@@ -132,8 +161,8 @@ export default function ViewModuloCurso() {
                     <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
                 </div>
             </section>
-            <section className="content flex">
-                <div className="runningCourses flex flexColumn entryAnimation">
+            <section className="content flex transition">
+                <div className="runningCourses flex flexColumn entryAnimation transition">
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
@@ -191,9 +220,9 @@ export default function ViewModuloCurso() {
 
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
-                                <div className="medias flex flexColumn">
+                                <div className="medias flex flexColumn transition">
                                     <div className="infos flexCenter">
-                                        <div className="disclaimer flexCenter entryAnimation">
+                                        <div className="disclaimer flexCenter entryAnimation transition" ref={refDisclaimer}>
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="10" cy="10.5" r="10" fill="#FF9D00" />
                                                 <path d="M10.0013 14.5C9.84 14.5 9.70433 14.4487 9.59433 14.346C9.49167 14.236 9.44033 14.1003 9.44033 13.939V9.044C9.44033 8.87533 9.49167 8.73967 9.59433 8.637C9.70433 8.53433 9.84 8.483 10.0013 8.483C10.17 8.483 10.3057 8.53433 10.4083 8.637C10.511 8.73967 10.5623 8.87533 10.5623 9.044V13.939C10.5623 14.1003 10.511 14.236 10.4083 14.346C10.3057 14.4487 10.17 14.5 10.0013 14.5ZM10.0013 7.504C9.80333 7.504 9.631 7.43433 9.48433 7.295C9.345 7.14833 9.27533 6.976 9.27533 6.778C9.27533 6.58 9.345 6.41133 9.48433 6.272C9.631 6.12533 9.80333 6.052 10.0013 6.052C10.1993 6.052 10.368 6.12533 10.5073 6.272C10.654 6.41133 10.7273 6.58 10.7273 6.778C10.7273 6.976 10.654 7.14833 10.5073 7.295C10.368 7.43433 10.1993 7.504 10.0013 7.504Z" fill="white" />
@@ -201,7 +230,7 @@ export default function ViewModuloCurso() {
 
                                             <span>as informações de progresso são armazenadas  localmente no seu navegador somente para indicação, limpeza de cache do navegador ou historico irão apagar essas informações mas, se você ja finalizou o modulo no moodle, esta tudo certo!</span>
                                         </div>
-                                        <div className="progressbar entryAnimation" style={{ animationDelay: ".25s" }}>
+                                        <div className={"progressbar entryAnimation transition" + (expandOnDisclaimerHide && " expand")} style={{ animationDelay: ".25s" }}>
                                             {(() => {
                                                 let totalSessoes = 0;
                                                 let viewedCount = 0;
@@ -216,12 +245,11 @@ export default function ViewModuloCurso() {
                                                 });
 
                                                 const percent = (viewedCount / totalSessoes) * 100
-
                                                 return (
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightColor" />
                                                         <span>
-                                                            {percent.toFixed(2) + "% concluido"}
+                                                            {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>
                                                 )
@@ -235,7 +263,7 @@ export default function ViewModuloCurso() {
                                         />
                                     ) : sessao.pathImgSessao ? <img className="imgSessao" src={sessao.pathImgSessao} alt="" /> : null}
                                 </div>
-                                <div className="textContent flex flexColumn entryAnimation" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
+                                <div className="textContent flex flexColumn entryAnimation transition" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
                                     <h1 className="title">{sessao.titulo}</h1>
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo) => {
