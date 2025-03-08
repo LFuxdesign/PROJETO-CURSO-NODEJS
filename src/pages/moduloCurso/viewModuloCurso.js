@@ -5,6 +5,7 @@ import Curso from "../../conteudo/curso.json"
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player/lazy";
+import Player from "../../components/player";
 
 
 export default function ViewModuloCurso() {
@@ -68,7 +69,7 @@ export default function ViewModuloCurso() {
     }
 
     useEffect(() => {
-        const urlSectionId = isSectionIndexValid(parseInt(searchParams.get("s"))) ? parseInt(searchParams.get("s")) -1 : 0;
+        const urlSectionId = isSectionIndexValid(parseInt(searchParams.get("s"))) ? parseInt(searchParams.get("s")) - 1 : 0;
 
         setModuloAtual(Curso.modulos[idModulo - 1]);
         markAsViewed(idModulo - 1, urlSectionId);
@@ -118,7 +119,7 @@ export default function ViewModuloCurso() {
         return brightness > 128 ? "#000" : whiteTarget; // Se for claro, retorna preto, se for escuro, retorna branco
     }
 
-    const [animationTimeout, setAnimationTimeout ] = useState(false);
+    const [animationTimeout, setAnimationTimeout] = useState(false);
 
     setTimeout(() => {
         setAnimationTimeout(true)
@@ -137,7 +138,7 @@ export default function ViewModuloCurso() {
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
                             return (
-                                <div key={index} className="cardCurso flexCenter entryAnimation" style={{ animationDuration: "1s", animationDelay: (.25 * (index+1) + "s"), background: sessao.highlightColor, filter: (viewedModules[idModulo - 1].sessoes[index].viewed && animationTimeout) && "saturate(.9)" }}>
+                                <div key={index} className="cardCurso flexCenter entryAnimation" style={{ animationDuration: "1s", animationDelay: (.25 * (index + 1) + "s"), background: sessao.highlightColor, filter: (viewedModules[idModulo - 1].sessoes[index].viewed && animationTimeout) && "saturate(.9)" }}>
                                     <div className="details">
                                         <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>{sessao.titulo}</h1>
                                         <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>{sessao.descricao}</span>
@@ -186,7 +187,7 @@ export default function ViewModuloCurso() {
                 {
                     (() => {
                         var urlSectionId = searchParams.get("s");
-                        var sessao = isSectionIndexValid(parseInt(urlSectionId)) ? moduloAtual.conteudos.sessoes[parseInt(urlSectionId) -1] : moduloAtual.conteudos.sessoes[0];
+                        var sessao = isSectionIndexValid(parseInt(urlSectionId)) ? moduloAtual.conteudos.sessoes[parseInt(urlSectionId) - 1] : moduloAtual.conteudos.sessoes[0];
 
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
@@ -200,7 +201,7 @@ export default function ViewModuloCurso() {
 
                                             <span>as informações de progresso são armazenadas  localmente no seu navegador somente para indicação, limpeza de cache do navegador ou historico irão apagar essas informações mas, se você ja finalizou o modulo no moodle, esta tudo certo!</span>
                                         </div>
-                                        <div className="progressbar entryAnimation" style={{animationDelay: ".25s"}}>
+                                        <div className="progressbar entryAnimation" style={{ animationDelay: ".25s" }}>
                                             {(() => {
                                                 let totalSessoes = 0;
                                                 let viewedCount = 0;
@@ -213,9 +214,9 @@ export default function ViewModuloCurso() {
                                                         }
                                                     });
                                                 });
-                                                
-                                                    const percent = (viewedCount / totalSessoes) * 100
-                                                
+
+                                                const percent = (viewedCount / totalSessoes) * 100
+
                                                 return (
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightColor" />
@@ -228,34 +229,40 @@ export default function ViewModuloCurso() {
                                         </div>
                                     </div>
                                     {sessao.pathVideoSessao ? (
-                                        <ReactPlayer
-                                            id="videoSessao"
-                                            className="entryAnimation"
-                                            style={{animationDelay: ".7s", animationDuration: "1s"}}
-                                            url={sessao.pathVideoSessao}
-                                            width={"100%"}
-                                            controls={true}
-                                            volume={1}
-                                            config={{
-                                                file: {
-                                                    attributes: {
-                                                        controlsList: 'nodownload',
-                                                        onContextMenu: e => e.preventDefault()
-                                                    }
-                                                }
-                                            }}
+                                        <Player
+                                            videoPath={sessao.pathVideoSessao}
+                                            animationDelay={".7s"}
                                         />
-                                    ) : sessao.pathImgSessao ? <img id="imgSessao" src={sessao.pathImgSessao} alt="" /> : null}
+                                    ) : sessao.pathImgSessao ? <img className="imgSessao" src={sessao.pathImgSessao} alt="" /> : null}
                                 </div>
-                                <div className="textContent flex flexColumn entryAnimation" style={{animationDelay: ".95s", animationDuration: "1s"}}>
+                                <div className="textContent flex flexColumn entryAnimation" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
                                     <h1 className="title">{sessao.titulo}</h1>
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo) => {
                                             return (
                                                 <>
-                                                    <p>{paragrafo.texto}</p><br />
-                                                </>
+                                                    {paragrafo.pathVideoSuperior ? (<>
+                                                        <Player
+                                                            videoPath={sessao.pathVideoSuperior}
+                                                            animationDelay={".7s"}
+                                                        />
+                                                        <br /><br />
+                                                    </>) : paragrafo.pathImgSuperior ? <><img className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" /><br /><br /></> : null}
 
+
+
+                                                    <p>{paragrafo.texto}</p><br />
+
+
+
+                                                    {paragrafo.pathVideoInferior ? (<>
+                                                        <Player
+                                                            videoPath={sessao.pathVideoInferior}
+                                                            animationDelay={".7s"}
+                                                        />
+                                                        <br /><br />
+                                                    </>) : paragrafo.pathImgInferior ? <><img className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" /><br /></> : null}
+                                                </>
                                             )
                                         })}
                                     </div>

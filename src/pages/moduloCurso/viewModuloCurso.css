@@ -82,7 +82,7 @@
     gap: 20px;
 }
 
-.content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
+.content4moodle.moduloCurso .content .imgSessao{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -90,12 +90,12 @@
     border-radius: var(--default-radius);
 }
 
-.content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
+.content4moodle.moduloCurso .content .imgSessao{
     aspect-ratio: unset!important;
     max-height: 275px;
 }
 
-.content4moodle.moduloCurso .content .conteudoSessao .medias #videoSessao, .content4moodle.moduloCurso .content .conteudoSessao .medias #imgSessao{
+.content4moodle.moduloCurso .content .videoPlayer, .content4moodle.moduloCurso .content .imgSessao{
     height: unset!important;
     aspect-ratio: 16 / 9;
     border-radius: var(--default-radius);
@@ -186,4 +186,8 @@
     top: 50%;
     transform: translateY(-37%) translateX(-50%);
     width: max-content;
+}
+
+@media(width <1420px){
+
 }
