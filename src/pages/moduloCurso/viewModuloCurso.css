@@ -230,10 +230,9 @@
         width: 55%;
         min-width: 300px;
     }
-
-    /* .content4moodle.moduloCurso .content {
-        flex-direction: column-reverse;
-    } */
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar{
+        width: 100px;
+    }
 }
 
 
@@ -277,6 +276,9 @@
 
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos {
         gap: 5px;
+    }
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar{
+        width: 160px;
     }
 }
 

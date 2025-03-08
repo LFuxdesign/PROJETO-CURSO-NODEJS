@@ -137,26 +137,48 @@ export default function ViewModuloCurso() {
 
     const refDisclaimer = useRef();
     const [expandOnDisclaimerHide, setExpandOnDisclaimerHide] = useState(false);
+    const [firstRender, setFirstRender] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => {
+
+    }, [])
+
+    useEffect(() => {
+        if (firstRender) {
+            setFirstRender(false)
+            setTimeout(() => {
+                refDisclaimer?.current?.classList.add("disclaimerOutAnimation")
+                setTimeout(() => {
+                    refDisclaimer?.current?.classList.add("disclaimerHide")
+                }, 50);
+                if (screenWidth <= 500) {
+                    setExpandOnDisclaimerHide(true)
+                } else {
+                    setExpandOnDisclaimerHide(false)
+                }
+            }, 10000);
+        } else {
             refDisclaimer?.current?.classList.add("disclaimerOutAnimation")
             setTimeout(() => {
                 refDisclaimer?.current?.classList.add("disclaimerHide")
             }, 50);
-        }, 10000);
-    }, [])
-
-    useEffect(()=>{
-        setTimeout(() => {
-            if(screenWidth <= 500){
+            if (screenWidth <= 500) {
                 setExpandOnDisclaimerHide(true)
-            }else{
+            } else {
                 setExpandOnDisclaimerHide(false)
             }
-            
-        }, 10000);
+        }
     }, [screenWidth])
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (screenWidth <= 500) {
+                setExpandOnDisclaimerHide(true)
+            } else {
+                setExpandOnDisclaimerHide(false)
+            }
+        }, 10000);
+    }, [])
 
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
@@ -234,7 +256,7 @@ export default function ViewModuloCurso() {
 
                                             <span>as informações de progresso são armazenadas  localmente no seu navegador somente para indicação, limpeza de cache do navegador ou historico irão apagar essas informações mas, se você ja finalizou o modulo no moodle, esta tudo certo!</span>
                                         </div>
-                                        <div className={"progressbar entryAnimation transition" + (expandOnDisclaimerHide && " expand")} style={{ animationDelay: ".25s" }}>
+                                        <div className={"progressbar entryAnimation transition" + (expandOnDisclaimerHide ? " expand" : "")} style={{ animationDelay: ".25s" }}>
                                             {(() => {
                                                 let totalSessoes = 0;
                                                 let viewedCount = 0;
@@ -253,7 +275,7 @@ export default function ViewModuloCurso() {
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightColor" />
                                                         <span>
-                                                            {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (expandOnDisclaimerHide ? "% concluido" : "%")}
+                                                            {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>
                                                 )
