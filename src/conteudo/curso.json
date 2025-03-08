@@ -55,7 +55,7 @@
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS Code o link é nada mas que https://code.visualstudio.com/ logo na pagina principal estará as opção de download.",
-                                "pathImgInferior": "../assets/Exemplo/Ex1.png",
+                                "pathImgInferior": "/assets/Exemplo/Ex1.png",
                                 "pathVideoInferior": ""
                             }
                         ]
