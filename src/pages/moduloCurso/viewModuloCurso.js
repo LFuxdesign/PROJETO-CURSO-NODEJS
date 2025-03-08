@@ -149,8 +149,12 @@ export default function ViewModuloCurso() {
 
     useEffect(()=>{
         setTimeout(() => {
-            if(screenWidth <= 500)
-            setExpandOnDisclaimerHide(true)
+            if(screenWidth <= 500){
+                setExpandOnDisclaimerHide(true)
+            }else{
+                setExpandOnDisclaimerHide(false)
+            }
+            
         }, 10000);
     }, [screenWidth])
 
