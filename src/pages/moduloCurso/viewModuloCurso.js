@@ -273,7 +273,7 @@ export default function ViewModuloCurso() {
                                                 const percent = (viewedCount / totalSessoes) * 100
                                                 return (
                                                     <>
-                                                        <div style={{ width: animationTimeout && percent + "%" }} className="highlightColor" />
+                                                        <div style={{ width: animationTimeout && percent + "%" }} className="highlightProgressBar" />
                                                         <span>
                                                             {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
