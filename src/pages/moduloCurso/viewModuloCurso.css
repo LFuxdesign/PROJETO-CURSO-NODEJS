@@ -310,16 +310,16 @@
     }
     .disclaimerHide{
         visibility: hidden;
+        height: 0;
     }
 }
 
 @media(width <350px) {
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .disclaimer {
-        max-width: 94%;
+        width: 0;
     }
 
-    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos {
-        flex-direction: column;
-        align-items: flex-end;
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar.expand {
+        width: 200px;
     }
 }
