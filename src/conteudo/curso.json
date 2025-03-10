@@ -5,6 +5,9 @@
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
+            "pathImgModulo": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+            "categoria": "introdução",
+            "duracao": "1h",
             "colors": {
                 "main": "#3784D1",
                 "background": "#C4DBF2"
@@ -205,6 +208,9 @@
         {
             "titulo": "🧑‍💻 Fundamentos do JavaScript no Node.js",
             "descricao": "Revise os principais conceitos do JavaScript, e, entenda o quais são as diferenças que existem entre CommonJS e ESModules.",
+            "pathImgModulo": "",
+            "categoria": "Fundamentos",
+            "duracao": "1h",
             "colors": {
                 "main": "#4B9E15",
                 "background": "#D4EEC3"
@@ -280,6 +286,9 @@
         {
             "titulo": "📂 Manipulação de Arquivos e Módulos",
             "descricao": "Explore o sistema de módulos do Node.js, aprenda a criar e importar módulos próprios e manipule arquivos utilizando o módulo fs para leitura e escrita.",
+            "pathImgModulo": "",
+            "categoria": "Arquivos",
+            "duracao": "1h",
             "colors": {
                 "main": "#9D5816",
                 "background": "#EBD4BE"
@@ -376,6 +385,9 @@
         {
             "titulo": "🌐 Criando um Servidor Web com Express.js",
             "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
+            "pathImgModulo": "",
+            "categoria": "Express.js",
+            "duracao": "1h",
             "colors": {
                 "main": "#49148B",
                 "background": "#D2BEEB"
@@ -451,6 +463,9 @@
         {
             "titulo": "🔧 Trabalhando com Banco de Dados",
             "descricao": "Conecte sua aplicação a bancos de dados MySQL ou Firebase, aprenda a realizar consultas e operações básicas para armazenar e recuperar informações.",
+            "pathImgModulo": "",
+            "categoria": "Banco de Dados",
+            "duracao": "1h",
             "colors": {
                 "main": "#14538A",
                 "background": "#9DBFDD"
@@ -568,6 +583,9 @@
         {
             "titulo": "🔄 APIs RESTful com Node.js",
             "descricao": "Estruture uma API RESTful completa com Express.js, implemente um CRUD funcional e aprenda a enviar e receber dados em formato JSON.",
+            "pathImgModulo": "",
+            "categoria": "APIs",
+            "duracao": "1h",
             "colors": {
                 "main": "#870F36",
                 "background": "#E1B6C4"
@@ -727,6 +745,9 @@
         {
             "titulo": "🎯 Deploy e Boas Práticas",
             "descricao": "Gerencie variáveis de ambiente com dotenv, utilize Git para versionamento do código e publique sua aplicação na internet usando a plataforma Vercel.",
+            "pathImgModulo": "",
+            "categoria": "Deploy",
+            "duracao": "1h",
             "colors": {
                 "main": "#133C7A",
                 "background": "#D1D5DB"
