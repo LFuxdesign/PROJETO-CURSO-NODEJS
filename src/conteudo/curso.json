@@ -43,21 +43,14 @@
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js.",
+                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js. assista: https://www.youtube.com/watch?v=tpzFsrEJm1A",
                                 "pathImgInferior": "",
-                                "pathVideoInferior": "https://www.youtube.com/watch?v=tpzFsrEJm1A"
+                                "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos.",
-                                "pathImgInferior": "",
-                                "pathVideoInferior": "https://youtu.be/DiNLHjzn818"
-                            },
-                            {
-                                "pathImgSuperior": "",
-                                "pathVideoSuperior": "",
-                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS Code o link é nada mas que https://code.visualstudio.com/ logo na pagina principal estará as opção de download.",
+                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que https://code.visualstudio.com/ logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
                                 "pathImgInferior": "/assets/Exemplo/Ex1.png",
                                 "pathVideoInferior": ""
                             }
@@ -67,20 +60,26 @@
                         "titulo": "Executando o primeiro script",
                         "descricao": "Escreva e execute seu primeiro script no terminal, entendendo os conceitos basicos de JavaScript e Node.js.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "https://youtu.be/DiNLHjzn818",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos. Veja o exemplo do video acima!",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
+                                "texto": "Entendendo mais abaixo sobre o JavaScript e Node!"
+                            },
+                            {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Segundo o livro: Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Segundo o livro: Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
                             }
                         ]
                     }
