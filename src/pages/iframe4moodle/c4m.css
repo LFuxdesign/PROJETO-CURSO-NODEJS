@@ -1,82 +1,85 @@
-.content4moodle{
+.content4moodle {
     height: 100vh;
     width: 100vw;
     justify-content: space-evenly;
 }
 
-
-.content4moodle .content{
+.content4moodle .content {
     gap: 30px;
     align-items: flex-start;
 }
 
-.content4moodle #cta{
+.content4moodle #cta {
     display: flex;
     flex-direction: column;
     gap: 10px;
     backdrop-filter: blur(6px);
 }
 
-.content4moodle #cta div{
+.content4moodle #cta div {
     width: 595px;
 }
 
-.content4moodle .content #cta #imageMobile{
+.content4moodle .content #cta #imageMobile {
     display: none;
 }
 
-.content4moodle #title h1{
+.content4moodle #title h1 {
     font-size: 50px;
     font-weight: bold;
 }
 
-.content4moodle #title svg{
+.content4moodle #title svg {
     width: 190px;
     height: fit-content;
 }
 
-.content4moodle #subtitle h2{
+.content4moodle #subtitle h2 {
     font-size: 28px;
     font-weight: normal;
 }
 
-@media (width <= 1100px) {
-    .content4moodle .content #cta #imageMobile{
+@media (width <=1100px) {
+    .content4moodle .content #cta #imageMobile {
         display: unset;
     }
 
-    .content4moodle #imageDesktop{
+    .content4moodle #imageDesktop {
         display: none;
     }
 }
 
-@media(width<700px){
-    .content4moodle{
+@media(width<700px) {
+    .content4moodle {
         max-width: 85vw;
     }
-    .content4moodle #title h1{
+
+    .content4moodle #title h1 {
         font-size: 36px;
     }
-    .content4moodle #title svg{
+
+    .content4moodle #title svg {
         width: 155px;
         top: -2px;
     }
-    .content4moodle #subtitle h2{
+
+    .content4moodle #subtitle h2 {
         font-size: 20px;
     }
 }
 
-@media ((width <= 1100px) and (height < 910px)) or (height<550px) {
-    .content4moodle{
+@media ((width <=1100px) and (height < 910px)) or (height<550px) {
+    .content4moodle {
         align-items: flex-start;
         padding-top: 7.5vh;
     }
-    .content4moodle div{
+
+    .content4moodle div {
         max-width: 100%;
     }
 }
 
-@media ((width <= 1100px) and (height < 910px)) or (height<550px) {
+@media ((width <=1100px) and (height < 910px)) or (height<550px) {
     .content4moodle {
         height: unset;
     }

@@ -159,38 +159,6 @@
     position: absolute;
 }
 
-.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightColor {
-    height: 44px;
-    position: absolute;
-    background: var(--default-gradient);
-    transition: all 1s var(--ease-in-out);
-    width: 0;
-    border-radius: 20px;
-}
-
-.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightColor::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    opacity: 0.7;
-    transform: translateX(-100%);
-    animation: wave 4s infinite var(--ease-in-out);
-}
-
-@keyframes wave {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar span {
     position: absolute;
     left: 50%;
@@ -209,6 +177,7 @@
     .content4moodle.moduloCurso .content .conteudoSessao .textContent {
         width: 100%;
     }
+
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar {
         width: 260px;
     }
@@ -230,7 +199,8 @@
         width: 55%;
         min-width: 300px;
     }
-    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar{
+
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar {
         width: 100px;
     }
 }
@@ -277,7 +247,8 @@
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos {
         gap: 5px;
     }
-    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar{
+
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar {
         width: 160px;
     }
 }
@@ -293,7 +264,11 @@
 }
 
 @media(width <=500px) {
-    .content4moodle.moduloCurso .content .conteudoSessao .textContent .paragrafos p, .content4moodle.moduloCurso .content .conteudoSessao .textContent .title, .content4moodle.moduloCurso .runningCourses span, .content4moodle.moduloCurso .runningCourses .cardCurso .details .titulo {
+
+    .content4moodle.moduloCurso .content .conteudoSessao .textContent .paragrafos p,
+    .content4moodle.moduloCurso .content .conteudoSessao .textContent .title,
+    .content4moodle.moduloCurso .runningCourses span,
+    .content4moodle.moduloCurso .runningCourses .cardCurso .details .titulo {
         word-wrap: break-word;
     }
 
@@ -305,21 +280,23 @@
         opacity: 1;
         animation: forwards outAnimation .5s var(--animations) !important;
     }
-    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar.expand{
+
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar.expand {
         width: 300px;
     }
-    .disclaimerHide{
+
+    .disclaimerHide {
         visibility: hidden;
+        height: 0;
     }
 }
 
 @media(width <350px) {
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .disclaimer {
-        max-width: 94%;
+        width: 0;
     }
 
-    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos {
-        flex-direction: column;
-        align-items: flex-end;
+    .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar.expand {
+        width: 200px;
     }
 }
