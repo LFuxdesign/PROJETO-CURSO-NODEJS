@@ -4,7 +4,6 @@ import "../c4m.css"
 import Curso from "../../../conteudo/curso.json"
 
 import { ReactComponent as ImageSection } from "../../../assets/imgSobre.svg"
-import { useState } from "react";
 
 export default function C4mSobre() {
 

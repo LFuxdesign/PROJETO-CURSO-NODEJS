@@ -168,6 +168,7 @@ export default function ViewModuloCurso() {
                 setExpandOnDisclaimerHide(false)
             }
         }
+        // eslint-disable-next-line
     }, [screenWidth])
 
     useEffect(() => {
@@ -178,6 +179,7 @@ export default function ViewModuloCurso() {
                 setExpandOnDisclaimerHide(false)
             }
         }, 10000);
+        // eslint-disable-next-line
     }, [])
 
     return (
