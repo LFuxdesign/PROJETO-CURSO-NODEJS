@@ -89,6 +89,8 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
+            "categoria": "NPM",
+            "duracao": "1h",
             "colors": {
                 "main": "#9E1515",
                 "background": "#E3B8B8"
