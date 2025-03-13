@@ -120,7 +120,7 @@
 #c4mSobreModulos .flexCards .card .andamento .progressbar {
     background: #EAEAEA;
     height: 20px;
-    width: 64%;
+    width: 75%;
     border-radius: var(--default-radius);
     overflow: hidden;
     position: relative;
@@ -148,8 +148,27 @@
         width: 85%;
     }
 }
+@media(width < 650px){
+    #c4mSobreModulos .flexCards{
+        gap: 20px;
+        padding: 30px;
+    }
+    #c4mSobreModulos .flexCards .card{
+        min-width: 300px;
+    }
+}
 @media(width <=500px){
     #c4mSobreModulos .titulo {
         font-size: 30px;
+    }
+    #c4mSobreModulos .flexCards{
+        gap: 15px;
+        padding: 20px;
+    }
+    #c4mSobreModulos .flexCards .card{
+        min-width: 250px;
+    }
+    #c4mSobreModulos .container::before, #c4mSobreModulos .container::after{
+        width: 20px;
     }
 }

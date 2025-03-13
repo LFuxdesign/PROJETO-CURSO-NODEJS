@@ -45,6 +45,7 @@ function AppContent() {
             <Route exact path="/c4m/sobre" Component={C4mSobre} />
             <Route exact path="/c4m/descricaoResumo" Component={C4mDescricaoResumo} />
             <Route exact path="/moduloCurso" Component={ViewModuloCurso} />
+            <Route exact path="/c4m/moduloCurso" Component={ViewModuloCurso} />
 
             {/* <Route exact path="/" Component={Home} />
             <Route exact path="/app" Component={Home} />
