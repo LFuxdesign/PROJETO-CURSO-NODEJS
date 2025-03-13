@@ -11,7 +11,7 @@ import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
-import { StaleWhileRevalidate } from 'workbox-strategies';
+import { NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 
 clientsClaim();
 
@@ -65,20 +65,38 @@ registerRoute(
     cacheName: 'cacheGeneralSWRK',
     plugins: [
       // new ExpirationPlugin({ maxEntries: 9999 }),
+      new ExpirationPlugin({
+        maxAgeSeconds: 432000,
+      }),
     ],
   })
 );
 
 registerRoute(
-  // Adicione outras extensões de arquivo ou critérios de roteamento conforme necessário.
+  ({ url }) => 
+    url.origin === self.location.origin && 
+    (url.pathname.endsWith('.css') || 
+     url.pathname.endsWith('.json')|| 
+     url.pathname.endsWith('.html')),
+  new StaleWhileRevalidate({
+    cacheName: 'cacheDocsSWRK',
+    plugins: [
+      new ExpirationPlugin({
+        maxAgeSeconds: 432000,
+      }),
+    ],
+  })
+);
+
+registerRoute(
   ({ url }) => 
     url.origin === self.location.origin && 
     (url.pathname.endsWith('.css') || 
      url.pathname.endsWith('.json')|| 
      url.pathname.endsWith('.js')|| 
      url.pathname.endsWith('.html')),
-  new StaleWhileRevalidate({
-    cacheName: 'cacheDocsSWRK',
+  new NetworkFirst({
+    cacheName: 'cacheJSSWRK',
     plugins: [
       new ExpirationPlugin({
         maxAgeSeconds: 432000,
