@@ -36,6 +36,27 @@
                         ]
                     },
                     {
+                        "titulo": "Os paradigmais do Nodejs",
+                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
                         "titulo": "Como começar um projeto Node.js e as configurações iniciais",
                         "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
@@ -89,6 +110,7 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
+            "pathImgModulo": "",
             "categoria": "NPM",
             "duracao": "1h",
             "colors": {
@@ -114,7 +136,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev.",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g <nome do pacote> --savedev</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
