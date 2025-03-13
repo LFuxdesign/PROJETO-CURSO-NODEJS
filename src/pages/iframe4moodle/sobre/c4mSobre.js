@@ -56,11 +56,11 @@ export default function C4mSobre() {
         <div id="c4mSobreModulos">
             <h1 className="titulo">O que você irá aprender neste curso?</h1>
             <div className="container">
-                <div className="flexCards flex">
+                <div className="flexCards flex transition">
                     {
                         Curso.modulos.map((modulo, index) => {
                             return (
-                                <div className="card flex flexColumn">
+                                <div className="card flex flexColumn transition">
                                     <div className="gap flex flexColumn">
                                         <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url(${modulo.pathImgModulo}) center/cover no-repeat` : modulo.colors.background }} alt="" />
                                         <div className="info">
@@ -94,7 +94,7 @@ export default function C4mSobre() {
                                                         <div className="progressbar">
                                                             <div style={{ width: percent + "%"}} className="highlightProgressBar" />
                                                         </div>
-                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0) + "% concluído"}</span>
+                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%": percent.toFixed(0) + "%"}</span>
                                                     </>
                                                 )
                                             })()

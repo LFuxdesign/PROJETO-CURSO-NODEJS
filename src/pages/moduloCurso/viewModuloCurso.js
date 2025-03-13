@@ -5,6 +5,7 @@ import Curso from "../../conteudo/curso.json"
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player";
+import { cleanHtml } from "../../scripts/scripts";
 
 
 export default function ViewModuloCurso() {
@@ -307,8 +308,7 @@ export default function ViewModuloCurso() {
 
 
 
-                                                    <p>{paragrafo.texto}</p><br />
-
+                                                    <p dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }}/><br />
 
 
                                                     {paragrafo.pathVideoInferior ? (<>
@@ -327,8 +327,6 @@ export default function ViewModuloCurso() {
                         );
                     })()
                 }
-
-
             </section>
         </div>
     );
