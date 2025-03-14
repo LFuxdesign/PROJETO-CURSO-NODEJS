@@ -35,22 +35,6 @@
     border-radius: var(--default-radius);
 }
 
-#c4mSobreModulos .container::before,
-#c4mSobreModulos .container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    z-index: 999;
-    pointer-events: none;
-}
-
-#c4mSobreModulos .container::before {
-    left: 0;
-    background: linear-gradient(90deg, #fff, transparent);
-}
-
 #c4mSobreModulos .container::after {
     right: 0;
     background: linear-gradient(-90deg, #fff, transparent);
@@ -167,8 +151,5 @@
     }
     #c4mSobreModulos .flexCards .card{
         min-width: 250px;
-    }
-    #c4mSobreModulos .container::before, #c4mSobreModulos .container::after{
-        width: 20px;
     }
 }

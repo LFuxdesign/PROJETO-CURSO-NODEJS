@@ -13,7 +13,7 @@ export function cleanHtml(text) {
       "strong",
       "mark"
     ],
-    // ALLOWED_ATTR: ["style", "href"],
+    ALLOWED_ATTR: ["href"],
   });
   return textolimpo;
 }

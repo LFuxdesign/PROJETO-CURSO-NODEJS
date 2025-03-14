@@ -36,11 +36,11 @@
                         ]
                     },
                     {
-                        "titulo": "Os paradigmais do Nodejs",
-                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "titulo": "Os paradigmais do Node.Js",
+                        "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
-                        "highlightColor": "#1283F4",
+                        "highlightColor": "#1265E2",
                         "paragrafos": [
                             {
                                 "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
