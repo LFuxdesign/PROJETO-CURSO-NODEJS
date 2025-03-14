@@ -139,7 +139,7 @@
                             },
                             {
                                 "pathImgSuperior": "/assets/Exemplo/EX6 visual ProjeCLP1.png",
-                                "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código cd para link a pasta do arquivo e usa o node 'Primeiro Script.js' e pressiona enter.",
+                                "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código <b>cd 'diretorio'</b> para link a pasta do arquivo e usa o <b>node 'Primeiro Script.js'</b> e pressiona enter, assim mostra as imagens abaixo.",
                                 "pathImgInferior": "/assets/Exemplo/EX7 visual ProjeCLP1.png"
                             },
                             {
