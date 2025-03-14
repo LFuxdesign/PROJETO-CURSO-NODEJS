@@ -103,6 +103,63 @@
                                 "texto": "Segundo o livro: <b><i>Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira</b></i>. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
                             }
                         ]
+                    },
+                    {
+                        "titulo": "Principios Básicos da IDE Visual Studio Code",
+                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "pathImgSessao": "/assets/Exemplo/EX1 visual ProjeCLP1.png",
+                        "pathVideoSessao": "",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "Depois das configurações iniciais, vamos entender um pouco mais sobre a IDE Visual Studio Code, que é uma das mais utilizadas por desenvolvedores de todo o mundo. Aprenda a criar, editar e salvar arquivos, além de instalar extensões e personalizar o ambiente de desenvolvimento.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX2 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "Na imagem acima temos a tela inicial da IDE, claro depois das configurações pois instalação, aqui veremos como na imagem abaixo de Start/Começar as opções New File/Novo arquivo, Open File/Abri arquivo, Open Folder/Abri Pasta, Clone Git Repository/ Clonar repositorio do Git, Connect to/ Conectar para. As ultimas duas opções vamos aprofundar mais para frente no curso, aqui vamos focar nas primeiras 3 opções. Ao clicar em New File vamos gera a seguinte ação.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX4 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herdando do JavaScript é js. Como no exemplo abaixo vamos criar o arquivo Primeiro Script.js, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX6 visual ProjeCLP1.png",
+                                "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código cd para link a pasta do arquivo e usa o node 'Primeiro Script.js' e pressiona enter.",
+                                "pathImgInferior": "/assets/Exemplo/EX7 visual ProjeCLP1.png"
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX8 visual ProjeCLP1.png",
+                                "texto": "Depois de ter começado um projeto pode salvar o arquivo em file depois save e aproveitar para ativar o autosave para a cada mudança não seja perdida! E caso vem ter um acesso futuro no arquivo pode o acessá-lo em Open File da tela inicial e se quiser abri uma pasta inteira dos arquivos do seu projeto pode-se usar o Open Folder.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "O Open Folder é claro a opção mais interessante ao usá-lo pode se visualizar seu projeto na opção abaixo.",
+                                "pathImgInferior": "/assets/Exemplo/EX3 visual ProjeCLP1.png"
+                            },
+                            {
+                                "texto": "E visualizar mais o menos assim na imagem abaixo na área de EXPLORER. Na imagem temos em uma tela o exemplo do Primeiro Script e outro de uma expectativa de futuro a ti aluno!",
+                                "pathImgInferior": "/assets/Exemplo/EX9 visual ProjeCLP1.png"
+                            },
+                            {
+                                "texto": "E assim terminamos o primeiro modulo, com a execução do primeiro script em Node.js. Parabéns! Você está no caminho certo para se tornar um desenvolvedor backend de sucesso."
+                            }
+                        ]
                     }
                 ]
             }
