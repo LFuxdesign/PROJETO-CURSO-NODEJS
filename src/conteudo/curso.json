@@ -126,7 +126,7 @@
                             {
                                 "pathImgSuperior": "/assets/Exemplo/EX4 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
-                                "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herdando do JavaScript é js. Como no exemplo abaixo vamos criar o arquivo Primeiro Script.js, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
+                                "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herda do JavaScript o js. Como no exemplo abaixo vamos criar o arquivo <b>Primeiro Script.js</b>, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
