@@ -36,6 +36,27 @@
                         ]
                     },
                     {
+                        "titulo": "Os paradigmais do Node.Js",
+                        "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
+                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "highlightColor": "#1265E2",
+                        "paragrafos": [
+                            {
+                                "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
                         "titulo": "Como começar um projeto Node.js e as configurações iniciais",
                         "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
@@ -43,14 +64,14 @@
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "Site de instalação é nada mais que o https://nodejs.org logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js. assista: https://www.youtube.com/watch?v=tpzFsrEJm1A",
+                                "texto": "<a href='https://nodejs.org' target='_black'>Site de instalação</a> logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js. <a href='https://www.youtube.com/watch?v=tpzFsrEJm1A' target='_blank'>assista aqui o tutorial!</a>",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que https://code.visualstudio.com/ logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
+                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que <a href='https://code.visualstudio.com/' target='_blank'>site de instalação</a> logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
                                 "pathImgInferior": "/assets/Exemplo/Ex1.png",
                                 "pathVideoInferior": ""
                             }
@@ -74,12 +95,69 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Segundo o livro: Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
+                                "texto": "Segundo o livro: <b><i>Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes</b></i>. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
-                                "texto": "Segundo o livro: Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
+                                "texto": "Segundo o livro: <b><i>Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira</b></i>. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Principios Básicos da IDE Visual Studio Code",
+                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "pathImgSessao": "/assets/Exemplo/EX1 visual ProjeCLP1.png",
+                        "pathVideoSessao": "",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "Depois das configurações iniciais, vamos entender um pouco mais sobre a IDE Visual Studio Code, que é uma das mais utilizadas por desenvolvedores de todo o mundo. Aprenda a criar, editar e salvar arquivos, além de instalar extensões e personalizar o ambiente de desenvolvimento.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX2 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "Na imagem acima temos a tela inicial da IDE, claro depois das configurações pois instalação, aqui veremos como na imagem abaixo de Start/Começar as opções New File/Novo arquivo, Open File/Abri arquivo, Open Folder/Abri Pasta, Clone Git Repository/ Clonar repositorio do Git, Connect to/ Conectar para. As ultimas duas opções vamos aprofundar mais para frente no curso, aqui vamos focar nas primeiras 3 opções. Ao clicar em New File vamos gera a seguinte ação.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX4 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herdando do JavaScript é js. Como no exemplo abaixo vamos criar o arquivo Primeiro Script.js, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
+                                "pathVideoSuperior": "",
+                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX6 visual ProjeCLP1.png",
+                                "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código <b>cd 'diretorio'</b> para link a pasta do arquivo e usa o <b>node 'Primeiro Script.js'</b> e pressiona enter, assim mostra as imagens abaixo.",
+                                "pathImgInferior": "/assets/Exemplo/EX7 visual ProjeCLP1.png"
+                            },
+                            {
+                                "pathImgSuperior": "/assets/Exemplo/EX8 visual ProjeCLP1.png",
+                                "texto": "Depois de ter começado um projeto pode salvar o arquivo em file depois save e aproveitar para ativar o autosave para a cada mudança não seja perdida! E caso vem ter um acesso futuro no arquivo pode o acessá-lo em Open File da tela inicial e se quiser abri uma pasta inteira dos arquivos do seu projeto pode-se usar o Open Folder.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "O Open Folder é claro a opção mais interessante ao usá-lo pode se visualizar seu projeto na opção abaixo.",
+                                "pathImgInferior": "/assets/Exemplo/EX3 visual ProjeCLP1.png"
+                            },
+                            {
+                                "texto": "E visualizar mais o menos assim na imagem abaixo na área de EXPLORER. Na imagem temos em uma tela o exemplo do Primeiro Script e outro de uma expectativa de futuro a ti aluno!",
+                                "pathImgInferior": "/assets/Exemplo/EX9 visual ProjeCLP1.png"
+                            },
+                            {
+                                "texto": "E assim terminamos o primeiro modulo, com a execução do primeiro script em Node.js. Parabéns! Você está no caminho certo para se tornar um desenvolvedor backend de sucesso."
                             }
                         ]
                     }
@@ -89,6 +167,7 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
+            "pathImgModulo": "",
             "categoria": "NPM",
             "duracao": "1h",
             "colors": {
@@ -114,7 +193,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são npm install <nome do pacote>// para instalar o modulo. npm -g install <nome do pacote>// Para instalar o modulo usando o repositório global. npm install <nome do pacote> --savedev// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. npm remove <nome do pacote>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote npm install -g <nome do pacote> --savedev.",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g <nome do pacote> --savedev</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
