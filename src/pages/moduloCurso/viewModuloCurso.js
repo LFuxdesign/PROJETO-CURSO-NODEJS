@@ -4,8 +4,9 @@ import Curso from "../../conteudo/curso.json"
 
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import Player from "../../components/player";
+import Player from "../../components/player/player";
 import { cleanHtml } from "../../scripts/scripts";
+import Modal from "../../components/modal/modal";
 
 
 export default function ViewModuloCurso() {
@@ -140,9 +141,6 @@ export default function ViewModuloCurso() {
     const [expandOnDisclaimerHide, setExpandOnDisclaimerHide] = useState(false);
     const [firstRender, setFirstRender] = useState(true);
 
-    useEffect(() => {
-
-    }, [])
 
     useEffect(() => {
         if (firstRender) {
@@ -183,8 +181,36 @@ export default function ViewModuloCurso() {
         // eslint-disable-next-line
     }, [])
 
+    const [modalAnimationController, setModalAnimationController] = useState(false);
+    const [showModalController, setShowModalController] = useState(false);
+    const [modalData, setModalData] = useState({ path: "", type: "" })
+
+    function modalController(status, path, type) {
+        console.log(status)
+        if (path !== "" && type !== "") {
+            setModalData({ path, type });
+
+            setShowModalController(status)
+            setTimeout(() => {
+                setModalAnimationController(true)
+            }, 1700);
+        }
+    }
+
+    function ExpandIcon({ path, type }) {
+        return (
+            <div onClick={() => modalController(true, path, type)} className={`expandIcon flexCenter transition ${type === "img" && "img"}`} title="Expandir">
+                <svg width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 100C1.34314 100 0 98.6569 0 97V60.1429C0 58.486 1.34315 57.1429 3 57.1429H11.2857C12.9426 57.1429 14.2857 58.486 14.2857 60.1429V82.7143C14.2857 84.3711 15.6289 85.7143 17.2857 85.7143H39.8571C41.514 85.7143 42.8571 87.0574 42.8571 88.7143V97C42.8571 98.6569 41.514 100 39.8571 100H3ZM88.7143 42.8571C87.0574 42.8571 85.7143 41.514 85.7143 39.8571V17.2857C85.7143 15.6289 84.3711 14.2857 82.7143 14.2857H60.1429C58.486 14.2857 57.1429 12.9426 57.1429 11.2857V3C57.1429 1.34315 58.486 0 60.1429 0H97C98.6569 0 100 1.34315 100 3V39.8571C100 41.514 98.6569 42.8571 97 42.8571H88.7143Z" fill="black" />
+                </svg>
+            </div>
+        )
+    }
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
+            {
+                showModalController && <Modal path={modalData.path} type={modalData.type} className="entryAnimation" animationDelay={".5s"} showControl={modalAnimationController} showStatus={(status) => { setModalAnimationController(status); setTimeout(() => setShowModalController(status), 100) }} />
+            }
             <section className="header entryAnimation opacityAni">
                 <div id="title">
                     <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
@@ -285,39 +311,87 @@ export default function ViewModuloCurso() {
                                             })()}
                                         </div>
                                     </div>
-                                    {sessao.pathVideoSessao ? (
-                                        <Player
-                                            videoPath={sessao.pathVideoSessao}
-                                            animationDelay={".7s"}
-                                        />
-                                    ) : sessao.pathImgSessao ? <img className="imgSessao" src={sessao.pathImgSessao} alt="" /> : null}
+
+                                    {
+                                        (() => {
+                                            if (sessao.pathVideoSessao) {
+                                                return (<>
+                                                    <div className="media">
+                                                        <ExpandIcon path={sessao.pathVideoSessao} type={"video"} />
+                                                        <Player
+                                                            videoPath={sessao.pathVideoSessao}
+                                                            animationDelay={".7s"}
+                                                        />
+                                                    </div>
+                                                </>)
+                                            } else if (sessao.pathImgSessao) {
+                                                return (<>
+                                                    <div className="media">
+                                                        <ExpandIcon path={sessao.pathImgSessao} type={"img"} />
+                                                        <img onClick={()=>modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
+                                                    </div>
+                                                </>)
+                                            }
+                                        })()
+                                    }
                                 </div>
                                 <div className="textContent flex flexColumn entryAnimation transition" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
                                     <h1 className="title">{sessao.titulo}</h1>
                                     <div className="paragrafos">
-                                        {sessao.paragrafos.map((paragrafo) => {
+                                        {sessao.paragrafos.map((paragrafo, index) => {
                                             return (
                                                 <>
-                                                    {paragrafo.pathVideoSuperior ? (<>
-                                                        <Player
-                                                            videoPath={sessao.pathVideoSuperior}
-                                                            animationDelay={".7s"}
-                                                        />
-                                                        <br /><br />
-                                                    </>) : paragrafo.pathImgSuperior ? <><img className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" /><br /><br /></> : null}
+                                                    {
+                                                        (() => {
+                                                            if (paragrafo.pathVideoSuperior) {
+                                                                return (<>
+                                                                    <div className="media">
+                                                                        <ExpandIcon path={paragrafo.pathVideoSuperior} type={"video"} />
+                                                                        <Player
+                                                                            videoPath={paragrafo.pathVideoSuperior}
+                                                                            animationDelay={".7s"}
+                                                                        />
+                                                                    </div>
+                                                                </>)
+                                                            } else if (paragrafo.pathImgSuperior) {
+                                                                return (<>
+                                                                    <div className="media">
+                                                                        <ExpandIcon path={paragrafo.pathImgSuperior} type={"img"} />
+                                                                        <img key={index} onClick={()=>modalController(true, paragrafo.pathImgSuperior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" />
+                                                                    </div>
+                                                                </>)
+                                                            }
+                                                        })()
+                                                    }
 
 
 
-                                                    <p dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }}/><br />
+                                                    <p key={index} dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }} /><br />
 
 
-                                                    {paragrafo.pathVideoInferior ? (<>
-                                                        <Player
-                                                            videoPath={sessao.pathVideoInferior}
-                                                            animationDelay={".7s"}
-                                                        />
-                                                        <br /><br />
-                                                    </>) : paragrafo.pathImgInferior ? <><img className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" /><br /></> : null}
+
+                                                    {
+                                                        (() => {
+                                                            if (paragrafo.pathVideoInferior) {
+                                                                return (<>
+                                                                    <div className="media">
+                                                                        <ExpandIcon path={paragrafo.pathVideoInferior} type={"video"}/>
+                                                                        <Player
+                                                                            videoPath={paragrafo.pathVideoInferior}
+                                                                            animationDelay={".7s"}
+                                                                        />
+                                                                    </div>
+                                                                </>)
+                                                            } else if (paragrafo.pathImgInferior) {
+                                                                return (<>
+                                                                    <div className="media">
+                                                                        <ExpandIcon path={paragrafo.pathImgInferior} type={"img"}/>
+                                                                        <img key={index} onClick={()=>modalController(true, paragrafo.pathImgInferior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" />
+                                                                    </div>
+                                                                </>)
+                                                            }
+                                                        })()
+                                                    }
                                                 </>
                                             )
                                         })}

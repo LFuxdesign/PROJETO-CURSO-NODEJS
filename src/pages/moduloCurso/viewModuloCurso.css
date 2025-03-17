@@ -125,6 +125,40 @@
     text-align: justify;
 }
 
+.content4moodle.moduloCurso .content .conteudoSessao .media{
+    position: relative;
+    border-radius: var(--default-radius);
+    overflow: hidden;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .media .expandIcon{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background: #fffa;
+    z-index: 9;
+    opacity: 0;
+    border-radius: calc(var(--default-radius) / 2);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition-duration: .3s;
+    border: 1px solid #0002;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .media .expandIcon.img{
+    top: 20px;
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .media .expandIcon:hover{
+    transform: scale(1.03);
+}
+
+.content4moodle.moduloCurso .content .conteudoSessao .media:hover .expandIcon{
+    opacity: 1;
+}
+
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos {
     justify-content: space-between;
     gap: 20px;
