@@ -119,6 +119,12 @@ input {
   animation: forwards entryAniOpacity 1s var(--animations) !important;
 }
 
+.outAnimation {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: forwards outAnimation .5s var(--animations);
+}
+
 @keyframes entryAni {
   0% {
     transform: translateY(10px);
