@@ -80,70 +80,28 @@ export default function Modal({ path, showControl = false, type, alt = "", class
     }
     const modalRef = useRef(null);
 
+    function pauseAnimationsForPerformance(status=true) {
+        const selector = document.querySelectorAll("*:not(#modal, #modal *)");
+        status ? selector.forEach(e=>e.classList.add("pauseAnimations")) : selector.forEach(e=>e.classList.remove("pauseAnimations"))
+    }
+    
     useEffect(() => {
-        function captureBlurredBackground() {
-            const mainElement = document.querySelector("#main");
-            const rect = mainElement.getBoundingClientRect();
-
-            // Offsets relativos: se o elemento estiver parcialmente fora da viewport
-            const offsetX = rect.left < 0 ? -rect.left : 0;
-            const offsetY = rect.top < 0 ? -rect.top : 0;
-
-            // Calcula a largura e altura visíveis
-            const visibleWidth = Math.min(rect.width, window.innerWidth - Math.max(rect.left, 0));
-            const visibleHeight = Math.min(rect.height, window.innerHeight - Math.max(rect.top, 0));
-
-            html2canvas(mainElement, {
-                useCORS: false,
-                x: offsetX,
-                y: offsetY,
-                width: visibleWidth,
-                height: visibleHeight,
-                windowWidth: document.documentElement.clientWidth,
-                windowHeight: document.documentElement.clientHeight,
-            }).then((canvas) => {
-                const blurCanvas = document.createElement("canvas");
-                const blurCtx = blurCanvas.getContext("2d");
-                blurCanvas.width = canvas.width;
-                blurCanvas.height = canvas.height;
-
-                blurCtx.drawImage(canvas, 0, 0);
-
-
-                // Aplica o desfoque com canvasRGB
-                canvasRGB(
-                    blurCanvas,
-                    0,
-                    0,
-                    blurCanvas.width,
-                    blurCanvas.height,
-                    100 // valor do raio de desfoque
-                );
-
-                modalRef.current.style.backgroundImage = `url(${blurCanvas.toDataURL("image/png")})`;
-                modalRef.current.style.backdropFilter = "none";
-            }).catch((err) => {
-                console.error("Erro ao capturar a imagem do fundo:", err);
-            });
-        }
-
-        setTimeout(() => {
-            captureBlurredBackground();
-        }, 800);
+            pauseAnimationsForPerformance(true);
     }, []);
 
     function closeModal() {
-        refLoader?.current?.classList.add("outAnimation");
+        // refLoader?.current?.classList.add("outAnimation");
         setVisibilityController(false); setTimeout(() => showStatus(false), 500)
+        pauseAnimationsForPerformance(false)
     }
-    const refLoader = useRef(null)
+    // const refLoader = useRef(null)
 
     return (<>
-        <div id="modalLoading" ref={refLoader} className={"entryAnimation flexCenter"}>
+        {/* <div id="modalLoading" ref={refLoader} className={"entryAnimation flexCenter"}>
             <div id="bgContainer">
                 <div className="loader1"/>
             </div>
-        </div>
+        </div> */}
         <div id="modal" ref={modalRef} className={`flexCenter ${visibilityController ? "entryAnimation" : "outAnimation out"}`}>
             <div onClick={closeModal}
                 className="closeModal flexCenter transition">

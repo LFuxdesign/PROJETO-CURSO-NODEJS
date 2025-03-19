@@ -191,9 +191,7 @@ export default function ViewModuloCurso() {
             setModalData({ path, type });
 
             setShowModalController(status)
-            setTimeout(() => {
-                setModalAnimationController(true)
-            }, 1700);
+            setModalAnimationController(true)
         }
     }
 
@@ -328,7 +326,7 @@ export default function ViewModuloCurso() {
                                                 return (<>
                                                     <div className="media">
                                                         <ExpandIcon path={sessao.pathImgSessao} type={"img"} />
-                                                        <img onClick={()=>modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
+                                                        <img onClick={() => modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
                                                     </div>
                                                 </>)
                                             }
@@ -357,7 +355,7 @@ export default function ViewModuloCurso() {
                                                                 return (<>
                                                                     <div className="media">
                                                                         <ExpandIcon path={paragrafo.pathImgSuperior} type={"img"} />
-                                                                        <img key={index} onClick={()=>modalController(true, paragrafo.pathImgSuperior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" />
+                                                                        <img key={index} onClick={() => modalController(true, paragrafo.pathImgSuperior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" />
                                                                     </div>
                                                                 </>)
                                                             }
@@ -375,7 +373,7 @@ export default function ViewModuloCurso() {
                                                             if (paragrafo.pathVideoInferior) {
                                                                 return (<>
                                                                     <div className="media">
-                                                                        <ExpandIcon path={paragrafo.pathVideoInferior} type={"video"}/>
+                                                                        <ExpandIcon path={paragrafo.pathVideoInferior} type={"video"} />
                                                                         <Player
                                                                             videoPath={paragrafo.pathVideoInferior}
                                                                             animationDelay={".7s"}
@@ -385,8 +383,8 @@ export default function ViewModuloCurso() {
                                                             } else if (paragrafo.pathImgInferior) {
                                                                 return (<>
                                                                     <div className="media">
-                                                                        <ExpandIcon path={paragrafo.pathImgInferior} type={"img"}/>
-                                                                        <img key={index} onClick={()=>modalController(true, paragrafo.pathImgInferior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" />
+                                                                        <ExpandIcon path={paragrafo.pathImgInferior} type={"img"} />
+                                                                        <img key={index} onClick={() => modalController(true, paragrafo.pathImgInferior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" />
                                                                     </div>
                                                                 </>)
                                                             }
