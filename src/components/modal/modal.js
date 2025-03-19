@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Player from "../player/player";
 import "./modal.css";
-import html2canvas from "html2canvas";
-import { canvasRGB } from "stackblur-canvas";
 
 function ResourceSwitcher({
     path,
@@ -90,18 +88,11 @@ export default function Modal({ path, showControl = false, type, alt = "", class
     }, []);
 
     function closeModal() {
-        // refLoader?.current?.classList.add("outAnimation");
         setVisibilityController(false); setTimeout(() => showStatus(false), 500)
         pauseAnimationsForPerformance(false)
     }
-    // const refLoader = useRef(null)
 
     return (<>
-        {/* <div id="modalLoading" ref={refLoader} className={"entryAnimation flexCenter"}>
-            <div id="bgContainer">
-                <div className="loader1"/>
-            </div>
-        </div> */}
         <div id="modal" ref={modalRef} className={`flexCenter ${visibilityController ? "entryAnimation" : "outAnimation out"}`}>
             <div onClick={closeModal}
                 className="closeModal flexCenter transition">
