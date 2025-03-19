@@ -7,6 +7,10 @@
   -webkit-tap-highlight-color: #fff0;
 }
 
+*.pauseAnimations, *.pauseAnimations::after, *.pauseAnimations::before{
+  animation-play-state: paused!important;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -108,8 +112,12 @@ input {
   flex-direction: column;
 }
 
+.entryAnimation, .outAnimation{
+  will-change: opacity, transform;
+}
+
 .entryAnimation {
-  transform: translateY(-10px);
+  transform: translate3d(0, -10px, 0);
   opacity: 0;
   animation: forwards entryAni .5s var(--animations);
 }
@@ -120,19 +128,20 @@ input {
 }
 
 .outAnimation {
-  transform: translateY(0px);
+  transform: translate3d(0, 0, 0);
   opacity: 1;
   animation: forwards outAnimation .5s var(--animations);
 }
 
 @keyframes entryAni {
   0% {
-    transform: translateY(10px);
+    transform: translate3d(0, 10px, 0);
     opacity: 0;
   }
 
   100% {
     transform: translate(0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -153,12 +162,12 @@ input {
 
 @keyframes outAnimation {
   0% {
-    transform: translate(0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 
   100% {
-    transform: translateY(-10px);
+    transform: translate3d(0, -10px, 0);
     opacity: 0;
   }
 }

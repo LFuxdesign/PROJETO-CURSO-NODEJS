@@ -1,78 +1,24 @@
-#modalLoading{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: #fff3;
-}
-
-#modalLoading #bgContainer{
-    padding: 30px;
-    background: #fff;
-    border-radius: var(--default-radius);
-}
-
-#modalLoading .loader1 {
-    width: 40px;
-    aspect-ratio: 1;
-    color: #6C63FF;
-    position: relative;
-    background:
-        conic-gradient(from 134deg at top, currentColor 92deg, #0000 0) top,
-        conic-gradient(from -46deg at bottom, currentColor 92deg, #0000 0) bottom;
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-}
-
-#modalLoading .loader1:before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    --g: currentColor 14.5px, #0000 0 calc(100% - 14.5px), currentColor 0;
-    background:
-        linear-gradient(45deg, var(--g)),
-        linear-gradient(-45deg, var(--g));
-    animation: l7 1.5s 3 var(--ease-in-out);
-}
-
-@keyframes l7 {
-    33% {
-        inset: -10px;
-        transform: rotate(0deg)
-    }
-
-    66% {
-        inset: -10px;
-        transform: rotate(90deg)
-    }
-
-    100% {
-        inset: 0;
-        transform: rotate(90deg)
-    }
-}
-
 #modal {
     --paddingModal: 50px;
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    backdrop-filter: blur(100px);
-    background: #fffa;
+    background: #fffffffc;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9998;
-    transition: opacity .5s var(--ease-in-out), backdrop-filter 2s var(--ease-in-out);
+    transition: opacity .5s var(--ease-in-out);
     overflow-y: auto;
     align-items: start;
     padding-top: 5vh;
-    will-change: backdrop-filter;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     transition: all .5s var(--ease-in-out);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0) translateZ(0);
+    will-change: transform, opacity;
 }
 
 #modal.out {
@@ -198,5 +144,28 @@
         top: 60px;
         width: 85vw;
         min-height: calc(90% - (var(--paddingModal)*2) - 60px);
+    }
+}
+
+@media(width<450px){
+    #modal .container{
+        background: transparent;
+        width: 100vw;
+        /* min-height: unset; */
+        max-height: 90vh;
+        padding: 0;
+        box-shadow: none;
+    }
+    #modal .container img{
+        width: 100%!important;
+        height: 100%!important;
+        border-radius: 0!important;
+        max-height: unset!important;
+        max-width: unset!important;
+        object-fit: contain!important;
+    }
+
+    #modal .container .videoPlayer{
+        border-radius: 0!important;
     }
 }
