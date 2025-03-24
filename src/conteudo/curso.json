@@ -178,7 +178,7 @@
                 "sessoes": [
                     {
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
-                        "descricao": "Entenda o papel do npm e do yarn, como funcionam os pacotes e sua importância na gestão de dependências.",
+                        "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
@@ -193,7 +193,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g <nome do pacote> --savedev</b>.",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -203,18 +203,18 @@
                         "titulo": "Conceito de dependências",
                         "descricao": "Aprenda o que são dependências, a diferença entre dependências de produção e desenvolvimento e como gerenciá-las.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "No desenvolvimento de software com Node.js, o conceito de dependências refere-se a módulos, bibliotecas ou pacotes externos que seu projeto precisa para funcionar corretamente. Essas dependências podem ser bibliotecas de terceiros, frameworks, ferramentas de construção, ou até mesmo outros módulos que você mesmo criou.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Bem , temos diversos tipos de dependência vamos explicar um por um. <b>Dependência Padrão</b> são pacotes essenciais para o funcionamento em produção com já citado express, lodash, axios… todos são listado em arquivo chamado package.json na chave <i>dependencies</i>. <b>Dependência Opcionais</b> são pacotes que se não poderem ser instalados, não deverão impedir a instalação nem o funcionamento do projeto, usa-se esse recurso quando tens pacote especifico que pode  haver de não estar disponíveis em todos os sistemas operacionais, são listada no arquivo package.json na chave <i>optinalDependencies</i>. <b>Dependências de Desenvolvimento</b> são pacotes necessários só durante a produção do projeto, mas não para o projeto em si na sua instalação e funcionamento. Exemplos eslint, jest, typescript… são listada no arquivo package.json na chave <i>devDependencies</i>. <b>Dependências de pares</b> são pacotes que o projeto necessita que o usuário tenha instalado na maquina e não pode ser instalado de forma automática, mas sim manual! Como plugins ou biblioteca exemplo webpack, isso também são listada no arquivo package.json na chave <i>peerDependencies</i>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -224,12 +224,12 @@
                         "titulo": "Como instalar pacotes do Node.js",
                         "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Entra no terminal/cmd: digita <b>npm install nome_do_modulo</b>. O resultado é similar ao da imagem abaixo como quantidade de pacotes feito download, quantidade de pacotes auditado, quantidade de pacotes enxergado e encontrado e quantidade de vulnerabilidades. Na aba explore depois do pacote ser instalado vai surgir uma pasta chamado <b>node_modules</b> e também um aquivo <i>package.json</i> e <i>package-lock.json</i>",
+                                "pathImgInferior": "../assets/Exemplo/npm ex1.png",
                                 "pathVideoInferior": ""
                             },
                             {
@@ -245,7 +245,7 @@
                         "titulo": "Como remover pacotes do Node.js",
                         "descricao": "Aprenda a desinstalar pacotes corretamente, garantindo a limpeza do projeto e a organização das dependências.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
