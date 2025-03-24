@@ -1,0 +1,181 @@
+footer{
+    --padding: 8vw;
+    width: calc(100vw - 2*var(--padding));
+    min-height: 40vh;
+    padding: var(--padding);
+    border-top: 2px solid #0002;
+}
+
+footer .main{
+    justify-content: space-between;
+}
+
+footer .title{
+    max-width: 35%;
+}
+
+footer .title h1{
+    font-size: 40px;
+    width: 100%;
+    /* text-wrap: nowrap; */
+}
+
+footer .title h1 svg{
+    width: min-content;
+    height: 40px;
+}
+
+footer .social, footer .containerLanguages{
+    gap: 20px;
+}
+
+footer .main .social .profile, footer .containerLanguages .lang {
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+footer a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+footer .main .social .profile .textData, footer .containerLanguages .lang .textData{
+    gap: 10px;
+    max-width: 210px;
+}
+
+footer .langs{
+    gap: 25px;
+}
+
+footer .containerLanguages{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .containerLanguages .lang .textData{
+    max-width: 275px;
+}
+
+footer .main .social .profile .textData h1, footer .containerLanguages .lang .textData h1{
+    font-weight: bold;
+    font-size: 24px;
+    max-width: 100%;
+}
+
+footer .main .social .profile .textData span, footer .containerLanguages .lang .textData span{
+    font-weight: lighter;
+    font-size: 18px;
+    margin-left: 1.5px;
+    max-width: 100%;
+}
+
+footer .main .social .profile .profilePic, footer .containerLanguages .lang .langPic{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 5px #0001;
+}
+
+footer .containerLanguages .lang .langPic svg{
+    max-width: 35px;
+}
+
+@property --gradientColor1 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+@property --gradientColor2 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+footer .linkBtn{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 10px #0001;
+    border-radius: 8px;
+    background: linear-gradient(45deg, var(--gradientColor1), var(--gradientColor2));
+    transition: all .3s var(--ease-in-out), --gradientColor1 .5s var(--ease-in-out), --gradientColor2 .5s var(--ease-in-out);
+}
+
+footer .linkBtn:hover{
+    transform: scale(1.05);
+    --gradientColor1: #446CFF;
+    --gradientColor2: #6C63FF;
+}
+
+footer .linkBtn svg path{
+    transition: all .3s var(--ease-in-out)
+}
+
+footer .linkBtn:hover svg path{
+    fill: #fff;
+}
+
+footer .splitter{
+    margin: 100px 0;
+    max-width: 100%;
+}
+
+@media(width < 1155px){
+    footer .containerLanguages .lang .textData {
+        max-width: 200px;
+    }
+}
+
+@media(width < 980px){
+    footer .containerLanguages .lang .textData {
+        max-width: 150px;
+    }
+}
+
+@media(width < 860px){
+    footer .containerLanguages .lang .textData {
+        max-width: 275px;
+    }
+    footer .main{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    footer .title{
+        max-width: 100%;
+    }
+}
+
+
+@media(width < 560px){
+    footer .containerLanguages .lang .textData, footer .main .social .profile .textData {
+        max-width: 150px;
+    }
+}
+
+@media(width <430px){
+    footer .main .social .profile .profilePic, footer .containerLanguages .lang .langPic {
+        width: 50px;
+        height: 50px;
+    }
+    footer .main .social .profile .spacingLink, footer .containerLanguages .lang .spacingLink {
+        gap: 20px!important;
+    }
+}
+
+@media(width <370px){
+    footer .containerLanguages .lang .textData, footer .main .social .profile .textData {
+        max-width: 100px;
+    }
+    footer .containerLanguages .lang .textData h1, footer .main .social .profile .textData h1, footer .containerLanguages .lang .textData span, footer .main .social .profile .textData span{
+        word-wrap: break-word;
+    }
+    footer .main .social .profile, footer .containerLanguages .lang{
+        gap: 10px;
+    }
+    footer .main .social .profile .spacingLink, footer .containerLanguages .lang .spacingLink {
+        gap: 10px!important;
+    }
+}

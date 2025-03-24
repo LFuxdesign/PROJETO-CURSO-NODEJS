@@ -176,6 +176,10 @@ input {
   visibility: hidden;
 }
 
+.hideForObserver{
+  opacity: 0;
+}
+
 .highlightProgressBar {
   height: 100%;
   position: absolute;
