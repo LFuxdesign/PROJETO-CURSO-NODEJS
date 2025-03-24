@@ -1,11 +1,14 @@
-import "./c4mSobre.css";
-import "../c4m.css"
+import "./Sobre.css";
+import "../iframe4moodle/c4m.css"
 
-import Curso from "../../../conteudo/curso.json"
+import Curso from "../../conteudo/curso.json"
 
-import { ReactComponent as ImageSection } from "../../../assets/imgSobre.svg"
+import { ReactComponent as ImageSection } from "../../assets/imgSobre.svg"
+import Button from "../../components/buttons/buttons";
+import CourseModeSelection from "../../components/courseSelection/courseModeSelection";
+import { useState } from "react";
 
-export default function C4mSobre() {
+export default function Sobre({ content4HomePage }) {
 
     const viewedModules = () => {
         const LSViewedModules = localStorage.getItem("viewedModules");
@@ -31,7 +34,14 @@ export default function C4mSobre() {
         return parsedModules;
     };
 
+    const [showModalCourseSelection, setShowModalCourseSelection] = useState(false);
+
+    function setShowModal(show){
+        setShowModalCourseSelection(show);
+    }
+
     return (<>
+        {showModalCourseSelection && <CourseModeSelection showControl={true} showStatus={(e)=>setShowModal(e)} />}
         <div className="content4moodle sobre flexCenter transition">
             <div className="content flex flexColumn transition">
                 <div id="cta">
@@ -40,27 +50,35 @@ export default function C4mSobre() {
                     </div>
                     <div id="title" className="entryAnimation" style={{ animationDelay: ".25s" }}>
                         <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
-
                     </div>
                     <div id="subtitle" className="entryAnimation" style={{ animationDelay: ".5s" }}>
                         <h2>
                             {Curso.descricao}
                         </h2>
                     </div>
+                    {
+                        content4HomePage && <Button
+                            className="entryAnimation"
+                            buttonText={"Iniciar"}
+                            width={"40%"}
+                            animationDelay={".75s"}
+                            buttonAction={() => {
+                                setShowModalCourseSelection(true)
+                            }}
+                        />
+                    }
                 </div>
             </div>
             <ImageSection id="imageDesktop" className="entryAnimation" style={{ animationDelay: ".75s" }} alt="" />
-
         </div>
-
-        <div id="c4mSobreModulos">
+        <div id="c4mSobreModulos" className="useObserver">
             <h1 className="titulo">O que você irá aprender neste curso?</h1>
             <div className="container">
                 <div className="flexCards flex transition">
                     {
                         Curso.modulos.map((modulo, index) => {
                             return (
-                                <div className="card flex flexColumn transition">
+                                <div key={index} className="card flex flexColumn transition useObserver allowReobserver">
                                     <div className="gap flex flexColumn">
                                         <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url(${modulo.pathImgModulo}) center/cover no-repeat` : modulo.colors.background }} alt="" />
                                         <div className="info">
@@ -82,19 +100,19 @@ export default function C4mSobre() {
                                                 let viewedCount = 0;
                                                 const viewedModulesData = viewedModules();
                                                 viewedModulesData[index].sessoes.forEach(sessao => {
-                                                        totalSessoes++;
-                                                        if (sessao.viewed) {
-                                                            viewedCount++;
-                                                        }
-                                                    });
+                                                    totalSessoes++;
+                                                    if (sessao.viewed) {
+                                                        viewedCount++;
+                                                    }
+                                                });
                                                 const percent = (viewedCount / totalSessoes) * 100
 
                                                 return (
                                                     <>
                                                         <div className="progressbar">
-                                                            <div style={{ width: percent + "%"}} className="highlightProgressBar" />
+                                                            <div style={{ width: percent + "%" }} className="highlightProgressBar" />
                                                         </div>
-                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%": percent.toFixed(0) + "%"}</span>
+                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
                                                     </>
                                                 )
                                             })()

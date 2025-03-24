@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Player from "../player/player";
 import "./modal.css";
+import { imagesFormats, videoFormats, videoPlatforms } from "../../scripts/scripts";
+import { CloseModalBtn } from "./closeModalBtn";
 
 function ResourceSwitcher({
     path,
@@ -9,20 +11,6 @@ function ResourceSwitcher({
     className = "",
     animationDelay = "0s",
 }) {
-    const imagesFormats = [".jpg", ".jpeg", ".png", ".svg", ".webp"];
-    const videoFormats = [".mp4", ".wav", ".mov", ".avi", ".webm"];
-    const videoPlatforms = [
-        "https://youtube.com",
-        "youtube.com",
-        "https://www.youtube.com",
-        "www.youtube.com",
-        "https://youtu.be",
-        "youtu.be",
-        "https://vimeo.com",
-        "vimeo.com",
-        "https://www.vimeo.com",
-        "www.vimeo.com",
-    ];
 
     function checkValidExtension(mode) {
         return mode === "img"
@@ -94,11 +82,7 @@ export default function Modal({ path, showControl = false, type, alt = "", class
 
     return (<>
         <div id="modal" ref={modalRef} className={`flexCenter ${visibilityController ? "entryAnimation" : "outAnimation out"}`}>
-            <div onClick={closeModal}
-                className="closeModal flexCenter transition">
-                <div className="line transition" />
-                <div className="line transition" />
-            </div>
+            <CloseModalBtn action={closeModal} />
             <div onClick={(e) => e.preventDefault()} className="container flexCenter entryAnimation transition">
                 <ResourceSwitcher
                     className={className}

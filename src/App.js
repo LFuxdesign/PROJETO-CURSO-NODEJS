@@ -5,10 +5,12 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import C4mSobre from "./pages/iframe4moodle/sobre/c4mSobre";
+import Sobre from "./pages/sobre/Sobre";
 import "./App.css";
 import C4mDescricaoResumo from "./pages/iframe4moodle/descricaoResumo/c4mDescricaoResumo";
 import ViewModuloCurso from "./pages/moduloCurso/viewModuloCurso";
+import Footer from "./components/footer/footer";
+import { useIntersectionObserver } from "./scripts/scripts";
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
 }
 
 function AppContent() {
+  useIntersectionObserver({ threshold: 0.05,});
   const location = useLocation();
   useEffect(() => {
     const counter = setTimeout(() => {
@@ -41,18 +44,14 @@ function AppContent() {
     <> 
         <div id="main">
           <Routes>
-          <Route exact path="/" Component={C4mSobre} />
-            <Route exact path="/c4m/sobre" Component={C4mSobre} />
+            <Route exact path="/" element={<Sobre content4HomePage={true} />} />
+            <Route exact path="/c4m/sobre" Component={Sobre} />
             <Route exact path="/c4m/descricaoResumo" Component={C4mDescricaoResumo} />
             <Route exact path="/moduloCurso" Component={ViewModuloCurso} />
             <Route exact path="/c4m/moduloCurso" Component={ViewModuloCurso} />
-
-            {/* <Route exact path="/" Component={Home} />
-            <Route exact path="/app" Component={Home} />
-            */}
           </Routes>
         </div>
-        {/* <Footer /> */}
+        <Footer />
     </>
   );
 }

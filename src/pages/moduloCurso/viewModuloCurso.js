@@ -5,7 +5,7 @@ import Curso from "../../conteudo/curso.json"
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
-import { cleanHtml } from "../../scripts/scripts";
+import { cleanHtml, useIntersectionObserver } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
@@ -204,6 +204,8 @@ export default function ViewModuloCurso() {
             </div>
         )
     }
+
+    useIntersectionObserver({ threshold: 0, rootMargin: "50px" });
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
             {
@@ -343,7 +345,7 @@ export default function ViewModuloCurso() {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
                                                                 return (<>
-                                                                    <div className="media">
+                                                                    <div className="media useObserver">
                                                                         <ExpandIcon path={paragrafo.pathVideoSuperior} type={"video"} />
                                                                         <Player
                                                                             videoPath={paragrafo.pathVideoSuperior}
@@ -353,7 +355,7 @@ export default function ViewModuloCurso() {
                                                                 </>)
                                                             } else if (paragrafo.pathImgSuperior) {
                                                                 return (<>
-                                                                    <div className="media">
+                                                                    <div className="media useObserver">
                                                                         <ExpandIcon path={paragrafo.pathImgSuperior} type={"img"} />
                                                                         <img key={index} onClick={() => modalController(true, paragrafo.pathImgSuperior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" />
                                                                     </div>
@@ -364,7 +366,7 @@ export default function ViewModuloCurso() {
 
 
 
-                                                    <p key={index} dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }} /><br />
+                                                    <p key={index} className="useObserver" dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }} /><br />
 
 
 
@@ -372,7 +374,7 @@ export default function ViewModuloCurso() {
                                                         (() => {
                                                             if (paragrafo.pathVideoInferior) {
                                                                 return (<>
-                                                                    <div className="media">
+                                                                    <div className="media useObserver">
                                                                         <ExpandIcon path={paragrafo.pathVideoInferior} type={"video"} />
                                                                         <Player
                                                                             videoPath={paragrafo.pathVideoInferior}
@@ -382,7 +384,7 @@ export default function ViewModuloCurso() {
                                                                 </>)
                                                             } else if (paragrafo.pathImgInferior) {
                                                                 return (<>
-                                                                    <div className="media">
+                                                                    <div className="media useObserver">
                                                                         <ExpandIcon path={paragrafo.pathImgInferior} type={"img"} />
                                                                         <img key={index} onClick={() => modalController(true, paragrafo.pathImgInferior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" />
                                                                     </div>
