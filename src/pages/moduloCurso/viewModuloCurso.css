@@ -1,6 +1,6 @@
 .content4moodle.moduloCurso {
     width: 85vw;
-    height: 95vh;
+    min-height: 95vh;
     padding-top: 5vh;
     justify-content: flex-start;
     gap: 10px;
