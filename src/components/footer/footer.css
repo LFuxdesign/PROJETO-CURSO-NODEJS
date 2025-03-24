@@ -32,6 +32,7 @@ footer .social, footer .containerLanguages{
 footer .main .social .profile, footer .containerLanguages .lang {
     gap: 20px;
     flex-wrap: nowrap;
+    max-width: 410px;
 }
 
 footer a, a:visited, a:hover, a:active {
@@ -40,7 +41,6 @@ footer a, a:visited, a:hover, a:active {
 
 footer .main .social .profile .textData, footer .containerLanguages .lang .textData{
     gap: 10px;
-    max-width: 210px;
 }
 
 footer .langs{
@@ -50,10 +50,6 @@ footer .langs{
 footer .containerLanguages{
     flex-wrap: wrap;
     gap: 20px;
-}
-
-footer .containerLanguages .lang .textData{
-    max-width: 275px;
 }
 
 footer .main .social .profile .textData h1, footer .containerLanguages .lang .textData h1{
@@ -71,6 +67,7 @@ footer .main .social .profile .textData span, footer .containerLanguages .lang .
 
 footer .main .social .profile .profilePic, footer .containerLanguages .lang .langPic{
     width: 80px;
+    min-width: 80px;
     height: 80px;
     border-radius: 100%;
     background-size: cover;
@@ -96,6 +93,7 @@ footer .containerLanguages .lang .langPic svg{
 
 footer .linkBtn{
     width: 60px;
+    min-width: 60px;
     height: 60px;
     box-shadow: 0px 0px 10px #0001;
     border-radius: 8px;
@@ -122,22 +120,13 @@ footer .splitter{
     max-width: 100%;
 }
 
-@media(width < 1155px){
-    footer .containerLanguages .lang .textData {
-        max-width: 200px;
-    }
-}
-
-@media(width < 980px){
-    footer .containerLanguages .lang .textData {
-        max-width: 150px;
+@media(width<1005px){
+    footer .main .social .profile, footer .containerLanguages .lang {
+        max-width: 350px;
     }
 }
 
 @media(width < 860px){
-    footer .containerLanguages .lang .textData {
-        max-width: 275px;
-    }
     footer .main{
         flex-direction: column;
         align-items: center;
@@ -146,12 +135,8 @@ footer .splitter{
     footer .title{
         max-width: 100%;
     }
-}
-
-
-@media(width < 560px){
-    footer .containerLanguages .lang .textData, footer .main .social .profile .textData {
-        max-width: 150px;
+    footer .main .social .profile, footer .containerLanguages .lang {
+        max-width: 100%;
     }
 }
 
@@ -159,16 +144,17 @@ footer .splitter{
     footer .main .social .profile .profilePic, footer .containerLanguages .lang .langPic {
         width: 50px;
         height: 50px;
+        min-width: 50px;
     }
     footer .main .social .profile .spacingLink, footer .containerLanguages .lang .spacingLink {
         gap: 20px!important;
     }
+    footer .containerLanguages .lang .langPic svg {
+        max-width: 25px;
+    }
 }
 
 @media(width <370px){
-    footer .containerLanguages .lang .textData, footer .main .social .profile .textData {
-        max-width: 100px;
-    }
     footer .containerLanguages .lang .textData h1, footer .main .social .profile .textData h1, footer .containerLanguages .lang .textData span, footer .main .social .profile .textData span{
         word-wrap: break-word;
     }
@@ -177,5 +163,14 @@ footer .splitter{
     }
     footer .main .social .profile .spacingLink, footer .containerLanguages .lang .spacingLink {
         gap: 10px!important;
+    }
+}
+
+@media(width<260px){
+    footer .main .social .profile .textData, footer .containerLanguages .lang .textData {
+        width: 75px;
+    }
+    footer .title{
+        word-wrap: break-word;
     }
 }
