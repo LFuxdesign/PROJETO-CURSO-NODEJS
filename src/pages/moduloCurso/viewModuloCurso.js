@@ -5,7 +5,7 @@ import Curso from "../../conteudo/curso.json"
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
-import { cleanHtml, useIntersectionObserver } from "../../scripts/scripts";
+import { cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
@@ -205,7 +205,6 @@ export default function ViewModuloCurso() {
         )
     }
 
-    useIntersectionObserver({ threshold: 0, rootMargin: "50px" });
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
             {

@@ -1,6 +1,7 @@
 
 import DOMPurify from "dompurify";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export function cleanHtml(text) {
   const textolimpo = DOMPurify.sanitize(text, {
@@ -39,27 +40,39 @@ export function isAFunction(str) {
 }
 
 export const useIntersectionObserver = (options) => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".useObserver");
+  const location = useLocation();
 
-    const observer = new IntersectionObserver((elements, observer) => {
-      elements.forEach((element) => {
-        if (element.isIntersecting) {
-          element.target.classList.add("entryAnimation");
-          if (!element.target.classList.contains("allowReobserver")) {
-            observer.unobserve(element.target);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        const { target, isIntersecting } = entry;
+
+        if (isIntersecting) {
+          target.classList.add("entryAnimation");
+
+          if (!target.classList.contains("allowReobserver")) {
+            observer.unobserve(target);
           }
-        } else if (element.target.classList.contains("allowReobserver")) {
-          element.target.classList.remove("entryAnimation")
+        } else {
+          if (target.classList.contains("allowReobserver")) {
+            target.classList.remove("entryAnimation");
+          }
         }
       });
     }, options);
 
-    elements.forEach((el) => {
-      el.classList.add("hideForObserver")
-      observer.observe(el)
-    });
+    const timeout = setTimeout(() => {
+      const elements = document.querySelectorAll(".useObserver");
 
-    return () => observer.disconnect();
-  }, [options]);
+      elements.forEach((el) => {
+        observer.observe(el);
+      });
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeout);
+      observer.disconnect();
+    };
+  }, [options, location.pathname]);
 };
+

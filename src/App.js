@@ -22,7 +22,7 @@ function App() {
 }
 
 function AppContent() {
-  useIntersectionObserver({ threshold: 0.05,});
+  useIntersectionObserver({ threshold: 0.1, });
   const location = useLocation();
   useEffect(() => {
     const counter = setTimeout(() => {
