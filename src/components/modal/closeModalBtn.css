@@ -1,0 +1,64 @@
+.closeModal {
+    position: fixed;
+    will-change: transform, opacity, --gradientColor1, --gradientColor2;
+    right: 40px;
+    top: 40px;
+    padding: 35px;
+    border-radius: var(--default-radius);
+    background: linear-gradient(45deg, var(--gradientColor1), var(--gradientColor2));
+    box-shadow: 0px 0px 40px #0002;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .5s, --gradientColor1 .5s, --gradientColor2 .5s var(--ease-in-out);
+}
+
+@property --gradientColor1 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+@property --gradientColor2 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+.closeModal:hover {
+    --gradientColor1: #446CFF;
+    --gradientColor2: #6C63FF;
+    transform: scale(1.03);
+}
+
+.closeModal .line {
+    width: 4px;
+    height: 40px;
+    background: rgb(71, 71, 71);
+    position: absolute;
+    border-radius: var(--default-radius);
+}
+
+.closeModal:hover .line {
+    background: #fff;
+}
+
+.closeModal .line:first-child {
+    transform: rotate(45deg);
+}
+
+.closeModal .line:last-child {
+    transform: rotate(-45deg);
+}
+
+@media(width < 800px) {
+    .closeModal .line {
+        width: 2px;
+        height: 20px;
+    }
+
+    .closeModal {
+        right: 20px;
+        top: 20px;
+        padding: 25px;
+    }
+}

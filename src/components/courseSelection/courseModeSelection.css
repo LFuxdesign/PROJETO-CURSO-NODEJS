@@ -1,0 +1,106 @@
+.modeSelection{
+    width: 100vw;
+    height: 100vh;
+    background: #ffffffbf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    flex-direction: column;
+    opacity: 0;
+    overflow: auto;
+}
+
+.modeSelection.entry{
+    opacity: 1;
+}
+
+.modeSelection #closeActionArea {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: -40px;
+    z-index: -1;
+}
+
+.modeSelection .container{
+    background: #ffffffb5;
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: var(--default-radius);
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid #0001;
+    box-shadow: 0px 0px 20px #0001;
+    margin-bottom: 20px;
+}
+
+.modeSelection .container .cardsOptions{
+    gap: 20px;
+}
+
+.modeSelection .container .cardsOptions .card{
+    width: 300px;
+    min-height: 200px;
+    padding: 25px;
+    background: #fff;
+    border-radius: var(--default-radius);
+    overflow: hidden;
+    border: 2px solid #0002;
+}
+
+.modeSelection .container .cardsOptions .card .content{
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.modeSelection .container .cardsOptions .card .content .img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: calc(var(--default-radius)/2);
+    aspect-ratio: 16/9;
+}
+
+@media(width < 860px){
+    .modeSelection .container{
+        max-width: calc(90vw - 40px);
+    }
+    .modeSelection .container .cardsOptions{
+        max-width: 100%;
+    }
+}
+
+@media(width < 720px){
+    .modeSelection .container{
+        padding: 20px;
+    }
+}
+
+@media(width <570px){
+    .modeSelection{
+        justify-content: flex-start;
+    }
+    .modeSelection .container{
+        max-width: calc(90vw - 40px);
+        margin: 90px 0;
+    }
+    .modeSelection .container .cardsOptions{
+        flex-wrap: wrap;
+        max-width: 80vw;
+    }
+    .modeSelection .container .cardsOptions .card{
+        max-width: calc(70vw - 40px);
+    }
+}
+
+@media(height<640px){
+    .modeSelection{
+        justify-content: flex-start;
+        overflow: auto;
+    }
+    .modeSelection .container{
+        margin: 90px 0;
+    }
+}

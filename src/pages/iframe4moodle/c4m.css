@@ -73,15 +73,10 @@
     .content4moodle {
         align-items: flex-start;
         padding-top: 7.5vh;
+        height: unset;
     }
 
     .content4moodle div {
         max-width: 100%;
-    }
-}
-
-@media ((width <=1100px) and (height < 910px)) or (height<550px) {
-    .content4moodle {
-        height: unset;
     }
 }
