@@ -249,15 +249,15 @@
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Para remover pacotes no nodejs usamos o <b>npm remove nome_do_pacote</b>, bem simples e claro!",
+                                "pathImgInferior": "../assets/Exemplo/npm remove.png",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Depois da execução do código vai aparecer a quantidade de pacotes removido,auditado e vulneráveis. E a pasta node_modules vai ser limpa e o arquivo package.json vai ser atualizado.",
+                                "pathImgInferior": "../assets/Exemplo/npm remove 2.png",
                                 "pathVideoInferior": ""
                             }
                         ]
@@ -266,7 +266,7 @@
                         "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
                         "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
