@@ -22,14 +22,21 @@
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": " Nodejs é praticamente um compilador de código JavaScript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
+                                "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
+                                "pathImgInferior": "/assets/Exemplo/resumo Ryan Dahl.jpg",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Ryan Dahl desenvolveu Node.js inspirado pelo processo de carregamento de arquivos no Flickr e observando que servidores como o Apache gerenciavam conexões de forma ineficaz. Dahl percebeu a necessidade de um ambiente capaz de gerenciar milhares de conexões simultâneas sem se tornar bloqueante, e assim nasceu o Node.js.<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Motor V8 da Google: Node.js utiliza o motor V8, que é conhecido por sua alta performance na execução de código JavaScript.<br/>&nbsp;&nbsp;&nbsp;&nbsp;• Loop de Eventos Assíncrono: A principal inovação de Node.js é seu loop de eventos assíncrono, permitindo que operações de entrada e saída sejam executadas sem bloqueios.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Gerenciamento Eficiente de Conexões: Node.js é capaz de lidar com milhares de conexões simultâneas de maneira eficiente, tornando-o ideal para aplicações em tempo real.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "No desenvolvimento web a linguagem de programação javascript é extremamente utilizada e padronizada. A linguagem de programação JavaScript foi desenvolvida em 1995 e virou predominante no desenvolvimento de página web responsável pela interação com o usuário/cliente, no entanto para o lado do servidor o mesmo fracassou em sua função, pois a performance era extremamente baixa em relação a outra linguagem também possíveis para essa função. Mas como já era predominante a linguagem JavaScript na web, não era muito conveniente ter que aprender outra linguagem para programa o servidor, sendo assim o Nodejs foi desenvolvido para rodar códigos JavaScript no lado do servidor, o Ryan Dahl uso como inspiração o processo de carga de arquivos Flickr e também ao perceber que os servidores como o Apache gerenciavam muitas conexão de forma ineficaz, então exergo a possibilidade de ser o criador do ambiente capaz dessa façanha de gerenciar milhares de conexão simultâneas sem se tornar bloqueantes. O lançamento foi em 05/2009, usava o motor V8 JavaScript da Google, a novidade foi o loop de eventos assíncrono, que o permiti o Nodejs executar operações de entrada e saída sem bloquear, mas claro o quer impressionou a comunidade foi a capacidade de lidar com as conexão simultâneas. A popularidade se deu no ano seguinte muito por causa das novidades, capacidades e claro a carga da predominância do JavaScript no universo Web.",
+                                "texto": "A popularidade de Node.js cresceu rapidamente após seu lançamento, especialmente devido à sua capacidade de lidar com conexões simultâneas e ao fato de que os desenvolvedores já estavam familiarizados com JavaScript, a linguagem predominante no desenvolvimento web. Node.js é amplamente utilizado para criar aplicações de alta performance, como servidores web, APIs e serviços de streaming. Node.js revolucionou o desenvolvimento de aplicações web, oferecendo uma solução poderosa e eficiente para o lado do servidor, e continua a ser uma escolha popular entre desenvolvedores por suas características inovadoras e desempenho robusto.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }

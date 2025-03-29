@@ -13,7 +13,8 @@ export function cleanHtml(text) {
       "u",
       "s",
       "strong",
-      "mark"
+      "mark",
+      "br",
     ],
     ALLOWED_ATTR: ["href", "target"],
   });
