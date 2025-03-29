@@ -50,15 +50,51 @@
                         "highlightColor": "#1265E2",
                         "paragrafos": [
                             {
-                                "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
+                                "texto": "Um paradigma de programação é uma abordagem ou estilo fundamental que orienta a forma como soluções são desenvolvidas em linguagens de programação. Ele define a estrutura e os elementos que compõem um programa, bem como as interações entre eles. Os principais paradigmas incluem:<br/><ol>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><b>Paradigma Imperativo:</b> Baseia-se na descrição de uma sequência de instruções que alteram o estado do programa até alcançar o resultado desejado, focando em descrever &quot;como&quot; um programa deve realizar tarefas através de sequências de comandos que alteram o estado do sistema. Linguagens como C e Pascal seguem esse paradigma.<br/><br/>O paradigma Imperativo possui algumas características que podem ser definidas como sendo: a <b>ênfase em &quot;como&quot; realizar as operações</b>, o <b>uso de variáveis que armazenam o estado do programa</b> e o <b>controle explicito do fluxo de execução através de estruturas como loops e condicionais.</b><br/><br/>Abaixo temos um exemplo em que o código instrui explicitamente o computador a somar os números de 1 a 5, atualizando o valor de <b><i><code>let contador</code></i></b> a cada iteração.</li></ol>",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma imperativo.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><b>Paradigma Procedural:</b> É como se fosse uma extensão do paradigma imperativo que organiza o código em procedimentos ou funções, isso permite que o código se torne mais reutilizável e mais modular, melhorando o processo de desenvolvimento, escrita e leitura e facilitando a manutenção do código posteriormente.</li></ol>",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Para este paradigma temos as seguintes características: <b>Divisão do programa em sub-rotinas ou funções</b>, <b>melhoria da manutenção e leitura do código</b> e a <b>otimização do fluxo de trabalho.</b>",
                                 "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                            ,
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo, temos um exemplo que mostra como isso funciona, temos uma função <b><i><code>somar</code></i></b> que encapsula a operação de adição, possibilitando a reutilização da função infinitas vezes no código, função essa que irá retornar o resultado da soma dos parâmetros <b><i><code>a</code></i></b> e <b><i><code>b</code></i></b>, isso é extremamente positivo pois já retorna o número diretamente no final, por isso que ao usarmos o <b><i><code>console.log(resultado)</code></i></b> a saída que o código nos retornará é o próprio número",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma procedural.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><b>Programação Orientada a Objetos (POO): </b> Organiza o código em torno de &quot;objetos&quot; que encapsulam dados e comportamentos. Linguagens como Java, C++ e Python adotam esse paradigma. A utilização do paradigma da Programação Orientada a Objetos (POO) no Node.js melhora a organização, reutilização e segurança do código, tornando-o mais modular, escalável e fácil de manter. Com conceitos como herança, encapsulamento e polimorfismo, a POO permite criar sistemas mais estruturados e flexíveis.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Podemos destacar as seguintes características do POO no Node.JS: <b>Encapsulamento:</b> proteção dos dados internos do objeto, <b>Herança:</b> capacidade de criar classes baseadas (herdadas) em classes existentes, <b>Polimorfismo:</b> permite que diferentes objetos respondam de maneira específica a uma mesma mensagem ou método.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo temos um exemplo dessa vez sobre o POO sendo aplicado no Node.JS, aqui, temos a classe <b><i><code>Animal</code></i></b> que tem suas características genéricas e seu construtor, o construtor em POO, é um método &quot;padrão&quot; necessário para que as propriedades (parâmetros) do objeto sejam inicializadas, imagine aqui as características gerais de todo(ou do grupo que esteja definindo) animal faz, neste caso, estamos considerando que todo animal faz um som, portanto, definimos aqui o método <b><i><code>emitirSom()</code></i></b>, que indica ao usuário que o animal esta fazendo um som. Mais abaixo, na linha 9, temos outra classe que esta &quot;extendendo&quot; da classe genérica <b><i><code>Animal</code></i></b>, isso indica que a classe que foi extendida, herdará todas as características genéricas definidas na classe <b><i><code>Animal</code></i></b>, nesse caso, criamos a classe Cachorro, que estende (herdando suas características) da classe <b><i><code>Animal</code></i></b>, mas, sabemos que o cachorro late, então, realizamos um o que chamamos de overriding, estamos sobrescrevendo o método original <b><i><code>emitirSom()</code></i></b>, para especificar que, para este animal no caso o cachorro, quando chamarmos o método <b><i><code>emitirSom()</code></i></b>, possamos retornar que o cachorro esta latindo. Nas linhas 14 e 15 estamos criando o que chamamos de Instâncias das classes criadas, podemos criar quantas instâncias quisermos, e atribuir a elas os parâmetros definidos no construtor, nesse caso o nome do animal, e, por fim, nas linhas 16 e 17 estamos &quot;invocando&quot;, o método <b><i><code>emitirSom()</code></i></b> definido nas classes, no caso estamos falando &quot;animal x emita um som&quot;, e o código irá nos retornar o que pedimos:",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma POO.png",
                                 "pathVideoInferior": ""
                             }
                         ]
@@ -140,7 +176,7 @@
                             {
                                 "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
-                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
+                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(&quot;Hello World!&quot;). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -200,7 +236,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto &quot;é como se fosse executar o modulo com permissão de administrado no PC&quot;. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }

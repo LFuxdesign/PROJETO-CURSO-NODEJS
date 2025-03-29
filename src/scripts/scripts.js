@@ -15,8 +15,11 @@ export function cleanHtml(text) {
       "strong",
       "mark",
       "br",
+      "ol",
+      "li",
+      "code"
     ],
-    ALLOWED_ATTR: ["href", "target"],
+    ALLOWED_ATTR: ["href", "target", "start"],
   });
   return textolimpo;
 }
