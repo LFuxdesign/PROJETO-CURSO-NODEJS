@@ -17,7 +17,8 @@ export function cleanHtml(text) {
       "br",
       "ol",
       "li",
-      "code"
+      "code",
+      "pre"
     ],
     ALLOWED_ATTR: ["href", "target", "start"],
   });

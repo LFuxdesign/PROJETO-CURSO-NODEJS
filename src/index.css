@@ -7,8 +7,10 @@
   -webkit-tap-highlight-color: #fff0;
 }
 
-*.pauseAnimations, *.pauseAnimations::after, *.pauseAnimations::before{
-  animation-play-state: paused!important;
+*.pauseAnimations,
+*.pauseAnimations::after,
+*.pauseAnimations::before {
+  animation-play-state: paused !important;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +41,18 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+code{
+  background: #ededed;
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 @font-face {
@@ -112,7 +126,8 @@ input {
   flex-direction: column;
 }
 
-.entryAnimation, .outAnimation{
+.entryAnimation,
+.outAnimation {
   will-change: opacity, transform;
 }
 
@@ -176,7 +191,7 @@ input {
   visibility: hidden;
 }
 
-.useObserver{
+.useObserver {
   opacity: 0;
 }
 
