@@ -3,7 +3,7 @@
     "descricao": "Neste curso, você aprenderá o tudo o que precisa para começar a programar em Node.js e tirar suas ideias do papel, com uma didática simples, prática e eficiente!",
     "modulos": [
         {
-            "titulo": "🚀 Introdução ao Node.Js",
+            "titulo": "🚀 Introdução ao Node.js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
             "pathImgModulo": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
             "categoria": "introdução",
@@ -22,35 +22,217 @@
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": " Nodejs é praticamente um compilador de código JavaScript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
+                                "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
+                                "pathImgInferior": "/assets/Exemplo/resumo Ryan Dahl.jpg",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Ryan Dahl desenvolveu Node.js inspirado pelo processo de carregamento de arquivos no Flickr e observando que servidores como o Apache gerenciavam conexões de forma ineficaz. Dahl percebeu a necessidade de um ambiente capaz de gerenciar milhares de conexões simultâneas sem se tornar bloqueante, e assim nasceu o Node.js.<br/><br/>&#9• Motor V8 da Google: Node.js utiliza o motor V8, que é conhecido por sua alta performance na execução de código JavaScript.<br/>&nbsp;&nbsp;&nbsp;&nbsp;• Loop de Eventos Assíncrono: A principal inovação de Node.js é seu loop de eventos assíncrono, permitindo que operações de entrada e saída sejam executadas sem bloqueios.<br/>&#9• Gerenciamento Eficiente de Conexões: Node.js é capaz de lidar com milhares de conexões simultâneas de maneira eficiente, tornando-o ideal para aplicações em tempo real.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "No desenvolvimento web a linguagem de programação javascript é extremamente utilizada e padronizada. A linguagem de programação JavaScript foi desenvolvida em 1995 e virou predominante no desenvolvimento de página web responsável pela interação com o usuário/cliente, no entanto para o lado do servidor o mesmo fracassou em sua função, pois a performance era extremamente baixa em relação a outra linguagem também possíveis para essa função. Mas como já era predominante a linguagem JavaScript na web, não era muito conveniente ter que aprender outra linguagem para programa o servidor, sendo assim o Nodejs foi desenvolvido para rodar códigos JavaScript no lado do servidor, o Ryan Dahl uso como inspiração o processo de carga de arquivos Flickr e também ao perceber que os servidores como o Apache gerenciavam muitas conexão de forma ineficaz, então exergo a possibilidade de ser o criador do ambiente capaz dessa façanha de gerenciar milhares de conexão simultâneas sem se tornar bloqueantes. O lançamento foi em 05/2009, usava o motor V8 JavaScript da Google, a novidade foi o loop de eventos assíncrono, que o permiti o Nodejs executar operações de entrada e saída sem bloquear, mas claro o quer impressionou a comunidade foi a capacidade de lidar com as conexão simultâneas. A popularidade se deu no ano seguinte muito por causa das novidades, capacidades e claro a carga da predominância do JavaScript no universo Web.",
+                                "texto": "A popularidade de Node.js cresceu rapidamente após seu lançamento, especialmente devido à sua capacidade de lidar com conexões simultâneas e ao fato de que os desenvolvedores já estavam familiarizados com JavaScript, a linguagem predominante no desenvolvimento web. Node.js é amplamente utilizado para criar aplicações de alta performance, como servidores web, APIs e serviços de streaming. Node.js revolucionou o desenvolvimento de aplicações web, oferecendo uma solução poderosa e eficiente para o lado do servidor, e continua a ser uma escolha popular entre desenvolvedores por suas características inovadoras e desempenho robusto.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
                         ]
                     },
                     {
-                        "titulo": "Os paradigmais do Node.Js",
+                        "titulo": "Os paradigmais do Node.js",
                         "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
                             {
-                                "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
+                                "texto": "Um paradigma de programação é uma abordagem ou estilo fundamental que orienta a forma como soluções são desenvolvidas em linguagens de programação. Ele define a estrutura e os elementos que compõem um programa, bem como as interações entre eles. Os principais paradigmas incluem:<br/><ol>&#9<li><b>Paradigma Imperativo:</b> Baseia-se na descrição de uma sequência de instruções que alteram o estado do programa até alcançar o resultado desejado, focando em descrever &quot;como&quot; um programa deve realizar tarefas através de sequências de comandos que alteram o estado do sistema. Linguagens como C e Pascal seguem esse paradigma.<br/><br/><b>Características:</b><br/>O paradigma Imperativo possui algumas características que podem ser definidas como sendo: <br/>&#9• A <b>ênfase em &quot;como&quot; realizar as operações</b>;<br/>&#9• O <b>uso de variáveis que armazenam o estado do programa</b>;<br/>&#9• O <b>controle explicito do fluxo de execução através de estruturas como loops e condicionais.</b><br/><br/>Abaixo temos um exemplo em que o código instrui explicitamente o computador a somar os números de 1 a 5, atualizando o valor de <code>let contador</code></i></b> a cada iteração.</li></ol>",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma imperativo.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='2'><li><b>Paradigma Procedural:</b> É como se fosse uma extensão do paradigma imperativo que organiza o código em procedimentos ou funções, isso permite que o código se torne mais reutilizável e mais modular, melhorando o processo de desenvolvimento, escrita e leitura e facilitando a manutenção do código posteriormente.</li></ol>",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "<b>Características:</b><br/>Para este paradigma temos as seguintes características:<br/>&#9• <b>Divisão do programa em sub-rotinas ou funções</b>;<br/>&#9• <b>Melhoria da manutenção e leitura do código</b>;<br/>&#9• <b>A otimização do fluxo de trabalho.</b>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo, temos um exemplo que mostra como isso funciona, temos uma função <code>somar</code></i></b> que encapsula a operação de adição, possibilitando a reutilização da função infinitas vezes no código, função essa que irá retornar o resultado da soma dos parâmetros <code>a</code></i></b> e <code>b</code></i></b>, isso é extremamente positivo pois já retorna o número diretamente no final, por isso que ao usarmos o <code>console.log(resultado)</code></i></b> a saída que o código nos retornará é o próprio número",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma procedural.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='3'>&#9<li><b>Programação Orientada a Objetos (POO): </b> Organiza o código em torno de &quot;objetos&quot; que encapsulam dados e comportamentos. Linguagens como Java, C++ e Python adotam esse paradigma. A utilização do paradigma da Programação Orientada a Objetos (POO) no Node.js melhora a organização, reutilização e segurança do código, tornando-o mais modular, escalável e fácil de manter. Com conceitos como herança, encapsulamento e polimorfismo, a POO permite criar sistemas mais estruturados e flexíveis.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Podemos destacar as seguintes características do POO no Node.js:<br/>&#9• <b>Encapsulamento:</b> proteção dos dados internos do objeto;<br/>&#9• <b>Herança:</b> capacidade de criar classes baseadas (herdadas) em classes existentes;<br/>&#9• <b>Polimorfismo:</b> permite que diferentes objetos respondam de maneira específica a uma mesma mensagem ou método.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo temos um exemplo dessa vez sobre o POO sendo aplicado no Node.js, aqui, temos a classe <code>Animal</code></i></b> que tem suas características genéricas e seu construtor, o construtor em POO, é um método &quot;padrão&quot; necessário para que as propriedades (parâmetros) do objeto sejam inicializadas, imagine aqui as características gerais de todo(ou do grupo que esteja definindo) animal faz, neste caso, estamos considerando que todo animal faz um som, portanto, definimos aqui o método <code>emitirSom()</code></i></b>, que indica ao usuário que o animal esta fazendo um som. Mais abaixo, na linha 9, temos outra classe que está &quot;estendendo&quot; da classe genérica <code>Animal</code></i></b>, isso indica que a classe que foi estendida, herdará todas as características genéricas definidas na classe <code>Animal</code></i></b>, nesse caso, criamos a classe Cachorro, que estende (herdando suas características) da classe <code>Animal</code></i></b>, mas, sabemos que o cachorro late, então, realizamos um o que chamamos de overriding, estamos sobrescrevendo o método original <code>emitirSom()</code></i></b>, para especificar que, para este animal no caso o cachorro, quando chamarmos o método <code>emitirSom()</code></i></b>, possamos retornar que o cachorro esta latindo. Nas linhas 14 e 15 estamos criando o que chamamos de Instâncias das classes criadas, podemos criar quantas instâncias quisermos, e atribuir a elas os parâmetros definidos no construtor, nesse caso o nome do animal, e, por fim, nas linhas 16 e 17 estamos &quot;invocando&quot;, o método <code>emitirSom()</code></i></b> definido nas classes, no caso estamos falando &quot;animal x emita um som&quot;, e o código irá nos retornar o que pedimos:",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma POO.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='4'>&#9<li><b>Programação Funcional:</b> A programação funcional é um paradigma que trata a computação como a avaliação de funções matemáticas, evitando mudanças de estado e dados mutáveis. Diferentemente da programação imperativa, que se baseia em comandos sequenciais que alteram o estado do programa, a programação funcional descreve o que deve ser alcançado por meio de funções.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Este paradigma aplicado no Node.js a programação funcional pode ser empregada das seguintes maneiras:<br/>&#9• <b>Uso de Funções de Alta Ordem:</b> Funções como <code>map</code>, <code>filter</code> e <code>reduce</code> permitem manipular coleções de dados de forma declarativa, promovendo um código mais conciso e legível;<br/>&#9• <b>Imutabilidade:</b> Embora o JavaScript não imponha imutabilidade por padrão, é possível utilizar bibliotecas como Immutable.js para garantir que os dados não sejam alterados após a criação, isso permitirá que os dados, uma vez criados, não são alterados. Em vez disso, novas versões dos dados são geradas quando necessário, o que ajuda a prevenir erros comuns relacionados a alterações inesperadas de estado;<br/>&#9• <b>Funções puras:</b> Escrever funções puras e combiná-las facilita a criação de aplicações modulares e testáveis no Node.js.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Aqui, temos o exemplo que mostra o paradigma funcional sendo aplicado no Node.js. Aqui, temos a função <code>multiplicarPorDois</code>, que é um exemplo de função pura. Em programação funcional, funções puras são aquelas que, dado um mesmo conjunto de entradas, sempre retornam o mesmo resultado, sem modificar estados externos ou causar efeitos colaterais. Essa função recebe um número como argumento e retorna esse número multiplicado por dois.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Logo abaixo, temos a função <code>aplicarOperacao</code>, que exemplifica o conceito de função de alta ordem. Em programação funcional, uma função de alta ordem é aquela que recebe outra função como argumento ou retorna uma função. No nosso caso, <code>aplicarOperacao</code> recebe um array e uma função, aplicando essa função a cada elemento do array utilizando o método <code>map()</code>. O método <code>map()</code> é uma característica importante da programação funcional, pois permite transformar coleções de dados sem modificar a original, garantindo imutabilidade.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Na linha 10, criamos um array de números [1, 2, 3, 4, 5]. Em seguida, chamamos <code>aplicarOperacao</code>, passando esse array e a função <code>multiplicarPorDois</code> como parâmetros. O resultado é um novo array onde cada número foi multiplicado por dois, sem alterar o array original. Esse conceito de imutabilidade é fundamental na programação funcional, pois evita efeitos colaterais e facilita a manutenção do código.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Por fim, exibimos o resultado no console, que nos retorna [2, 4, 6, 8, 10]. Esse exemplo mostra como o paradigma funcional pode ser aplicado no Node.js para escrever código modular, previsível e mais fácil de testar.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma funcional.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='5'>&#9<li><b>Programação Declarativa:</b> A programação declarativa é um paradigma que se concentra em descrever o que deve ser feito, sem especificar detalhadamente como realizar as operações. Diferentemente da programação imperativa, que define uma sequência explícita de comandos, a abordagem declarativa permite que o desenvolvedor especifique o resultado desejado, delegando ao sistema a responsabilidade de determinar o fluxo de execução necessário para alcançá-lo.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Principais Características da Programação Declarativa no Node.js:<br/>&#9• <b>Abstração de Controle:</b> O programador define o objetivo final, e o sistema gerencia os detalhes de implementação para atingir esse resultado;<br/>&#9• <b>Imutabilidade e Ausência de Estado:</b> As operações não dependem de estados internos ou variáveis mutáveis, promovendo previsibilidade e facilitando a depuração;<br/>&#9• <b>Transparência Referencial: :</b> Funções ou expressões produzem o mesmo resultado quando dadas as mesmas entradas, sem efeitos colaterais, permitindo substituições seguras e otimizando o código;<br/>&#9• <b>Concisão e Clareza:</b> A sintaxe tende a ser mais enxuta e expressiva, focando no &quot;o quê&quot; em vez do &quot;como&quot;, o que melhora a legibilidade e manutenção do código.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No contexto do Node.js, a programação declarativa é frequentemente aplicada por meio de técnicas funcionais e uso de APIs que permitem descrever operações de forma declarativa.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo temos um exemplo dessa vez sobre o paradigma declarativo sendo aplicado no Node.js. Diferente da programação imperativa, onde descrevemos passo a passo como o programa deve executar cada ação, na programação declarativa focamos no que queremos alcançar, deixando que a linguagem e suas funções abstratas lidem com os detalhes da execução. No exemplo abaixo, temos um array de números e utilizamos funções declarativas como <code>filter()</code>, <code>map()</code> e <code>reduce()</code> para manipular os dados de forma clara e expressiva, sem precisar de laços ou variáveis auxiliares.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Primeiramente, criamos um array de números de 1 a 10. Em seguida, definimos a função <code>ehPar</code>, que verifica se um número é par, e a função <code>aoQuadrado</code>, que eleva um número ao quadrado. Ambas são funções puras, pois sempre retornam o mesmo resultado para os mesmos argumentos, sem causar efeitos colaterais.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Na linha 10, aplicamos a cadeia de métodos declarativos: primeiro usamos <code>filter(ehPar)</code>, que retorna apenas os números pares do array; depois <code>map(aoQuadrado)</code>, que transforma cada número par em seu quadrado; e por fim <code>reduce((acc, val) => acc + val, 0)</code>, que soma todos os valores resultantes. Esse encadeamento de funções evita a necessidade de estruturas imperativas, como <code>for</code> ou <code>while</code>, tornando o código mais legível e conciso.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Ao final, o código nos retorna 220, que é a soma dos quadrados dos números pares do array original. Esse exemplo mostra como a programação declarativa torna o código mais expressivo e fácil de entender, permitindo que o desenvolvedor foque no resultado desejado, sem se preocupar com os detalhes de implementação.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma declarativo.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='6'>&#9<li><b>Programação Orientada a Eventos:</b> A Programação Orientada a Eventos é um paradigma no qual o fluxo de execução de um programa é determinado por eventos, como interações do usuário, mensagens de outros sistemas ou mudanças de estado. No Node.js, esse paradigma é fundamental, permitindo a construção de aplicações assíncronas e altamente responsivas.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Principais Características da Programação Orientada a Eventos no Node.js:<br/>&#9• <b>Assincronicidade:</b> As operações são executadas de forma não bloqueante, permitindo que o programa continue processando outras tarefas enquanto aguarda a conclusão de operações anteriores;<br/>&#9• <b>Emissão e Escuta de Eventos:</b> Componentes do sistema podem emitir eventos, enquanto outros &quot;ouvintes&quot; reagem a esses eventos, facilitando a comunicação entre diferentes partes da aplicação;<br/>&#9• <b>Loop de Eventos (Event Loop):</b> Mecanismo central do Node.js que gerencia a execução de operações assíncronas, despachando eventos e garantindo que as funções de callback correspondentes sejam executadas no momento apropriado.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo, temos um exemplo que demonstra a aplicação da Programação Orientada a Eventos no Node.js. Utilizamos o módulo events para criar um emissor de eventos personalizado que reage a um evento específico.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Primeiro, vamos realizar a importação do módulo <code>events</code>: Utilizamos o módulo interno do Node.js chamado <code>events</code>, que fornece a classe <code>EventEmitter</code> para a criação e manipulação de eventos. Depois temos a criação de uma classe personalizada <code>MeuEmissor</code>, que estende <code>EventEmitter</code>, permitindo que instâncias dessa classe emitam e escutem eventos personalizados, e, em seguida temos a instanciação do Emissor de Eventos, aqui estamos criando uma instância de <code>MeuEmissor</code> chamada <code>meuEmissor</code>, que será utilizada para emitir e ouvir eventos, depois, realizamos o registro de um Ouvinte de Evento, utilizamos o método <code>on</code> para registrar uma função que será executada sempre que o evento '<code>eventoPersonalizado</code>' for emitido. Nesse caso, a função simplesmente imprime uma mensagem no console, por fim temos a emissão do evento personalizado: Chamamos o método <code>emit</code> para disparar o evento '<code>eventoPersonalizado</code>', acionando todos os ouvintes registrados para esse evento. Como resultado, a mensagem definida anteriormente é exibida no console.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma orientada a eventos.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<br/>No geral os paradigmas de programação no Node.js são fundamentais para entender como essa tecnologia se destaca no desenvolvimento de aplicações modernas. Ele adota principalmente os paradigmas assíncrono e orientado a eventos, que permitem um alto desempenho em aplicações de rede e sistemas escaláveis. Além disso, suporta a programação funcional com o uso de funções de ordem superior, promessas e async/await, tornando o código mais modular e reutilizável.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Por outro lado, o paradigma orientado a objetos também pode ser utilizado, principalmente com classes do ES6, facilitando a organização de grandes projetos. No entanto, devido à natureza do JavaScript, a combinação de múltiplos paradigmas dentro do mesmo projeto é comum e pode ser benéfica.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em conclusão, o Node.js oferece uma abordagem flexível e eficiente para o desenvolvimento de software, permitindo que os desenvolvedores escolham os paradigmas que melhor se adaptam às necessidades do projeto. Seu modelo assíncrono e não bloqueante, aliado à versatilidade da linguagem, faz dele uma escolha poderosa para aplicações escaláveis e de alto desempenho.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -133,7 +315,7 @@
                             {
                                 "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
-                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
+                                "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(&quot;Hello World!&quot;). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -193,7 +375,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
+                                "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto &quot;é como se fosse executar o modulo com permissão de administrado no PC&quot;. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -249,15 +431,15 @@
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Para remover pacotes no nodejs usamos o <b>npm remove nome_do_pacote</b>, bem simples e claro!",
+                                "pathImgInferior": "../assets/Exemplo/npm remove.png",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Depois da execução do código vai aparecer a quantidade de pacotes removido,auditado e vulneráveis. E a pasta node_modules vai ser limpa e o arquivo package.json vai ser atualizado.",
+                                "pathImgInferior": "../assets/Exemplo/npm remove 2.png",
                                 "pathVideoInferior": ""
                             }
                         ]
@@ -266,11 +448,11 @@
                         "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
                         "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
