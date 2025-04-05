@@ -334,7 +334,21 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, verificar se é igual o valor (==), <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Os operadores lógicos ajudam muito na formalização da sentença da operação, em javascript temos três. O <b>se e somente se (&&)</b> ex: ((5 + 3 == 8) && (3 + 5 == 8) ) == verdadeiro. <b>O se esse ou esse (||)</b> ex: ((4%2 == 0) || (3%2 == 0)) == verdadeiro, para avaliar a negação de uma sentença só preciso usar o <b>simbolo (!)</b> ex: !(2 + 3 == 6) == verdadeiro.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "As atribuições começa pelo <b>símbolo (=)</b> ex: A = 5 o variável oberar o valor 5 em sua composição. O <b>simbolo (+=)</b> ex: A += 5 o valor 5 somara com o valor que está dentro da variável. O <b>simbolo (-=)</b> ex: A -= 5 o valor subtrairá o valor que está dentro da variável.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
