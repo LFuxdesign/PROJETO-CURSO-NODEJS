@@ -351,6 +351,139 @@
                                 "texto": "As atribuições começa pelo <b>símbolo (=)</b> ex: A = 5 o variável oberar o valor 5 em sua composição. O <b>simbolo (+=)</b> ex: A += 5 o valor 5 somara com o valor que está dentro da variável. O <b>simbolo (-=)</b> ex: A -= 5 o valor subtrairá o valor que está dentro da variável.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Diante as estruturas de controle, são todas as padrões de qualquer linguagem. Temos o <b>if...else = se...senão</b>, <b>switch == coleção de probabilidade</b>. Os loops temos o <b>for == parar em alguma estancia</b>, <b>while == enquanto algo operacional estiver acontecendo</b>, <b>do...while == fazer enquanto algo estiver acontecendo</b>, <b>for...of == é loop que permite iterar sobre elementos</b>, <b>for...in == já é um loop usado parar iterar sobre propriedades enumeráveis de um objetos</b>.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Temos 4 tipos de funções. A declaração <b>function nomeFunção(){}</b>. Expressão <b>const funcao = function(){}</b>. Arrow functions <b>() => {}</b>. E o parâmetros e retorno (<b>return</b>). O retorno é o valor que a função devolve após sua execução, e o parâmetro é o valor que a função recebe como entrada. Exemplo: function soma(a, b) { return a + b; } onde a e b são os parâmetros e o resultado da soma é o retorno da função.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
                             }
                         ]
                     },
