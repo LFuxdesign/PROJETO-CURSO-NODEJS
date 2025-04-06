@@ -369,14 +369,14 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Os principais objetos e protótipos são a coleção de propriedade ({ chave: valor }), herança baseada em protótipos e não em classe tradicionas.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "No javaScript os métodos são diversos. O <b>push()</b> é usado para adicionar um o mais elementos ao final de um array e retornar o novo comprimento do array. O <b>pop()</b> remove o último elemento de um array e retornar esse elemento, modifica o array original e se tiver vazio retorna <i>undefined</i>. O método <b>shift()</b> remove o primeiro elemento de um array e retorna esse elemento. Modificando o array original e deslocando todos os outros elementos para um índice menor. O método <b>unshift()</b> adiciona um ou mais elementos no início de um array e retorna o novo comprimento do array, deslocando os elementos existentes para índices maiores. O método map() é uma função de arrays em javaScript que cria um novo array com os resultados da aplicação de cada elemento do array original. Já o método <b>filter()</b> cria um novo array com todos os elementos que passam em uma implementação fornecida pela função. É extremamente últi para selecionar elementos de array baseado em condições específicas. O método <b>reduce()</b> é umas das operações para manipulação de arrays em JavaScript, executa uma função redutora para cada elemento do array resultando em um único valor de retorno. Já o <b>forEach()</b> é uma função fornecida uma vez para cada elemento de um array, em ordem crescente de índice, sendo muito diferente de map() ou filter(), o forEach não retorna um novo array o fundamento dele é usado para sanar efeitos colaterais.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
