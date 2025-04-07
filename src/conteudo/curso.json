@@ -334,7 +334,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, verificar se é igual o valor (==), <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
+                                "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, <b>verificar se é igual o valor (==)</b>, <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -390,7 +390,7 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "Já no Eventos e Dom(Document Object Model), temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
+                                "texto": "Já no <i><b>Eventos e Dom(Document Object Model)</b></i>, temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -404,14 +404,14 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O <i><b>tratamento de erros</b></i> no códigos é constituindo pelo <b>try/catch</b> é uma estrutura fundamental em JavaScript para capturar e tratar erros de formar controlada, assim evitando quebras inesperadas que interrompam o fluxo do código. E também é constituindo pelo <b>finally</b> um bloco em uma parte estrutural do try/catch que sempre é executado independente  de ocorrer um erro ou não.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "No JavaScript temos a <i><b>Classes(ES6+)</b></i> que obtém a sintaxe <b>class</b> que é a forma mais clara e orientada ao objeto para criar estruturas reutilizáveis com uma sintaxe limpa e recursos avançados. Temos também o <b>constructor</b> um método em classes que automaticamente quando o objeto é criado o mesmo é executado a partir da classes. Já no conceito de herança temos o <b>extends</b> que permite criar uma classe filha em uma classe pai, herdando seus métodos e propriedade.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
