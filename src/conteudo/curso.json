@@ -383,21 +383,21 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "No <i><b>âmbito de variável</i></b> de escopo é algo bem simples, temos a global (<b>var</b>) e a de bloco (<b>let e const</b>) que fica retida na (<b>{}</b>) da função em afim.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Já no Eventos e Dom(Document Object Model), temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Já no âmbito <i><b>Assincronismo</b></i> é um conceito que permite a execução de operações demoradas sem bloquear a thread principal, temos em primeiro lugar os <b>Callbacks</b> que é nada mais que funções passadas como argumentos para serem executadas depois. <b>Promises</b> é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona, temos a <i>.then()</i> é um método de Promises usado para lidar com o resultado bem-sucedido de uma operação assíncrona, também permite encadear operações na forma limpa e legível. Outra é o <i>.catch()</i> um método essencial para tratar erros em promises no JavaScript, ele procura e capta falhas no códigos dentro de uma Promise ou .then() anterior no encadeamento. Já em ultimo nas Promises <i>Async/Await</i> é uma forma mais modernar, atual e legível de trabalhar com operações assíncronas em JavaScript, assim permitindo escrever códigos de maneira síncrona, facilitando o entendimento e a manutenção do mesmo. Em ultimo dos Assincronismo temos o <b>Fetch API</b> é a forma mais moderna de fazer requisições HTTP em JavaScript, substituindo o antigo <i>XMLHttpRequest</i>, ela fornece uma interface mais poderosa e flexível para buscar recursos de forma assíncrona, retornando promises nativas.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
