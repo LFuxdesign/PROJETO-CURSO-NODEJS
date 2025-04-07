@@ -418,28 +418,28 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Em <i><b>Módulos (ES6)</b></i> temos duas modularizações, o <b>import  e export</b>  é uma forma moderna de compartilhar e organizar arquivos JavaScript, esse sistema do ES6 surgiu para substituir os antigos sistema como CommonJS e AMD",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O <i><b>Hoisting</b></i> em JavaScript é um comportamento tipico onde a declaração de variáveis e funções são movidas para o topo de seu escopo antes da execução do código.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O <i><b>Closures</b></i> são um dos conceitos mais poderosos e até importante, eles permitem que a funções “lembrem” e acessem variáveis de seu escopo léxico, mesmo depois  a execução da função externa ter sido finalizada.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O <i><b>Destructuring</b></i> é uma sintaxe no ES6 que extrair valores de arrays ou objetos de forma mais legível.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
