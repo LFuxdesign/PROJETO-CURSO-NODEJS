@@ -446,42 +446,42 @@
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O <i><b>Spread/Rest Operator</b></i> é nada menos que <b>(...)</b> serve para espalhar ou agrupar elementos. O <b>Spread</b> é usado para expandir elementos de um array ou objeto, enquanto o <b>Rest</b> é usado para agrupar múltiplos argumentos em um único array.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Agora o <i><b>Template Literals</b></i> o template strings é somente uma área de adicionamento de expressão variável, representado dessa forma <b>(${})</b>. São uma sintaxe introduzida no ES6 que cria de forma flexível e poderosa, pode ser usando <b>(``)</b> também.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "E também temos o <i><b>JSON(JavaScript Object Notation)</b></i> composto de <b>JSON.parse()</b> e junto com <b>JSON.stringify()</b>. O método <i>JSON.parse()</i> é usado para converter uma string JSON válida em um objeto JavaScript. Já o método <i>JSON.stringify()</i> converter um objeto JavaScript em uma string JSON, criando assim uma lista seriada de dados para compartilhamento e armazenamento.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "No <i><b>Web APIs</b></i> fornece interfaces pelos navegadores que permite e cria interação com recursos do sistema e funcionalidades avançadas, com capacidades específicas para desenvolvimento web. Os principais são <b>localStorage</b>, <b>sessionStorage</b>, <b>setTimeout</b> e <b>setInterval</b>. No <i>localStorege</i> permite armazenar dados no navegador do usuário, como se fosse um cookies, só que não expiram até ser diretamente removidos, tem maior capacidade até mais de 5MB e não são enviados automaticamente em requisições. Já no <i>sessionStorage</i> e umas da forma de armazenar dados temporariamente para sessão atual da aba  do navegador e quando fecha a aba os dados se apagam automaticamente, e lógico cada aba tem seu próprio sessionStorage. E no <i>setTimeout</i> é uma função para executar uma ação em um tempo exato contabilizado em <b>milissegundos</b>. Em ultimo o <i>setInterval</i> é um pouco diferente do <b>setTimeout</b> esse executa repetidamente em um intervalo de tempo definido.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Em ultimo tópico <i><b>Strict Mode</b></i> ele é fundamental para tornar o código JavaScript mais seguro, evitando assim más práticas. O código em si é <b>(use strict)</b> o mesmo é rigoroso e evitar erros e deixa limpo o executar do código em si.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
