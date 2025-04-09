@@ -2,15 +2,16 @@ import "./viewModuloCurso.css";
 
 import Curso from "../../conteudo/curso.json"
 
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
 import { cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
-export default function ViewModuloCurso() {
+export default function ViewModuloCurso({ content4website }) {
     const [searchParams] = useSearchParams(); // parametros url
+    const navigate = useNavigate();
 
     const [idModulo, setIdModulo] = useState(() => {
         const urlModuleId = parseInt(searchParams.get("m"));
@@ -49,41 +50,50 @@ export default function ViewModuloCurso() {
     }
 
     function isSectionIndexValid(index) {
-        return index >= 1 && index <= moduloAtual.conteudos.sessoes.length;
+        return index >= 1 && index <= Curso.modulos[idModulo - 1].conteudos.sessoes.length;
     }
 
 
     function markAsViewed(moduloIndex, sessaoIndex) {
-        const newViewedModules = [...viewedModules];
-        const timestamp = Date.now();
+        if (
+            moduloIndex >= 0 && moduloIndex < viewedModules.length &&
+            sessaoIndex >= 0 && sessaoIndex < viewedModules[moduloIndex].sessoes.length
+        ) {
+            const newViewedModules = [...viewedModules];
+            const timestamp = Date.now();
 
-        if (!newViewedModules[moduloIndex].sessoes[sessaoIndex].viewed) {
+            if (!newViewedModules[moduloIndex].sessoes[sessaoIndex].viewed) {
+                newViewedModules[moduloIndex].sessoes[sessaoIndex] = {
+                    viewed: true,
+                    timestamp: timestamp,
+                };
 
-            newViewedModules[moduloIndex].sessoes[sessaoIndex] = {
-                viewed: true,
-                timestamp: timestamp,
-            };
-
-            setViewedModules(newViewedModules);
-            localStorage.setItem("viewedModules", JSON.stringify(newViewedModules));
+                setViewedModules(newViewedModules);
+                localStorage.setItem("viewedModules", JSON.stringify(newViewedModules));
+            }
         }
     }
-
     useEffect(() => {
-        const urlSectionId = isSectionIndexValid(parseInt(searchParams.get("s"))) ? parseInt(searchParams.get("s")) - 1 : 0;
-
-        setModuloAtual(Curso.modulos[idModulo - 1]);
-        markAsViewed(idModulo - 1, urlSectionId);
+        if (moduloAtual) {
+            const urlSectionId = parseInt(searchParams.get("s"));
+            const validSectionId = isSectionIndexValid(urlSectionId) ? urlSectionId - 1 : 0;
+            markAsViewed(idModulo - 1, validSectionId);
+        }
         // eslint-disable-next-line
-    }, [idModulo]);
+    }, [idModulo, moduloAtual, searchParams]);
 
     useEffect(() => {
         const newUrlModuleId = parseInt(searchParams.get("m"));
         const validId = isModuleIndexValid(newUrlModuleId) ? newUrlModuleId : 1;
         setIdModulo(validId);
+        setModuloAtual(Curso.modulos[validId - 1]);
+
+        // eslint-disable-next-line
     }, [searchParams]);
 
-
+    useEffect(() => {
+        localStorage.setItem("viewedModules", JSON.stringify(viewedModules));
+    }, [viewedModules]);
 
     useEffect(() => {
         setTimeout(() => {
@@ -220,30 +230,38 @@ export default function ViewModuloCurso() {
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
+                            const moduloData = viewedModules[idModulo - 1];
+                            const sessaoData = moduloData?.sessoes[index];
+
                             return (
-                                <div key={index} className="cardCurso flexCenter entryAnimation" style={{ animationDuration: "1s", animationDelay: (.25 * (index + 1) + "s"), background: sessao.highlightColor, filter: (viewedModules[idModulo - 1].sessoes[index].viewed && animationTimeout) && "saturate(.9)" }}>
+                                <div
+                                    key={index}
+                                    className="cardCurso flexCenter entryAnimation"
+                                    style={{
+                                        animationDuration: "1s",
+                                        animationDelay: `${0.25 * (index + 1)}s`,
+                                        background: sessao.highlightColor,
+                                        filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
+                                    }}
+                                >
                                     <div className="details">
-                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>{sessao.titulo}</h1>
-                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>{sessao.descricao}</span>
+                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
+                                            {sessao.titulo}
+                                        </h1>
+                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                            {sessao.descricao}
+                                        </span>
                                     </div>
                                     <div className="info flex flexColumn" style={{ gap: "10px" }}>
-                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>{viewedModules[idModulo - 1].sessoes[index].viewed ? "visto dia" : "não iniciado"}</p>
+                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                            {sessaoData?.viewed ? "visto dia" : "não iniciado"}
+                                        </p>
                                         <div className="dia flexCenter">
-                                            {
-                                                (() => {
-                                                    const timestamp = viewedModules[idModulo - 1].sessoes[index].timestamp
-                                                    if (timestamp) {
-                                                        const viewedDate = new Date(timestamp);
-                                                        const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
-                                                        return (
-                                                            <h1>
-                                                                {viewedDay}
-                                                            </h1>
-                                                        );
-                                                    }
-                                                    return (<h1>-</h1>)
-                                                })()
-                                            }
+                                            {sessaoData?.timestamp ? (
+                                                <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
+                                            ) : (
+                                                <h1>-</h1>
+                                            )}
                                         </div>
                                         {
                                             (() => {
@@ -263,7 +281,8 @@ export default function ViewModuloCurso() {
                                         }
                                     </div>
                                 </div>
-                            )
+                            );
+
                         })
                     }
                 </div>
@@ -339,7 +358,7 @@ export default function ViewModuloCurso() {
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo, index) => {
                                             return (
-                                                <>
+                                                <div key={index}>
                                                     {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
@@ -391,11 +410,68 @@ export default function ViewModuloCurso() {
                                                             }
                                                         })()
                                                     }
-                                                </>
+                                                </div>
                                             )
                                         })}
                                     </div>
                                 </div>
+                                {
+                                    content4website && (() => {
+                                        const actualSectionId = parseInt(searchParams.get("s")) || 1;
+                                        const actualModuleId = parseInt(searchParams.get("m")) || 1;
+                                        const prevSectionId = actualSectionId - 1;
+                                        const prevModuleId = actualModuleId - 1;
+                                        const nextSectionId = actualSectionId + 1;
+                                        const nextModuleId = actualModuleId + 1;
+                                        function goToNextPage() {
+
+                                            if (isSectionIndexValid(nextSectionId)) {
+                                                window.scrollTo(0, 0)
+
+                                                navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
+
+                                            } else if (isModuleIndexValid(nextModuleId)) {
+                                                window.scrollTo(0, 0)
+
+                                                navigate(`/moduloCurso?m=${nextModuleId}`)
+
+                                            } else {
+                                                console.log("acabou")
+                                            }
+                                        }
+                                        function goToPrevPage() {
+                                            if (isSectionIndexValid(prevSectionId)) {
+
+                                                window.scrollTo(0, 0);
+
+                                                navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
+
+                                            } else if (isModuleIndexValid(prevModuleId)) {
+                                                const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
+
+                                                window.scrollTo(0, 0);
+
+                                                navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                            } else {
+                                                console.log("Não há mais páginas anteriores.");
+                                            }
+                                        }
+                                        return (
+                                            <div className="pageControlButton">
+                                                <div className="prevButton flexCenter" onClick={goToPrevPage}>
+                                                    <svg width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M97 50C98.6569 50 100 51.3431 100 53V97C100 98.6569 98.6569 100 97 100H3C1.34314 100 0 98.6569 0 97V53C0 51.3431 1.34314 50 3 50H97ZM13.7071 53L39.7071 27L36.2929 23.5858L4.29289 55.5858C3.90237 56.0052 3.90237 56.6447 4.29289 57.0641L36.2929 89.0641L39.7071 85.6499L13.7071 59.6499V53Z" fill="black" />
+                                                    </svg>
+                                                </div>
+                                                <div className="nextButton flexCenter" onClick={goToNextPage}>
+                                                    <svg width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3 50C1.34314 50 0 51.3431 0 53V97C0 98.6569 1.34314 100 3 100H97C98.6569 100 100 98.6569 100 97V53C100 51.3431 98.6569 50 97 50H3ZM86.2929 53L60.2929 27L63.7071 23.5858L95.7071 55.5858C96.0976 56.0052 96.0976 56.6447 95.7071 57.0641L63.7071 89.0641L60.2929 85.6499L86.2929 59.6499V53Z" fill="black" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        )
+                                    })()
+                                }
                             </div>
                         );
                     })()
