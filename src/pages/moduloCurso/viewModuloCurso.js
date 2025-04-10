@@ -83,7 +83,7 @@ export default function ViewModuloCurso({ content4website }) {
     }, [idModulo, moduloAtual, searchParams]);
 
     useEffect(() => {
-        const newUrlModuleId = parseInt(searchParams.get("m"));
+        const newUrlModuleId = parseInt(searchParams.get("m") || 1);
         const validId = isModuleIndexValid(newUrlModuleId) ? newUrlModuleId : 1;
         setIdModulo(validId);
         setModuloAtual(Curso.modulos[validId - 1]);
@@ -196,7 +196,6 @@ export default function ViewModuloCurso({ content4website }) {
     const [modalData, setModalData] = useState({ path: "", type: "" })
 
     function modalController(status, path, type) {
-        console.log(status)
         if (path !== "" && type !== "") {
             setModalData({ path, type });
 
@@ -215,6 +214,40 @@ export default function ViewModuloCurso({ content4website }) {
         )
     }
 
+    // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
+    // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
+    const refBtnNext = useRef(null)
+    const refBtnPrev = useRef(null)
+    useEffect(() => {
+        if (!content4website) return;
+
+        const btnNext = refBtnNext.current;
+        const btnPrev = refBtnPrev.current;
+        const actualSectionId = parseInt(searchParams.get("s")) || 1;
+        const actualModuleId = parseInt(searchParams.get("m")) || 1;
+        const modulesLenght = Curso.modulos.length;
+        const sectionsLength = Curso.modulos[actualModuleId - 1]?.conteudos.sessoes.length || 0;
+
+        function deactivateButton(element, status) {
+            if (!element) return;
+            status ? element.classList.add("disabled") : element.classList.remove("disabled");
+        }
+
+        function checkOnload() {
+            if (actualModuleId === 1 && actualSectionId === 1) {
+                deactivateButton(btnNext, false);
+            } else if (actualModuleId === modulesLenght && actualSectionId === sectionsLength) {
+                deactivateButton(btnPrev, false);
+            } else {
+                deactivateButton(btnPrev, false);
+                deactivateButton(btnNext, false);
+            }
+        }
+
+        checkOnload();
+    }, [content4website, refBtnNext, refBtnPrev, searchParams]);
+    // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
+    // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
             {
@@ -417,55 +450,89 @@ export default function ViewModuloCurso({ content4website }) {
                                 </div>
                                 {
                                     content4website && (() => {
+                                        const btnNext = refBtnNext.current;
+                                        const btnPrev = refBtnPrev.current;
                                         const actualSectionId = parseInt(searchParams.get("s")) || 1;
                                         const actualModuleId = parseInt(searchParams.get("m")) || 1;
                                         const prevSectionId = actualSectionId - 1;
                                         const prevModuleId = actualModuleId - 1;
                                         const nextSectionId = actualSectionId + 1;
                                         const nextModuleId = actualModuleId + 1;
+                                        const modulesLenght = Curso.modulos.length;
+                                        const sectionsLength = Curso.modulos[actualModuleId - 1]?.conteudos.sessoes.length || 0;
+
+                                        function checkUrlValidDataForPageControl() {
+                                            return !(nextSectionId > sectionsLength + 1 || nextModuleId > modulesLenght + 1 || actualModuleId <= 0 || actualSectionId <= 0)
+                                        }
+                                        function deactivateButton(element, status) {
+                                            status ? element.classList.add("disabled") : element.classList.remove("disabled")
+                                        }
+
                                         function goToNextPage() {
+                                            if (checkUrlValidDataForPageControl()) {
+                                                if (actualModuleId === modulesLenght && sectionsLength === actualSectionId + 1) {
+                                                    deactivateButton(btnNext, true)
+                                                } else {
+                                                    deactivateButton(btnNext, false)
+                                                }
 
-                                            if (isSectionIndexValid(nextSectionId)) {
-                                                window.scrollTo(0, 0)
+                                                if (isSectionIndexValid(nextSectionId)) {
+                                                    window.scrollTo(0, 0)
 
-                                                navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
+                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
 
-                                            } else if (isModuleIndexValid(nextModuleId)) {
-                                                window.scrollTo(0, 0)
+                                                } else if (isModuleIndexValid(nextModuleId)) {
+                                                    window.scrollTo(0, 0)
 
-                                                navigate(`/moduloCurso?m=${nextModuleId}`)
-
+                                                    navigate(`/moduloCurso?m=${nextModuleId}`)
+                                                } else {
+                                                    deactivateButton(btnNext, true)
+                                                }
                                             } else {
-                                                console.log("acabou")
+                                                navigate(`/moduloCurso?m=${1}&s=${2}`)
                                             }
+
                                         }
                                         function goToPrevPage() {
-                                            if (isSectionIndexValid(prevSectionId)) {
+                                            if (checkUrlValidDataForPageControl()) {
+                                                if (actualModuleId === 1 && actualSectionId === 2) {
+                                                    deactivateButton(btnPrev, true)
+                                                } else {
+                                                    deactivateButton(btnPrev, false)
+                                                }
 
-                                                window.scrollTo(0, 0);
+                                                if (isSectionIndexValid(prevSectionId)) {
 
-                                                navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
+                                                    window.scrollTo(0, 0);
 
-                                            } else if (isModuleIndexValid(prevModuleId)) {
-                                                const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
+                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
 
-                                                window.scrollTo(0, 0);
+                                                } else if (isModuleIndexValid(prevModuleId)) {
+                                                    const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
 
-                                                navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                                    window.scrollTo(0, 0);
+
+                                                    navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                                } else {
+                                                    deactivateButton(btnPrev, true)
+                                                }
                                             } else {
-                                                console.log("Não há mais páginas anteriores.");
+                                                navigate(`/moduloCurso?m=${1}&s=${1}`)
                                             }
+
                                         }
                                         return (
-                                            <div className="pageControlButton">
-                                                <div className="prevButton flexCenter" onClick={goToPrevPage}>
-                                                    <svg width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M97 50C98.6569 50 100 51.3431 100 53V97C100 98.6569 98.6569 100 97 100H3C1.34314 100 0 98.6569 0 97V53C0 51.3431 1.34314 50 3 50H97ZM13.7071 53L39.7071 27L36.2929 23.5858L4.29289 55.5858C3.90237 56.0052 3.90237 56.6447 4.29289 57.0641L36.2929 89.0641L39.7071 85.6499L13.7071 59.6499V53Z" fill="black" />
+                                            <div className="pageControlButton flex">
+                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                                    <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
+                                                    <span>Voltar</span>
                                                 </div>
-                                                <div className="nextButton flexCenter" onClick={goToNextPage}>
-                                                    <svg width="25" height="25" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3 50C1.34314 50 0 51.3431 0 53V97C0 98.6569 1.34314 100 3 100H97C98.6569 100 100 98.6569 100 97V53C100 51.3431 98.6569 50 97 50H3ZM86.2929 53L60.2929 27L63.7071 23.5858L95.7071 55.5858C96.0976 56.0052 96.0976 56.6447 95.7071 57.0641L63.7071 89.0641L60.2929 85.6499L86.2929 59.6499V53Z" fill="black" />
+                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                    <span>Avançar</span>
+                                                    <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
                                                 </div>
                                             </div>
