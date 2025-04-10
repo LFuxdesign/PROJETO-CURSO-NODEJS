@@ -323,7 +323,7 @@
                         "titulo": "Principais conceitos do JavaScript",
                         "descricao": "Compreenda conceitos chave do JavaScript, como variáveis, funções, objetos, arrays e a manipulação do DOM.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
@@ -491,7 +491,7 @@
                         "titulo": "Diferenças entre CommonJS e ESModules",
                         "descricao": "Aprenda as diferenças entre os sistemas de módulos CommonJS e ESModules, e como cada um é usado no Node.js.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
