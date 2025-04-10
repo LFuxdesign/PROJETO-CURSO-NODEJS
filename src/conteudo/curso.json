@@ -495,14 +495,21 @@
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Nesse tópico vamos falar primeiro do <i><b>CommonJS</b></i>, atualmente e principalmente é usado em NodeJS, mas já foi usado em JavaScript, ele é um sistema de módulos tradicional que permite organizar e compartilhar trecho de código entre arquivos JavaScript. Foi criado para trazer familiaridade e modularidade fora do navegador. Temos dois códigos principais e fundamentas o <b>require()</b> que tem como intenção importar módulos, e <b>module.exports/exports</b> que a funcionalidade é exportar módulo, literalmente o inverso do anterior falado.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "O mais atual e utilizada no Front-End JavaScript/Navegador é o <i><b>ES Modules</b></i>, esse sistema é mais moderno, introduzido em 2015. Permite organizar o código em arquivos separados de maneira eficiente, simples e pratico quanto em navegadores e Node. Os códigos principais são muito similares a do Common, é <b>import</b> que tem como finalidade importar módulos e <b>export</b> que é exportar funções, variáveis ou objetos.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Já respondendo com a questão presente no titulo, as diferenças estão em como lidar com a modularização do projeto em si. Ambos organiza os códigos praticamente da mesma forma, só abordagens visuais distintas. Como características o <b>CommonJS(require/module.exports)</b>, já <b>ES Modules(import/export)</b>. Na origem o <b>Commonjs foi desenvolvido pelo NodeJS</b>, já o <b>ES Modules foi desenvolvida e oficializada pelo JavaScript</b>. O carregamento do Commonjs é <b>síncrono(bloqueante)</b>, já do ES Modules é <b>Assíncrono(não bloqueante)</b>. No navegador o CommonJS <b>não é suportado nativamente</b>, já o ES Modules <b>sim é suportado nativamente</b>. Especificamente no NodeJS os dois tipos é usado, o CommonJS nativo e o ES Modules usando o “type”: “module” ou o .mjs. Em questão de importação dinâmica o CommonJS com o seu <b>requerie() pode ser chamado dinamicamente</b>, mas o ES Modules por ser mais moderno com o seu <b>import() tens mais retornos em suas Promise, além de ser dinâmico</b>. O CommonJS na analise estática <b>é muito difícil permitir o  require em uma condicional</b>, já o ES Modules <b>sai ganhando nessa, pois o seus imports/export são estáticos e isso traz mais permissões</b>. Tendo toda essa noção, conseguimos ver que cada um tens suas peculiaridades, o CommonJS tem uma ampla adoção no NodeJS muitos pacotes npm usam de forma fundamentas, permite require dinâmico e mais simples em projetos legados. Já o ES Modules é padrão moderno JavaScript, melhor desempenho por causa do carregamento assíncrono e compatível com praticamente todos os navegadores. <b>Conclusão o CommonJS é tradicional principalmente no nodeJS por isso ainda está forte seu uso, mas aos poucos está sendo substituindo, pelo futuro ES Modules do JavaScript</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
