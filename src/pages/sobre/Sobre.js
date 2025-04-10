@@ -8,7 +8,7 @@ import Button from "../../components/buttons/buttons";
 import CourseModeSelection from "../../components/courseSelection/courseModeSelection";
 import { useState } from "react";
 
-export default function Sobre({ content4HomePage }) {
+export default function Sobre({ content4website }) {
 
     const viewedModules = () => {
         const LSViewedModules = localStorage.getItem("viewedModules");
@@ -57,7 +57,7 @@ export default function Sobre({ content4HomePage }) {
                         </h2>
                     </div>
                     {
-                        content4HomePage && <Button
+                        content4website && <Button
                             className="entryAnimation"
                             buttonText={"Iniciar"}
                             width={"40%"}

@@ -2,15 +2,16 @@ import "./viewModuloCurso.css";
 
 import Curso from "../../conteudo/curso.json"
 
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
 import { cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
-export default function ViewModuloCurso() {
+export default function ViewModuloCurso({ content4website }) {
     const [searchParams] = useSearchParams(); // parametros url
+    const navigate = useNavigate();
 
     const [idModulo, setIdModulo] = useState(() => {
         const urlModuleId = parseInt(searchParams.get("m"));
@@ -49,41 +50,50 @@ export default function ViewModuloCurso() {
     }
 
     function isSectionIndexValid(index) {
-        return index >= 1 && index <= moduloAtual.conteudos.sessoes.length;
+        return index >= 1 && index <= Curso.modulos[idModulo - 1].conteudos.sessoes.length;
     }
 
 
     function markAsViewed(moduloIndex, sessaoIndex) {
-        const newViewedModules = [...viewedModules];
-        const timestamp = Date.now();
+        if (
+            moduloIndex >= 0 && moduloIndex < viewedModules.length &&
+            sessaoIndex >= 0 && sessaoIndex < viewedModules[moduloIndex].sessoes.length
+        ) {
+            const newViewedModules = [...viewedModules];
+            const timestamp = Date.now();
 
-        if (!newViewedModules[moduloIndex].sessoes[sessaoIndex].viewed) {
+            if (!newViewedModules[moduloIndex].sessoes[sessaoIndex].viewed) {
+                newViewedModules[moduloIndex].sessoes[sessaoIndex] = {
+                    viewed: true,
+                    timestamp: timestamp,
+                };
 
-            newViewedModules[moduloIndex].sessoes[sessaoIndex] = {
-                viewed: true,
-                timestamp: timestamp,
-            };
-
-            setViewedModules(newViewedModules);
-            localStorage.setItem("viewedModules", JSON.stringify(newViewedModules));
+                setViewedModules(newViewedModules);
+                localStorage.setItem("viewedModules", JSON.stringify(newViewedModules));
+            }
         }
     }
-
     useEffect(() => {
-        const urlSectionId = isSectionIndexValid(parseInt(searchParams.get("s"))) ? parseInt(searchParams.get("s")) - 1 : 0;
-
-        setModuloAtual(Curso.modulos[idModulo - 1]);
-        markAsViewed(idModulo - 1, urlSectionId);
+        if (moduloAtual) {
+            const urlSectionId = parseInt(searchParams.get("s"));
+            const validSectionId = isSectionIndexValid(urlSectionId) ? urlSectionId - 1 : 0;
+            markAsViewed(idModulo - 1, validSectionId);
+        }
         // eslint-disable-next-line
-    }, [idModulo]);
+    }, [idModulo, moduloAtual, searchParams]);
 
     useEffect(() => {
-        const newUrlModuleId = parseInt(searchParams.get("m"));
+        const newUrlModuleId = parseInt(searchParams.get("m") || 1);
         const validId = isModuleIndexValid(newUrlModuleId) ? newUrlModuleId : 1;
         setIdModulo(validId);
+        setModuloAtual(Curso.modulos[validId - 1]);
+
+        // eslint-disable-next-line
     }, [searchParams]);
 
-
+    useEffect(() => {
+        localStorage.setItem("viewedModules", JSON.stringify(viewedModules));
+    }, [viewedModules]);
 
     useEffect(() => {
         setTimeout(() => {
@@ -186,7 +196,6 @@ export default function ViewModuloCurso() {
     const [modalData, setModalData] = useState({ path: "", type: "" })
 
     function modalController(status, path, type) {
-        console.log(status)
         if (path !== "" && type !== "") {
             setModalData({ path, type });
 
@@ -205,6 +214,40 @@ export default function ViewModuloCurso() {
         )
     }
 
+    // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
+    // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
+    const refBtnNext = useRef(null)
+    const refBtnPrev = useRef(null)
+    useEffect(() => {
+        if (!content4website) return;
+
+        const btnNext = refBtnNext.current;
+        const btnPrev = refBtnPrev.current;
+        const actualSectionId = parseInt(searchParams.get("s")) || 1;
+        const actualModuleId = parseInt(searchParams.get("m")) || 1;
+        const modulesLenght = Curso.modulos.length;
+        const sectionsLength = Curso.modulos[actualModuleId - 1]?.conteudos.sessoes.length || 0;
+
+        function deactivateButton(element, status) {
+            if (!element) return;
+            status ? element.classList.add("disabled") : element.classList.remove("disabled");
+        }
+
+        function checkOnload() {
+            if (actualModuleId === 1 && actualSectionId === 1) {
+                deactivateButton(btnNext, false);
+            } else if (actualModuleId === modulesLenght && actualSectionId === sectionsLength) {
+                deactivateButton(btnPrev, false);
+            } else {
+                deactivateButton(btnPrev, false);
+                deactivateButton(btnNext, false);
+            }
+        }
+
+        checkOnload();
+    }, [content4website, refBtnNext, refBtnPrev, searchParams]);
+    // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
+    // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
             {
@@ -220,30 +263,38 @@ export default function ViewModuloCurso() {
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
+                            const moduloData = viewedModules[idModulo - 1];
+                            const sessaoData = moduloData?.sessoes[index];
+
                             return (
-                                <div key={index} className="cardCurso flexCenter entryAnimation" style={{ animationDuration: "1s", animationDelay: (.25 * (index + 1) + "s"), background: sessao.highlightColor, filter: (viewedModules[idModulo - 1].sessoes[index].viewed && animationTimeout) && "saturate(.9)" }}>
+                                <div
+                                    key={index}
+                                    className="cardCurso flexCenter entryAnimation"
+                                    style={{
+                                        animationDuration: "1s",
+                                        animationDelay: `${0.25 * (index + 1)}s`,
+                                        background: sessao.highlightColor,
+                                        filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
+                                    }}
+                                >
                                     <div className="details">
-                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>{sessao.titulo}</h1>
-                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>{sessao.descricao}</span>
+                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
+                                            {sessao.titulo}
+                                        </h1>
+                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                            {sessao.descricao}
+                                        </span>
                                     </div>
                                     <div className="info flex flexColumn" style={{ gap: "10px" }}>
-                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>{viewedModules[idModulo - 1].sessoes[index].viewed ? "visto dia" : "não iniciado"}</p>
+                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                            {sessaoData?.viewed ? "visto dia" : "não iniciado"}
+                                        </p>
                                         <div className="dia flexCenter">
-                                            {
-                                                (() => {
-                                                    const timestamp = viewedModules[idModulo - 1].sessoes[index].timestamp
-                                                    if (timestamp) {
-                                                        const viewedDate = new Date(timestamp);
-                                                        const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
-                                                        return (
-                                                            <h1>
-                                                                {viewedDay}
-                                                            </h1>
-                                                        );
-                                                    }
-                                                    return (<h1>-</h1>)
-                                                })()
-                                            }
+                                            {sessaoData?.timestamp ? (
+                                                <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
+                                            ) : (
+                                                <h1>-</h1>
+                                            )}
                                         </div>
                                         {
                                             (() => {
@@ -263,7 +314,8 @@ export default function ViewModuloCurso() {
                                         }
                                     </div>
                                 </div>
-                            )
+                            );
+
                         })
                     }
                 </div>
@@ -339,7 +391,7 @@ export default function ViewModuloCurso() {
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo, index) => {
                                             return (
-                                                <>
+                                                <div key={index}>
                                                     {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
@@ -391,11 +443,102 @@ export default function ViewModuloCurso() {
                                                             }
                                                         })()
                                                     }
-                                                </>
+                                                </div>
                                             )
                                         })}
                                     </div>
                                 </div>
+                                {
+                                    content4website && (() => {
+                                        const btnNext = refBtnNext.current;
+                                        const btnPrev = refBtnPrev.current;
+                                        const actualSectionId = parseInt(searchParams.get("s")) || 1;
+                                        const actualModuleId = parseInt(searchParams.get("m")) || 1;
+                                        const prevSectionId = actualSectionId - 1;
+                                        const prevModuleId = actualModuleId - 1;
+                                        const nextSectionId = actualSectionId + 1;
+                                        const nextModuleId = actualModuleId + 1;
+                                        const modulesLenght = Curso.modulos.length;
+                                        const sectionsLength = Curso.modulos[actualModuleId - 1]?.conteudos.sessoes.length || 0;
+
+                                        function checkUrlValidDataForPageControl() {
+                                            return !(nextSectionId > sectionsLength + 1 || nextModuleId > modulesLenght + 1 || actualModuleId <= 0 || actualSectionId <= 0)
+                                        }
+                                        function deactivateButton(element, status) {
+                                            status ? element.classList.add("disabled") : element.classList.remove("disabled")
+                                        }
+
+                                        function goToNextPage() {
+                                            if (checkUrlValidDataForPageControl()) {
+                                                if (actualModuleId === modulesLenght && sectionsLength === actualSectionId + 1) {
+                                                    deactivateButton(btnNext, true)
+                                                } else {
+                                                    deactivateButton(btnNext, false)
+                                                }
+
+                                                if (isSectionIndexValid(nextSectionId)) {
+                                                    window.scrollTo(0, 0)
+
+                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
+
+                                                } else if (isModuleIndexValid(nextModuleId)) {
+                                                    window.scrollTo(0, 0)
+
+                                                    navigate(`/moduloCurso?m=${nextModuleId}`)
+                                                } else {
+                                                    deactivateButton(btnNext, true)
+                                                }
+                                            } else {
+                                                navigate(`/moduloCurso?m=${1}&s=${2}`)
+                                            }
+
+                                        }
+                                        function goToPrevPage() {
+                                            if (checkUrlValidDataForPageControl()) {
+                                                if (actualModuleId === 1 && actualSectionId === 2) {
+                                                    deactivateButton(btnPrev, true)
+                                                } else {
+                                                    deactivateButton(btnPrev, false)
+                                                }
+
+                                                if (isSectionIndexValid(prevSectionId)) {
+
+                                                    window.scrollTo(0, 0);
+
+                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
+
+                                                } else if (isModuleIndexValid(prevModuleId)) {
+                                                    const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
+
+                                                    window.scrollTo(0, 0);
+
+                                                    navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                                } else {
+                                                    deactivateButton(btnPrev, true)
+                                                }
+                                            } else {
+                                                navigate(`/moduloCurso?m=${1}&s=${1}`)
+                                            }
+
+                                        }
+                                        return (
+                                            <div className="pageControlButton flex">
+                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                                    <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
+                                                    </svg>
+                                                    <span>Voltar</span>
+                                                </div>
+                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                    <span>Avançar</span>
+                                                    <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        )
+                                    })()
+                                }
                             </div>
                         );
                     })()

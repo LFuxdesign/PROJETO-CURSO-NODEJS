@@ -5,7 +5,7 @@ import GetGithubProfileData from "../../scripts/getGithubProfileData";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
-    const [githubProfilesData, setGithubProfilesData] = useState([]);
+    const [githubProfilesData, setGithubProfilesData] = useState(null);
 
     const profiles = [{ profName: "LFuxdesign", function: "Front-end Developer, UI/UX Designer, Prototyping and Research" }, { profName: "LucasEduardo0803", function: "Research, content structuring, evaluation, testing and thinking about the user experience" }];
 
@@ -96,7 +96,7 @@ export default function Footer() {
                 </div>
                 <div className="social flex flexColumn useObserver">
                     {
-                        githubProfilesData.map((profile, index) => {
+                        githubProfilesData && githubProfilesData.map((profile, index) => {
                             return (
                                 <Link key={index} to={profile.html_url} target="_blank" rel="noopener noreferrer">
                                     <div className="profile flexCenter transition useObserver allowReobserver" style={{ animationDelay: `${.25 * index}s` }}>
@@ -108,7 +108,7 @@ export default function Footer() {
                                             </div>
                                             <div className="linkBtn flexCenter useObserver allowReobserver" title="GitHub">
                                                 <svg className="useObserver allowReobserver" width="30" height="30" viewBox="0 0 364 355" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M182.483 0.587769C82.2458 0.587769 0.968994 81.8526 0.968994 182.102C0.968994 262.297 52.9814 330.336 125.097 354.337C134.172 356.02 137.504 350.4 137.504 345.608C137.504 341.28 137.336 326.979 137.254 311.811C86.7569 322.793 76.1044 290.397 76.1044 290.397C67.8445 269.419 55.9487 263.838 55.9487 263.838C39.4769 252.572 57.1895 252.801 57.1895 252.801C75.4167 254.085 85.0112 271.509 85.0112 271.509C101.204 299.259 127.477 291.237 137.836 286.598C139.467 274.868 144.168 266.856 149.359 262.326C109.043 257.742 66.6638 242.175 66.6638 172.623C66.6638 152.809 73.7527 136.613 85.3623 123.905C83.4794 119.331 77.2658 100.868 87.1249 75.8674C87.1249 75.8674 102.365 70.986 137.045 94.4721C151.528 90.4516 167.055 88.4365 182.481 88.3643C197.907 88.4365 213.448 90.4516 227.953 94.4721C262.599 70.9884 277.82 75.865 277.82 75.865C287.698 100.864 281.487 119.326 279.599 123.898C291.238 136.609 298.279 152.801 298.279 172.616C298.279 242.338 255.818 257.685 215.4 262.179C221.91 267.815 227.712 278.86 227.712 295.796C227.712 320.083 227.505 339.632 227.505 345.608C227.505 350.441 230.768 356.097 239.969 354.318C312.06 330.29 364 262.275 364 182.104C363.998 81.8526 282.73 0.587769 182.483 0.587769Z" fill="#1B1817" />
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M182.483 0.587769C82.2458 0.587769 0.968994 81.8526 0.968994 182.102C0.968994 262.297 52.9814 330.336 125.097 354.337C134.172 356.02 137.504 350.4 137.504 345.608C137.504 341.28 137.336 326.979 137.254 311.811C86.7569 322.793 76.1044 290.397 76.1044 290.397C67.8445 269.419 55.9487 263.838 55.9487 263.838C39.4769 252.572 57.1895 252.801 57.1895 252.801C75.4167 254.085 85.0112 271.509 85.0112 271.509C101.204 299.259 127.477 291.237 137.836 286.598C139.467 274.868 144.168 266.856 149.359 262.326C109.043 257.742 66.6638 242.175 66.6638 172.623C66.6638 152.809 73.7527 136.613 85.3623 123.905C83.4794 119.331 77.2658 100.868 87.1249 75.8674C87.1249 75.8674 102.365 70.986 137.045 94.4721C151.528 90.4516 167.055 88.4365 182.481 88.3643C197.907 88.4365 213.448 90.4516 227.953 94.4721C262.599 70.9884 277.82 75.865 277.82 75.865C287.698 100.864 281.487 119.326 279.599 123.898C291.238 136.609 298.279 152.801 298.279 172.616C298.279 242.338 255.818 257.685 215.4 262.179C221.91 267.815 227.712 278.86 227.712 295.796C227.712 320.083 227.505 339.632 227.505 345.608C227.505 350.441 230.768 356.097 239.969 354.318C312.06 330.29 364 262.275 364 182.104C363.998 81.8526 282.73 0.587769 182.483 0.587769Z" fill="#1B1817" />
                                                 </svg>
                                             </div>
                                         </div>
