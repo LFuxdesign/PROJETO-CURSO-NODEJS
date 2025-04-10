@@ -221,7 +221,7 @@
                         ]
                     },
                     {
-                        "titulo": "Como instalar pacotes do Node.js",
+                        "titulo": "Como instalar pacotes do Node.js", 
                         "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
                         "pathVideoSessao": "",
@@ -249,15 +249,15 @@
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Para remover pacotes no nodejs usamos o <b>npm remove nome_do_pacote</b>, bem simples e claro!",
+                                "pathImgInferior": "../assets/Exemplo/npm remove.png",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": "",
+                                "texto": "Depois da execução do código vai aparecer a quantidade de pacotes removido,auditado e vulneráveis. E a pasta node_modules vai ser limpa e o arquivo package.json vai ser atualizado.",
+                                "pathImgInferior": "../assets/Exemplo/npm remove 2.png",
                                 "pathVideoInferior": ""
                             }
                         ]
@@ -270,7 +270,7 @@
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -306,14 +306,14 @@
                         "highlightColor": "#68EC13",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "As principais do JavaScript no Nodejs são o <i><b>Event Loop</b></i> um modelo non-blocking, permitindo operações concorrentes sem bloquer a thread principal e ideal para aplicações simultâneas de I/O. <i><b>Single-Threaded</b></i>, o Node.js roda em uma única thread, mas usa <i><b>Worked Threads</b></i> para tarefas pesadas em CPU e escalabilidade via cluster mode(múltiplas instâncias do Node). <i><b>CommonJS</i></b> e <i><b>ESM(Módulos)</b></i> é suporte a módulos via <b>require()</b>, <b>Common.JS</b> e <b>import(ES Modules)</b>, dependência gerenciada pelo npm ou yarn. V8 Engine, executar JavaScript com alta performace e suporte a recursos modenos do <i><b>ECMAScript(ES6+)</b></i>. <i><b>Streams</i></b> e <i><b>Buffers</b></i>, otimiza para manipulação de dados em fluxo(streams) e operações com buffers.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "As limitações principais são <i>Single-Threaded</i></b> problemas com <i><b>CPU-Intensive Task</i></b>, código bloqueante com os loops pesados e pode trava o <b>Event Loop</b>, soluções <b>Worker Threads</b>, delegar tarefa a outros serviços. <b>Callback Hell</b>, aninhamento excessivo de callbacks antes de <i><b>promises/async-await</b></i>, solução e usar um async/await ou bibliotecas como Promise.all. Gerenciamento de memória, vazamento de memória podem ocorrer se não forem liberadas referências. Dependência Externas(NPM), o ecossistema tem milhões de pacotes, mas alguns podem ter má qualidade ou vulnerabilidade, problemas com dependency hell(versões conflitante). Falta de suporte a <i><b>Multi-threading</i></b> Nativo, Embora existam <b>Worker Threads</b>, não é tão simples quanto em linguagens como Java ou Go. Processamento de Dados Binários, Embora o Node.js tenha <b>Buffer</b>, manipulação avançada de binários pode ser menos eficiente que em C/C++. Mudanças rápidas na api, algumas api do node.js mudam entre versões, exigindo atualizações frequentes. Segurança, vulnerabilidade em pacotes de terceiros( npm audit é essencial), configurações incorretas podem expor dados sensíveis em produção.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -327,14 +327,161 @@
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "A linguagem JavaScript é excepcional, pois ao mesmo tempo que é extremamento complexas, a mesmo consegue ser muito intuitiva e fácil de compreender suas nuncias. Aqui vamos ver seus conceitos principais. Os tipos de dados e variáveis temos o <b><i>var</i></b>, <b><i>let</i></b> e <b><i>const</i></b> esses são padrões para declarações. Os primitivos são exempladamente <i><b>string</b></i>, <i><b>number</b></i>, <i><b>boolean</b></i>, <i><b>null</b></i>, <i><b>undefined</b></i>, <i><b>symbol</b></i>, <i><b>bigint</b></i>. Os Objetos são ditos como <i><b>object</b></i> e <i><b>array []</i></b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, <b>verificar se é igual o valor (==)</b>, <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Os operadores lógicos ajudam muito na formalização da sentença da operação, em javascript temos três. O <b>se e somente se (&&)</b> ex: ((5 + 3 == 8) && (3 + 5 == 8) ) == verdadeiro. <b>O se esse ou esse (||)</b> ex: ((4%2 == 0) || (3%2 == 0)) == verdadeiro, para avaliar a negação de uma sentença só preciso usar o <b>simbolo (!)</b> ex: !(2 + 3 == 6) == verdadeiro.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "As atribuições começa pelo <b>símbolo (=)</b> ex: A = 5 o variável oberar o valor 5 em sua composição. O <b>simbolo (+=)</b> ex: A += 5 o valor 5 somara com o valor que está dentro da variável. O <b>simbolo (-=)</b> ex: A -= 5 o valor subtrairá o valor que está dentro da variável.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Diante as estruturas de controle, são todas as padrões de qualquer linguagem. Temos o <b>if...else = se...senão</b>, <b>switch == coleção de probabilidade</b>. Os loops temos o <b>for == parar em alguma estancia</b>, <b>while == enquanto algo operacional estiver acontecendo</b>, <b>do...while == fazer enquanto algo estiver acontecendo</b>, <b>for...of == é loop que permite iterar sobre elementos</b>, <b>for...in == já é um loop usado parar iterar sobre propriedades enumeráveis de um objetos</b>.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Temos 4 tipos de funções. A declaração <b>function nomeFunção(){}</b>. Expressão <b>const funcao = function(){}</b>. Arrow functions <b>() => {}</b>. E o parâmetros e retorno (<b>return</b>). O retorno é o valor que a função devolve após sua execução, e o parâmetro é o valor que a função recebe como entrada. Exemplo: function soma(a, b) { return a + b; } onde a e b são os parâmetros e o resultado da soma é o retorno da função.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Os principais objetos e protótipos são a coleção de propriedade ({ chave: valor }), herança baseada em protótipos e não em classe tradicionas.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No javaScript os métodos são diversos. O <b>push()</b> é usado para adicionar um o mais elementos ao final de um array e retornar o novo comprimento do array. O <b>pop()</b> remove o último elemento de um array e retornar esse elemento, modifica o array original e se tiver vazio retorna <i>undefined</i>. O método <b>shift()</b> remove o primeiro elemento de um array e retorna esse elemento. Modificando o array original e deslocando todos os outros elementos para um índice menor. O método <b>unshift()</b> adiciona um ou mais elementos no início de um array e retorna o novo comprimento do array, deslocando os elementos existentes para índices maiores. O método map() é uma função de arrays em javaScript que cria um novo array com os resultados da aplicação de cada elemento do array original. Já o método <b>filter()</b> cria um novo array com todos os elementos que passam em uma implementação fornecida pela função. É extremamente últi para selecionar elementos de array baseado em condições específicas. O método <b>reduce()</b> é umas das operações para manipulação de arrays em JavaScript, executa uma função redutora para cada elemento do array resultando em um único valor de retorno. Já o <b>forEach()</b> é uma função fornecida uma vez para cada elemento de um array, em ordem crescente de índice, sendo muito diferente de map() ou filter(), o forEach não retorna um novo array o fundamento dele é usado para sanar efeitos colaterais.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No <i><b>âmbito de variável</i></b> de escopo é algo bem simples, temos a global (<b>var</b>) e a de bloco (<b>let e const</b>) que fica retida na (<b>{}</b>) da função em afim.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Já no <i><b>Eventos e Dom(Document Object Model)</b></i>, temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Já no âmbito <i><b>Assincronismo</b></i> é um conceito que permite a execução de operações demoradas sem bloquear a thread principal, temos em primeiro lugar os <b>Callbacks</b> que é nada mais que funções passadas como argumentos para serem executadas depois. <b>Promises</b> é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona, temos a <i>.then()</i> é um método de Promises usado para lidar com o resultado bem-sucedido de uma operação assíncrona, também permite encadear operações na forma limpa e legível. Outra é o <i>.catch()</i> um método essencial para tratar erros em promises no JavaScript, ele procura e capta falhas no códigos dentro de uma Promise ou .then() anterior no encadeamento. Já em ultimo nas Promises <i>Async/Await</i> é uma forma mais modernar, atual e legível de trabalhar com operações assíncronas em JavaScript, assim permitindo escrever códigos de maneira síncrona, facilitando o entendimento e a manutenção do mesmo. Em ultimo dos Assincronismo temos o <b>Fetch API</b> é a forma mais moderna de fazer requisições HTTP em JavaScript, substituindo o antigo <i>XMLHttpRequest</i>, ela fornece uma interface mais poderosa e flexível para buscar recursos de forma assíncrona, retornando promises nativas.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O <i><b>tratamento de erros</b></i> no códigos é constituindo pelo <b>try/catch</b> é uma estrutura fundamental em JavaScript para capturar e tratar erros de formar controlada, assim evitando quebras inesperadas que interrompam o fluxo do código. E também é constituindo pelo <b>finally</b> um bloco em uma parte estrutural do try/catch que sempre é executado independente  de ocorrer um erro ou não.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No JavaScript temos a <i><b>Classes(ES6+)</b></i> que obtém a sintaxe <b>class</b> que é a forma mais clara e orientada ao objeto para criar estruturas reutilizáveis com uma sintaxe limpa e recursos avançados. Temos também o <b>constructor</b> um método em classes que automaticamente quando o objeto é criado o mesmo é executado a partir da classes. Já no conceito de herança temos o <b>extends</b> que permite criar uma classe filha em uma classe pai, herdando seus métodos e propriedade.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em <i><b>Módulos (ES6)</b></i> temos duas modularizações, o <b>import  e export</b>  é uma forma moderna de compartilhar e organizar arquivos JavaScript, esse sistema do ES6 surgiu para substituir os antigos sistema como CommonJS e AMD",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O <i><b>Hoisting</b></i> em JavaScript é um comportamento tipico onde a declaração de variáveis e funções são movidas para o topo de seu escopo antes da execução do código.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O <i><b>Closures</b></i> são um dos conceitos mais poderosos e até importante, eles permitem que a funções “lembrem” e acessem variáveis de seu escopo léxico, mesmo depois  a execução da função externa ter sido finalizada.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O <i><b>Destructuring</b></i> é uma sintaxe no ES6 que extrair valores de arrays ou objetos de forma mais legível.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O <i><b>Spread/Rest Operator</b></i> é nada menos que <b>(...)</b> serve para espalhar ou agrupar elementos. O <b>Spread</b> é usado para expandir elementos de um array ou objeto, enquanto o <b>Rest</b> é usado para agrupar múltiplos argumentos em um único array.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Agora o <i><b>Template Literals</b></i> o template strings é somente uma área de adicionamento de expressão variável, representado dessa forma <b>(${})</b>. São uma sintaxe introduzida no ES6 que cria de forma flexível e poderosa, pode ser usando <b>(``)</b> também.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "E também temos o <i><b>JSON(JavaScript Object Notation)</b></i> composto de <b>JSON.parse()</b> e junto com <b>JSON.stringify()</b>. O método <i>JSON.parse()</i> é usado para converter uma string JSON válida em um objeto JavaScript. Já o método <i>JSON.stringify()</i> converter um objeto JavaScript em uma string JSON, criando assim uma lista seriada de dados para compartilhamento e armazenamento.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No <i><b>Web APIs</b></i> fornece interfaces pelos navegadores que permite e cria interação com recursos do sistema e funcionalidades avançadas, com capacidades específicas para desenvolvimento web. Os principais são <b>localStorage</b>, <b>sessionStorage</b>, <b>setTimeout</b> e <b>setInterval</b>. No <i>localStorege</i> permite armazenar dados no navegador do usuário, como se fosse um cookies, só que não expiram até ser diretamente removidos, tem maior capacidade até mais de 5MB e não são enviados automaticamente em requisições. Já no <i>sessionStorage</i> e umas da forma de armazenar dados temporariamente para sessão atual da aba  do navegador e quando fecha a aba os dados se apagam automaticamente, e lógico cada aba tem seu próprio sessionStorage. E no <i>setTimeout</i> é uma função para executar uma ação em um tempo exato contabilizado em <b>milissegundos</b>. Em ultimo o <i>setInterval</i> é um pouco diferente do <b>setTimeout</b> esse executa repetidamente em um intervalo de tempo definido.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em ultimo tópico <i><b>Strict Mode</b></i> ele é fundamental para tornar o código JavaScript mais seguro, evitando assim más práticas. O código em si é <b>(use strict)</b> o mesmo é rigoroso e evitar erros e deixa limpo o executar do código em si.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
