@@ -5,7 +5,7 @@ import GetGithubProfileData from "../../scripts/getGithubProfileData";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
-    const [githubProfilesData, setGithubProfilesData] = useState([]);
+    const [githubProfilesData, setGithubProfilesData] = useState(null);
 
     const profiles = [{ profName: "LFuxdesign", function: "Front-end Developer, UI/UX Designer, Prototyping and Research" }, { profName: "LucasEduardo0803", function: "Research, content structuring, evaluation, testing and thinking about the user experience" }];
 
@@ -96,7 +96,7 @@ export default function Footer() {
                 </div>
                 <div className="social flex flexColumn useObserver">
                     {
-                        githubProfilesData.map((profile, index) => {
+                        githubProfilesData && githubProfilesData.map((profile, index) => {
                             return (
                                 <Link key={index} to={profile.html_url} target="_blank" rel="noopener noreferrer">
                                     <div className="profile flexCenter transition useObserver allowReobserver" style={{ animationDelay: `${.25 * index}s` }}>
