@@ -270,7 +270,7 @@
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b>.",
+                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b> ou pode-se usar apenas ou <b>npm install</b> que vai simplemente atualizar usando como referência os dados do package.json.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
