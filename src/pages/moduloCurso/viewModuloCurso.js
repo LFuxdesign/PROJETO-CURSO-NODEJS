@@ -5,7 +5,7 @@ import Curso from "../../conteudo/curso.json"
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
-import { cleanHtml } from "../../scripts/scripts";
+import { capFirstLetter, cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
@@ -264,10 +264,10 @@ export default function ViewModuloCurso({ content4website }) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
-            <div className={"scrollToTopBtn flexCenter" + (!showScrollToTopBtn ? " hide": "")} title="Ir para o topo" onClick={()=>{window.scrollTo(0,0)}}>
+            <div className={"scrollToTopBtn flexCenter" + (!showScrollToTopBtn ? " hide" : "")} title="Ir para o topo" onClick={() => { window.scrollTo(0, 0) }}>
                 <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 17L16.2929 1.70711C16.6834 1.31658 17.3166 1.31658 17.7071 1.70711L33 17" stroke="#212529" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -386,7 +386,6 @@ export default function ViewModuloCurso({ content4website }) {
                                             })()}
                                         </div>
                                     </div>
-
                                     {
                                         (() => {
                                             if (sessao.pathVideoSessao) {
@@ -411,11 +410,14 @@ export default function ViewModuloCurso({ content4website }) {
                                     }
                                 </div>
                                 <div className="textContent flex flexColumn entryAnimation transition" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
-                                    <h1 className="title">{sessao.titulo}</h1>
+                                    <h1 className="title">{capFirstLetter(sessao.titulo)}</h1>
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo, index) => {
                                             return (
                                                 <div key={index}>
+                                                    {
+                                                        paragrafo.subtitulo && <><br /><br /><br /><h1>• {capFirstLetter(paragrafo.subtitulo)}</h1><br /></>
+                                                    }
                                                     {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
@@ -441,7 +443,7 @@ export default function ViewModuloCurso({ content4website }) {
 
 
 
-                                                    <p key={index} className="useObserver" dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }} /><br />
+                                                    <p key={index} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.texto)) }} /><br />
 
 
 

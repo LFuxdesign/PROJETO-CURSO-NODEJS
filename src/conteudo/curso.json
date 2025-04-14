@@ -27,6 +27,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Ryan Dahl desenvolveu Node.js inspirado pelo processo de carregamento de arquivos no Flickr e observando que servidores como o Apache gerenciavam conexões de forma ineficaz. Dahl percebeu a necessidade de um ambiente capaz de gerenciar milhares de conexões simultâneas sem se tornar bloqueante, e assim nasceu o Node.js.<br/><br/>&#9• Motor V8 da Google: Node.js utiliza o motor V8, que é conhecido por sua alta performance na execução de código JavaScript.<br/>&nbsp;&nbsp;&nbsp;&nbsp;• Loop de Eventos Assíncrono: A principal inovação de Node.js é seu loop de eventos assíncrono, permitindo que operações de entrada e saída sejam executadas sem bloqueios.<br/>&#9• Gerenciamento Eficiente de Conexões: Node.js é capaz de lidar com milhares de conexões simultâneas de maneira eficiente, tornando-o ideal para aplicações em tempo real.",
@@ -34,6 +35,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "A popularidade de Node.js cresceu rapidamente após seu lançamento, especialmente devido à sua capacidade de lidar com conexões simultâneas e ao fato de que os desenvolvedores já estavam familiarizados com JavaScript, a linguagem predominante no desenvolvimento web. Node.js é amplamente utilizado para criar aplicações de alta performance, como servidores web, APIs e serviços de streaming. Node.js revolucionou o desenvolvimento de aplicações web, oferecendo uma solução poderosa e eficiente para o lado do servidor, e continua a ser uma escolha popular entre desenvolvedores por suas características inovadoras e desempenho robusto.",
@@ -55,6 +57,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<ol start='2'><li><b>Paradigma Procedural:</b> É como se fosse uma extensão do paradigma imperativo que organiza o código em procedimentos ou funções, isso permite que o código se torne mais reutilizável e mais modular, melhorando o processo de desenvolvimento, escrita e leitura e facilitando a manutenção do código posteriormente.</li></ol>",
@@ -62,6 +65,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<b>Características:</b><br/>Para este paradigma temos as seguintes características:<br/>&#9• <b>Divisão do programa em sub-rotinas ou funções</b>;<br/>&#9• <b>Melhoria da manutenção e leitura do código</b>;<br/>&#9• <b>A otimização do fluxo de trabalho.</b>",
@@ -69,6 +73,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Abaixo, temos um exemplo que mostra como isso funciona, temos uma função <code>somar</code></i></b> que encapsula a operação de adição, possibilitando a reutilização da função infinitas vezes no código, função essa que irá retornar o resultado da soma dos parâmetros <code>a</code></i></b> e <code>b</code></i></b>, isso é extremamente positivo pois já retorna o número diretamente no final, por isso que ao usarmos o <code>console.log(resultado)</code></i></b> a saída que o código nos retornará é o próprio número",
@@ -76,6 +81,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<ol start='3'>&#9<li><b>Programação Orientada a Objetos (POO): </b> Organiza o código em torno de &quot;objetos&quot; que encapsulam dados e comportamentos. Linguagens como Java, C++ e Python adotam esse paradigma. A utilização do paradigma da Programação Orientada a Objetos (POO) no Node.js melhora a organização, reutilização e segurança do código, tornando-o mais modular, escalável e fácil de manter. Com conceitos como herança, encapsulamento e polimorfismo, a POO permite criar sistemas mais estruturados e flexíveis.</li></ol>",
@@ -83,6 +89,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<b>Características:</b><br/>Podemos destacar as seguintes características do POO no Node.js:<br/>&#9• <b>Encapsulamento:</b> proteção dos dados internos do objeto;<br/>&#9• <b>Herança:</b> capacidade de criar classes baseadas (herdadas) em classes existentes;<br/>&#9• <b>Polimorfismo:</b> permite que diferentes objetos respondam de maneira específica a uma mesma mensagem ou método.",
@@ -90,6 +97,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Abaixo temos um exemplo dessa vez sobre o POO sendo aplicado no Node.js, aqui, temos a classe <code>Animal</code></i></b> que tem suas características genéricas e seu construtor, o construtor em POO, é um método &quot;padrão&quot; necessário para que as propriedades (parâmetros) do objeto sejam inicializadas, imagine aqui as características gerais de todo(ou do grupo que esteja definindo) animal faz, neste caso, estamos considerando que todo animal faz um som, portanto, definimos aqui o método <code>emitirSom()</code></i></b>, que indica ao usuário que o animal esta fazendo um som. Mais abaixo, na linha 9, temos outra classe que está &quot;estendendo&quot; da classe genérica <code>Animal</code></i></b>, isso indica que a classe que foi estendida, herdará todas as características genéricas definidas na classe <code>Animal</code></i></b>, nesse caso, criamos a classe Cachorro, que estende (herdando suas características) da classe <code>Animal</code></i></b>, mas, sabemos que o cachorro late, então, realizamos um o que chamamos de overriding, estamos sobrescrevendo o método original <code>emitirSom()</code></i></b>, para especificar que, para este animal no caso o cachorro, quando chamarmos o método <code>emitirSom()</code></i></b>, possamos retornar que o cachorro esta latindo. Nas linhas 14 e 15 estamos criando o que chamamos de Instâncias das classes criadas, podemos criar quantas instâncias quisermos, e atribuir a elas os parâmetros definidos no construtor, nesse caso o nome do animal, e, por fim, nas linhas 16 e 17 estamos &quot;invocando&quot;, o método <code>emitirSom()</code></i></b> definido nas classes, no caso estamos falando &quot;animal x emita um som&quot;, e o código irá nos retornar o que pedimos:",
@@ -97,6 +105,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<ol start='4'>&#9<li><b>Programação Funcional:</b> A programação funcional é um paradigma que trata a computação como a avaliação de funções matemáticas, evitando mudanças de estado e dados mutáveis. Diferentemente da programação imperativa, que se baseia em comandos sequenciais que alteram o estado do programa, a programação funcional descreve o que deve ser alcançado por meio de funções.</li></ol>",
@@ -104,6 +113,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<b>Características:</b><br/>Este paradigma aplicado no Node.js a programação funcional pode ser empregada das seguintes maneiras:<br/>&#9• <b>Uso de Funções de Alta Ordem:</b> Funções como <code>map</code>, <code>filter</code> e <code>reduce</code> permitem manipular coleções de dados de forma declarativa, promovendo um código mais conciso e legível;<br/>&#9• <b>Imutabilidade:</b> Embora o JavaScript não imponha imutabilidade por padrão, é possível utilizar bibliotecas como Immutable.js para garantir que os dados não sejam alterados após a criação, isso permitirá que os dados, uma vez criados, não são alterados. Em vez disso, novas versões dos dados são geradas quando necessário, o que ajuda a prevenir erros comuns relacionados a alterações inesperadas de estado;<br/>&#9• <b>Funções puras:</b> Escrever funções puras e combiná-las facilita a criação de aplicações modulares e testáveis no Node.js.",
@@ -111,6 +121,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Aqui, temos o exemplo que mostra o paradigma funcional sendo aplicado no Node.js. Aqui, temos a função <code>multiplicarPorDois</code>, que é um exemplo de função pura. Em programação funcional, funções puras são aquelas que, dado um mesmo conjunto de entradas, sempre retornam o mesmo resultado, sem modificar estados externos ou causar efeitos colaterais. Essa função recebe um número como argumento e retorna esse número multiplicado por dois.",
@@ -118,6 +129,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Logo abaixo, temos a função <code>aplicarOperacao</code>, que exemplifica o conceito de função de alta ordem. Em programação funcional, uma função de alta ordem é aquela que recebe outra função como argumento ou retorna uma função. No nosso caso, <code>aplicarOperacao</code> recebe um array e uma função, aplicando essa função a cada elemento do array utilizando o método <code>map()</code>. O método <code>map()</code> é uma característica importante da programação funcional, pois permite transformar coleções de dados sem modificar a original, garantindo imutabilidade.",
@@ -125,6 +137,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Na linha 10, criamos um array de números [1, 2, 3, 4, 5]. Em seguida, chamamos <code>aplicarOperacao</code>, passando esse array e a função <code>multiplicarPorDois</code> como parâmetros. O resultado é um novo array onde cada número foi multiplicado por dois, sem alterar o array original. Esse conceito de imutabilidade é fundamental na programação funcional, pois evita efeitos colaterais e facilita a manutenção do código.",
@@ -132,6 +145,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Por fim, exibimos o resultado no console, que nos retorna [2, 4, 6, 8, 10]. Esse exemplo mostra como o paradigma funcional pode ser aplicado no Node.js para escrever código modular, previsível e mais fácil de testar.",
@@ -139,6 +153,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<ol start='5'>&#9<li><b>Programação Declarativa:</b> A programação declarativa é um paradigma que se concentra em descrever o que deve ser feito, sem especificar detalhadamente como realizar as operações. Diferentemente da programação imperativa, que define uma sequência explícita de comandos, a abordagem declarativa permite que o desenvolvedor especifique o resultado desejado, delegando ao sistema a responsabilidade de determinar o fluxo de execução necessário para alcançá-lo.</li></ol>",
@@ -146,6 +161,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<b>Características:</b><br/>Principais Características da Programação Declarativa no Node.js:<br/>&#9• <b>Abstração de Controle:</b> O programador define o objetivo final, e o sistema gerencia os detalhes de implementação para atingir esse resultado;<br/>&#9• <b>Imutabilidade e Ausência de Estado:</b> As operações não dependem de estados internos ou variáveis mutáveis, promovendo previsibilidade e facilitando a depuração;<br/>&#9• <b>Transparência Referencial: :</b> Funções ou expressões produzem o mesmo resultado quando dadas as mesmas entradas, sem efeitos colaterais, permitindo substituições seguras e otimizando o código;<br/>&#9• <b>Concisão e Clareza:</b> A sintaxe tende a ser mais enxuta e expressiva, focando no &quot;o quê&quot; em vez do &quot;como&quot;, o que melhora a legibilidade e manutenção do código.",
@@ -153,6 +169,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No contexto do Node.js, a programação declarativa é frequentemente aplicada por meio de técnicas funcionais e uso de APIs que permitem descrever operações de forma declarativa.",
@@ -160,6 +177,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Abaixo temos um exemplo dessa vez sobre o paradigma declarativo sendo aplicado no Node.js. Diferente da programação imperativa, onde descrevemos passo a passo como o programa deve executar cada ação, na programação declarativa focamos no que queremos alcançar, deixando que a linguagem e suas funções abstratas lidem com os detalhes da execução. No exemplo abaixo, temos um array de números e utilizamos funções declarativas como <code>filter()</code>, <code>map()</code> e <code>reduce()</code> para manipular os dados de forma clara e expressiva, sem precisar de laços ou variáveis auxiliares.",
@@ -167,6 +185,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Primeiramente, criamos um array de números de 1 a 10. Em seguida, definimos a função <code>ehPar</code>, que verifica se um número é par, e a função <code>aoQuadrado</code>, que eleva um número ao quadrado. Ambas são funções puras, pois sempre retornam o mesmo resultado para os mesmos argumentos, sem causar efeitos colaterais.",
@@ -174,6 +193,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Na linha 10, aplicamos a cadeia de métodos declarativos: primeiro usamos <code>filter(ehPar)</code>, que retorna apenas os números pares do array; depois <code>map(aoQuadrado)</code>, que transforma cada número par em seu quadrado; e por fim <code>reduce((acc, val) => acc + val, 0)</code>, que soma todos os valores resultantes. Esse encadeamento de funções evita a necessidade de estruturas imperativas, como <code>for</code> ou <code>while</code>, tornando o código mais legível e conciso.",
@@ -181,6 +201,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Ao final, o código nos retorna 220, que é a soma dos quadrados dos números pares do array original. Esse exemplo mostra como a programação declarativa torna o código mais expressivo e fácil de entender, permitindo que o desenvolvedor foque no resultado desejado, sem se preocupar com os detalhes de implementação.",
@@ -188,6 +209,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<ol start='6'>&#9<li><b>Programação Orientada a Eventos:</b> A Programação Orientada a Eventos é um paradigma no qual o fluxo de execução de um programa é determinado por eventos, como interações do usuário, mensagens de outros sistemas ou mudanças de estado. No Node.js, esse paradigma é fundamental, permitindo a construção de aplicações assíncronas e altamente responsivas.</li></ol>",
@@ -195,6 +217,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<b>Características:</b><br/>Principais Características da Programação Orientada a Eventos no Node.js:<br/>&#9• <b>Assincronicidade:</b> As operações são executadas de forma não bloqueante, permitindo que o programa continue processando outras tarefas enquanto aguarda a conclusão de operações anteriores;<br/>&#9• <b>Emissão e Escuta de Eventos:</b> Componentes do sistema podem emitir eventos, enquanto outros &quot;ouvintes&quot; reagem a esses eventos, facilitando a comunicação entre diferentes partes da aplicação;<br/>&#9• <b>Loop de Eventos (Event Loop):</b> Mecanismo central do Node.js que gerencia a execução de operações assíncronas, despachando eventos e garantindo que as funções de callback correspondentes sejam executadas no momento apropriado.",
@@ -202,6 +225,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Abaixo, temos um exemplo que demonstra a aplicação da Programação Orientada a Eventos no Node.js. Utilizamos o módulo events para criar um emissor de eventos personalizado que reage a um evento específico.",
@@ -209,6 +233,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Primeiro, vamos realizar a importação do módulo <code>events</code>: Utilizamos o módulo interno do Node.js chamado <code>events</code>, que fornece a classe <code>EventEmitter</code> para a criação e manipulação de eventos. Depois temos a criação de uma classe personalizada <code>MeuEmissor</code>, que estende <code>EventEmitter</code>, permitindo que instâncias dessa classe emitam e escutem eventos personalizados, e, em seguida temos a instanciação do Emissor de Eventos, aqui estamos criando uma instância de <code>MeuEmissor</code> chamada <code>meuEmissor</code>, que será utilizada para emitir e ouvir eventos, depois, realizamos o registro de um Ouvinte de Evento, utilizamos o método <code>on</code> para registrar uma função que será executada sempre que o evento '<code>eventoPersonalizado</code>' for emitido. Nesse caso, a função simplesmente imprime uma mensagem no console, por fim temos a emissão do evento personalizado: Chamamos o método <code>emit</code> para disparar o evento '<code>eventoPersonalizado</code>', acionando todos os ouvintes registrados para esse evento. Como resultado, a mensagem definida anteriormente é exibida no console.",
@@ -216,6 +241,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<br/>No geral os paradigmas de programação no Node.js são fundamentais para entender como essa tecnologia se destaca no desenvolvimento de aplicações modernas. Ele adota principalmente os paradigmas assíncrono e orientado a eventos, que permitem um alto desempenho em aplicações de rede e sistemas escaláveis. Além disso, suporta a programação funcional com o uso de funções de ordem superior, promessas e async/await, tornando o código mais modular e reutilizável.",
@@ -223,6 +249,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Por outro lado, o paradigma orientado a objetos também pode ser utilizado, principalmente com classes do ES6, facilitando a organização de grandes projetos. No entanto, devido à natureza do JavaScript, a combinação de múltiplos paradigmas dentro do mesmo projeto é comum e pode ser benéfica.",
@@ -230,6 +257,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Em conclusão, o Node.js oferece uma abordagem flexível e eficiente para o desenvolvimento de software, permitindo que os desenvolvedores escolham os paradigmas que melhor se adaptam às necessidades do projeto. Seu modelo assíncrono e não bloqueante, aliado à versatilidade da linguagem, faz dele uma escolha poderosa para aplicações escaláveis e de alto desempenho.",
@@ -240,7 +268,7 @@
                     },
                     {
                         "titulo": "Conceitos de IDE, instalação e configuração do VS Code",
-                        "descricao": "Aqui você irá descobrir o que é uma IDE, para que serve, como realizar a instalação completa, dicas e configuração da IDE do Visual Studio Code",
+                        "descricao": "Aqui você irá descobrir o que é uma IDE, para que serve, como realizar a instalação completa, dicas e configuração da IDE do Visual Studio Code.",
                         "pathImgSessao": "/assets/Exemplo/EX1 visual ProjeCLP1.png",
                         "pathVideoSessao": "",
                         "highlightColor": "rgb(113 36 197)",
@@ -251,6 +279,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX2 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "Na imagem acima temos a tela inicial da IDE, claro depois das configurações pois instalação, aqui veremos como na imagem abaixo de Start/Começar as opções New File/Novo arquivo, Open File/Abri arquivo, Open Folder/Abri Pasta, Clone Git Repository/ Clonar repositorio do Git, Connect to/ Conectar para. As ultimas duas opções vamos aprofundar mais para frente no curso, aqui vamos focar nas primeiras 3 opções. Ao clicar em New File vamos gera a seguinte ação.",
@@ -258,6 +287,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX4 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herda do JavaScript o js. Como no exemplo abaixo vamos criar o arquivo <b>Primeiro Script.js</b>, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
@@ -265,6 +295,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
@@ -272,11 +303,13 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX6 visual ProjeCLP1.png",
                                 "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código <b>cd 'diretorio'</b> para link a pasta do arquivo e usa o <b>node 'Primeiro Script.js'</b> e pressiona enter, assim mostra as imagens abaixo.",
                                 "pathImgInferior": "/assets/Exemplo/EX7 visual ProjeCLP1.png"
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX8 visual ProjeCLP1.png",
                                 "texto": "Depois de ter começado um projeto pode salvar o arquivo em file depois save e aproveitar para ativar o autosave para a cada mudança não seja perdida! E caso vem ter um acesso futuro no arquivo pode o acessá-lo em Open File da tela inicial e se quiser abri uma pasta inteira dos arquivos do seu projeto pode-se usar o Open Folder.",
                                 "pathImgInferior": "",
@@ -308,6 +341,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que <a href='https://code.visualstudio.com/' target='_blank'>site de instalação</a> logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
@@ -332,6 +366,7 @@
                                 "texto": "Entendendo mais abaixo sobre o JavaScript e Node!"
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Segundo o livro: <b><i>Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes</b></i>. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
@@ -366,6 +401,7 @@
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express.",
@@ -373,6 +409,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
@@ -394,6 +431,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Bem , temos diversos tipos de dependência vamos explicar um por um. <b>Dependência Padrão</b> são pacotes essenciais para o funcionamento em produção com já citado express, lodash, axios… todos são listado em arquivo chamado package.json na chave <i>dependencies</i>. <b>Dependência Opcionais</b> são pacotes que se não poderem ser instalados, não deverão impedir a instalação nem o funcionamento do projeto, usa-se esse recurso quando tens pacote especifico que pode  haver de não estar disponíveis em todos os sistemas operacionais, são listada no arquivo package.json na chave <i>optinalDependencies</i>. <b>Dependências de Desenvolvimento</b> são pacotes necessários só durante a produção do projeto, mas não para o projeto em si na sua instalação e funcionamento. Exemplos eslint, jest, typescript… são listada no arquivo package.json na chave <i>devDependencies</i>. <b>Dependências de pares</b> são pacotes que o projeto necessita que o usuário tenha instalado na maquina e não pode ser instalado de forma automática, mas sim manual! Como plugins ou biblioteca exemplo webpack, isso também são listada no arquivo package.json na chave <i>peerDependencies</i>.",
@@ -403,7 +441,7 @@
                         ]
                     },
                     {
-                        "titulo": "Como instalar pacotes do Node.js", 
+                        "titulo": "Como instalar pacotes do Node.js",
                         "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
                         "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
                         "pathVideoSessao": "",
@@ -415,6 +453,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -436,6 +475,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Depois da execução do código vai aparecer a quantidade de pacotes removido,auditado e vulneráveis. E a pasta node_modules vai ser limpa e o arquivo package.json vai ser atualizado.",
@@ -457,6 +497,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -493,6 +534,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "As limitações principais são <i>Single-Threaded</i></b> problemas com <i><b>CPU-Intensive Task</i></b>, código bloqueante com os loops pesados e pode trava o <b>Event Loop</b>, soluções <b>Worker Threads</b>, delegar tarefa a outros serviços. <b>Callback Hell</b>, aninhamento excessivo de callbacks antes de <i><b>promises/async-await</b></i>, solução e usar um async/await ou bibliotecas como Promise.all. Gerenciamento de memória, vazamento de memória podem ocorrer se não forem liberadas referências. Dependência Externas(NPM), o ecossistema tem milhões de pacotes, mas alguns podem ter má qualidade ou vulnerabilidade, problemas com dependency hell(versões conflitante). Falta de suporte a <i><b>Multi-threading</i></b> Nativo, Embora existam <b>Worker Threads</b>, não é tão simples quanto em linguagens como Java ou Go. Processamento de Dados Binários, Embora o Node.js tenha <b>Buffer</b>, manipulação avançada de binários pode ser menos eficiente que em C/C++. Mudanças rápidas na api, algumas api do node.js mudam entre versões, exigindo atualizações frequentes. Segurança, vulnerabilidade em pacotes de terceiros( npm audit é essencial), configurações incorretas podem expor dados sensíveis em produção.",
@@ -514,6 +556,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, <b>verificar se é igual o valor (==)</b>, <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
@@ -521,6 +564,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Os operadores lógicos ajudam muito na formalização da sentença da operação, em javascript temos três. O <b>se e somente se (&&)</b> ex: ((5 + 3 == 8) && (3 + 5 == 8) ) == verdadeiro. <b>O se esse ou esse (||)</b> ex: ((4%2 == 0) || (3%2 == 0)) == verdadeiro, para avaliar a negação de uma sentença só preciso usar o <b>simbolo (!)</b> ex: !(2 + 3 == 6) == verdadeiro.",
@@ -528,6 +572,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "As atribuições começa pelo <b>símbolo (=)</b> ex: A = 5 o variável oberar o valor 5 em sua composição. O <b>simbolo (+=)</b> ex: A += 5 o valor 5 somara com o valor que está dentro da variável. O <b>simbolo (-=)</b> ex: A -= 5 o valor subtrairá o valor que está dentro da variável.",
@@ -535,6 +580,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Diante as estruturas de controle, são todas as padrões de qualquer linguagem. Temos o <b>if...else = se...senão</b>, <b>switch == coleção de probabilidade</b>. Os loops temos o <b>for == parar em alguma estancia</b>, <b>while == enquanto algo operacional estiver acontecendo</b>, <b>do...while == fazer enquanto algo estiver acontecendo</b>, <b>for...of == é loop que permite iterar sobre elementos</b>, <b>for...in == já é um loop usado parar iterar sobre propriedades enumeráveis de um objetos</b>.",
@@ -542,6 +588,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Temos 4 tipos de funções. A declaração <b>function nomeFunção(){}</b>. Expressão <b>const funcao = function(){}</b>. Arrow functions <b>() => {}</b>. E o parâmetros e retorno (<b>return</b>). O retorno é o valor que a função devolve após sua execução, e o parâmetro é o valor que a função recebe como entrada. Exemplo: function soma(a, b) { return a + b; } onde a e b são os parâmetros e o resultado da soma é o retorno da função.",
@@ -549,6 +596,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Os principais objetos e protótipos são a coleção de propriedade ({ chave: valor }), herança baseada em protótipos e não em classe tradicionas.",
@@ -556,6 +604,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No javaScript os métodos são diversos. O <b>push()</b> é usado para adicionar um o mais elementos ao final de um array e retornar o novo comprimento do array. O <b>pop()</b> remove o último elemento de um array e retornar esse elemento, modifica o array original e se tiver vazio retorna <i>undefined</i>. O método <b>shift()</b> remove o primeiro elemento de um array e retorna esse elemento. Modificando o array original e deslocando todos os outros elementos para um índice menor. O método <b>unshift()</b> adiciona um ou mais elementos no início de um array e retorna o novo comprimento do array, deslocando os elementos existentes para índices maiores. O método map() é uma função de arrays em javaScript que cria um novo array com os resultados da aplicação de cada elemento do array original. Já o método <b>filter()</b> cria um novo array com todos os elementos que passam em uma implementação fornecida pela função. É extremamente últi para selecionar elementos de array baseado em condições específicas. O método <b>reduce()</b> é umas das operações para manipulação de arrays em JavaScript, executa uma função redutora para cada elemento do array resultando em um único valor de retorno. Já o <b>forEach()</b> é uma função fornecida uma vez para cada elemento de um array, em ordem crescente de índice, sendo muito diferente de map() ou filter(), o forEach não retorna um novo array o fundamento dele é usado para sanar efeitos colaterais.",
@@ -563,6 +612,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No <i><b>âmbito de variável</i></b> de escopo é algo bem simples, temos a global (<b>var</b>) e a de bloco (<b>let e const</b>) que fica retida na (<b>{}</b>) da função em afim.",
@@ -570,6 +620,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Já no <i><b>Eventos e Dom(Document Object Model)</b></i>, temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
@@ -577,6 +628,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Já no âmbito <i><b>Assincronismo</b></i> é um conceito que permite a execução de operações demoradas sem bloquear a thread principal, temos em primeiro lugar os <b>Callbacks</b> que é nada mais que funções passadas como argumentos para serem executadas depois. <b>Promises</b> é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona, temos a <i>.then()</i> é um método de Promises usado para lidar com o resultado bem-sucedido de uma operação assíncrona, também permite encadear operações na forma limpa e legível. Outra é o <i>.catch()</i> um método essencial para tratar erros em promises no JavaScript, ele procura e capta falhas no códigos dentro de uma Promise ou .then() anterior no encadeamento. Já em ultimo nas Promises <i>Async/Await</i> é uma forma mais modernar, atual e legível de trabalhar com operações assíncronas em JavaScript, assim permitindo escrever códigos de maneira síncrona, facilitando o entendimento e a manutenção do mesmo. Em ultimo dos Assincronismo temos o <b>Fetch API</b> é a forma mais moderna de fazer requisições HTTP em JavaScript, substituindo o antigo <i>XMLHttpRequest</i>, ela fornece uma interface mais poderosa e flexível para buscar recursos de forma assíncrona, retornando promises nativas.",
@@ -584,6 +636,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>tratamento de erros</b></i> no códigos é constituindo pelo <b>try/catch</b> é uma estrutura fundamental em JavaScript para capturar e tratar erros de formar controlada, assim evitando quebras inesperadas que interrompam o fluxo do código. E também é constituindo pelo <b>finally</b> um bloco em uma parte estrutural do try/catch que sempre é executado independente  de ocorrer um erro ou não.",
@@ -591,6 +644,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No JavaScript temos a <i><b>Classes(ES6+)</b></i> que obtém a sintaxe <b>class</b> que é a forma mais clara e orientada ao objeto para criar estruturas reutilizáveis com uma sintaxe limpa e recursos avançados. Temos também o <b>constructor</b> um método em classes que automaticamente quando o objeto é criado o mesmo é executado a partir da classes. Já no conceito de herança temos o <b>extends</b> que permite criar uma classe filha em uma classe pai, herdando seus métodos e propriedade.",
@@ -598,6 +652,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Em <i><b>Módulos (ES6)</b></i> temos duas modularizações, o <b>import  e export</b>  é uma forma moderna de compartilhar e organizar arquivos JavaScript, esse sistema do ES6 surgiu para substituir os antigos sistema como CommonJS e AMD",
@@ -605,6 +660,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Hoisting</b></i> em JavaScript é um comportamento tipico onde a declaração de variáveis e funções são movidas para o topo de seu escopo antes da execução do código.",
@@ -612,6 +668,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Closures</b></i> são um dos conceitos mais poderosos e até importante, eles permitem que a funções “lembrem” e acessem variáveis de seu escopo léxico, mesmo depois  a execução da função externa ter sido finalizada.",
@@ -619,6 +676,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Destructuring</b></i> é uma sintaxe no ES6 que extrair valores de arrays ou objetos de forma mais legível.",
@@ -626,6 +684,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Spread/Rest Operator</b></i> é nada menos que <b>(...)</b> serve para espalhar ou agrupar elementos. O <b>Spread</b> é usado para expandir elementos de um array ou objeto, enquanto o <b>Rest</b> é usado para agrupar múltiplos argumentos em um único array.",
@@ -633,6 +692,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Agora o <i><b>Template Literals</b></i> o template strings é somente uma área de adicionamento de expressão variável, representado dessa forma <b>(${})</b>. São uma sintaxe introduzida no ES6 que cria de forma flexível e poderosa, pode ser usando <b>(``)</b> também.",
@@ -640,6 +700,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "E também temos o <i><b>JSON(JavaScript Object Notation)</b></i> composto de <b>JSON.parse()</b> e junto com <b>JSON.stringify()</b>. O método <i>JSON.parse()</i> é usado para converter uma string JSON válida em um objeto JavaScript. Já o método <i>JSON.stringify()</i> converter um objeto JavaScript em uma string JSON, criando assim uma lista seriada de dados para compartilhamento e armazenamento.",
@@ -647,6 +708,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No <i><b>Web APIs</b></i> fornece interfaces pelos navegadores que permite e cria interação com recursos do sistema e funcionalidades avançadas, com capacidades específicas para desenvolvimento web. Os principais são <b>localStorage</b>, <b>sessionStorage</b>, <b>setTimeout</b> e <b>setInterval</b>. No <i>localStorege</i> permite armazenar dados no navegador do usuário, como se fosse um cookies, só que não expiram até ser diretamente removidos, tem maior capacidade até mais de 5MB e não são enviados automaticamente em requisições. Já no <i>sessionStorage</i> e umas da forma de armazenar dados temporariamente para sessão atual da aba  do navegador e quando fecha a aba os dados se apagam automaticamente, e lógico cada aba tem seu próprio sessionStorage. E no <i>setTimeout</i> é uma função para executar uma ação em um tempo exato contabilizado em <b>milissegundos</b>. Em ultimo o <i>setInterval</i> é um pouco diferente do <b>setTimeout</b> esse executa repetidamente em um intervalo de tempo definido.",
@@ -654,6 +716,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Em ultimo tópico <i><b>Strict Mode</b></i> ele é fundamental para tornar o código JavaScript mais seguro, evitando assim más práticas. O código em si é <b>(use strict)</b> o mesmo é rigoroso e evitar erros e deixa limpo o executar do código em si.",
@@ -661,6 +724,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>.",
@@ -682,6 +746,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -718,6 +783,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -739,6 +805,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -760,6 +827,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -781,6 +849,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -817,6 +886,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -838,6 +908,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -859,6 +930,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -895,6 +967,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -916,6 +989,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -937,6 +1011,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -958,6 +1033,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -979,6 +1055,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1015,6 +1092,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1036,6 +1114,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1057,6 +1136,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1078,6 +1158,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1099,6 +1180,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1120,6 +1202,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1141,6 +1224,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1177,6 +1261,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1198,6 +1283,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1219,6 +1305,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1240,6 +1327,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1261,6 +1349,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",

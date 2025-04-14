@@ -81,3 +81,6 @@ export const useIntersectionObserver = (options) => {
   }, [options, location.pathname]);
 };
 
+export function capFirstLetter(texto) {
+  return texto.charAt(0).toUpperCase() + texto.slice(1);
+}
