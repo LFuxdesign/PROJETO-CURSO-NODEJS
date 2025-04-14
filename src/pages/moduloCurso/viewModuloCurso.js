@@ -2,7 +2,7 @@ import "./viewModuloCurso.css";
 
 import Curso from "../../conteudo/curso.json"
 
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
 import { cleanHtml } from "../../scripts/scripts";
@@ -10,6 +10,7 @@ import Modal from "../../components/modal/modal";
 
 
 export default function ViewModuloCurso({ content4website }) {
+    const location = useLocation();
     const [searchParams] = useSearchParams(); // parametros url
     const navigate = useNavigate();
 
@@ -248,18 +249,41 @@ export default function ViewModuloCurso({ content4website }) {
     }, [content4website, refBtnNext, refBtnPrev, searchParams]);
     // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
     // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
+
+
+
+    const [showScrollToTopBtn, setShowScrollToTopBtn] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            window.scrollY > 200 ? setShowScrollToTopBtn(true) : setShowScrollToTopBtn(false);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
+            <div className={"scrollToTopBtn flexCenter" + (!showScrollToTopBtn ? " hide": "")} title="Ir para o topo" onClick={()=>{window.scrollTo(0,0)}}>
+                <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 17L16.2929 1.70711C16.6834 1.31658 17.3166 1.31658 17.7071 1.70711L33 17" stroke="#212529" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
             {
                 showModalController && <Modal path={modalData.path} type={modalData.type} className="entryAnimation" animationDelay={".5s"} showControl={modalAnimationController} showStatus={(status) => { setModalAnimationController(status); setTimeout(() => setShowModalController(status), 100) }} />
             }
             <section className="header entryAnimation opacityAni">
-                <div id="title">
-                    <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
-                </div>
+                {
+                    !content4website && <div id="title">
+                        <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
+                    </div>
+                }
             </section>
             <section className="content flex transition">
-                <div className="runningCourses flex flexColumn entryAnimation transition">
+                <div className={"runningCourses flex flexColumn entryAnimation transition" + (location.pathname === "/view" && " isOnViewPage")}>
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
@@ -327,7 +351,7 @@ export default function ViewModuloCurso({ content4website }) {
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
                                 <div className="medias flex flexColumn transition">
-                                    <div className="infos flexCenter">
+                                    <div className={"infos flexCenter" + (expandOnDisclaimerHide ? " expand" : "")}>
                                         <div className="disclaimer flexCenter entryAnimation transition" ref={refDisclaimer}>
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="10" cy="10.5" r="10" fill="#FF9D00" />
@@ -355,7 +379,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightProgressBar" />
                                                         <span>
-                                                            {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
+                                                            {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>
                                                 )
@@ -479,17 +503,17 @@ export default function ViewModuloCurso({ content4website }) {
                                                 if (isSectionIndexValid(nextSectionId)) {
                                                     window.scrollTo(0, 0)
 
-                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
+                                                    navigate(`/view?m=${actualModuleId}&s=${nextSectionId}`)
 
                                                 } else if (isModuleIndexValid(nextModuleId)) {
                                                     window.scrollTo(0, 0)
 
-                                                    navigate(`/moduloCurso?m=${nextModuleId}`)
+                                                    navigate(`/view?m=${nextModuleId}`)
                                                 } else {
                                                     deactivateButton(btnNext, true)
                                                 }
                                             } else {
-                                                navigate(`/moduloCurso?m=${1}&s=${2}`)
+                                                navigate(`/view?m=${1}&s=${2}`)
                                             }
 
                                         }
@@ -505,31 +529,31 @@ export default function ViewModuloCurso({ content4website }) {
 
                                                     window.scrollTo(0, 0);
 
-                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
+                                                    navigate(`/view?m=${actualModuleId}&s=${prevSectionId}`);
 
                                                 } else if (isModuleIndexValid(prevModuleId)) {
                                                     const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
 
                                                     window.scrollTo(0, 0);
 
-                                                    navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                                    navigate(`/view?m=${prevModuleId}&s=${lastSessionIndex}`);
                                                 } else {
                                                     deactivateButton(btnPrev, true)
                                                 }
                                             } else {
-                                                navigate(`/moduloCurso?m=${1}&s=${1}`)
+                                                navigate(`/view?m=${1}&s=${1}`)
                                             }
 
                                         }
                                         return (
                                             <div className="pageControlButton flex">
-                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                                <div className="btn useObserver disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
                                                     <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
                                                     <span>Voltar</span>
                                                 </div>
-                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                <div className="btn useObserver disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
                                                     <span>Avançar</span>
                                                     <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />

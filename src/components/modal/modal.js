@@ -60,9 +60,9 @@ export default function Modal({ path, showControl = false, type, alt = "", class
     }
 
     if (visibilityController) {
-        document.querySelector("body").style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     } else {
-        document.querySelector("body").style.overflow = "";
+        document.body.style.overflow = "";
     }
     const modalRef = useRef(null);
 

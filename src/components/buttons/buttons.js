@@ -51,12 +51,20 @@ function BasicButton({ buttonAction, buttonText, needIcon, iconPath, width, heig
 
     }, [backgroundHover, colorHover])
 
+    function handleClick() {
+        if (isAFunction(buttonAction)) {
+            buttonAction();
+        }
+        setTimeout(() => {
+            document.body.style.overflow = "";
+        }, 1000);
+    }
     return (
         <div
             ref={btnRef}
             title={title ? title : buttonText}
             className={"button flexCenter transition " + className}
-            onClick={buttonAction && isAFunction(buttonAction) ? buttonAction : undefined}
+            onClick={buttonAction && handleClick}
             style={{
                 width: typeof width === "string" ? `calc(${width} - 2* ${typeof padding === "string" ? padding : padding + "px"}` : width > 0 ? `${width - (padding * 2)}px` : "auto",
                 height: typeof height === "string" ? height : height > 0 ? `${height}px` : "auto",
