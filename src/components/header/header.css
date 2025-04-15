@@ -1,12 +1,14 @@
 header{
+    /* width: calc(95vw - 200px);
+    padding: 10px 100px; */
     width: calc(95vw - 200px);
+    padding: 20px 100px;
     border-radius: var(--default-radius);
     border: 1px solid #00000059;
     position: fixed;
     top: 30px;
     left: 50%;
     background: #ffffffef;
-    padding: 10px 100px;
     transform: translate(-50%, 0px);
     z-index: 9997;
     backdrop-filter: blur(10px);
@@ -82,7 +84,9 @@ header .rightItems .hamburgerMenu.open div:last-child{
 
 @media(width<720px){
     header{
-        padding: 10px 50px;
+        /* padding: 10px 50px;
+        width: calc(95vw - 100px); */
+        padding: 20px 50px;
         width: calc(95vw - 100px);
     }
     header .profile span{

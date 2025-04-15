@@ -38,10 +38,7 @@ export default function Header({ windowSize }) {
     }, [heightofHeader, windowSize, location.pathname])
 
     return (
-        <header ref={refHeader} className={"flexCenter"} style={{
-            padding: "20px 100px",
-            width: "calc(95vw - 200px)"
-        }}> {/*propriedades temporarias*/}
+        <header ref={refHeader} className={"flexCenter"}>
             <div className="container flex" style={{ justifyContent: "space-between", width: "100%", gap: "20px" }}>
                 <div className="leftItems flexCenter">
                     <div>

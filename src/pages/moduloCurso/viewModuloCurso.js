@@ -2,7 +2,7 @@ import "./viewModuloCurso.css";
 
 import Curso from "../../conteudo/curso.json"
 
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
 import { capFirstLetter, cleanHtml } from "../../scripts/scripts";
@@ -291,53 +291,55 @@ export default function ViewModuloCurso({ content4website }) {
                             const sessaoData = moduloData?.sessoes[index];
 
                             return (
-                                <div
-                                    key={index}
-                                    className="cardCurso flexCenter entryAnimation"
-                                    style={{
-                                        animationDuration: "1s",
-                                        animationDelay: `${0.25 * (index + 1)}s`,
-                                        background: sessao.highlightColor,
-                                        filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
-                                    }}
-                                >
-                                    <div className="details">
-                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
-                                            {sessao.titulo}
-                                        </h1>
-                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                            {sessao.descricao}
-                                        </span>
-                                    </div>
-                                    <div className="info flex flexColumn" style={{ gap: "10px" }}>
-                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                            {sessaoData?.viewed ? "visto dia" : "não iniciado"}
-                                        </p>
-                                        <div className="dia flexCenter">
-                                            {sessaoData?.timestamp ? (
-                                                <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
-                                            ) : (
-                                                <h1>-</h1>
-                                            )}
+                                <Link to={`/view?m=${idModulo}&s=${index+1}`} onClick={()=>window.scrollTo(0,0)}>
+                                    <div
+                                        key={index}
+                                        className="cardCurso flexCenter entryAnimation"
+                                        style={{
+                                            animationDuration: "1s",
+                                            animationDelay: `${0.25 * (index + 1)}s`,
+                                            background: sessao.highlightColor,
+                                            filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
+                                        }}
+                                    >
+                                        <div className="details">
+                                            <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
+                                                {sessao.titulo}
+                                            </h1>
+                                            <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessao.descricao}
+                                            </span>
                                         </div>
-                                        {
-                                            (() => {
-                                                const sectionDataViewed = viewedModules[idModulo - 1].sessoes[index];
-                                                if (sectionDataViewed.timestamp) {
-                                                    const viewedDate = new Date(sectionDataViewed.timestamp);
-                                                    const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
-                                                    const viewedMonth = (viewedDate.getMonth() + 1).toString().padStart(2, '0');
-                                                    const viewedYear = viewedDate.getFullYear().toString().slice(-2);
-                                                    return (
-                                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                                            {viewedDay + "/" + viewedMonth + "/" + viewedYear}
-                                                        </p>
-                                                    );
-                                                }
-                                            })()
-                                        }
+                                        <div className="info flex flexColumn" style={{ gap: "10px" }}>
+                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessaoData?.viewed ? "visto dia" : "não iniciado"}
+                                            </p>
+                                            <div className="dia flexCenter">
+                                                {sessaoData?.timestamp ? (
+                                                    <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
+                                                ) : (
+                                                    <h1>-</h1>
+                                                )}
+                                            </div>
+                                            {
+                                                (() => {
+                                                    const sectionDataViewed = viewedModules[idModulo - 1].sessoes[index];
+                                                    if (sectionDataViewed.timestamp) {
+                                                        const viewedDate = new Date(sectionDataViewed.timestamp);
+                                                        const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
+                                                        const viewedMonth = (viewedDate.getMonth() + 1).toString().padStart(2, '0');
+                                                        const viewedYear = viewedDate.getFullYear().toString().slice(-2);
+                                                        return (
+                                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                                {viewedDay + "/" + viewedMonth + "/" + viewedYear}
+                                                            </p>
+                                                        );
+                                                    }
+                                                })()
+                                            }
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             );
 
                         })

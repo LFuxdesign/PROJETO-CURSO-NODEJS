@@ -68,6 +68,7 @@
 
 .content4moodle.moduloCurso .runningCourses .cardCurso .dia h1 {
     height: 22px;
+    color: #212529!important;
 }
 
 .content4moodle.moduloCurso .runningCourses .cardCurso .details {
