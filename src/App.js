@@ -12,6 +12,7 @@ import ViewModuloCurso from "./pages/moduloCurso/viewModuloCurso";
 import Footer from "./components/footer/footer";
 import { useIntersectionObserver } from "./scripts/scripts";
 import Header from "./components/header/header";
+import { Login } from "./pages/login/login";
 
 
 function App() {
@@ -85,6 +86,7 @@ function AppContent() {
           {/*Rotas normais para acesso em site*/}
           <Route exact path="/" element={<Sobre content4website={true} />} />
           <Route exact path="/view" element={<ViewModuloCurso content4website={true} />} />
+          <Route exact path="/login" Component={Login} />
 
           {/*Rotas para Iframe Moodle*/}
           <Route exact path="/c4m/sobre" Component={Sobre} />

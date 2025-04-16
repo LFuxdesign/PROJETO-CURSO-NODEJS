@@ -283,7 +283,7 @@ export default function ViewModuloCurso({ content4website }) {
                 }
             </section>
             <section className="content flex transition">
-                <div className={"runningCourses flex flexColumn entryAnimation transition" + (location.pathname === "/view" && " isOnViewPage")}>
+                <div className={"runningCourses flex flexColumn entryAnimation transition" + (location.pathname === "/view" ? " isOnViewPage" : "")}>
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
@@ -291,7 +291,7 @@ export default function ViewModuloCurso({ content4website }) {
                             const sessaoData = moduloData?.sessoes[index];
 
                             return (
-                                <Link to={`/view?m=${idModulo}&s=${index+1}`} onClick={()=>window.scrollTo(0,0)}>
+                                <Link to={`/view?m=${idModulo}&s=${index + 1}`} onClick={() => window.scrollTo(0, 0)} title="Acessar">
                                     <div
                                         key={index}
                                         className="cardCurso flexCenter entryAnimation"
