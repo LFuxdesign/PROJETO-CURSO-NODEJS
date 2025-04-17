@@ -124,6 +124,10 @@
     font-size: 40px;
 }
 
+.content4moodle.moduloCurso .content .conteudoSessao .textContent .textParagraph{
+    text-align: justify;
+}
+
 .content4moodle.moduloCurso .content .conteudoSessao .textContent .paragrafos p {
     font-size: 20px;
     line-height: 144%;

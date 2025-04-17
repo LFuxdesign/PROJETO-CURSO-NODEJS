@@ -5,7 +5,7 @@
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
-            "pathImgModulo": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+            "pathImgModulo": "/assets/CAPA CURSO.png",
             "categoria": "introdução",
             "duracao": "1h",
             "colors": {
@@ -17,7 +17,7 @@
                     {
                         "titulo": "O que é Node.js?",
                         "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -45,9 +45,63 @@
                         ]
                     },
                     {
+                        "titulo": "Genealogia da linguagem",
+                        "descricao": "Neste módulo, exploramos as origens da linguagem JavaScript e como ela evoluiu até se tornar uma das principais tecnologias da web. Entender essa trajetória é essencial para compreender o surgimento do Node.js e seu papel no desenvolvimento moderno.",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "Como ja vimos na sessão anterior, em 2009, Ryan Dahl criou o Node.js como uma plataforma de tempo de execução JavaScript no lado do servidor. A motivação de Dahl era desenvolver aplicações de rede escaláveis e eficientes, superando as limitações de plataformas existentes como o Apache HTTP Server e o Ruby on Rails. A linguagem foi construído sobre o motor V8 do Google, conhecido por sua velocidade ao compilar JavaScript diretamente em código de máquina. <br/>O Node.js foi oficialmente introduzido como um ambiente de tempo de execução JavaScript de código aberto no lado do servidor em 27 de maio de 2009. Inicialmente, funcionava exclusivamente em sistemas Linux e Mac OS X, mas, ao longo dos anos a linugagem foi evoluindo constantemente para o que temos hoje, e, nesse caminho, podemos destacar alguns eventos e mudanças que toraram o Node.js uma das linguagens mais utilizadas hoje!",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "A evolução do Node.js",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em 2010, Isaac Schlueter lançou o npm (Node Package Manager), um repositório comum para módulos Node.js que facilita o compartilhamento e a reutilização de código.<br/>Desde então, o Node.js tem sido adotado por diversas grandes empresas devido à sua escalabilidade e desempenho. Por exemplo, o Uber foi uma das primeiras empresas a utilizar o Node.js em larga escala, construindo a maior parte de sua plataforma com essa tecnologia. O Node.js oferece processamento rápido, uma comunidade open-source ativa e facilidade na detecção de erros, permitindo que os desenvolvedores publiquem e implantem novo código constantemente.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Impacto e legado",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O Node.js revolucionou o desenvolvimento web ao permitir o uso do JavaScript tanto no lado do cliente quanto no servidor. Isso impulsionou o surgimento de frameworks como Express.js e NestJS, além de plataformas como Electron (para aplicações desktop) e React Native (para aplicações móveis). Grandes empresas como Netflix, LinkedIn, Uber, PayPal, NASA e Walmart adotaram o Node.js em suas operações devido à sua eficiência e escalabilidade.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Linha do Tempo",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<div class='tableContainer'><table><thead><tr><th>Ano<th>Evento<th>Resumo<tbody><tr><td>2009<td>Criação do Node.js<td>Ryan Dahl lança o Node.js permitindo que o JavaScript fosse executado no lado do servidor<tr><td>2010<td>Lançamento do NPM<td>Isaac Schlueter lança o npm (Node Package Manager), facilitando o gerenciamento de pacotes do Node.js.<tr><td>2011<td>Suporte ao Windows<td>A Microsoft e a Joynet implementaram uma versão nativa do Node.js para Windows<tr><td>2012<td>Transição de liderança<td>Ryan Dahl transfere a liderança do projeto para Isaac Schlueter, criador do npm<tr><td>2014<td>Criação do io.js<td>Desenvolvedores criam o io.js, um fork do Node.js, buscando um desenvolvimento mais ágil e aberto<tr><td>2015<td>Fundação do Node.js<td>A Node.js Foundation é estabelecida para unificar o Node.js e o io.js, promovendo uma governança aberta<tr><td>2018<td>Node.js 10 LTS<td>Lançamento da versão 10 do Node.js com Long Term Support, o que oferece uma estabilidade para aplicações em produção<tr><td>2021<td>Suporte ao Apple Silicon<td>Node.js 16 é lançado com suporte aprimorado para os chips M1 da Apple<tr><td>2023<td>Fim do suporte ao Node.js 16<td>O suporte ao Node.js 16 foi encerrado, coincidindo com o fim do suporte do OpenSSL 1.1.1<tr><td>2024<td>Lançamento da versão 20 do Node.js<td>A versão 20 do Node.js é lançada com suporte de longo prazo, contendo melhorias de desempenho e segurança</table></div>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Evolução do Node.js: Principais Versões e Conquistas",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Desde sua criação em 2009 por Ryan Dahl, o Node.js tem passado por uma evolução constante, impulsionada por melhorias de desempenho, segurança, compatibilidade com os padrões ECMAScript e ampliação de recursos voltados à produção. Abaixo, listamos as versões mais marcantes e os eventos que simbolizam os saltos tecnológicos da plataforma:",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>&#9• Versão 0.10.0 (2013) - Introdução dos Streams Melhorados:</b><br/>Esta versão introduziu a nova API de streams (streams2), que trouxe uma forma mais eficiente e controlada de lidar com operações de entrada e saída (I/O), fundamentais para aplicações em rede. Também houve melhorias no módulo domains, para captura de erros assíncronos.<br/><br/><b>&#9• Versão 4.0.0 (2015) - Reunificação com io.js e ES6:</b><br/>Após a divisão da comunidade e a criação do io.js, esta versão marcou o retorno da unificação entre os projetos. Com isso, passou a oferecer suporte mais robusto ao ECMAScript 6, incluindo classes, arrow functions, let/const, entre outros.<br/><br/><b>&#9• Versão 6.0.0 (2016) - Promises e Segurança Aprimorada:</b><br/>Com foco em performance e segurança, o Node.js 6 trouxe melhor suporte para Promises, melhorias na performance do V8 e avanços na segurança da plataforma. Esta versão consolidou o uso moderno de JavaScript assíncrono.<br/><br/><b>&#9• Versão 8.0.0 (2017) - Async/Await no Core:</b><br/>Finalmente foi introduzido suporte completo a async/await, simplificando o desenvolvimento assíncrono e tornando o código mais limpo e compreensível. Também houve a introdução da API util.promisify.<br/><br/><b>&#9• Versão 10.0.0 (2018) - Sistema de Arquivos e Estabilidade:</b><br/>Além de melhorias de estabilidade, esta versão apresentou uma nova API experimental para o sistema de arquivos (fs.promises), baseada em Promises. Ela foi um passo importante para a padronização do estilo assíncrono moderno.<br/><br/><b>&#9• Versão 12.0.0 (2019) - Privacidade e Diagnóstico:</b><br/>Essa versão introduziu private class fields (campos privados de classes do ECMAScript), além de melhorias em diagnóstico, como o Diagnostic Report (para análise de falhas em produção).<br/><br/><b>&#9• Versão 14.0.0 (2020) - Módulos ES e Performance:</b><br/>O destaque foi o suporte experimental a ECMAScript Modules (ESM) com import/export nativos, além de melhorias no motor V8 e novos recursos de diagnóstico com rastreamento de chamadas assíncronas (async stack traces).",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
                         "titulo": "Os paradigmais do Node.js",
                         "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://youtu.be/ET59Wd4gP2E",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
@@ -331,7 +385,7 @@
                     {
                         "titulo": "Como começar um projeto Node.js e as configurações iniciais",
                         "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
-                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -353,7 +407,7 @@
                     {
                         "titulo": "Executando o primeiro script",
                         "descricao": "Escreva e execute seu primeiro script no terminal, entendendo os conceitos basicos de JavaScript e Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://youtu.be/DiNLHjzn818",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -396,7 +450,7 @@
                     {
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
                         "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -421,7 +475,7 @@
                     {
                         "titulo": "Conceito de dependências",
                         "descricao": "Aprenda o que são dependências, a diferença entre dependências de produção e desenvolvimento e como gerenciá-las.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -443,7 +497,7 @@
                     {
                         "titulo": "Como instalar pacotes do Node.js",
                         "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -465,7 +519,7 @@
                     {
                         "titulo": "Como remover pacotes do Node.js",
                         "descricao": "Aprenda a desinstalar pacotes corretamente, garantindo a limpeza do projeto e a organização das dependências.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -487,7 +541,7 @@
                     {
                         "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
                         "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
@@ -524,7 +578,7 @@
                     {
                         "titulo": "Caracteristicas e limitações comuns do JavaScript",
                         "descricao": "Explore as principais características e limitações do JavaScript, como sua natureza assíncrona e o gerenciamento de escopo.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -546,7 +600,7 @@
                     {
                         "titulo": "Principais conceitos do JavaScript",
                         "descricao": "Compreenda conceitos chave do JavaScript, como variáveis, funções, objetos, arrays e a manipulação do DOM.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -736,7 +790,7 @@
                     {
                         "titulo": "Diferenças entre CommonJS e ESModules",
                         "descricao": "Aprenda as diferenças entre os sistemas de módulos CommonJS e ESModules, e como cada um é usado no Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -780,7 +834,7 @@
                     {
                         "titulo": "Conceito de Módulos do Node.js",
                         "descricao": "Entenda o conceito de módulos no Node.js e como eles permitem a organização e reutilização de código.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -802,7 +856,7 @@
                     {
                         "titulo": "Dependências",
                         "descricao": "Aprenda como gerenciar dependências externas em seu projeto e utilizá-las através de módulos no Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -824,7 +878,7 @@
                     {
                         "titulo": "Criar, exportar e importar módulos próprios",
                         "descricao": "Veja como criar seus próprios módulos, exportar funcionalidades e importá-las em outros arquivos.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -846,7 +900,7 @@
                     {
                         "titulo": "Manipulação de arquivos utilizando o módulo fs para leitura e escrita",
                         "descricao": "Aprenda a utilizar o módulo fs do Node.js para ler e escrever arquivos de forma síncrona e assíncrona.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -883,7 +937,7 @@
                     {
                         "titulo": "Introdução ao Express.js",
                         "descricao": "Conheça o Express.js, um framework para Node.js, que facilita a criação de servidores e APIs com recursos poderosos e simplificados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
@@ -905,7 +959,7 @@
                     {
                         "titulo": "Desenvolva um servidor web com Express.js",
                         "descricao": "Aprenda a criar um servidor web básico utilizando o Express.js, configurando rotas e respondendo a requisições HTTP.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -927,7 +981,7 @@
                     {
                         "titulo": "Conceitos de definições de rota",
                         "descricao": "Entenda o conceito de rotas no Express.js, como defini-las e manipulá-las para responder a diferentes tipos de requisições.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -964,7 +1018,7 @@
                     {
                         "titulo": "Conceitos básicos do banco de dados SQL",
                         "descricao": "Aprenda o que é Banco de Dados e alguns dos conceitos fundamentais de bancos de dados relacionais SQL, como tabelas, chaves primárias e SQL queries.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1ABBE8",
                         "paragrafos": [
@@ -986,7 +1040,7 @@
                     {
                         "titulo": "Conecte sua aplicação ao banco de dados MySQL",
                         "descricao": "Veja como conectar seu projeto Node.js a um banco de dados MySQL e realizar operações básicas de leitura e escrita.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -1008,7 +1062,7 @@
                     {
                         "titulo": "Conceitos básicos do banco de dados NoSQL",
                         "descricao": "Entenda os princípios dos bancos de dados NoSQL, como a flexibilidade e escalabilidade, e como eles se diferenciam dos SQL.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -1030,7 +1084,7 @@
                     {
                         "titulo": "Primeiros passos com Firebase",
                         "descricao": "Explore o Firebase, sua configuração e como ele pode ser usado para armazenar dados em tempo real no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -1052,7 +1106,7 @@
                     {
                         "titulo": "Conecte sua aplicação ao banco de dados Firebase",
                         "descricao": "Aprenda a integrar seu aplicativo Node.js com o Firebase para criar e ler dados de forma eficiente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -1089,7 +1143,7 @@
                     {
                         "titulo": "Conceitos de API",
                         "descricao": "Entenda o que são APIs, sua importância e como elas permitem a comunicação entre diferentes sistemas e aplicativos.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#EA1A5E",
                         "paragrafos": [
@@ -1111,7 +1165,7 @@
                     {
                         "titulo": "O que são APIs RESTful",
                         "descricao": "Aprenda sobre APIs RESTful, seus princípios e como elas utilizam métodos HTTP para operar em recursos de maneira eficiente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -1133,7 +1187,7 @@
                     {
                         "titulo": "Estruturação de uma API RESTful com Express.js",
                         "descricao": "Descubra como estruturar uma API RESTful com o Express.js, criando rotas e manipulando requisições e respostas.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -1155,7 +1209,7 @@
                     {
                         "titulo": "O que é CRUD?",
                         "descricao": "Compreenda o conceito de CRUD (Create, Read, Update, Delete) e sua aplicação em sistemas de gerenciamento de dados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -1177,7 +1231,7 @@
                     {
                         "titulo": "Implemente um sistema CRUD funcional com Node.js",
                         "descricao": "Aprenda a implementar um sistema CRUD completo usando Node.js, Express.js e um banco de dados para persistir dados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -1199,7 +1253,7 @@
                     {
                         "titulo": "O que é JSON?",
                         "descricao": "Saiba o que é o JSON (JavaScript Object Notation) e como ele é usado para troca de dados entre servidor e cliente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
@@ -1221,7 +1275,7 @@
                     {
                         "titulo": "Enviar e receber dados em formato JSON",
                         "descricao": "Aprenda como enviar e receber dados em formato JSON em uma API, utilizando o Express.js para facilitar a comunicação.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1A88E8",
                         "paragrafos": [
@@ -1258,7 +1312,7 @@
                     {
                         "titulo": "O que são variáveis de ambiente",
                         "descricao": "Entenda o conceito de variáveis de ambiente, sua importância para a configuração de aplicações e como elas ajudam a manter informações sensíveis fora do código.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
@@ -1280,7 +1334,7 @@
                     {
                         "titulo": "Gerenciamento de variáveis de ambiente no Node.js com a biblioteca dotenv",
                         "descricao": "Aprenda a usar a biblioteca dotenv no Node.js para carregar variáveis de ambiente de um arquivo .env, mantendo a segurança e flexibilidade no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -1302,7 +1356,7 @@
                     {
                         "titulo": "O que é Git e a importância do versionamento de código",
                         "descricao": "Compreenda o Git, suas funcionalidades e como o versionamento de código ajuda na colaboração e controle de mudanças no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -1324,7 +1378,7 @@
                     {
                         "titulo": "Introdução ao GitHub e configuração do GitHub no VS Code",
                         "descricao": "Saiba como usar o GitHub para hospedar repositórios e configurar o Git no VS Code, facilitando o controle de versão e o trabalho em equipe.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -1346,7 +1400,7 @@
                     {
                         "titulo": "Conceitos de Deployment e como realizar o Deploy de uma aplicação Node.js na plataforma Vercel",
                         "descricao": "Entenda o que é deployment e como realizar o deploy de uma aplicação Node.js utilizando a plataforma Vercel para tornar sua aplicação acessível online.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [

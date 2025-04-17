@@ -392,7 +392,7 @@ export default function ViewModuloCurso({ content4website }) {
                                         (() => {
                                             if (sessao.pathVideoSessao) {
                                                 return (<>
-                                                    <div className="media">
+                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
                                                         <ExpandIcon path={sessao.pathVideoSessao} type={"video"} />
                                                         <Player
                                                             videoPath={sessao.pathVideoSessao}
@@ -402,7 +402,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                 </>)
                                             } else if (sessao.pathImgSessao) {
                                                 return (<>
-                                                    <div className="media">
+                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
                                                         <ExpandIcon path={sessao.pathImgSessao} type={"img"} />
                                                         <img onClick={() => modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
                                                     </div>
@@ -418,7 +418,7 @@ export default function ViewModuloCurso({ content4website }) {
                                             return (
                                                 <div key={index}>
                                                     {
-                                                        paragrafo.subtitulo && <><br /><br /><br /><h1>• {capFirstLetter(paragrafo.subtitulo)}</h1><br /></>
+                                                        paragrafo.subtitulo && <><br /><br /><h1 style={{fontSize: "25px"}} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.subtitulo)) }}/><br /></>
                                                     }
                                                     {
                                                         (() => {
@@ -445,7 +445,7 @@ export default function ViewModuloCurso({ content4website }) {
 
 
 
-                                                    <p key={index} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.texto)) }} /><br />
+                                                    <p key={index} className="useObserver textParagraph" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.texto)) }} /><br />
 
 
 
