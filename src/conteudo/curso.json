@@ -5,7 +5,7 @@
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
-            "pathImgModulo": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+            "pathImgModulo": "/assets/CAPA CURSO.png",
             "categoria": "introdução",
             "duracao": "1h",
             "colors": {
@@ -17,99 +17,315 @@
                     {
                         "titulo": "O que é Node.js?",
                         "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": " Nodejs é praticamente um compilador de código JavaScript voltado para os computadores com finalidade para servirem informações a outras maquinas como TVS, Celulares, Pcs, Relogios, Robos…",
+                                "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
+                                "pathImgInferior": "/assets/Exemplo/resumo Ryan Dahl.jpg",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Ryan Dahl desenvolveu Node.js inspirado pelo processo de carregamento de arquivos no Flickr e observando que servidores como o Apache gerenciavam conexões de forma ineficaz. Dahl percebeu a necessidade de um ambiente capaz de gerenciar milhares de conexões simultâneas sem se tornar bloqueante, e assim nasceu o Node.js.<br/><br/>&#9• Motor V8 da Google: Node.js utiliza o motor V8, que é conhecido por sua alta performance na execução de código JavaScript.<br/>&nbsp;&nbsp;&nbsp;&nbsp;• Loop de Eventos Assíncrono: A principal inovação de Node.js é seu loop de eventos assíncrono, permitindo que operações de entrada e saída sejam executadas sem bloqueios.<br/>&#9• Gerenciamento Eficiente de Conexões: Node.js é capaz de lidar com milhares de conexões simultâneas de maneira eficiente, tornando-o ideal para aplicações em tempo real.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "No desenvolvimento web a linguagem de programação javascript é extremamente utilizada e padronizada. A linguagem de programação JavaScript foi desenvolvida em 1995 e virou predominante no desenvolvimento de página web responsável pela interação com o usuário/cliente, no entanto para o lado do servidor o mesmo fracassou em sua função, pois a performance era extremamente baixa em relação a outra linguagem também possíveis para essa função. Mas como já era predominante a linguagem JavaScript na web, não era muito conveniente ter que aprender outra linguagem para programa o servidor, sendo assim o Nodejs foi desenvolvido para rodar códigos JavaScript no lado do servidor, o Ryan Dahl uso como inspiração o processo de carga de arquivos Flickr e também ao perceber que os servidores como o Apache gerenciavam muitas conexão de forma ineficaz, então exergo a possibilidade de ser o criador do ambiente capaz dessa façanha de gerenciar milhares de conexão simultâneas sem se tornar bloqueantes. O lançamento foi em 05/2009, usava o motor V8 JavaScript da Google, a novidade foi o loop de eventos assíncrono, que o permiti o Nodejs executar operações de entrada e saída sem bloquear, mas claro o quer impressionou a comunidade foi a capacidade de lidar com as conexão simultâneas. A popularidade se deu no ano seguinte muito por causa das novidades, capacidades e claro a carga da predominância do JavaScript no universo Web.",
+                                "texto": "A popularidade de Node.js cresceu rapidamente após seu lançamento, especialmente devido à sua capacidade de lidar com conexões simultâneas e ao fato de que os desenvolvedores já estavam familiarizados com JavaScript, a linguagem predominante no desenvolvimento web. Node.js é amplamente utilizado para criar aplicações de alta performance, como servidores web, APIs e serviços de streaming. Node.js revolucionou o desenvolvimento de aplicações web, oferecendo uma solução poderosa e eficiente para o lado do servidor, e continua a ser uma escolha popular entre desenvolvedores por suas características inovadoras e desempenho robusto.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
                         ]
                     },
                     {
-                        "titulo": "Os paradigmais do Node.Js",
+                        "titulo": "Genealogia da linguagem",
+                        "descricao": "Neste módulo, exploramos as origens da linguagem JavaScript e como ela evoluiu até se tornar uma das principais tecnologias da web. Entender essa trajetória é essencial para compreender o surgimento do Node.js e seu papel no desenvolvimento moderno.",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "",
+                        "highlightColor": "#1283F4",
+                        "paragrafos": [
+                            {
+                                "texto": "Como ja vimos na sessão anterior, em 2009, Ryan Dahl criou o Node.js como uma plataforma de tempo de execução JavaScript no lado do servidor. A motivação de Dahl era desenvolver aplicações de rede escaláveis e eficientes, superando as limitações de plataformas existentes como o Apache HTTP Server e o Ruby on Rails. A linguagem foi construído sobre o motor V8 do Google, conhecido por sua velocidade ao compilar JavaScript diretamente em código de máquina. <br/>O Node.js foi oficialmente introduzido como um ambiente de tempo de execução JavaScript de código aberto no lado do servidor em 27 de maio de 2009. Inicialmente, funcionava exclusivamente em sistemas Linux e Mac OS X, mas, ao longo dos anos a linugagem foi evoluindo constantemente para o que temos hoje, e, nesse caminho, podemos destacar alguns eventos e mudanças que toraram o Node.js uma das linguagens mais utilizadas hoje!",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "A evolução do Node.js",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em 2010, Isaac Schlueter lançou o npm (Node Package Manager), um repositório comum para módulos Node.js que facilita o compartilhamento e a reutilização de código.<br/>Desde então, o Node.js tem sido adotado por diversas grandes empresas devido à sua escalabilidade e desempenho. Por exemplo, o Uber foi uma das primeiras empresas a utilizar o Node.js em larga escala, construindo a maior parte de sua plataforma com essa tecnologia. O Node.js oferece processamento rápido, uma comunidade open-source ativa e facilidade na detecção de erros, permitindo que os desenvolvedores publiquem e implantem novo código constantemente.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Impacto e legado",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O Node.js revolucionou o desenvolvimento web ao permitir o uso do JavaScript tanto no lado do cliente quanto no servidor. Isso impulsionou o surgimento de frameworks como Express.js e NestJS, além de plataformas como Electron (para aplicações desktop) e React Native (para aplicações móveis). Grandes empresas como Netflix, LinkedIn, Uber, PayPal, NASA e Walmart adotaram o Node.js em suas operações devido à sua eficiência e escalabilidade.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Linha do Tempo",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<div class='tableContainer'><table><thead><tr><th>Ano<th>Evento<th>Resumo<tbody><tr><td>2009<td>Criação do Node.js<td>Ryan Dahl lança o Node.js permitindo que o JavaScript fosse executado no lado do servidor<tr><td>2010<td>Lançamento do NPM<td>Isaac Schlueter lança o npm (Node Package Manager), facilitando o gerenciamento de pacotes do Node.js.<tr><td>2011<td>Suporte ao Windows<td>A Microsoft e a Joynet implementaram uma versão nativa do Node.js para Windows<tr><td>2012<td>Transição de liderança<td>Ryan Dahl transfere a liderança do projeto para Isaac Schlueter, criador do npm<tr><td>2014<td>Criação do io.js<td>Desenvolvedores criam o io.js, um fork do Node.js, buscando um desenvolvimento mais ágil e aberto<tr><td>2015<td>Fundação do Node.js<td>A Node.js Foundation é estabelecida para unificar o Node.js e o io.js, promovendo uma governança aberta<tr><td>2018<td>Node.js 10 LTS<td>Lançamento da versão 10 do Node.js com Long Term Support, o que oferece uma estabilidade para aplicações em produção<tr><td>2021<td>Suporte ao Apple Silicon<td>Node.js 16 é lançado com suporte aprimorado para os chips M1 da Apple<tr><td>2023<td>Fim do suporte ao Node.js 16<td>O suporte ao Node.js 16 foi encerrado, coincidindo com o fim do suporte do OpenSSL 1.1.1<tr><td>2024<td>Lançamento da versão 20 do Node.js<td>A versão 20 do Node.js é lançada com suporte de longo prazo, contendo melhorias de desempenho e segurança</table></div>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Evolução do Node.js: Principais Versões e Conquistas",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Desde sua criação em 2009 por Ryan Dahl, o Node.js tem passado por uma evolução constante, impulsionada por melhorias de desempenho, segurança, compatibilidade com os padrões ECMAScript e ampliação de recursos voltados à produção. Abaixo, listamos as versões mais marcantes e os eventos que simbolizam os saltos tecnológicos da plataforma:",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>&#9• Versão 0.10.0 (2013) - Introdução dos Streams Melhorados:</b><br/>Esta versão introduziu a nova API de streams (streams2), que trouxe uma forma mais eficiente e controlada de lidar com operações de entrada e saída (I/O), fundamentais para aplicações em rede. Também houve melhorias no módulo domains, para captura de erros assíncronos.<br/><br/><b>&#9• Versão 4.0.0 (2015) - Reunificação com io.js e ES6:</b><br/>Após a divisão da comunidade e a criação do io.js, esta versão marcou o retorno da unificação entre os projetos. Com isso, passou a oferecer suporte mais robusto ao ECMAScript 6, incluindo classes, arrow functions, let/const, entre outros.<br/><br/><b>&#9• Versão 6.0.0 (2016) - Promises e Segurança Aprimorada:</b><br/>Com foco em performance e segurança, o Node.js 6 trouxe melhor suporte para Promises, melhorias na performance do V8 e avanços na segurança da plataforma. Esta versão consolidou o uso moderno de JavaScript assíncrono.<br/><br/><b>&#9• Versão 8.0.0 (2017) - Async/Await no Core:</b><br/>Finalmente foi introduzido suporte completo a async/await, simplificando o desenvolvimento assíncrono e tornando o código mais limpo e compreensível. Também houve a introdução da API util.promisify.<br/><br/><b>&#9• Versão 10.0.0 (2018) - Sistema de Arquivos e Estabilidade:</b><br/>Além de melhorias de estabilidade, esta versão apresentou uma nova API experimental para o sistema de arquivos (fs.promises), baseada em Promises. Ela foi um passo importante para a padronização do estilo assíncrono moderno.<br/><br/><b>&#9• Versão 12.0.0 (2019) - Privacidade e Diagnóstico:</b><br/>Essa versão introduziu private class fields (campos privados de classes do ECMAScript), além de melhorias em diagnóstico, como o Diagnostic Report (para análise de falhas em produção).<br/><br/><b>&#9• Versão 14.0.0 (2020) - Módulos ES e Performance:</b><br/>O destaque foi o suporte experimental a ECMAScript Modules (ESM) com import/export nativos, além de melhorias no motor V8 e novos recursos de diagnóstico com rastreamento de chamadas assíncronas (async stack traces).",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Os paradigmas do Node.js",
                         "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "https://youtu.be/ET59Wd4gP2E",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
                             {
-                                "texto": "O NodeJS é multi-paradigma em sua composição, mas entre os fundamentais ele como foco o  Funcional e OOP, Mas também os seus paradigmas de princípios pois como é focado para ser um  linguagem para servidor obtêm suas individualizações. Como o Event Loop que funciona para  gerenciar a requisições em uma única thread, Non-blocking isso permite que outras tarefas sejam  executadas enquanto a operação original é processada através de callbacks moderna de async/await,  Event-Driven são eventos disparados que reagem a essas ocorrências fazendo o fluxo ser dinâmico Ex  servidor HTTP, JavaScript é trazida para o servidor permitindo que desenvolvedores usem a mesma  para Front e Back end e o NPM que possui um enorme banco de pacote que incetiva o código modular  e reutilizável.",
+                                "texto": "Um paradigma de programação é uma abordagem ou estilo fundamental que orienta a forma como soluções são desenvolvidas em linguagens de programação. Ele define a estrutura e os elementos que compõem um programa, bem como as interações entre eles. Os principais paradigmas incluem:<br/><ol>&#9<li><b>Paradigma Imperativo:</b> Baseia-se na descrição de uma sequência de instruções que alteram o estado do programa até alcançar o resultado desejado, focando em descrever &quot;como&quot; um programa deve realizar tarefas através de sequências de comandos que alteram o estado do sistema. Linguagens como C e Pascal seguem esse paradigma.<br/><br/><b>Características:</b><br/>O paradigma Imperativo possui algumas características que podem ser definidas como sendo: <br/>&#9• A <b>ênfase em &quot;como&quot; realizar as operações</b>;<br/>&#9• O <b>uso de variáveis que armazenam o estado do programa</b>;<br/>&#9• O <b>controle explicito do fluxo de execução através de estruturas como loops e condicionais.</b><br/><br/>Abaixo temos um exemplo em que o código instrui explicitamente o computador a somar os números de 1 a 5, atualizando o valor de <code>let contador</code></i></b> a cada iteração.</li></ol>",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma imperativo.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='2'><li><b>Paradigma Procedural:</b> É como se fosse uma extensão do paradigma imperativo que organiza o código em procedimentos ou funções, isso permite que o código se torne mais reutilizável e mais modular, melhorando o processo de desenvolvimento, escrita e leitura e facilitando a manutenção do código posteriormente.</li></ol>",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "<b>Características:</b><br/>Para este paradigma temos as seguintes características:<br/>&#9• <b>Divisão do programa em sub-rotinas ou funções</b>;<br/>&#9• <b>Melhoria da manutenção e leitura do código</b>;<br/>&#9• <b>A otimização do fluxo de trabalho.</b>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo, temos um exemplo que mostra como isso funciona, temos uma função <code>somar</code></i></b> que encapsula a operação de adição, possibilitando a reutilização da função infinitas vezes no código, função essa que irá retornar o resultado da soma dos parâmetros <code>a</code></i></b> e <code>b</code></i></b>, isso é extremamente positivo pois já retorna o número diretamente no final, por isso que ao usarmos o <code>console.log(resultado)</code></i></b> a saída que o código nos retornará é o próprio número",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma procedural.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='3'>&#9<li><b>Programação Orientada a Objetos (POO): </b> Organiza o código em torno de &quot;objetos&quot; que encapsulam dados e comportamentos. Linguagens como Java, C++ e Python adotam esse paradigma. A utilização do paradigma da Programação Orientada a Objetos (POO) no Node.js melhora a organização, reutilização e segurança do código, tornando-o mais modular, escalável e fácil de manter. Com conceitos como herança, encapsulamento e polimorfismo, a POO permite criar sistemas mais estruturados e flexíveis.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Podemos destacar as seguintes características do POO no Node.js:<br/>&#9• <b>Encapsulamento:</b> proteção dos dados internos do objeto;<br/>&#9• <b>Herança:</b> capacidade de criar classes baseadas (herdadas) em classes existentes;<br/>&#9• <b>Polimorfismo:</b> permite que diferentes objetos respondam de maneira específica a uma mesma mensagem ou método.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo temos um exemplo dessa vez sobre o POO sendo aplicado no Node.js, aqui, temos a classe <code>Animal</code></i></b> que tem suas características genéricas e seu construtor, o construtor em POO, é um método &quot;padrão&quot; necessário para que as propriedades (parâmetros) do objeto sejam inicializadas, imagine aqui as características gerais de todo(ou do grupo que esteja definindo) animal faz, neste caso, estamos considerando que todo animal faz um som, portanto, definimos aqui o método <code>emitirSom()</code></i></b>, que indica ao usuário que o animal esta fazendo um som. Mais abaixo, na linha 9, temos outra classe que está &quot;estendendo&quot; da classe genérica <code>Animal</code></i></b>, isso indica que a classe que foi estendida, herdará todas as características genéricas definidas na classe <code>Animal</code></i></b>, nesse caso, criamos a classe Cachorro, que estende (herdando suas características) da classe <code>Animal</code></i></b>, mas, sabemos que o cachorro late, então, realizamos um o que chamamos de overriding, estamos sobrescrevendo o método original <code>emitirSom()</code></i></b>, para especificar que, para este animal no caso o cachorro, quando chamarmos o método <code>emitirSom()</code></i></b>, possamos retornar que o cachorro esta latindo. Nas linhas 14 e 15 estamos criando o que chamamos de Instâncias das classes criadas, podemos criar quantas instâncias quisermos, e atribuir a elas os parâmetros definidos no construtor, nesse caso o nome do animal, e, por fim, nas linhas 16 e 17 estamos &quot;invocando&quot;, o método <code>emitirSom()</code></i></b> definido nas classes, no caso estamos falando &quot;animal x emita um som&quot;, e o código irá nos retornar o que pedimos:",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma POO.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='4'>&#9<li><b>Programação Funcional:</b> A programação funcional é um paradigma que trata a computação como a avaliação de funções matemáticas, evitando mudanças de estado e dados mutáveis. Diferentemente da programação imperativa, que se baseia em comandos sequenciais que alteram o estado do programa, a programação funcional descreve o que deve ser alcançado por meio de funções.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Este paradigma aplicado no Node.js a programação funcional pode ser empregada das seguintes maneiras:<br/>&#9• <b>Uso de Funções de Alta Ordem:</b> Funções como <code>map</code>, <code>filter</code> e <code>reduce</code> permitem manipular coleções de dados de forma declarativa, promovendo um código mais conciso e legível;<br/>&#9• <b>Imutabilidade:</b> Embora o JavaScript não imponha imutabilidade por padrão, é possível utilizar bibliotecas como Immutable.js para garantir que os dados não sejam alterados após a criação, isso permitirá que os dados, uma vez criados, não são alterados. Em vez disso, novas versões dos dados são geradas quando necessário, o que ajuda a prevenir erros comuns relacionados a alterações inesperadas de estado;<br/>&#9• <b>Funções puras:</b> Escrever funções puras e combiná-las facilita a criação de aplicações modulares e testáveis no Node.js.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Aqui, temos o exemplo que mostra o paradigma funcional sendo aplicado no Node.js. Aqui, temos a função <code>multiplicarPorDois</code>, que é um exemplo de função pura. Em programação funcional, funções puras são aquelas que, dado um mesmo conjunto de entradas, sempre retornam o mesmo resultado, sem modificar estados externos ou causar efeitos colaterais. Essa função recebe um número como argumento e retorna esse número multiplicado por dois.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Logo abaixo, temos a função <code>aplicarOperacao</code>, que exemplifica o conceito de função de alta ordem. Em programação funcional, uma função de alta ordem é aquela que recebe outra função como argumento ou retorna uma função. No nosso caso, <code>aplicarOperacao</code> recebe um array e uma função, aplicando essa função a cada elemento do array utilizando o método <code>map()</code>. O método <code>map()</code> é uma característica importante da programação funcional, pois permite transformar coleções de dados sem modificar a original, garantindo imutabilidade.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Na linha 10, criamos um array de números [1, 2, 3, 4, 5]. Em seguida, chamamos <code>aplicarOperacao</code>, passando esse array e a função <code>multiplicarPorDois</code> como parâmetros. O resultado é um novo array onde cada número foi multiplicado por dois, sem alterar o array original. Esse conceito de imutabilidade é fundamental na programação funcional, pois evita efeitos colaterais e facilita a manutenção do código.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Por fim, exibimos o resultado no console, que nos retorna [2, 4, 6, 8, 10]. Esse exemplo mostra como o paradigma funcional pode ser aplicado no Node.js para escrever código modular, previsível e mais fácil de testar.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma funcional.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='5'>&#9<li><b>Programação Declarativa:</b> A programação declarativa é um paradigma que se concentra em descrever o que deve ser feito, sem especificar detalhadamente como realizar as operações. Diferentemente da programação imperativa, que define uma sequência explícita de comandos, a abordagem declarativa permite que o desenvolvedor especifique o resultado desejado, delegando ao sistema a responsabilidade de determinar o fluxo de execução necessário para alcançá-lo.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Principais Características da Programação Declarativa no Node.js:<br/>&#9• <b>Abstração de Controle:</b> O programador define o objetivo final, e o sistema gerencia os detalhes de implementação para atingir esse resultado;<br/>&#9• <b>Imutabilidade e Ausência de Estado:</b> As operações não dependem de estados internos ou variáveis mutáveis, promovendo previsibilidade e facilitando a depuração;<br/>&#9• <b>Transparência Referencial: :</b> Funções ou expressões produzem o mesmo resultado quando dadas as mesmas entradas, sem efeitos colaterais, permitindo substituições seguras e otimizando o código;<br/>&#9• <b>Concisão e Clareza:</b> A sintaxe tende a ser mais enxuta e expressiva, focando no &quot;o quê&quot; em vez do &quot;como&quot;, o que melhora a legibilidade e manutenção do código.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "No contexto do Node.js, a programação declarativa é frequentemente aplicada por meio de técnicas funcionais e uso de APIs que permitem descrever operações de forma declarativa.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo temos um exemplo dessa vez sobre o paradigma declarativo sendo aplicado no Node.js. Diferente da programação imperativa, onde descrevemos passo a passo como o programa deve executar cada ação, na programação declarativa focamos no que queremos alcançar, deixando que a linguagem e suas funções abstratas lidem com os detalhes da execução. No exemplo abaixo, temos um array de números e utilizamos funções declarativas como <code>filter()</code>, <code>map()</code> e <code>reduce()</code> para manipular os dados de forma clara e expressiva, sem precisar de laços ou variáveis auxiliares.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Primeiramente, criamos um array de números de 1 a 10. Em seguida, definimos a função <code>ehPar</code>, que verifica se um número é par, e a função <code>aoQuadrado</code>, que eleva um número ao quadrado. Ambas são funções puras, pois sempre retornam o mesmo resultado para os mesmos argumentos, sem causar efeitos colaterais.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Na linha 10, aplicamos a cadeia de métodos declarativos: primeiro usamos <code>filter(ehPar)</code>, que retorna apenas os números pares do array; depois <code>map(aoQuadrado)</code>, que transforma cada número par em seu quadrado; e por fim <code>reduce((acc, val) => acc + val, 0)</code>, que soma todos os valores resultantes. Esse encadeamento de funções evita a necessidade de estruturas imperativas, como <code>for</code> ou <code>while</code>, tornando o código mais legível e conciso.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Ao final, o código nos retorna 220, que é a soma dos quadrados dos números pares do array original. Esse exemplo mostra como a programação declarativa torna o código mais expressivo e fácil de entender, permitindo que o desenvolvedor foque no resultado desejado, sem se preocupar com os detalhes de implementação.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma declarativo.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<ol start='6'>&#9<li><b>Programação Orientada a Eventos:</b> A Programação Orientada a Eventos é um paradigma no qual o fluxo de execução de um programa é determinado por eventos, como interações do usuário, mensagens de outros sistemas ou mudanças de estado. No Node.js, esse paradigma é fundamental, permitindo a construção de aplicações assíncronas e altamente responsivas.</li></ol>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<b>Características:</b><br/>Principais Características da Programação Orientada a Eventos no Node.js:<br/>&#9• <b>Assincronicidade:</b> As operações são executadas de forma não bloqueante, permitindo que o programa continue processando outras tarefas enquanto aguarda a conclusão de operações anteriores;<br/>&#9• <b>Emissão e Escuta de Eventos:</b> Componentes do sistema podem emitir eventos, enquanto outros &quot;ouvintes&quot; reagem a esses eventos, facilitando a comunicação entre diferentes partes da aplicação;<br/>&#9• <b>Loop de Eventos (Event Loop):</b> Mecanismo central do Node.js que gerencia a execução de operações assíncronas, despachando eventos e garantindo que as funções de callback correspondentes sejam executadas no momento apropriado.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Abaixo, temos um exemplo que demonstra a aplicação da Programação Orientada a Eventos no Node.js. Utilizamos o módulo events para criar um emissor de eventos personalizado que reage a um evento específico.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Primeiro, vamos realizar a importação do módulo <code>events</code>: Utilizamos o módulo interno do Node.js chamado <code>events</code>, que fornece a classe <code>EventEmitter</code> para a criação e manipulação de eventos. Depois temos a criação de uma classe personalizada <code>MeuEmissor</code>, que estende <code>EventEmitter</code>, permitindo que instâncias dessa classe emitam e escutem eventos personalizados, e, em seguida temos a instanciação do Emissor de Eventos, aqui estamos criando uma instância de <code>MeuEmissor</code> chamada <code>meuEmissor</code>, que será utilizada para emitir e ouvir eventos, depois, realizamos o registro de um Ouvinte de Evento, utilizamos o método <code>on</code> para registrar uma função que será executada sempre que o evento '<code>eventoPersonalizado</code>' for emitido. Nesse caso, a função simplesmente imprime uma mensagem no console, por fim temos a emissão do evento personalizado: Chamamos o método <code>emit</code> para disparar o evento '<code>eventoPersonalizado</code>', acionando todos os ouvintes registrados para esse evento. Como resultado, a mensagem definida anteriormente é exibida no console.",
+                                "pathImgInferior": "/assets/Exemplo/exemplo paradigma orientada a eventos.png",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "<br/>No geral os paradigmas de programação no Node.js são fundamentais para entender como essa tecnologia se destaca no desenvolvimento de aplicações modernas. Ele adota principalmente os paradigmas assíncrono e orientado a eventos, que permitem um alto desempenho em aplicações de rede e sistemas escaláveis. Além disso, suporta a programação funcional com o uso de funções de ordem superior, promessas e async/await, tornando o código mais modular e reutilizável.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Por outro lado, o paradigma orientado a objetos também pode ser utilizado, principalmente com classes do ES6, facilitando a organização de grandes projetos. No entanto, devido à natureza do JavaScript, a combinação de múltiplos paradigmas dentro do mesmo projeto é comum e pode ser benéfica.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Em conclusão, o Node.js oferece uma abordagem flexível e eficiente para o desenvolvimento de software, permitindo que os desenvolvedores escolham os paradigmas que melhor se adaptam às necessidades do projeto. Seu modelo assíncrono e não bloqueante, aliado à versatilidade da linguagem, faz dele uma escolha poderosa para aplicações escaláveis e de alto desempenho.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
                         ]
                     },
                     {
-                        "titulo": "Como começar um projeto Node.js e as configurações iniciais",
-                        "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://youtu.be/3GzPQ1LScjo",
-                        "highlightColor": "#E71A1A",
-                        "paragrafos": [
-                            {
-                                "texto": "<a href='https://nodejs.org' target='_black'>Site de instalação</a> logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js. <a href='https://www.youtube.com/watch?v=tpzFsrEJm1A' target='_blank'>assista aqui o tutorial!</a>",
-                                "pathImgInferior": "",
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "pathImgSuperior": "",
-                                "pathVideoSuperior": "",
-                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que <a href='https://code.visualstudio.com/' target='_blank'>site de instalação</a> logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
-                                "pathImgInferior": "/assets/Exemplo/Ex1.png",
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Executando o primeiro script",
-                        "descricao": "Escreva e execute seu primeiro script no terminal, entendendo os conceitos basicos de JavaScript e Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://youtu.be/DiNLHjzn818",
-                        "highlightColor": "#68EC13",
-                        "paragrafos": [
-                            {
-                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos. Veja o exemplo do video acima!",
-                                "pathImgInferior": "",
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "texto": "Entendendo mais abaixo sobre o JavaScript e Node!"
-                            },
-                            {
-                                "pathImgSuperior": "",
-                                "pathVideoSuperior": "",
-                                "texto": "Segundo o livro: <b><i>Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes</b></i>. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
-                                "pathImgInferior": "",
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "texto": "Segundo o livro: <b><i>Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira</b></i>. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Principios Básicos da IDE Visual Studio Code",
-                        "descricao": "Descubra o que é o Node.js, suas principais características e por que ele é amplamente utilizado no desenvolvimento backend.",
+                        "titulo": "Conceitos de IDE, instalação e configuração do VS Code",
+                        "descricao": "Aqui você irá descobrir o que é uma IDE, para que serve, como realizar a instalação completa, dicas e configuração da IDE do Visual Studio Code.",
                         "pathImgSessao": "/assets/Exemplo/EX1 visual ProjeCLP1.png",
                         "pathVideoSessao": "",
-                        "highlightColor": "#1283F4",
+                        "highlightColor": "rgb(113 36 197)",
                         "paragrafos": [
                             {
                                 "texto": "Depois das configurações iniciais, vamos entender um pouco mais sobre a IDE Visual Studio Code, que é uma das mais utilizadas por desenvolvedores de todo o mundo. Aprenda a criar, editar e salvar arquivos, além de instalar extensões e personalizar o ambiente de desenvolvimento.",
@@ -117,6 +333,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX2 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "Na imagem acima temos a tela inicial da IDE, claro depois das configurações pois instalação, aqui veremos como na imagem abaixo de Start/Começar as opções New File/Novo arquivo, Open File/Abri arquivo, Open Folder/Abri Pasta, Clone Git Repository/ Clonar repositorio do Git, Connect to/ Conectar para. As ultimas duas opções vamos aprofundar mais para frente no curso, aqui vamos focar nas primeiras 3 opções. Ao clicar em New File vamos gera a seguinte ação.",
@@ -124,6 +341,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX4 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "Aqui nos colocaremos o nome do arquivo que vamos gerar e sua respectiva extensão que no Node herda do JavaScript o js. Como no exemplo abaixo vamos criar o arquivo <b>Primeiro Script.js</b>, e logo após clicar em Save/Salvar. Apos isso vamos ver a tela de edição do arquivo.",
@@ -131,6 +349,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX5 visual ProjeCLP1.png",
                                 "pathVideoSuperior": "",
                                 "texto": "E assim começa a diversão! Aqui vamos escrever nosso primeiro código em Node.js, que será um simples console.log(“Hello World!”). Para executar o código, basta clicar no botão Run/Executar, que fica no canto superior direito da tela. Pronto! Você acaba de executar seu primeiro script em Node.js.",
@@ -138,11 +357,13 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX6 visual ProjeCLP1.png",
                                 "texto": "Uma segunda forma é ir direto no Terminal/CMD como a imagem acima explicita, é um pouco mais complicado mas não impossível! Assim simplesmente usar o código <b>cd 'diretorio'</b> para link a pasta do arquivo e usa o <b>node 'Primeiro Script.js'</b> e pressiona enter, assim mostra as imagens abaixo.",
                                 "pathImgInferior": "/assets/Exemplo/EX7 visual ProjeCLP1.png"
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "/assets/Exemplo/EX8 visual ProjeCLP1.png",
                                 "texto": "Depois de ter começado um projeto pode salvar o arquivo em file depois save e aproveitar para ativar o autosave para a cada mudança não seja perdida! E caso vem ter um acesso futuro no arquivo pode o acessá-lo em Open File da tela inicial e se quiser abri uma pasta inteira dos arquivos do seu projeto pode-se usar o Open Folder.",
                                 "pathImgInferior": "",
@@ -158,6 +379,56 @@
                             },
                             {
                                 "texto": "E assim terminamos o primeiro modulo, com a execução do primeiro script em Node.js. Parabéns! Você está no caminho certo para se tornar um desenvolvedor backend de sucesso."
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Como começar um projeto Node.js e as configurações iniciais",
+                        "descricao": "Aprenda a instalar o Node.js, configurar um projeto do zero e preparar seu ambiente de desenvolvimento.",
+                        "pathImgSessao": "/assets/CAPA CURSO.png.png",
+                        "pathVideoSessao": "",
+                        "highlightColor": "#E71A1A",
+                        "paragrafos": [
+                            {
+                                "texto": "<a href='https://nodejs.org' target='_black'>Site de instalação</a> logo no cabeçalho estará a opção descarregar/Download. Logo ao carregar a página ficara disponível as opções que será claramente de sua escolha e vontade! Mas por padrão será baseado pela a configuração de sua maquina. No Linux temos a opção de usar o terminal para a instalação podendo ser até mais segura, executando o simples código sudo apt-get install Node.js. <a href='https://www.youtube.com/watch?v=tpzFsrEJm1A' target='_blank'>assista aqui o tutorial!</a>",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Para ter mais liberdade e praticidade no desenvolvimento do código utilizaremos sempre uma IDE( Integrated Development Environment/ Ambiente de Desenvolvimento Integrado), no universo dos programadores tem diversas opção como Android Studio, NetBeans, Eclipse… Mas aqui vamos usar o Visual Studio Code/VS, o link é nada mas que <a href='https://code.visualstudio.com/' target='_blank'>site de instalação</a> logo na pagina principal estará as opção de download, a instalação ocorre como qualquer outro software, sem maiores dificuldade tanto no windows ou linux. A configuração também é bastante intuitiva de escolha personalizada, sendo assim configure da forma que achar melhor, não tens muitas configuração técnica na página de entrada, somente ensinos e escolha de comportamento da IA e themes.",
+                                "pathImgInferior": "/assets/Exemplo/Ex1.png",
+                                "pathVideoInferior": ""
+                            }
+                        ]
+                    },
+                    {
+                        "titulo": "Executando o primeiro script",
+                        "descricao": "Escreva e execute seu primeiro script no terminal, entendendo os conceitos basicos de JavaScript e Node.js.",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "https://youtu.be/DiNLHjzn818",
+                        "highlightColor": "#68EC13",
+                        "paragrafos": [
+                            {
+                                "texto": "Depois de instalado o software do Node, podemos dependendo do sistema operacional utilizar o cmd/terminal para executar alguns comandos. Veja o exemplo do video acima!",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Entendendo mais abaixo sobre o JavaScript e Node!"
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "Segundo o livro: <b><i>Aprendendo JavaScript / Filipe Del Nero Grillo e Renata Pontin de Mattos Fortes</b></i>. Sumario 2 : A linguagem JavaScript foi criada pela Netscape Communications Corporation e foi desenvolvida com o nome de Mocha, depois passou a se chamar LiveScript e foi finalmente lançada como JavaScript em 1995 integrando a versão 2.0B3 do navegador Netscape e visava implementar uma tecnologia de processamento modo cliente. A denominação da linguagem, JavaScript, se deve a similaridades com a sintaxe do Java e embora as duas linguagens não tenham nenhuma outra relação além desta, os nomes ainda causam confusão para alguns usuários. Mais tarde, a linguagem tornou-se um padrão da ECMA (European Computer Manufacturers Association) que atualmente é seguido por outros desenvolvedores como os da Adobe com a linguagem ActionScript. A implementação da Microsoft do ECMAScript é chamada de JScript ou ActiveScript, popularmente conhecido como ActiveX, usada nos navegadores Internet Explorer. JavaScript permite criar pequenos programas embutidos no próprio código de uma página HTML e capazes de gerar números, processar alguns dados, verificar formulários, alterar valor de elementos HTML e criar elementos HTML. Tudo isso diretamente no computador cliente, evitando a troca de informações com o servidor e o tempo passa a depender somente do processamento local do cliente, não mais da latência da rede.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Segundo o livro: <b><i>Aplicações web real-time com Nodejs / Casa do Código/ Caio Ribeiro Pereira</b></i>. Sumario 1.1 O problema das arquiteturas bloqueantes: Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-Thread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. . Um sistema bloqueante enfileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais ficam em espera, mantendo por um período de tempo uma fila de requisições ociosas. Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineficiente. É gasto grande parte do tempo mantendo uma fila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são finalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 1.2 E assim nasceu o Node.js: Foi baseado neste problema que, no final de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eficiente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático. 1.3 Single-thread: Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters, que é um módulo nativo do Node.js e é super fácil de implementá-lo. Outra maneira é utilizar ao máximo a programação assíncrona."
                             }
                         ]
                     }
@@ -179,11 +450,12 @@
                     {
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
                         "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "NPM é um gerenciador de pacote instalado junto ao próprio Nodejs. É como se fosse a playstore do android que se encontra diversas aplicações a ser utilizadas em seu projeto com fundamento poupar tempo e facilitar a vida do programador. Dentro desse cursos vamos usar algumas como exemplo o Express.",
@@ -191,6 +463,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Um dos paradigmas fundamentais que temos que ter em mente sobre o Nodejs é que o mesmo é modularizado, por isso teremos muitos callbacks de entrada e saída e usaremos muito em todos os projetos em vida o require(). O NPM significa Node Package Manager e esse pacotes são módulos, os mais famosos são o Express, Nodemon, Cors, Pm2 dentre outros. Os códigos básicos são <strong>npm install nome_do_pacote</strong>/ para instalar o modulo. <b>npm -g install nome_do_pacote</b>// Para instalar o modulo usando o repositório global. <b>npm install nome_do_pacote --savedev</b>// para instalar o modulo com dependência na maquina assim não ficará só no projeto “é como se fosse executar o modulo com permissão de administrado no PC”. <b>npm remove nome_do_pacote</b>// desinstala o pacote do projeto em questão. Código recomendado a utilizar ao instalar o pacote <b>npm install -g nome_do_pacote --savedev</b>.",
@@ -202,7 +475,7 @@
                     {
                         "titulo": "Conceito de dependências",
                         "descricao": "Aprenda o que são dependências, a diferença entre dependências de produção e desenvolvimento e como gerenciá-las.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -212,6 +485,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Bem , temos diversos tipos de dependência vamos explicar um por um. <b>Dependência Padrão</b> são pacotes essenciais para o funcionamento em produção com já citado express, lodash, axios… todos são listado em arquivo chamado package.json na chave <i>dependencies</i>. <b>Dependência Opcionais</b> são pacotes que se não poderem ser instalados, não deverão impedir a instalação nem o funcionamento do projeto, usa-se esse recurso quando tens pacote especifico que pode  haver de não estar disponíveis em todos os sistemas operacionais, são listada no arquivo package.json na chave <i>optinalDependencies</i>. <b>Dependências de Desenvolvimento</b> são pacotes necessários só durante a produção do projeto, mas não para o projeto em si na sua instalação e funcionamento. Exemplos eslint, jest, typescript… são listada no arquivo package.json na chave <i>devDependencies</i>. <b>Dependências de pares</b> são pacotes que o projeto necessita que o usuário tenha instalado na maquina e não pode ser instalado de forma automática, mas sim manual! Como plugins ou biblioteca exemplo webpack, isso também são listada no arquivo package.json na chave <i>peerDependencies</i>.",
@@ -221,9 +495,9 @@
                         ]
                     },
                     {
-                        "titulo": "Como instalar pacotes do Node.js", 
+                        "titulo": "Como instalar pacotes do Node.js",
                         "descricao": "Veja como instalar pacotes globais e locais usando npm ou yarn, além de entender o package.json e o node_modules.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -233,6 +507,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -244,7 +519,7 @@
                     {
                         "titulo": "Como remover pacotes do Node.js",
                         "descricao": "Aprenda a desinstalar pacotes corretamente, garantindo a limpeza do projeto e a organização das dependências.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -254,6 +529,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Depois da execução do código vai aparecer a quantidade de pacotes removido,auditado e vulneráveis. E a pasta node_modules vai ser limpa e o arquivo package.json vai ser atualizado.",
@@ -265,16 +541,17 @@
                     {
                         "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
                         "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b>.",
+                                "texto": "Para atualizar os pacotes, podemos começar pela verificação do pacotes, usando <b>npm outdated</b>, para atualizar os pacotes de acordo com as configurações do <i>package.json</i>, caso queira atualizar um projeto especifico pode-se usar <b>npm update nome_do_pacote</b>. Caso queira testa o modulo instalado pode-se usar npx, para verificar se a instalado em sua maquina pode usar <b>which npx</b>, caso não ha pode-se usar <b>npm install -g npx</b>, para atualizar para versões mais recente usa-se <b>npx npm-check-update -u npm install</b> ou pode-se usar apenas ou <b>npm install</b> que vai simplemente atualizar usando como referência os dados do package.json.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -301,7 +578,7 @@
                     {
                         "titulo": "Caracteristicas e limitações comuns do JavaScript",
                         "descricao": "Explore as principais características e limitações do JavaScript, como sua natureza assíncrona e o gerenciamento de escopo.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -311,6 +588,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "As limitações principais são <i>Single-Threaded</i></b> problemas com <i><b>CPU-Intensive Task</i></b>, código bloqueante com os loops pesados e pode trava o <b>Event Loop</b>, soluções <b>Worker Threads</b>, delegar tarefa a outros serviços. <b>Callback Hell</b>, aninhamento excessivo de callbacks antes de <i><b>promises/async-await</b></i>, solução e usar um async/await ou bibliotecas como Promise.all. Gerenciamento de memória, vazamento de memória podem ocorrer se não forem liberadas referências. Dependência Externas(NPM), o ecossistema tem milhões de pacotes, mas alguns podem ter má qualidade ou vulnerabilidade, problemas com dependency hell(versões conflitante). Falta de suporte a <i><b>Multi-threading</i></b> Nativo, Embora existam <b>Worker Threads</b>, não é tão simples quanto em linguagens como Java ou Go. Processamento de Dados Binários, Embora o Node.js tenha <b>Buffer</b>, manipulação avançada de binários pode ser menos eficiente que em C/C++. Mudanças rápidas na api, algumas api do node.js mudam entre versões, exigindo atualizações frequentes. Segurança, vulnerabilidade em pacotes de terceiros( npm audit é essencial), configurações incorretas podem expor dados sensíveis em produção.",
@@ -322,8 +600,8 @@
                     {
                         "titulo": "Principais conceitos do JavaScript",
                         "descricao": "Compreenda conceitos chave do JavaScript, como variáveis, funções, objetos, arrays e a manipulação do DOM.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
@@ -332,6 +610,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Para operações temos símbolos para indicar a cada sua funções, <b>somar +</b>, <b>subtrair -</b>, <b>multiplicar *</b>, <b>dividir /</b>, obter o restos da <b>divisão %</b>. Para obter o resultado de uma comparação, o mesmo sera em uma resposta boolean como verdadeiro/falso, <b>verificar se é igual o valor (==)</b>, <b>verificar se é igual o valor e tipo (===)</b>, <b>verificar que é diferente o valor (!=)</b>, <b>verifica que é diferente o valor e tipo (!==)</b>, <b>verificar que é maior (>) ou menor (<)</b>.",
@@ -339,6 +618,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Os operadores lógicos ajudam muito na formalização da sentença da operação, em javascript temos três. O <b>se e somente se (&&)</b> ex: ((5 + 3 == 8) && (3 + 5 == 8) ) == verdadeiro. <b>O se esse ou esse (||)</b> ex: ((4%2 == 0) || (3%2 == 0)) == verdadeiro, para avaliar a negação de uma sentença só preciso usar o <b>simbolo (!)</b> ex: !(2 + 3 == 6) == verdadeiro.",
@@ -346,6 +626,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "As atribuições começa pelo <b>símbolo (=)</b> ex: A = 5 o variável oberar o valor 5 em sua composição. O <b>simbolo (+=)</b> ex: A += 5 o valor 5 somara com o valor que está dentro da variável. O <b>simbolo (-=)</b> ex: A -= 5 o valor subtrairá o valor que está dentro da variável.",
@@ -353,6 +634,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Diante as estruturas de controle, são todas as padrões de qualquer linguagem. Temos o <b>if...else = se...senão</b>, <b>switch == coleção de probabilidade</b>. Os loops temos o <b>for == parar em alguma estancia</b>, <b>while == enquanto algo operacional estiver acontecendo</b>, <b>do...while == fazer enquanto algo estiver acontecendo</b>, <b>for...of == é loop que permite iterar sobre elementos</b>, <b>for...in == já é um loop usado parar iterar sobre propriedades enumeráveis de um objetos</b>.",
@@ -360,6 +642,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Temos 4 tipos de funções. A declaração <b>function nomeFunção(){}</b>. Expressão <b>const funcao = function(){}</b>. Arrow functions <b>() => {}</b>. E o parâmetros e retorno (<b>return</b>). O retorno é o valor que a função devolve após sua execução, e o parâmetro é o valor que a função recebe como entrada. Exemplo: function soma(a, b) { return a + b; } onde a e b são os parâmetros e o resultado da soma é o retorno da função.",
@@ -367,6 +650,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Os principais objetos e protótipos são a coleção de propriedade ({ chave: valor }), herança baseada em protótipos e não em classe tradicionas.",
@@ -374,6 +658,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No javaScript os métodos são diversos. O <b>push()</b> é usado para adicionar um o mais elementos ao final de um array e retornar o novo comprimento do array. O <b>pop()</b> remove o último elemento de um array e retornar esse elemento, modifica o array original e se tiver vazio retorna <i>undefined</i>. O método <b>shift()</b> remove o primeiro elemento de um array e retorna esse elemento. Modificando o array original e deslocando todos os outros elementos para um índice menor. O método <b>unshift()</b> adiciona um ou mais elementos no início de um array e retorna o novo comprimento do array, deslocando os elementos existentes para índices maiores. O método map() é uma função de arrays em javaScript que cria um novo array com os resultados da aplicação de cada elemento do array original. Já o método <b>filter()</b> cria um novo array com todos os elementos que passam em uma implementação fornecida pela função. É extremamente últi para selecionar elementos de array baseado em condições específicas. O método <b>reduce()</b> é umas das operações para manipulação de arrays em JavaScript, executa uma função redutora para cada elemento do array resultando em um único valor de retorno. Já o <b>forEach()</b> é uma função fornecida uma vez para cada elemento de um array, em ordem crescente de índice, sendo muito diferente de map() ou filter(), o forEach não retorna um novo array o fundamento dele é usado para sanar efeitos colaterais.",
@@ -381,6 +666,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No <i><b>âmbito de variável</i></b> de escopo é algo bem simples, temos a global (<b>var</b>) e a de bloco (<b>let e const</b>) que fica retida na (<b>{}</b>) da função em afim.",
@@ -388,6 +674,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Já no <i><b>Eventos e Dom(Document Object Model)</b></i>, temos os elementos <b>document.querySelector()</b> aqui pode se buscar uma classe ou Id do método em questão, no <b>getElementById()</b> aqui se busca só o ID. Na manipulação temos o <b>innerHTML</b> para manipular <i><b>TAGS</b></i>. No <b>textContent</b> é um elemento que permite ler ou definir o conteúdo textual de um elemento HTML excluindo tegs e comentários. Em ultimo dos Eventos  Dom temos <b>addEventListener()</b> esse método permite colocar um ouvinte nos eventos ao um elemento HTML especifico, assim ocorrendo um clique, tecla pressionada ou movimentação do mouse, assim adiante.",
@@ -395,6 +682,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Já no âmbito <i><b>Assincronismo</b></i> é um conceito que permite a execução de operações demoradas sem bloquear a thread principal, temos em primeiro lugar os <b>Callbacks</b> que é nada mais que funções passadas como argumentos para serem executadas depois. <b>Promises</b> é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona, temos a <i>.then()</i> é um método de Promises usado para lidar com o resultado bem-sucedido de uma operação assíncrona, também permite encadear operações na forma limpa e legível. Outra é o <i>.catch()</i> um método essencial para tratar erros em promises no JavaScript, ele procura e capta falhas no códigos dentro de uma Promise ou .then() anterior no encadeamento. Já em ultimo nas Promises <i>Async/Await</i> é uma forma mais modernar, atual e legível de trabalhar com operações assíncronas em JavaScript, assim permitindo escrever códigos de maneira síncrona, facilitando o entendimento e a manutenção do mesmo. Em ultimo dos Assincronismo temos o <b>Fetch API</b> é a forma mais moderna de fazer requisições HTTP em JavaScript, substituindo o antigo <i>XMLHttpRequest</i>, ela fornece uma interface mais poderosa e flexível para buscar recursos de forma assíncrona, retornando promises nativas.",
@@ -402,6 +690,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>tratamento de erros</b></i> no códigos é constituindo pelo <b>try/catch</b> é uma estrutura fundamental em JavaScript para capturar e tratar erros de formar controlada, assim evitando quebras inesperadas que interrompam o fluxo do código. E também é constituindo pelo <b>finally</b> um bloco em uma parte estrutural do try/catch que sempre é executado independente  de ocorrer um erro ou não.",
@@ -409,6 +698,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No JavaScript temos a <i><b>Classes(ES6+)</b></i> que obtém a sintaxe <b>class</b> que é a forma mais clara e orientada ao objeto para criar estruturas reutilizáveis com uma sintaxe limpa e recursos avançados. Temos também o <b>constructor</b> um método em classes que automaticamente quando o objeto é criado o mesmo é executado a partir da classes. Já no conceito de herança temos o <b>extends</b> que permite criar uma classe filha em uma classe pai, herdando seus métodos e propriedade.",
@@ -416,6 +706,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Em <i><b>Módulos (ES6)</b></i> temos duas modularizações, o <b>import  e export</b>  é uma forma moderna de compartilhar e organizar arquivos JavaScript, esse sistema do ES6 surgiu para substituir os antigos sistema como CommonJS e AMD",
@@ -423,6 +714,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Hoisting</b></i> em JavaScript é um comportamento tipico onde a declaração de variáveis e funções são movidas para o topo de seu escopo antes da execução do código.",
@@ -430,6 +722,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Closures</b></i> são um dos conceitos mais poderosos e até importante, eles permitem que a funções “lembrem” e acessem variáveis de seu escopo léxico, mesmo depois  a execução da função externa ter sido finalizada.",
@@ -437,6 +730,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Destructuring</b></i> é uma sintaxe no ES6 que extrair valores de arrays ou objetos de forma mais legível.",
@@ -444,6 +738,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "O <i><b>Spread/Rest Operator</b></i> é nada menos que <b>(...)</b> serve para espalhar ou agrupar elementos. O <b>Spread</b> é usado para expandir elementos de um array ou objeto, enquanto o <b>Rest</b> é usado para agrupar múltiplos argumentos em um único array.",
@@ -451,6 +746,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Agora o <i><b>Template Literals</b></i> o template strings é somente uma área de adicionamento de expressão variável, representado dessa forma <b>(${})</b>. São uma sintaxe introduzida no ES6 que cria de forma flexível e poderosa, pode ser usando <b>(``)</b> também.",
@@ -458,6 +754,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "E também temos o <i><b>JSON(JavaScript Object Notation)</b></i> composto de <b>JSON.parse()</b> e junto com <b>JSON.stringify()</b>. O método <i>JSON.parse()</i> é usado para converter uma string JSON válida em um objeto JavaScript. Já o método <i>JSON.stringify()</i> converter um objeto JavaScript em uma string JSON, criando assim uma lista seriada de dados para compartilhamento e armazenamento.",
@@ -465,6 +762,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "No <i><b>Web APIs</b></i> fornece interfaces pelos navegadores que permite e cria interação com recursos do sistema e funcionalidades avançadas, com capacidades específicas para desenvolvimento web. Os principais são <b>localStorage</b>, <b>sessionStorage</b>, <b>setTimeout</b> e <b>setInterval</b>. No <i>localStorege</i> permite armazenar dados no navegador do usuário, como se fosse um cookies, só que não expiram até ser diretamente removidos, tem maior capacidade até mais de 5MB e não são enviados automaticamente em requisições. Já no <i>sessionStorage</i> e umas da forma de armazenar dados temporariamente para sessão atual da aba  do navegador e quando fecha a aba os dados se apagam automaticamente, e lógico cada aba tem seu próprio sessionStorage. E no <i>setTimeout</i> é uma função para executar uma ação em um tempo exato contabilizado em <b>milissegundos</b>. Em ultimo o <i>setInterval</i> é um pouco diferente do <b>setTimeout</b> esse executa repetidamente em um intervalo de tempo definido.",
@@ -472,6 +770,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "Em ultimo tópico <i><b>Strict Mode</b></i> ele é fundamental para tornar o código JavaScript mais seguro, evitando assim más práticas. O código em si é <b>(use strict)</b> o mesmo é rigoroso e evitar erros e deixa limpo o executar do código em si.",
@@ -479,6 +778,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>.",
@@ -490,19 +790,27 @@
                     {
                         "titulo": "Diferenças entre CommonJS e ESModules",
                         "descricao": "Aprenda as diferenças entre os sistemas de módulos CommonJS e ESModules, e como cada um é usado no Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
+                        "pathVideoSessao": "",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Nesse tópico vamos falar primeiro do <i><b>CommonJS</b></i>, atualmente e principalmente é usado em NodeJS, mas já foi usado em JavaScript, ele é um sistema de módulos tradicional que permite organizar e compartilhar trecho de código entre arquivos JavaScript. Foi criado para trazer familiaridade e modularidade fora do navegador. Temos dois códigos principais e fundamentas o <b>require()</b> que tem como intenção importar módulos, e <b>module.exports/exports</b> que a funcionalidade é exportar módulo, literalmente o inverso do anterior falado.",
+                                "pathImgInferior": "",
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": "",
+                                "pathVideoSuperior": "",
+                                "texto": "O mais atual e utilizada no Front-End JavaScript/Navegador é o <i><b>ES Modules</b></i>, esse sistema é mais moderno, introduzido em 2015. Permite organizar o código em arquivos separados de maneira eficiente, simples e pratico quanto em navegadores e Node. Os códigos principais são muito similares a do Common, é <b>import</b> que tem como finalidade importar módulos e <b>export</b> que é exportar funções, variáveis ou objetos.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
                             {
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "Já respondendo com a questão presente no titulo, as diferenças estão em como lidar com a modularização do projeto em si. Ambos organiza os códigos praticamente da mesma forma, só abordagens visuais distintas. Como características o <b>CommonJS(require/module.exports)</b>, já <b>ES Modules(import/export)</b>. Na origem o <b>Commonjs foi desenvolvido pelo NodeJS</b>, já o <b>ES Modules foi desenvolvida e oficializada pelo JavaScript</b>. O carregamento do Commonjs é <b>síncrono(bloqueante)</b>, já do ES Modules é <b>Assíncrono(não bloqueante)</b>. No navegador o CommonJS <b>não é suportado nativamente</b>, já o ES Modules <b>sim é suportado nativamente</b>. Especificamente no NodeJS os dois tipos é usado, o CommonJS nativo e o ES Modules usando o “type”: “module” ou o .mjs. Em questão de importação dinâmica o CommonJS com o seu <b>requerie() pode ser chamado dinamicamente</b>, mas o ES Modules por ser mais moderno com o seu <b>import() tens mais retornos em suas Promise, além de ser dinâmico</b>. O CommonJS na analise estática <b>é muito difícil permitir o  require em uma condicional</b>, já o ES Modules <b>sai ganhando nessa, pois o seus imports/export são estáticos e isso traz mais permissões</b>. Tendo toda essa noção, conseguimos ver que cada um tens suas peculiaridades, o CommonJS tem uma ampla adoção no NodeJS muitos pacotes npm usam de forma fundamentas, permite require dinâmico e mais simples em projetos legados. Já o ES Modules é padrão moderno JavaScript, melhor desempenho por causa do carregamento assíncrono e compatível com praticamente todos os navegadores. <b>Conclusão o CommonJS é tradicional principalmente no nodeJS por isso ainda está forte seu uso, mas aos poucos está sendo substituindo, pelo futuro ES Modules do JavaScript</b>.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -526,7 +834,7 @@
                     {
                         "titulo": "Conceito de Módulos do Node.js",
                         "descricao": "Entenda o conceito de módulos no Node.js e como eles permitem a organização e reutilização de código.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -536,6 +844,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -547,7 +856,7 @@
                     {
                         "titulo": "Dependências",
                         "descricao": "Aprenda como gerenciar dependências externas em seu projeto e utilizá-las através de módulos no Node.js.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -557,6 +866,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -568,7 +878,7 @@
                     {
                         "titulo": "Criar, exportar e importar módulos próprios",
                         "descricao": "Veja como criar seus próprios módulos, exportar funcionalidades e importá-las em outros arquivos.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -578,6 +888,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -589,7 +900,7 @@
                     {
                         "titulo": "Manipulação de arquivos utilizando o módulo fs para leitura e escrita",
                         "descricao": "Aprenda a utilizar o módulo fs do Node.js para ler e escrever arquivos de forma síncrona e assíncrona.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -599,6 +910,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -625,7 +937,7 @@
                     {
                         "titulo": "Introdução ao Express.js",
                         "descricao": "Conheça o Express.js, um framework para Node.js, que facilita a criação de servidores e APIs com recursos poderosos e simplificados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
@@ -635,6 +947,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -646,7 +959,7 @@
                     {
                         "titulo": "Desenvolva um servidor web com Express.js",
                         "descricao": "Aprenda a criar um servidor web básico utilizando o Express.js, configurando rotas e respondendo a requisições HTTP.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -656,6 +969,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -667,7 +981,7 @@
                     {
                         "titulo": "Conceitos de definições de rota",
                         "descricao": "Entenda o conceito de rotas no Express.js, como defini-las e manipulá-las para responder a diferentes tipos de requisições.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -677,6 +991,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -703,7 +1018,7 @@
                     {
                         "titulo": "Conceitos básicos do banco de dados SQL",
                         "descricao": "Aprenda o que é Banco de Dados e alguns dos conceitos fundamentais de bancos de dados relacionais SQL, como tabelas, chaves primárias e SQL queries.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1ABBE8",
                         "paragrafos": [
@@ -713,6 +1028,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -724,7 +1040,7 @@
                     {
                         "titulo": "Conecte sua aplicação ao banco de dados MySQL",
                         "descricao": "Veja como conectar seu projeto Node.js a um banco de dados MySQL e realizar operações básicas de leitura e escrita.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -734,6 +1050,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -745,7 +1062,7 @@
                     {
                         "titulo": "Conceitos básicos do banco de dados NoSQL",
                         "descricao": "Entenda os princípios dos bancos de dados NoSQL, como a flexibilidade e escalabilidade, e como eles se diferenciam dos SQL.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -755,6 +1072,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -766,7 +1084,7 @@
                     {
                         "titulo": "Primeiros passos com Firebase",
                         "descricao": "Explore o Firebase, sua configuração e como ele pode ser usado para armazenar dados em tempo real no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -776,6 +1094,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -787,7 +1106,7 @@
                     {
                         "titulo": "Conecte sua aplicação ao banco de dados Firebase",
                         "descricao": "Aprenda a integrar seu aplicativo Node.js com o Firebase para criar e ler dados de forma eficiente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -797,6 +1116,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -823,7 +1143,7 @@
                     {
                         "titulo": "Conceitos de API",
                         "descricao": "Entenda o que são APIs, sua importância e como elas permitem a comunicação entre diferentes sistemas e aplicativos.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#EA1A5E",
                         "paragrafos": [
@@ -833,6 +1153,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -844,7 +1165,7 @@
                     {
                         "titulo": "O que são APIs RESTful",
                         "descricao": "Aprenda sobre APIs RESTful, seus princípios e como elas utilizam métodos HTTP para operar em recursos de maneira eficiente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -854,6 +1175,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -865,7 +1187,7 @@
                     {
                         "titulo": "Estruturação de uma API RESTful com Express.js",
                         "descricao": "Descubra como estruturar uma API RESTful com o Express.js, criando rotas e manipulando requisições e respostas.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -875,6 +1197,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -886,7 +1209,7 @@
                     {
                         "titulo": "O que é CRUD?",
                         "descricao": "Compreenda o conceito de CRUD (Create, Read, Update, Delete) e sua aplicação em sistemas de gerenciamento de dados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -896,6 +1219,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -907,7 +1231,7 @@
                     {
                         "titulo": "Implemente um sistema CRUD funcional com Node.js",
                         "descricao": "Aprenda a implementar um sistema CRUD completo usando Node.js, Express.js e um banco de dados para persistir dados.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -917,6 +1241,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -928,7 +1253,7 @@
                     {
                         "titulo": "O que é JSON?",
                         "descricao": "Saiba o que é o JSON (JavaScript Object Notation) e como ele é usado para troca de dados entre servidor e cliente.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
@@ -938,6 +1263,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -949,7 +1275,7 @@
                     {
                         "titulo": "Enviar e receber dados em formato JSON",
                         "descricao": "Aprenda como enviar e receber dados em formato JSON em uma API, utilizando o Express.js para facilitar a comunicação.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1A88E8",
                         "paragrafos": [
@@ -959,6 +1285,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -985,7 +1312,7 @@
                     {
                         "titulo": "O que são variáveis de ambiente",
                         "descricao": "Entenda o conceito de variáveis de ambiente, sua importância para a configuração de aplicações e como elas ajudam a manter informações sensíveis fora do código.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
@@ -995,6 +1322,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1006,7 +1334,7 @@
                     {
                         "titulo": "Gerenciamento de variáveis de ambiente no Node.js com a biblioteca dotenv",
                         "descricao": "Aprenda a usar a biblioteca dotenv no Node.js para carregar variáveis de ambiente de um arquivo .env, mantendo a segurança e flexibilidade no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
@@ -1016,6 +1344,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1027,7 +1356,7 @@
                     {
                         "titulo": "O que é Git e a importância do versionamento de código",
                         "descricao": "Compreenda o Git, suas funcionalidades e como o versionamento de código ajuda na colaboração e controle de mudanças no seu projeto.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
@@ -1037,6 +1366,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1048,7 +1378,7 @@
                     {
                         "titulo": "Introdução ao GitHub e configuração do GitHub no VS Code",
                         "descricao": "Saiba como usar o GitHub para hospedar repositórios e configurar o Git no VS Code, facilitando o controle de versão e o trabalho em equipe.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
@@ -1058,6 +1388,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",
@@ -1069,7 +1400,7 @@
                     {
                         "titulo": "Conceitos de Deployment e como realizar o Deploy de uma aplicação Node.js na plataforma Vercel",
                         "descricao": "Entenda o que é deployment e como realizar o deploy de uma aplicação Node.js utilizando a plataforma Vercel para tornar sua aplicação acessível online.",
-                        "pathImgSessao": "https://global.discourse-cdn.com/freecodecamp/optimized/4X/b/2/b/b2b29cf1ff8514236fa0ade16aa677e5539a14e8_2_1024x529.png",
+                        "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
                         "highlightColor": "#F28318",
                         "paragrafos": [
@@ -1079,6 +1410,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
+                                "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
                                 "texto": "",

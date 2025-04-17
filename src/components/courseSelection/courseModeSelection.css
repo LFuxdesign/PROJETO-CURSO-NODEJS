@@ -37,6 +37,7 @@
 
 .modeSelection .container .cardsOptions{
     gap: 20px;
+    align-items: flex-start;
 }
 
 .modeSelection .container .cardsOptions .card{
@@ -57,10 +58,11 @@
 
 .modeSelection .container .cardsOptions .card .content .img{
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-position: center!important;
     border-radius: calc(var(--default-radius)/2);
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/9!important;
 }
 
 @media(width < 860px){

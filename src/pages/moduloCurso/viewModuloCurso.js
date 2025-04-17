@@ -2,14 +2,15 @@ import "./viewModuloCurso.css";
 
 import Curso from "../../conteudo/curso.json"
 
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
-import { cleanHtml } from "../../scripts/scripts";
+import { capFirstLetter, cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
 
 
 export default function ViewModuloCurso({ content4website }) {
+    const location = useLocation();
     const [searchParams] = useSearchParams(); // parametros url
     const navigate = useNavigate();
 
@@ -248,18 +249,41 @@ export default function ViewModuloCurso({ content4website }) {
     }, [content4website, refBtnNext, refBtnPrev, searchParams]);
     // useEffect que controla o estado do botão de avançar e voltar a cada renderização, alterando o estado inicial
     // que é desativado, isso é necessário para ativar somente o botão conveniente ao carregar a pagina
+
+
+
+    const [showScrollToTopBtn, setShowScrollToTopBtn] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            window.scrollY > 200 ? setShowScrollToTopBtn(true) : setShowScrollToTopBtn(false);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="content4moodle moduloCurso flex flexColumn" >
+            <div className={"scrollToTopBtn flexCenter" + (!showScrollToTopBtn ? " hide" : "")} title="Ir para o topo" onClick={() => { window.scrollTo(0, 0) }}>
+                <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 17L16.2929 1.70711C16.6834 1.31658 17.3166 1.31658 17.7071 1.70711L33 17" stroke="#212529" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
             {
                 showModalController && <Modal path={modalData.path} type={modalData.type} className="entryAnimation" animationDelay={".5s"} showControl={modalAnimationController} showStatus={(status) => { setModalAnimationController(status); setTimeout(() => setShowModalController(status), 100) }} />
             }
             <section className="header entryAnimation opacityAni">
-                <div id="title">
-                    <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
-                </div>
+                {
+                    !content4website && <div id="title">
+                        <h1 dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
+                    </div>
+                }
             </section>
             <section className="content flex transition">
-                <div className="runningCourses flex flexColumn entryAnimation transition">
+                <div className={"runningCourses flex flexColumn entryAnimation transition" + (location.pathname === "/view" ? " isOnViewPage" : "")}>
                     <span style={{ fontSize: "22px" }}>{moduloAtual.titulo}</span>
                     {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
@@ -267,53 +291,55 @@ export default function ViewModuloCurso({ content4website }) {
                             const sessaoData = moduloData?.sessoes[index];
 
                             return (
-                                <div
-                                    key={index}
-                                    className="cardCurso flexCenter entryAnimation"
-                                    style={{
-                                        animationDuration: "1s",
-                                        animationDelay: `${0.25 * (index + 1)}s`,
-                                        background: sessao.highlightColor,
-                                        filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
-                                    }}
-                                >
-                                    <div className="details">
-                                        <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
-                                            {sessao.titulo}
-                                        </h1>
-                                        <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                            {sessao.descricao}
-                                        </span>
-                                    </div>
-                                    <div className="info flex flexColumn" style={{ gap: "10px" }}>
-                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                            {sessaoData?.viewed ? "visto dia" : "não iniciado"}
-                                        </p>
-                                        <div className="dia flexCenter">
-                                            {sessaoData?.timestamp ? (
-                                                <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
-                                            ) : (
-                                                <h1>-</h1>
-                                            )}
+                                <Link to={`/view?m=${idModulo}&s=${index + 1}`} onClick={() => window.scrollTo(0, 0)} title="Acessar">
+                                    <div
+                                        key={index}
+                                        className="cardCurso flexCenter entryAnimation"
+                                        style={{
+                                            animationDuration: "1s",
+                                            animationDelay: `${0.25 * (index + 1)}s`,
+                                            background: sessao.highlightColor,
+                                            filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
+                                        }}
+                                    >
+                                        <div className="details">
+                                            <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
+                                                {sessao.titulo}
+                                            </h1>
+                                            <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessao.descricao}
+                                            </span>
                                         </div>
-                                        {
-                                            (() => {
-                                                const sectionDataViewed = viewedModules[idModulo - 1].sessoes[index];
-                                                if (sectionDataViewed.timestamp) {
-                                                    const viewedDate = new Date(sectionDataViewed.timestamp);
-                                                    const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
-                                                    const viewedMonth = (viewedDate.getMonth() + 1).toString().padStart(2, '0');
-                                                    const viewedYear = viewedDate.getFullYear().toString().slice(-2);
-                                                    return (
-                                                        <p style={{ color: getContrastColor(sessao.highlightColor) }}>
-                                                            {viewedDay + "/" + viewedMonth + "/" + viewedYear}
-                                                        </p>
-                                                    );
-                                                }
-                                            })()
-                                        }
+                                        <div className="info flex flexColumn" style={{ gap: "10px" }}>
+                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessaoData?.viewed ? "visto dia" : "não iniciado"}
+                                            </p>
+                                            <div className="dia flexCenter">
+                                                {sessaoData?.timestamp ? (
+                                                    <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
+                                                ) : (
+                                                    <h1>-</h1>
+                                                )}
+                                            </div>
+                                            {
+                                                (() => {
+                                                    const sectionDataViewed = viewedModules[idModulo - 1].sessoes[index];
+                                                    if (sectionDataViewed.timestamp) {
+                                                        const viewedDate = new Date(sectionDataViewed.timestamp);
+                                                        const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
+                                                        const viewedMonth = (viewedDate.getMonth() + 1).toString().padStart(2, '0');
+                                                        const viewedYear = viewedDate.getFullYear().toString().slice(-2);
+                                                        return (
+                                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                                {viewedDay + "/" + viewedMonth + "/" + viewedYear}
+                                                            </p>
+                                                        );
+                                                    }
+                                                })()
+                                            }
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             );
 
                         })
@@ -327,7 +353,7 @@ export default function ViewModuloCurso({ content4website }) {
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
                                 <div className="medias flex flexColumn transition">
-                                    <div className="infos flexCenter">
+                                    <div className={"infos flexCenter" + (expandOnDisclaimerHide ? " expand" : "")}>
                                         <div className="disclaimer flexCenter entryAnimation transition" ref={refDisclaimer}>
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="10" cy="10.5" r="10" fill="#FF9D00" />
@@ -355,19 +381,18 @@ export default function ViewModuloCurso({ content4website }) {
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightProgressBar" />
                                                         <span>
-                                                            {(percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) : percent.toFixed(0)) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
+                                                            {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>
                                                 )
                                             })()}
                                         </div>
                                     </div>
-
                                     {
                                         (() => {
                                             if (sessao.pathVideoSessao) {
                                                 return (<>
-                                                    <div className="media">
+                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
                                                         <ExpandIcon path={sessao.pathVideoSessao} type={"video"} />
                                                         <Player
                                                             videoPath={sessao.pathVideoSessao}
@@ -377,7 +402,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                 </>)
                                             } else if (sessao.pathImgSessao) {
                                                 return (<>
-                                                    <div className="media">
+                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
                                                         <ExpandIcon path={sessao.pathImgSessao} type={"img"} />
                                                         <img onClick={() => modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
                                                     </div>
@@ -387,11 +412,14 @@ export default function ViewModuloCurso({ content4website }) {
                                     }
                                 </div>
                                 <div className="textContent flex flexColumn entryAnimation transition" style={{ animationDelay: ".95s", animationDuration: "1s" }}>
-                                    <h1 className="title">{sessao.titulo}</h1>
+                                    <h1 className="title">{capFirstLetter(sessao.titulo)}</h1>
                                     <div className="paragrafos">
                                         {sessao.paragrafos.map((paragrafo, index) => {
                                             return (
                                                 <div key={index}>
+                                                    {
+                                                        paragrafo.subtitulo && <><br /><br /><h1 style={{fontSize: "25px"}} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.subtitulo)) }}/><br /></>
+                                                    }
                                                     {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
@@ -417,7 +445,7 @@ export default function ViewModuloCurso({ content4website }) {
 
 
 
-                                                    <p key={index} className="useObserver" dangerouslySetInnerHTML={{ __html: cleanHtml(paragrafo.texto) }} /><br />
+                                                    <p key={index} className="useObserver textParagraph" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.texto)) }} /><br />
 
 
 
@@ -479,17 +507,17 @@ export default function ViewModuloCurso({ content4website }) {
                                                 if (isSectionIndexValid(nextSectionId)) {
                                                     window.scrollTo(0, 0)
 
-                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${nextSectionId}`)
+                                                    navigate(`/view?m=${actualModuleId}&s=${nextSectionId}`)
 
                                                 } else if (isModuleIndexValid(nextModuleId)) {
                                                     window.scrollTo(0, 0)
 
-                                                    navigate(`/moduloCurso?m=${nextModuleId}`)
+                                                    navigate(`/view?m=${nextModuleId}`)
                                                 } else {
                                                     deactivateButton(btnNext, true)
                                                 }
                                             } else {
-                                                navigate(`/moduloCurso?m=${1}&s=${2}`)
+                                                navigate(`/view?m=${1}&s=${2}`)
                                             }
 
                                         }
@@ -505,31 +533,31 @@ export default function ViewModuloCurso({ content4website }) {
 
                                                     window.scrollTo(0, 0);
 
-                                                    navigate(`/moduloCurso?m=${actualModuleId}&s=${prevSectionId}`);
+                                                    navigate(`/view?m=${actualModuleId}&s=${prevSectionId}`);
 
                                                 } else if (isModuleIndexValid(prevModuleId)) {
                                                     const lastSessionIndex = Curso.modulos[prevModuleId - 1].conteudos.sessoes.length;
 
                                                     window.scrollTo(0, 0);
 
-                                                    navigate(`/moduloCurso?m=${prevModuleId}&s=${lastSessionIndex}`);
+                                                    navigate(`/view?m=${prevModuleId}&s=${lastSessionIndex}`);
                                                 } else {
                                                     deactivateButton(btnPrev, true)
                                                 }
                                             } else {
-                                                navigate(`/moduloCurso?m=${1}&s=${1}`)
+                                                navigate(`/view?m=${1}&s=${1}`)
                                             }
 
                                         }
                                         return (
                                             <div className="pageControlButton flex">
-                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                                <div className="btn useObserver disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
                                                     <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
                                                     <span>Voltar</span>
                                                 </div>
-                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                <div className="btn useObserver disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
                                                     <span>Avançar</span>
                                                     <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />

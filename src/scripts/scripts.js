@@ -18,9 +18,16 @@ export function cleanHtml(text) {
       "ol",
       "li",
       "code",
-      "pre"
+      "pre",
+      "table",
+      "thead",
+      "tbody",
+      "tr",
+      "th",
+      "td",
+      "div"
     ],
-    ALLOWED_ATTR: ["href", "target", "start"],
+    ALLOWED_ATTR: ["href", "target", "start", "class"],
   });
   return textolimpo;
 }
@@ -81,3 +88,6 @@ export const useIntersectionObserver = (options) => {
   }, [options, location.pathname]);
 };
 
+export function capFirstLetter(texto) {
+  return texto.charAt(0).toUpperCase() + texto.slice(1);
+}

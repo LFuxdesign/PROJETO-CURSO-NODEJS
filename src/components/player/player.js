@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 export default function Player({ videoPath, animationDelay = 0, loadingType = "lazy" }) {
     return (
         videoPath && (loadingType === "lazy" ? <ReactPlayerLazy
-            className="entryAnimation videoPlayer"
+            className="videoPlayer"
             style={{ animationDelay, animationDuration: "1s" }}
             url={videoPath}
             width={"100%"}
@@ -19,7 +19,7 @@ export default function Player({ videoPath, animationDelay = 0, loadingType = "l
                 }
             }}
         /> : loadingType === "default" && <ReactPlayer
-            className="entryAnimation videoPlayer"
+            className="videoPlayer"
             style={{ animationDelay, animationDuration: "1s" }}
             url={videoPath}
             width={"100%"}
