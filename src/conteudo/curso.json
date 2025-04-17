@@ -99,7 +99,7 @@
                         ]
                     },
                     {
-                        "titulo": "Os paradigmais do Node.js",
+                        "titulo": "Os paradigmas do Node.js",
                         "descricao": "Aqui veremos os paradigmas do Node.js, incluindo a programação assíncrona e orientada a eventos e objetos, a programação funcional e a modularização. Esses conceitos são essenciais para criar aplicações escaláveis e eficientes.",
                         "pathImgSessao": "/assets/CAPA CURSO.png",
                         "pathVideoSessao": "https://youtu.be/ET59Wd4gP2E",
