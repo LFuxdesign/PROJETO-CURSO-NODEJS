@@ -835,11 +835,11 @@
                         "titulo": "Conceito de Módulos do Node.js",
                         "descricao": "Entenda o conceito de módulos no Node.js e como eles permitem a organização e reutilização de código.",
                         "pathImgSessao": "/assets/CAPA CURSO.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Os módulos no Node.js, permite organizar e reutilizar o código de forma separadas baseada no padrão CommonJS. Módulos são blocos de códigos encapsulados que podem ser importados e exportados em diferentes partes de uma aplicação JavaScript. Cada arquivo no Node.js é como um módulo separado. Temos os Módulos Nativos fornecidos pelo o próprio Node como o <b>fs, http, path</b> temos os Módulos de terceiros como o <b>express, mongoose, nodemon,pw2</b> e temos o módulos locais que o próprio desenvolvedor criar em suas aplicações.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             },
@@ -847,7 +847,7 @@
                                 "subtitulo": "",
                                 "pathImgSuperior": "",
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "As vantagens de seguir esse padrão é as organização do código executando assim uma separação lógica -racional de funcionalidades, a reutilização do mesmo códigos em varias partes e aplicações do mesmo desenvolvedor, o oferecimento da facilidade e da manutenção do projeto em si, e encapsulamento dessa estratégia, pois variáveis e funções ficam isoladas no mesmo módulos em questões.",
                                 "pathImgInferior": "",
                                 "pathVideoInferior": ""
                             }
@@ -857,7 +857,7 @@
                         "titulo": "Dependências",
                         "descricao": "Aprenda como gerenciar dependências externas em seu projeto e utilizá-las através de módulos no Node.js.",
                         "pathImgSessao": "/assets/CAPA CURSO.png",
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=vYekSMBCCiM",
+                        "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
