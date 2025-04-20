@@ -122,7 +122,7 @@ export default function Footer() {
 
             {
                 showDetails && <><svg className="splitter useObserver allowReobserver" width="1274" height="2" viewBox="0 0 1274 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1H1273" stroke="url(#paint0_linear_228_15)" stroke-width="2" stroke-linecap="round" stroke-dasharray="15 15" />
+                    <path d="M1 1H1273" stroke="url(#paint0_linear_228_15)" strokeWidth="2" strokeLinecap="round" stroke-dasharray="15 15" />
                     <defs>
                         <linearGradient id="paint0_linear_228_15" x1="-187.983" y1="-1.93125" x2="-187.939" y2="8.34993" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#007BFF" />

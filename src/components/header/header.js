@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import Curso from "../../conteudo/curso.json"
 import "./header.css"
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export default function Header({ windowSize }) {
     const location = useLocation();
     const refHeader = useRef(null);
@@ -42,7 +42,7 @@ export default function Header({ windowSize }) {
             <div className="container flex" style={{ justifyContent: "space-between", width: "100%", gap: "20px" }}>
                 <div className="leftItems flexCenter">
                     <div>
-                        <h4 className="tituloCurso" style={{ fontSize: "18px" }} dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} />
+                        <Link to={"/"}><h4 className="tituloCurso" style={{ fontSize: "18px" }} dangerouslySetInnerHTML={{ __html: Curso.tituloCurso }} /></Link>
                     </div>
                 </div>
                 {/* <div className="rightItems flexCenter" style={{gap: "40px"}}>

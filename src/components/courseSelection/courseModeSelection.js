@@ -33,7 +33,7 @@ export default function CourseModeSelection({showControl, showStatus}) {
                 <div className="cardsOptions flexCenter entryAnimation" style={{animationDelay: `${.25*3}s`}}>
                     <div className="card">
                         <div className="content flexCenter">
-                            <div className="img" style={{background: "url('/assets/CAPA MOODLE CURSOS.png')"}} alt=""/>
+                            <div className="img" style={{background: "url('/assets/webp/CAPA MOODLE CURSOS.webp')"}} alt=""/>
                             <h2 style={{fontSize: "large"}}>Moodle Cursos IC - UFMT</h2>
                             <span>Plataforma de cursos online do IC-UFMT, você poderá realizar este e outros cursos da plataforma</span>
                             <Button 
@@ -46,7 +46,7 @@ export default function CourseModeSelection({showControl, showStatus}) {
                     </div>
                     <div className="card">
                         <div className="content flexCenter">
-                            <div className="img" style={{background: "url('assets/CAPA YT.png')"}}/>
+                            <div className="img" style={{background: "url('assets/webp/CAPA YT.webp')"}}/>
                             <h2 style={{fontSize: "large"}}>Plataforma do curso</h2>
                             <span>Aqui você terá acesso a uma interface rapida, completa, amigavel e simples para fazer esse curso de maneira mais personalizada e eficiente</span>
                             <Button 

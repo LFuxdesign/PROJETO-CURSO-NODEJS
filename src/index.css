@@ -93,6 +93,9 @@ th, td {
   text-align: left;
 }
 
+li{
+  text-align: left;
+}
 
 .flexCenter {
   display: flex;

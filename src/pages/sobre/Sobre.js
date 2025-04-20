@@ -80,7 +80,7 @@ export default function Sobre({ content4website }) {
                             return (
                                 <div key={index} className="card flex flexColumn transition useObserver">
                                     <div className="gap flex flexColumn">
-                                        <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url(${modulo.pathImgModulo}) center/cover no-repeat` : modulo.colors.background }} alt="" />
+                                        <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
                                         <div className="info">
                                             <div className="detail flexCenter">
                                                 <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
