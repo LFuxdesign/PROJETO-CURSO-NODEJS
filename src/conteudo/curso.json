@@ -1238,7 +1238,15 @@
                                 "pathImgSuperior": {"path": "", "description": ""},
                                 "pathVideoSuperior": "",
                                 "texto": "",
-                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Ex11-Dep.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {"path": "", "description": ""},
+                                "pathVideoSuperior": "",
+                                "texto": "",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Ex12-Dep.webp", "description": ""},
                                 "pathVideoInferior": ""
                             }
                         ]
@@ -1310,6 +1318,32 @@
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
+                                "texto": "Agora meu grande aluno, finalmente você chegou no nível aonde a magica do back acontece de fato. Aqui vamos te ensinar como inicializar o servidor Node.js. Vou te mostra 3 métodos de executar isso e te explicar porque praticamente todos os programadores usam o express para isso.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {"path": "", "description": ""},
+                                "pathVideoSuperior": "",
+                                "texto": "O primeiro é a declaração original do node.js não é muito usado por não ser tão intuitiva e mais longa e  complexas, e também não tem o recurso intuitivo da manipulação de direcionamento da url.",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Declaração-original.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Nesse código padrão temos o módulo nativo <b>http</b> que está sendo atribuída para a variável http isso na linha 1, já na linha 3 temos a <b>const server</b> sendo atribuída as propriedades do <b>http método createServer</b>. já o <b>server</b> na linha 11, novamente sendo atribuindo as propriedades do <b>listen</b> e dentro das suas função as configurações de rede que sera configurado no node e as suas reações de resposta que está sendo declara dentro da <b>function</b>.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {"path": "", "description": ""},
+                                "pathVideoSuperior": "",
+                                "texto": "Já o segundo exemplo deriva de novo método que está presente no site oficial do Node.js, que agora utiliza do método <b>Import</b> em vez do <b>require()</b>. Os dois funciona perfeitamente!",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/index-original-atualizada.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
                                 "texto": "",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
@@ -1318,6 +1352,11 @@
                                 "subtitulo": "",
                                 "pathImgSuperior": {"path": "", "description": ""},
                                 "pathVideoSuperior": "",
+                                "texto": "No express é modulo que comprime e facilita a vida do programador fragmentando o site back-end em blocos dentro do código.",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Ex-declaração-express.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
                                 "texto": "",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
