@@ -1149,7 +1149,7 @@
                                 "subtitulo": "",
                                 "pathImgSuperior": {"path": "", "description": ""},
                                 "pathVideoSuperior": "",
-                                "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>.",
+                                "texto": "<i><b>Saber JavaScript é fundamental, pois é a linguagem base do Node, sem o conhecimento  é enviável o uso do mesmo. Assim recomendo apender pelo menos o básico de JavaScript puro front-end para começar ter as primeiras experiencias no back-end através do NodeJS.</b></i>",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             }
@@ -1229,8 +1229,8 @@
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": {"path": "", "description": ""},
+                                "texto": "No Node.JS o npm ou yarn para gerenciar dependência externas, caso já tenha um package.json configurado é só utilizar o <b>npm install</b>. Depois de instalado pode si usar o módulo si utilizando o <b>require</b>!",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/EX10-visual-ProjeCLP1.webp", "description": "Esse é o código base do modulo express para inicializar um server-back-end. Ainda está limpo sem nenhum conteúdo!"},
                                 "pathVideoInferior": ""
                             },
                             {
