@@ -290,7 +290,8 @@ export default function ViewModuloCurso({ content4website }) {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
                             const moduloData = viewedModules[idModulo - 1];
                             const sessaoData = moduloData?.sessoes[index];
-
+                            
+                            
                             return (
                                 location.pathname === "/view" ? <Link key={index} to={`/view?m=${idModulo}&s=${index + 1}`} onClick={() => window.scrollTo(0, 0)} title="Acessar">
                                     <div
@@ -393,7 +394,7 @@ export default function ViewModuloCurso({ content4website }) {
                     (() => {
                         var urlSectionId = searchParams.get("s");
                         var sessao = isSectionIndexValid(parseInt(urlSectionId)) ? moduloAtual.conteudos.sessoes[parseInt(urlSectionId) - 1] : moduloAtual.conteudos.sessoes[0];
-
+                        document.title = `${sessao.titulo} - ${Curso.urlTitle}`;
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
                                 <div className="medias flex flexColumn transition">
@@ -425,6 +426,9 @@ export default function ViewModuloCurso({ content4website }) {
                                                     <>
                                                         <div style={{ width: animationTimeout && percent + "%" }} className="highlightProgressBar" />
                                                         <span>
+                                                            {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
+                                                        </span>
+                                                        <span className="highlightText" style={{width: (animationTimeout && percent - 12.9889 > 0) ? percent-12.9889 + "%" : "0%"}}>
                                                             {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>

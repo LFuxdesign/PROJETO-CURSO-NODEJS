@@ -42,6 +42,10 @@ function AppContent() {
     return () => clearTimeout(counter);
   }, [location]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [location.pathname])
+
 
   const [windowSize, setWindowSize] = useState([]);
   useEffect(() => {

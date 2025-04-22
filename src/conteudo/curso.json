@@ -1,11 +1,12 @@
 {
     "tituloCurso": "Introdução ao <svg width=\"2500\" height=\"708\" viewBox=\"0 0 512 145\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMinYMin meet\"><g fill=\"#83CD29\"><path d=\"M471.05 51.611c-1.244 0-2.454.257-3.525.863l-33.888 19.57c-2.193 1.264-3.526 3.65-3.526 6.189v39.069c0 2.537 1.333 4.92 3.526 6.187l8.85 5.109c4.3 2.119 5.885 2.086 7.842 2.086 6.366 0 10.001-3.863 10.001-10.576V81.542c0-.545-.472-.935-1.007-.935h-4.245c-.544 0-1.007.39-1.007.935v38.566c0 2.975-3.1 5.968-8.13 3.453l-9.21-5.396c-.326-.177-.576-.49-.576-.863v-39.07c0-.37.247-.747.576-.935L470.547 57.8a.998.998 0 0 1 1.007 0l33.817 19.498c.322.194.576.553.576.936v39.069c0 .373-.188.755-.504.935l-33.889 19.498c-.29.173-.69.173-1.007 0l-8.706-5.18a.905.905 0 0 0-.863 0c-2.403 1.362-2.855 1.52-5.109 2.302-.555.194-1.398.495.288 1.44l11.368 6.69a6.995 6.995 0 0 0 3.526.936 6.949 6.949 0 0 0 3.525-.935l33.889-19.499c2.193-1.275 3.525-3.65 3.525-6.187v-39.07c0-2.538-1.332-4.92-3.525-6.187l-33.889-19.57c-1.062-.607-2.28-.864-3.525-.864z\" /><path d=\"M480.116 79.528c-9.65 0-15.397 4.107-15.397 10.937 0 7.408 5.704 9.444 14.966 10.36 11.08 1.085 11.943 2.712 11.943 4.893 0 3.783-3.016 5.396-10.144 5.396-8.957 0-10.925-2.236-11.584-6.691-.078-.478-.447-.864-.936-.864h-4.389c-.54 0-1.007.466-1.007 1.008 0 5.703 3.102 12.447 17.916 12.447 10.723 0 16.908-4.209 16.908-11.584 0-7.31-4.996-9.273-15.398-10.648-10.51-1.391-11.512-2.072-11.512-4.533 0-2.032.85-4.75 8.634-4.75 6.954 0 9.524 1.5 10.577 6.189.092.44.48.791.935.791h4.39c.27 0 .532-.166.719-.36.184-.207.314-.44.288-.719-.68-8.074-6.064-11.872-16.909-11.872z\" /></g><path d=\"M271.821.383a2.181 2.181 0 0 0-1.08.287 2.18 2.18 0 0 0-1.079 1.871v55.042c0 .54-.251 1.024-.719 1.295a1.501 1.501 0 0 1-1.511 0l-8.994-5.18a4.31 4.31 0 0 0-4.317 0l-35.903 20.721c-1.342.775-2.158 2.264-2.158 3.814v41.443c0 1.548.817 2.966 2.158 3.741l35.903 20.722a4.3 4.3 0 0 0 4.317 0l35.903-20.722a4.308 4.308 0 0 0 2.159-3.741V16.356a4.386 4.386 0 0 0-2.23-3.814L272.9.598c-.335-.187-.707-.22-1.079-.215zM40.861 52.115c-.684.027-1.328.147-1.942.503L3.015 73.34a4.3 4.3 0 0 0-2.158 3.741L.929 132.7c0 .773.399 1.492 1.079 1.87a2.096 2.096 0 0 0 2.159 0l21.297-12.231c1.349-.802 2.23-2.196 2.23-3.742V92.623c0-1.55.815-2.972 2.159-3.742l9.065-5.252a4.251 4.251 0 0 1 2.159-.576c.74 0 1.5.185 2.158.576l9.066 5.252a4.296 4.296 0 0 1 2.159 3.742v25.973c0 1.546.89 2.95 2.23 3.742l21.297 12.232a2.096 2.096 0 0 0 2.159 0 2.164 2.164 0 0 0 1.08-1.871l.07-55.618a4.28 4.28 0 0 0-2.158-3.741L43.235 52.618c-.607-.356-1.253-.475-1.942-.503h-.432zm322.624.503c-.75 0-1.485.19-2.158.576l-35.903 20.722a4.306 4.306 0 0 0-2.159 3.741V119.1c0 1.559.878 2.971 2.23 3.742l35.616 20.29c1.315.75 2.921.807 4.245.07l21.585-12.015c.685-.38 1.148-1.09 1.151-1.87a2.126 2.126 0 0 0-1.079-1.871l-36.119-20.722c-.676-.386-1.151-1.167-1.151-1.943v-12.95c0-.775.48-1.485 1.151-1.871l11.224-6.476a2.155 2.155 0 0 1 2.159 0L375.5 89.96a2.152 2.152 0 0 1 1.08 1.87v10.217a2.15 2.15 0 0 0 1.079 1.87c.673.389 1.487.39 2.158 0L401.331 91.4a4.325 4.325 0 0 0 2.159-3.742v-10c0-1.545-.82-2.966-2.159-3.742l-35.687-20.722a4.279 4.279 0 0 0-2.159-.575zm-107.35 30.939c.188 0 .408.046.576.143l12.304 7.123c.334.193.576.55.576.935v14.246c0 .387-.24.743-.576.936l-12.304 7.123a1.088 1.088 0 0 1-1.079 0l-12.303-7.123c-.335-.194-.576-.549-.576-.936V91.758c0-.386.242-.74.576-.935l12.303-7.122a.948.948 0 0 1 .504-.143v-.001z\" fill=\"#404137\" /><path d=\"M148.714 52.402c-.748 0-1.488.19-2.158.576l-35.903 20.65c-1.343.773-2.159 2.265-2.159 3.813v41.443c0 1.55.817 2.966 2.159 3.742l35.903 20.721a4.297 4.297 0 0 0 4.317 0l35.903-20.721a4.308 4.308 0 0 0 2.158-3.742V77.441c0-1.55-.816-3.04-2.158-3.813l-35.903-20.65a4.297 4.297 0 0 0-2.159-.576zM363.413 89.385c-.143 0-.302 0-.431.072l-6.907 4.029a.84.84 0 0 0-.432.72v7.914c0 .298.172.571.432.72l6.907 3.957c.259.15.535.15.791 0l6.907-3.958a.846.846 0 0 0 .432-.719v-7.915a.846.846 0 0 0-.432-.719l-6.907-4.03c-.128-.075-.216-.07-.36-.07z\" fill=\"#83CD29\" /></svg>, o front-end que virou back-end",
+    "urlTitle": "Curso introdutório de Node.js",
     "descricao": "Neste curso, você aprenderá o tudo o que precisa para começar a programar em Node.js e tirar suas ideias do papel, com uma didática simples, prática e eficiente!",
     "modulos": [
         {
             "titulo": "🚀 Introdução ao Node.Js",
             "descricao": "Entenda o que é o Node.js, por que ele é tão utilizado e como instalá-lo corretamente. Configure o npm e execute seu primeiro script no ambiente Node.js.",
-            "pathImgModulo": "/assets/webp/CAPA CURSO.webp",
+            "pathImgModulo": "/assets/webp/CAPA YT.webp",
             "categoria": "introdução",
             "duracao": "1h",
             "colors": {
@@ -27,7 +28,7 @@
                             {
                                 "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
                                 "pathImgInferior": {
-                                    "path": "/assets/webp/Exemplo/resumo Ryan Dahl.jpg",
+                                    "path": "/assets/webp/Exemplo/resumo Ryan Dahl.webp",
                                     "description": "Imagem de Ryan Dahl, fonte: <a href='https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/' target='_blank'>https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/</a>"
                                 },
                                 "pathVideoInferior": ""
@@ -1369,7 +1370,7 @@
         {
             "titulo": "📦 Gerenciamento de pacotes via NPM",
             "descricao": "Veja como funciona o sistema de gerenciamento de pacotes do Node.js e como realizar instalações, exclusões, atualizações e checagem de versões do pacote, mantendo os pacotes atualizados e seguros.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD GER PCT NPM.webp",
             "categoria": "NPM",
             "duracao": "1h",
             "colors": {
@@ -1382,7 +1383,7 @@
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
                         "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA PACOTES.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -1744,7 +1745,7 @@
                         "titulo": "Conceito de dependências",
                         "descricao": "Aprenda o que são dependências, a diferença entre dependências de produção e desenvolvimento e como gerenciá-las.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA DEPENDENCIAS.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -1926,7 +1927,7 @@
                         "titulo": "Como atualizar pacotes do Node.js e gerenciamento de versões de pacotes",
                         "descricao": "Descubra como atualizar pacotes, lidar com versões específicas e utilizar o package-lock.json para manter a compatibilidade.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA ATUALIZAR PACOTES.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -1996,7 +1997,7 @@
         {
             "titulo": "🧑‍💻 Fundamentos do JavaScript no Node.js",
             "descricao": "Revise os principais conceitos do JavaScript, e, entenda o quais são as diferenças que existem entre CommonJS e ESModules.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD FUND JS.webp",
             "categoria": "Fundamentos",
             "duracao": "1h",
             "colors": {
@@ -2006,10 +2007,10 @@
             "conteudos": {
                 "sessoes": [
                     {
-                        "titulo": "Caracteristicas e limitações comuns do JavaScript",
+                        "titulo": "Características e limitações comuns do JavaScript no Node.js",
                         "descricao": "Explore as principais características e limitações do JavaScript, como sua natureza assíncrona e o gerenciamento de escopo.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA CARACTERISTICAS JS.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -2125,7 +2126,7 @@
                         "titulo": "Principais conceitos do JavaScript",
                         "descricao": "Compreenda conceitos chave do JavaScript, como variáveis, funções, objetos, arrays e a manipulação do DOM.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA CONCEITOSJS.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -2411,7 +2412,7 @@
                         "titulo": "Diferenças entre CommonJS e ESModules",
                         "descricao": "Aprenda as diferenças entre os sistemas de módulos CommonJS e ESModules, e como cada um é usado no Node.js.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA DIFCOMMONESMOD.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
@@ -2482,7 +2483,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": " ",
+                                "subtitulo": "",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
@@ -2496,13 +2497,13 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Diferenças entre CommonJS e ESModules ",
+                                "subtitulo": "",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Apesar de ambos servirem para modularizar o código, existem diferenças importantes entre eles: <table border=1><tr><th>Característica<th>CommonJS<th>ESModules<tr><td>Sintaxe<td>require / module.exports<td>import / export<tr><td>Origem<td>Desenvolvido para o Node.js<td>Padrão oficial do JavaScript (ES6)<tr><td>Carregamento<td>Síncrono (bloqueante)<td>Assíncrono (não bloqueante)<tr><td>Suporte nativo no navegador<td>Não<td>Sim<tr><td>Suporte no Node.js<td>Nativo<td>Sim (com <code>\"type\": \"module\"</code> ou <code>.mjs</code>)<tr><td>Importação dinâmica<td>Suportada via require()<td>Suportada via import() com Promises<tr><td>Análise estática<td>Limitada<td>Suportada (importações são estáticas)</table>",
+                                "texto": "Por outro lado, o ESModules representa o futuro da modularização em JavaScript, com melhor desempenho, suporte nativo nos navegadores e uma sintaxe mais limpa e moderna. A tendência é que ele se torne cada vez mais dominante, substituindo gradualmente o CommonJS.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2510,13 +2511,97 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Diferenças entre CommonJS e ESModules ",
+                                "subtitulo": "",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Apesar de ambos servirem para modularizar o código, existem diferenças importantes entre eles: <table border=1><tr><th>Característica<th>CommonJS<th>ESModules<tr><td>Sintaxe<td>require / module.exports<td>import / export<tr><td>Origem<td>Desenvolvido para o Node.js<td>Padrão oficial do JavaScript (ES6)<tr><td>Carregamento<td>Síncrono (bloqueante)<td>Assíncrono (não bloqueante)<tr><td>Suporte nativo no navegador<td>Não<td>Sim<tr><td>Suporte no Node.js<td>Nativo<td>Sim (com <code>\"type\": \"module\"</code> ou <code>.mjs</code>)<tr><td>Importação dinâmica<td>Suportada via require()<td>Suportada via import() com Promises<tr><td>Análise estática<td>Limitada<td>Suportada (importações são estáticas)</table>",
+                                "texto": "Em resumo:<br/><li>CommonJS é o tradicional, consolidado no back-end com o Node.js.<li>ESModules é o moderno, recomendado para novos projetos e aplicações que visam compatibilidade com o navegador.</li>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Módulos Nativos do Node.js",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "O Node.js oferece uma série de módulos nativos — ou seja, bibliotecas já inclusas na sua instalação, que podem ser utilizadas sem a necessidade de instalar nada via npm. Esses módulos facilitam tarefas comuns como trabalhar com arquivos, caminhos de diretórios e informações do sistema operacional.",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "A seguir, uma visão geral de três dos módulos nativos mais utilizados:<br/><li>fs (File System)",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "O módulo fs permite interagir com o sistema de arquivos, ou seja, ler, escrever, criar, renomear e deletar arquivos e diretórios.<br/><br/>Exemplos de uso:<br/><br/><code>const fs = require('fs');<br/>// Ler um arquivo de forma assíncrona<br/>fs.readFile('arquivo.txt', 'utf8', (err, data) => {<br/>&#9;if (err) throw err;<br/>&#9;console.log(data);});<br/>// Escrever em um arquivo<br/>fs.writeFile('novo.txt', 'Conteúdo do arquivo', (err) => {<br/>&#9;if (err) throw err;<br/>&#9;console.log('Arquivo salvo com sucesso!');<br/>});</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Path:",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "O módulo path fornece utilitários para trabalhar com caminhos de arquivos e diretórios, de forma independente do sistema operacional (Windows, Linux, etc.).<br/><br/>Exemplos de uso:<br/><br/><code>const path = require('path');<br/>// Obter o nome do arquivo<br/>console.log(path.basename('/caminho/para/arquivo.txt')); // arquivo.txt<br/>// Unir caminhos<br/>const completo = path.join(__dirname, 'pasta', 'arquivo.txt');<br/>console.log(completo);</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "os:",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "O módulo os fornece informações sobre o sistema operacional que está executando o Node.js. É útil para coletar dados como tipo de sistema, arquitetura, memória livre e CPUs disponíveis.<br/><br/>Exemplos de uso:<br/><br/><code>const os = require('os');</code><br/><code>console.log('Sistema operacional:', os.type());</code><br/><code>console.log('Arquitetura:', os.arch());</code><br/><code>console.log('Memória livre:', os.freemem());</code><br/><code>console.log('CPUs:', os.cpus().length);</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "Esses módulos nativos são essenciais para tarefas comuns em aplicações back-end. Eles proporcionam alto desempenho, segurança, e integração com o sistema operacional, sem depender de bibliotecas externas.<table border=1 cellpadding=5 cellspacing=0><thead><tr><th>Módulo<th>Finalidade Principal<tbody><tr><td><code>fs</code><td>Manipular arquivos e diretórios<tr><td><code>path</code><td>Trabalhar com caminhos de arquivos<tr><td><code>os</code><td>Obter informações do sistema operacional</table><br/>Explorar bem esses módulos é um passo importante para se tornar produtivo com Node.js no desenvolvimento de aplicações robustas e eficientes.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2531,7 +2616,7 @@
         {
             "titulo": "📂 Manipulação de Arquivos e Módulos",
             "descricao": "Explore o sistema de módulos do Node.js, aprenda a criar e importar módulos próprios e manipule arquivos utilizando o módulo fs para leitura e escrita.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD MAN MOD ARQ.webp",
             "categoria": "Arquivos",
             "duracao": "1h",
             "colors": {
@@ -2541,17 +2626,31 @@
             "conteudos": {
                 "sessoes": [
                     {
-                        "titulo": "Conceito de Módulos do Node.js",
-                        "descricao": "Entenda o conceito de módulos no Node.js e como eles permitem a organização e reutilização de código.",
+                        "titulo": "Lendo e Escrevendo Arquivos com o módulo fs",
+                        "descricao": "Neste módulo, você vai aprender a usar o módulo nativo fs do Node.js para ler, escrever e manipular arquivos e diretórios, tanto de forma síncrona quanto assíncrona — uma base essencial para trabalhar com dados salvos em disco.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA RW ARQ.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
-                                "texto": "Os módulos no Node.js, permite organizar e reutilizar o código de forma separadas baseada no padrão CommonJS. Módulos são blocos de códigos encapsulados que podem ser importados e exportados em diferentes partes de uma aplicação JavaScript. Cada arquivo no Node.js é como um módulo separado. Temos os Módulos Nativos fornecidos pelo o próprio Node como o <b>fs, http, path</b> temos os Módulos de terceiros como o <b>express, mongoose, nodemon,pw2</b> e temos o módulos locais que o próprio desenvolvedor criar em suas aplicações.",
+                                "texto": "Como ja vimos, o módulo nativo fs (File System) do Node.js é uma das ferramentas mais poderosas para lidar com arquivos e diretórios. Ele permite ler, escrever, criar, deletar e modificar arquivos de maneira síncrona ou assíncrona.",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Lendo arquivos:",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "Você pode ler arquivos de forma assíncrona (recomendada para evitar travamentos) ou síncrona (bloqueia a execução até a leitura terminar).<br/><br/>Exemplo assíncrono:<br/><br/><code>const fs = require('fs');<br/>fs.readFile('exemplo.txt', 'utf8', (err, data) => {<br/>&#9;if (err) {<br/>&#9;&#9;console.error('Erro ao ler o arquivo:', err);<br/>&#9;&#9;return;<br/>&#9;}<br/>&#9;console.log('Conteúdo do arquivo:', data);<br/>});</code>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2565,7 +2664,49 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "As vantagens de seguir esse padrão é as organização do código executando assim uma separação lógica -racional de funcionalidades, a reutilização do mesmo códigos em varias partes e aplicações do mesmo desenvolvedor, o oferecimento da facilidade e da manutenção do projeto em si, e encapsulamento dessa estratégia, pois variáveis e funções ficam isoladas no mesmo módulos em questões.",
+                                "texto": "Exemplo síncrono:<br/><br/><code>const fs = require('fs');<br/>try {<br/>&#9;const data = fs.readFileSync('exemplo.txt', 'utf8');<br/>&#9;console.log('Conteúdo do arquivo:', data);<br/>} catch (err) {<br/>&#9;console.error('Erro ao ler o arquivo:', err<br/>}</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Escrevendo arquivos:",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "Com fs, é possível criar ou sobrescrever um arquivo com conteúdo novo. Também há versões assíncronas e síncronas.<br/><br/>Exemplo assíncrono:<br/><br/><code>const fs = require('fs');<br/>fs.writeFile('saida.txt', 'Conteúdo escrito pelo Node.js', (err) => {<br/>&#9;if (err) {<br/>&#9;&#9;console.error('Erro ao escrever o arquivo:', err);<br/>&#9;&#9;return;<br/>&#9;}<br/>&#9;console.log('Arquivo escrito com sucesso!');<br/>});</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "<br/>Exemplo síncrono:<br/<br/><br/><code>const fs = require('fs');<br/>try {<br/>&#9;fs.writeFileSync('saida.txt', 'Conteúdo escrito de forma síncrona');<br/>&#9;console.log('Arquivo salvo com sucesso!');<br/>} catch (err) {<br/>&#9;console.error('Erro ao escrever o arquivo:', err);<br/>}</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Dicas Importantes:",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "<li>Prefira operações assíncronas sempre que possível, para evitar bloqueios no event loop.<br/><li>Utilize utf8 como codificação para textos em português ou qualquer linguagem com acentuação.<br/><li>Sempre trate erros com try/catch (em síncrono) ou no callback (em assíncrono).<br/>O módulo fs é essencial para qualquer aplicação Node.js que precise lidar com arquivos. Ele oferece flexibilidade, controle total sobre o sistema de arquivos e funciona de forma consistente entre sistemas operacionais.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2575,17 +2716,45 @@
                         ]
                     },
                     {
-                        "titulo": "Dependências",
-                        "descricao": "Aprenda como gerenciar dependências externas em seu projeto e utilizá-las através de módulos no Node.js.",
+                        "titulo": "Trabalhando com Caminhos de Arquivos (path)",
+                        "descricao": "Neste módulo, você vai aprender a usar o módulo path do Node.js para lidar com caminhos de arquivos e diretórios de forma segura e multiplataforma, facilitando a navegação e organização no sistema de arquivos.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
+                            "path": "/assets/webp/CAPA PATH.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "O módulo nativo path do Node.js serve para manipular caminhos de arquivos e diretórios de forma segura e independente do sistema operacional. Ele é fundamental para evitar erros ao montar caminhos manualmente, especialmente em projetos multiplataforma (Linux, Windows, macOS).",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Porque path?",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "Em sistemas diferentes, os separadores de diretório mudam, usamos: (\"/\" no Linux - \"/\" macOS e \"\\\" no Windows). O path resolve isso automaticamente e garante que os caminhos estejam corretos, sem precisar se preocupar com essas diferenças.",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Principais métodos do path: ",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "<li><code>path.join()</code>:</li><br/>Une partes de caminhos em um só, tratando barras e separadores corretamente.<br/><br/><code>const path = require('path');<br/>const caminho = path.join('pasta', 'subpasta', 'arquivo.txt');<br/>console.log(caminho); // pasta/subpasta/arquivo.txt (ou com \\ no Windows)</code>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2599,27 +2768,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Criar, exportar e importar módulos próprios",
-                        "descricao": "Veja como criar seus próprios módulos, exportar funcionalidades e importá-las em outros arquivos.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
-                        "highlightColor": "#E71A1A",
-                        "paragrafos": [
-                            {
-                                "texto": "",
+                                "texto": "<li><code>path.resolve():</code></li><br/>Gera um caminho absoluto a partir das partes passadas. Útil quando você quer o caminho completo no sistema de arquivos.<br/><br/><code>const caminhoAbsoluto = path.resolve('pasta', 'arquivo.txt');<br/>console.log(caminhoAbsoluto); // /seu/projeto/pasta/arquivo.txt</code>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2633,27 +2782,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Manipulação de arquivos utilizando o módulo fs para leitura e escrita",
-                        "descricao": "Aprenda a utilizar o módulo fs do Node.js para ler e escrever arquivos de forma síncrona e assíncrona.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CURSO.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
-                        "highlightColor": "#68EC13",
-                        "paragrafos": [
-                            {
-                                "texto": "",
+                                "texto": "<li><code>path.basename()</code>:</li><br/>Retorna apenas o nome do arquivo, a partir de um caminho completo.<br/><br/><code>const caminho = '/home/usuario/projeto/index.js';<br/>console.log(path.basename(caminho)); // index.js</code>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2667,7 +2796,21 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "",
+                                "texto": "<li><code>path.extname()</code>:</li><br/>Retorna a extensão do arquivo.<br/><br/><code>console.log(path.extname('arquivo.html')); // .html</code>",
+                                "pathImgInferior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "Dicas Práticas: ",
+                                "pathImgSuperior": {
+                                    "path": "",
+                                    "description": ""
+                                },
+                                "pathVideoSuperior": "",
+                                "texto": "<li>Use __dirname para referenciar o diretório atual do arquivo.<li>Combine path.join(__dirname, 'pasta', 'arquivo.txt') para montar caminhos seguros dentro do projeto.<li>Evite concatenar caminhos com + ou template strings, pois pode quebrar o código em sistemas diferentes.<br/>O módulo path é indispensável quando lidamos com caminhos no Node.js. Ele evita erros comuns e torna o código mais limpo, seguro e compatível com qualquer sistema operacional. Se você estiver trabalhando com arquivos, usar path junto com fs é o combo perfeito!",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2682,7 +2825,7 @@
         {
             "titulo": "🌐 Criando um Servidor Web com Express.js",
             "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD SRV WEB.webp",
             "categoria": "Express.js",
             "duracao": "1h",
             "colors": {
@@ -2799,7 +2942,7 @@
         {
             "titulo": "🔧 Trabalhando com Banco de Dados",
             "descricao": "Conecte sua aplicação a bancos de dados MySQL ou Firebase, aprenda a realizar consultas e operações básicas para armazenar e recuperar informações.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD BD.webp",
             "categoria": "Banco de Dados",
             "duracao": "1h",
             "colors": {
@@ -2984,7 +3127,7 @@
         {
             "titulo": "🔄 APIs RESTful com Node.js",
             "descricao": "Estruture uma API RESTful completa com Express.js, implemente um CRUD funcional e aprenda a enviar e receber dados em formato JSON.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD APIs.webp",
             "categoria": "APIs",
             "duracao": "1h",
             "colors": {
@@ -3237,7 +3380,7 @@
         {
             "titulo": "🎯 Deploy e Boas Práticas",
             "descricao": "Gerencie variáveis de ambiente com dotenv, utilize Git para versionamento do código e publique sua aplicação na internet usando a plataforma Vercel.",
-            "pathImgModulo": "",
+            "pathImgModulo": "/assets/webp/CAPA MOD DEPLOY.webp",
             "categoria": "Deploy",
             "duracao": "1h",
             "colors": {
@@ -3349,7 +3492,7 @@
                         ]
                     },
                     {
-                        "titulo": "Introdução ao GitHub e configuração do GitHub no VS Code",
+                        "titulo": "Introdução ao GitHub",
                         "descricao": "Saiba como usar o GitHub para hospedar repositórios e configurar o Git no VS Code, facilitando o controle de versão e o trabalho em equipe.",
                         "pathImgSessao": {
                             "path": "/assets/webp/CAPA CURSO.webp",

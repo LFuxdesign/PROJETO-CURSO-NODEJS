@@ -7,6 +7,7 @@ import { ReactComponent as ImageSection } from "../../assets/imgSobre.svg"
 import Button from "../../components/buttons/buttons";
 import CourseModeSelection from "../../components/courseSelection/courseModeSelection";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Sobre({ content4website }) {
 
@@ -36,12 +37,14 @@ export default function Sobre({ content4website }) {
 
     const [showModalCourseSelection, setShowModalCourseSelection] = useState(false);
 
-    function setShowModal(show){
+    function setShowModal(show) {
         setShowModalCourseSelection(show);
     }
 
+    document.title = Curso.urlTitle;
+
     return (<>
-        {showModalCourseSelection && <CourseModeSelection showControl={true} showStatus={(e)=>setShowModal(e)} />}
+        {showModalCourseSelection && <CourseModeSelection showControl={true} showStatus={(e) => setShowModal(e)} />}
         <div className="content4moodle sobre flexCenter transition">
             <div className="content flex flexColumn transition">
                 <div id="cta">
@@ -77,50 +80,100 @@ export default function Sobre({ content4website }) {
                 <div className="flexCards flex transition">
                     {
                         Curso.modulos.map((modulo, index) => {
-                            return (
-                                <div key={index} className="card flex flexColumn transition useObserver">
-                                    <div className="gap flex flexColumn">
-                                        <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
-                                        <div className="info">
-                                            <div className="detail flexCenter">
-                                                <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
-                                                <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                            if (!content4website) {
+                                return (
+                                    <div key={index} className="card flex flexColumn transition useObserver">
+                                        <div className="gap flex flexColumn">
+                                            <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
+                                            <div className="info">
+                                                <div className="detail flexCenter">
+                                                    <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
+                                                    <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                                                </div>
+                                            </div>
+                                            <div className="content flex flexColumn">
+                                                <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
+                                                <span>{modulo.descricao}</span>
                                             </div>
                                         </div>
-                                        <div className="content flex flexColumn">
-                                            <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
-                                            <span>{modulo.descricao}</span>
+
+                                        <div className="andamento flexCenter">
+                                            {
+                                                (() => {
+                                                    let totalSessoes = 0;
+                                                    let viewedCount = 0;
+                                                    const viewedModulesData = viewedModules();
+                                                    viewedModulesData[index].sessoes.forEach(sessao => {
+                                                        totalSessoes++;
+                                                        if (sessao.viewed) {
+                                                            viewedCount++;
+                                                        }
+                                                    });
+                                                    const percent = (viewedCount / totalSessoes) * 100
+
+                                                    return (
+                                                        <>
+                                                            <div className="progressbar">
+                                                                <div style={{ width: percent + "%" }} className="highlightProgressBar" />
+                                                            </div>
+                                                            <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
+                                                        </>
+                                                    )
+                                                })()
+                                            }
+
                                         </div>
                                     </div>
+                                )
+                            } else {
+                                return (
+                                    <Link to={`/view?m=${index + 1}`} style={{color: "#000"}} key={index}>
+                                        <div style={{minHeight: "500px"}} className="card flex flexColumn transition useObserver">
+                                            <div className="gap flex flexColumn">
+                                                <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
+                                                <div className="info">
+                                                    <div className="detail flexCenter">
+                                                        <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
+                                                        <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="content flex flexColumn">
+                                                    <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
+                                                    <span>{modulo.descricao}</span>
+                                                </div>
+                                            </div>
 
-                                    <div className="andamento flexCenter">
-                                        {
-                                            (() => {
-                                                let totalSessoes = 0;
-                                                let viewedCount = 0;
-                                                const viewedModulesData = viewedModules();
-                                                viewedModulesData[index].sessoes.forEach(sessao => {
-                                                    totalSessoes++;
-                                                    if (sessao.viewed) {
-                                                        viewedCount++;
-                                                    }
-                                                });
-                                                const percent = (viewedCount / totalSessoes) * 100
+                                            <div className="andamento flexCenter">
+                                                {
+                                                    (() => {
+                                                        let totalSessoes = 0;
+                                                        let viewedCount = 0;
+                                                        const viewedModulesData = viewedModules();
+                                                        viewedModulesData[index].sessoes.forEach(sessao => {
+                                                            totalSessoes++;
+                                                            if (sessao.viewed) {
+                                                                viewedCount++;
+                                                            }
+                                                        });
+                                                        const percent = (viewedCount / totalSessoes) * 100
 
-                                                return (
-                                                    <>
-                                                        <div className="progressbar">
-                                                            <div style={{ width: percent + "%" }} className="highlightProgressBar" />
-                                                        </div>
-                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
-                                                    </>
-                                                )
-                                            })()
-                                        }
+                                                        return (
+                                                            <>
+                                                                <div className="progressbar">
+                                                                    <div style={{ width: percent + "%" }} className="highlightProgressBar" />
+                                                                </div>
+                                                                <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
+                                                            </>
+                                                        )
+                                                    })()
+                                                }
 
-                                    </div>
-                                </div>
-                            )
+                                            </div>
+                                        </div>
+                                    </Link>
+                                )
+                            }
+
 
                         })
                     }

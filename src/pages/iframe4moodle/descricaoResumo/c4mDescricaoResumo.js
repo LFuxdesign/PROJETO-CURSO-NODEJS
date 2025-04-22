@@ -5,6 +5,7 @@ import Curso from "../../../conteudo/curso.json"
 
 
 export default function C4mDescricaoResumo() {
+    document.title = Curso.urlTitle;
     return (
         <div className="content4moodle modulosResumo flexCenter transition">
             <div className="content flex flexColumn">
