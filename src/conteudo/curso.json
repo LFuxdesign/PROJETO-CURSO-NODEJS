@@ -1344,7 +1344,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "texto": "Aqui no novo index, usamos o <b>import</b> em vez do <b>require</b> e chamamos o modulo atravez do <b>from</b>. Já o resto é exatamente igual ao anterior.",
+                                "texto": "Já o resto é exatamente igual ao anterior.",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             },
