@@ -1357,7 +1357,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "texto": "Agora sim, chagamos no express, o modulo mais usado nos projetos gerais. Diferente da nova declaração o express usa a chamada padrão do node, o <b>const server</b> sendo atribuindo as propriedades <b>require(‘express’)</b> e o <b>const app</b> sendo atribuída as propriedades <b>server()</b>. Já o principal diferencial desse modulo é a sua capacidade de trazer facilidade de manipulação de url, especificamente os seus diretórios após os domínios. <b>app.get</b> aqui você está chamando as propriedades do express voltado a obtenção do fron-end, <b>(‘/’</b> aqui você está especificando o diretório que vai desenvolver, já a virgula(<b>,</b>) é logicamente é a separação dos parâmetros.",
+                                "texto": "Agora sim, chagamos no express, o modulo mais usado nos projetos gerais. Diferente da nova declaração o express usa a chamada padrão do node, o <b>const server</b> sendo atribuindo as propriedades <b>require(‘express’)</b> e o <b>const app</b> sendo atribuída as propriedades <b>server()</b>. Já o principal diferencial desse modulo é a sua capacidade de trazer facilidade de manipulação de url, especificamente os seus diretórios após os domínios. <b>app.get</b> aqui você está chamando as propriedades do express voltado a obtenção do fron-end, <b>(‘/’</b> aqui você está especificando o diretório que vai desenvolver, já a virgula(<b>,</b>) é logicamente a separação dos parâmetros.",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             },
