@@ -25,7 +25,8 @@ export function cleanHtml(text) {
       "tr",
       "th",
       "td",
-      "div"
+      "div",
+      "blockquote"
     ],
     ALLOWED_ATTR: ["href", "target", "start", "class"],
   });
