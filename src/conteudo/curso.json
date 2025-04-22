@@ -1344,7 +1344,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "texto": "",
+                                "texto": "Aqui no novo index, usamos o <b>import</b> em vez do <b>require</b> e chamamos o modulo atravez do <b>from</b>. Já o resto é exatamente igual ao anterior.",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             },
@@ -1357,7 +1357,12 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "texto": "",
+                                "texto": "Agora sim, chagamos no express, o modulo mais usado nos projetos gerais. Diferente da nova declaração o express usa a chamada padrão do node, o <b>const server</b> sendo atribuindo as propriedades <b>require(‘express’)</b> e o <b>const app</b> sendo atribuída as propriedades <b>server()</b>. Já o principal diferencial desse modulo é a sua capacidade de trazer facilidade de manipulação de url, especificamente os seus diretórios após os domínios. <b>app.get</b> aqui você está chamando as propriedades do express voltado a obtenção do fron-end, <b>(‘/’</b> aqui você está especificando o diretório que vai desenvolver, já a virgula(<b>,</b>) é logicamente é a separação dos parâmetros.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "<b>function(entrada, saida){}</b> aqui a <b>function</b> tem dois parâmetros fundamentas que precisão de estrema atenção. A <b>entrada</b> ela receber diversos atributos do front-end que merece sua absoluta observação, pois é fundamento para a manipulação do mesmo. Já a <b>saída</b> ela tem como fundamento enviar atributos para o front-end, o mesmo que você atribui no corpo da sua function.",
                                 "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             }
