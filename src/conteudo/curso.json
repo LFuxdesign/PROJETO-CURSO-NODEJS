@@ -2845,11 +2845,8 @@
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
+                                "texto": "Agora meu grande aluno, finalmente você chegou no nível aonde a magica do back acontece de fato. Aqui vamos te ensinar como inicializar o servidor Node.js. Vou te mostra 3 métodos de executar isso e te explicar porque praticamente todos os programadores usam o express para isso.",
+                                "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             },
                             {
@@ -2859,11 +2856,44 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
+                                "texto": "O primeiro é a declaração original do node.js não é muito usado por não ser tão intuitiva e mais longa e  complexas, e também não tem o recurso intuitivo da manipulação de direcionamento da url.",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Declaração-original.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Nesse código padrão temos o módulo nativo <b>http</b> que está sendo atribuída para a variável http isso na linha 1, já na linha 3 temos a <b>const server</b> sendo atribuída as propriedades do <b>http método createServer</b>. já o <b>server</b> na linha 11, novamente sendo atribuindo as propriedades do <b>listen</b> e dentro das suas função as configurações de rede que sera configurado no node e as suas reações de resposta que está sendo declara dentro da <b>function</b>.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {"path": "", "description": ""},
+                                "pathVideoSuperior": "",
+                                "texto": "Já o segundo exemplo deriva de novo método que está presente no site oficial do Node.js, que agora utiliza do método <b>Import</b> em vez do <b>require()</b>. Os dois funciona perfeitamente!",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/index-original-atualizada.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Já o resto é exatamente igual ao anterior.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "subtitulo": "",
+                                "pathImgSuperior": {"path": "", "description": ""},
+                                "pathVideoSuperior": "",
+                                "texto": "No express é modulo que comprime e facilita a vida do programador fragmentando o site back-end em blocos dentro do código.",
+                                "pathImgInferior": {"path": "/assets/webp/exemplo/Ex-declaração-express.webp", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "Agora sim, chagamos no express, o modulo mais usado nos projetos gerais. Diferente da nova declaração o express usa a chamada padrão do node, o <b>const server</b> sendo atribuindo as propriedades <b>require(‘express’)</b> e o <b>const app</b> sendo atribuída as propriedades <b>server()</b>. Já o principal diferencial desse modulo é a sua capacidade de trazer facilidade de manipulação de url, especificamente os seus diretórios após os domínios. <b>app.get</b> aqui você está chamando as propriedades do express voltado a obtenção do fron-end, <b>(‘/’</b> aqui você está especificando o diretório que vai desenvolver, já a virgula(<b>,</b>) é logicamente a separação dos parâmetros.",
+                                "pathImgInferior": {"path": "", "description": ""},
+                                "pathVideoInferior": ""
+                            },
+                            {
+                                "texto": "<b>function(entrada, saida){}</b> aqui a <b>function</b> tem dois parâmetros fundamentas que precisão de estrema atenção. A <b>entrada</b> ela receber diversos atributos do front-end que merece sua absoluta observação, pois é fundamento para a manipulação do mesmo. Já a <b>saída</b> ela tem como fundamento enviar atributos para o front-end, o mesmo que você atribui no corpo da sua function.",
+                                "pathImgInferior": {"path": "", "description": ""},
                                 "pathVideoInferior": ""
                             }
                         ]
