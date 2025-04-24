@@ -22,7 +22,8 @@ export default function Footer() {
                     return data;
                 })
             );
-            setGithubProfilesData(allData);
+            const validProfiles = allData.filter((data) => !data.error);
+            setGithubProfilesData(validProfiles);
         };
 
         fetchProfilesData();

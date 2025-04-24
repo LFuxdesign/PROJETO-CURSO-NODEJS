@@ -597,14 +597,14 @@ export default function ViewModuloCurso({ content4website }) {
 
                                         }
                                         return (
-                                            <div className="pageControlButton flex">
-                                                <div className="btn useObserver disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                            <div className="pageControlButton flex useObserver">
+                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
                                                     <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
                                                     <span>Voltar</span>
                                                 </div>
-                                                <div className="btn useObserver disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
                                                     <span>Avançar</span>
                                                     <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />

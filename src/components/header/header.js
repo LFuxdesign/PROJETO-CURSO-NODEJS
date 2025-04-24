@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import Curso from "../../conteudo/curso.json"
 import "./header.css"
 import { Link, useLocation } from "react-router-dom";
+import { cpuThreads } from "../../scripts/scripts";
 export default function Header({ windowSize }) {
     const location = useLocation();
     const refHeader = useRef(null);
@@ -38,7 +39,7 @@ export default function Header({ windowSize }) {
     }, [heightofHeader, windowSize, location.pathname])
 
     return (
-        <header ref={refHeader} className={"flexCenter"}>
+        <header ref={refHeader} className={`flexCenter ${cpuThreads < 4 ? "noBlur" : ""}`}>
             <div className="container flex" style={{ justifyContent: "space-between", width: "100%", gap: "20px" }}>
                 <div className="leftItems flexCenter">
                     <div>

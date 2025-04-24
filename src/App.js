@@ -13,6 +13,7 @@ import Footer from "./components/footer/footer";
 import { useIntersectionObserver } from "./scripts/scripts";
 import Header from "./components/header/header";
 import { Login } from "./pages/login/login";
+import NotFoundPage from "./pages/errors/404/404";
 
 
 function App() {
@@ -96,6 +97,8 @@ function AppContent() {
           <Route exact path="/c4m/sobre" Component={Sobre} />
           <Route exact path="/c4m/descricaoResumo" Component={C4mDescricaoResumo} />
           <Route exact path="/c4m/moduloCurso" Component={ViewModuloCurso} />
+
+          <Route exact path="*" Component={NotFoundPage} />
         </Routes>
       </div>
       <Footer />

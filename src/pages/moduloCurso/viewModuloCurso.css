@@ -255,6 +255,7 @@
 
 .pageControlButton .btn:active {
     transform: scale(0.95);
+    transition-duration: .2s;
 }
 
 .pageControlButton .btn.disabled {

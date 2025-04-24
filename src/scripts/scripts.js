@@ -96,3 +96,5 @@ export const useIntersectionObserver = (options) => {
 export function capFirstLetter(texto) {
   return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
+
+export const cpuThreads = navigator.hardwareConcurrency;

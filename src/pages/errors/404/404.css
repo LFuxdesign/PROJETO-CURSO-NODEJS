@@ -1,0 +1,78 @@
+.notFoundPage{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.notFoundPage #span{
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    max-width: 90vw;
+    width: 100%;
+    text-align: center;
+}
+
+.notFoundPage .containerAni{
+    position: absolute;
+    bottom: 5vh;
+    right: 40px;
+    width: 200px;
+    height: 150px;
+}
+
+@media(width<875px){
+    .notFoundPage .containerAni{
+        pointer-events: none;
+    }
+}
+
+@media(width<500px){
+    .notFoundPage #span, .notFoundPage .containerAni{
+        bottom: 10vh;
+    }
+}
+
+@media(width<480px){
+    .notFoundPage .containerAni{
+        bottom: 15vh;
+    }
+}
+@media(width<480px){
+    .notFoundPage #span{
+        font-size: large;
+    }
+}
+
+@media(width<430px){
+    .notFoundPage h1{
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+@media(width<340px){
+    .notFoundPage{
+        height: max-content;
+    }
+}
+
+@media(width<265px){
+    .notFoundPage .containerAni{
+        right: 5px;
+    }
+    .notFoundPage #span{
+        font-size: small;
+    }
+}
+
+@media(height<590px){
+    .notFoundPage{
+        height: 590px;
+    }
+    
+}

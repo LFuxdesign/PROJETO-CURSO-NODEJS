@@ -146,6 +146,10 @@ li{
   font-size: 24px;
 }
 
+.noBlur{
+  backdrop-filter: blur(0px);
+}
+
 .App {
   padding-top: 130px;
   align-items: center;
@@ -165,7 +169,7 @@ li{
 
 .entryAnimation.opacityAni {
   opacity: 0;
-  animation: forwards entryAniOpacity 1s var(--animations) !important;
+  animation: forwards entryAniOpacity 1s var(--animations);
 }
 
 .outAnimation {
