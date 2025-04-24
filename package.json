@@ -1,6 +1,6 @@
 {
   "name": "nodejs_course",
-  "version": "DEV 1.0",
+  "version": "BETA 1.0",
   "private": true,
   "dependencies": {
     "@babel/helpers": "^7.26.10",
