@@ -2943,7 +2943,7 @@
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "No express como explicado na sessão anterior as rotas são como diretório(endpoint(url/caminho)). Nessas requisições temos <b>app.get()</b>,<b>app.post()</b>,<b>app.put()</b>,<b>app.delete()</b>,<b>app.all()</b>,<b>app.use()</b>. No <b>app.get()</b> o front-end obtém algum objeto do servidor node.js, como no exemplos anteriores a esse modulo. Já no <b>app.post</b> o front-end coloca e criar um objeto no servidor. E sendo bem parecido com o Post, temos o <b>app.put</b> ele é usado quando temos que atualizar um objeto dentro do servidor sem criar/adicionar. Agora esse já um pouco intuitivo o <b>app.delete()</b>, como o próprio já diz, esse deletar o objeto de dentro do servidor node. Esse método ele já multi-trend faz tudo, o <b>app.all()</b> é especial, pois permite definir um manipulador de rotas que será executado para todos os verbos HTTP, útil para lógica que deve ser execitada independente do método usado. Por ultimo temos o <b>app.use()</b> é um método fundamental para middleware, a mesma é as mais versáteis  do framework, pois captura todos os métodos HTTP, é essencial para construir aplicações bem organizadas.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
