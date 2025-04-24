@@ -2943,7 +2943,7 @@
             }
         },
         {
-            "titulo": "🌐 Criando um Servidor Web com Express.js",
+            "titulo": "🌐 Criando um Servidor Web e Dicas do Express.js",
             "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
             "pathImgModulo": "/assets/webp/CAPA MOD SRV WEB.webp",
             "categoria": "Express.js",
@@ -2957,11 +2957,15 @@
                     {
                         "titulo": "Introdução ao Express.js",
                         "descricao": "Conheça o Express.js, um framework para Node.js, que facilita a criação de servidores e APIs com recursos poderosos e simplificados.",
+                        "pathImgSessao": {
+                            "path": "/assets/webp/CAPA INTR EXPR.webp",
+                            "description": ""
+                        },
                         "pathVideoSessao": "",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
-                                "texto": "Agora meu grande aluno, finalmente você chegou no nível aonde a magica do back acontece de fato. Aqui vamos te ensinar como inicializar o servidor Node.js. Vou te mostra 3 métodos de executar isso e te explicar porque praticamente todos os programadores usam o express para isso.",
+                                "texto": "Aqui vamos te ensinar como inicializar o servidor Node.js. Vou te mostra 3 métodos de executar isso e te explicar porque praticamente todos os programadores usam o express para isso.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3045,71 +3049,16 @@
                         ]
                     },
                     {
-                        "titulo": "Desenvolva um servidor web com Express.js",
-                        "descricao": "Aprenda a criar um servidor web básico utilizando o Express.js, configurando rotas e respondendo a requisições HTTP.",
+                        "titulo": "Desenvolva um servidor web com com Node.js Puro",
+                        "descricao": "Aprenda a criar um servidor web básico utilizando os módulos nativos do Node.js.",
                         "pathImgSessao": {
                             "path": "/assets/webp/CAPA SRV WEB EXPR.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=tRzUHPTWpm0",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
-                            {
-                                "texto": "Dentro da função de cada bloco <b>app</b> vamos adicionar os métodos básicos <b>writeHead</b>, <b>write</b> e <b>end()</b>. O <b>writeHead</b> tem como seus parâmetros o código de status que você desenvolvedor definiu e o tipo de conteúdo. No <b>write</b> você defini o conteúdo como nos exemplo ao longo do curso. A seguir vemos no código que dentro do write, ele obtém o código que deriva do módulo <b>fs(File-System)</b> e o mesmo está carregando o <b>index.html</b>. Detalhando melhor o <b>gerenarqui( é uma junção de gerenciador de arquivo) – nome definido por mim, não é regra a se seguir!</b> que recebeu os atributos do fs, nas propriedades readFileSync temos em seus parâmetros o <b>__dirname</b> um método que obtém o diretório anterior do seu arquivo index, para melhor compressão o coloque em um <b>console.log()</b>, o ‘/index.html’ é nada mais que a complementação do dirname, o <b>+</b> significa junção aos dois complementos do parâmetro.",
-                                "pathImgInferior": {
-                                    "path": "/assets/webp/exemplo/Ex-server-express.webp",
-                                    "description": "Exemplo: Código ilustrativo!"
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "/assets/webp/exemplo/Ex-server-express-resul.webp",
-                                    "description": "Exemplo: Resultado do código ilustrativo!"
-                                },
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Conceitos de definições de rota",
-                        "descricao": "Entenda o conceito de rotas no Express.js, como defini-las e manipulá-las para responder a diferentes tipos de requisições.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA ROTA.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
-                        "highlightColor": "#E71A1A",
-                        "paragrafos": [
-                            {
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            }
+                           
                         ]
                     }
                 ]

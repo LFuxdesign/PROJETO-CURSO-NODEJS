@@ -18,7 +18,6 @@ export function cleanHtml(text) {
       "ol",
       "li",
       "code",
-      "pre",
       "table",
       "thead",
       "tbody",
