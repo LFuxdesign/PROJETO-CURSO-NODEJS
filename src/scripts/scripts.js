@@ -18,14 +18,14 @@ export function cleanHtml(text) {
       "ol",
       "li",
       "code",
-      "pre",
       "table",
       "thead",
       "tbody",
       "tr",
       "th",
       "td",
-      "div"
+      "div",
+      "blockquote"
     ],
     ALLOWED_ATTR: ["href", "target", "start", "class"],
   });
@@ -55,6 +55,8 @@ export const useIntersectionObserver = (options) => {
   const location = useLocation();
 
   useEffect(() => {
+    let isMounted = true;
+
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         const { target, isIntersecting } = entry;
@@ -74,14 +76,16 @@ export const useIntersectionObserver = (options) => {
     }, options);
 
     const timeout = setTimeout(() => {
-      const elements = document.querySelectorAll(".useObserver");
+      if (!isMounted) return;
 
+      const elements = document.querySelectorAll(".useObserver");
       elements.forEach((el) => {
         observer.observe(el);
       });
     }, 1000);
 
     return () => {
+      isMounted = false;
       clearTimeout(timeout);
       observer.disconnect();
     };
@@ -91,3 +95,5 @@ export const useIntersectionObserver = (options) => {
 export function capFirstLetter(texto) {
   return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
+
+export const cpuThreads = navigator.hardwareConcurrency;

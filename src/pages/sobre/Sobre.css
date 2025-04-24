@@ -1,14 +1,92 @@
-.content4moodle.sobre {
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
-        url(/public/assets/background_resumo.svg);
+/* .content4moodle.sobre {
+    background: url(/public/assets/background_resumo.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+} */
+
+.content4moodle.sobre #bgSobre{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content4moodle.sobre #bgSobre svg{
+    height: 98vh;
+    transform-origin: center;
+}
+
+.content4moodle.sobre #bgSobre svg #purpleCircle, .content4moodle.sobre #bgSobre svg .lines{
+    animation: leftRight 2.3s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+.content4moodle.sobre #bgSobre svg #purpleCircle2{
+    animation: leftRight 2.3s ease-in-out infinite alternate-reverse;
+    will-change: transform;
+}
+
+.content4moodle.sobre #bgSobre svg #redCircle{
+    animation: upDown 2.3s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+.content4moodle.sobre #bgSobre svg #yellowCircle, .content4moodle.sobre #bgSobre svg .greenStar{
+    animation: upDown 2.3s ease-in-out infinite alternate-reverse;
+    will-change: transform;
+}
+
+.content4moodle.sobre #bgSobre svg .greenStar{
+    animation-name: upDownRotate;
+}
+
+.content4moodle.sobre #bgSobre svg #yellowStar{
+    transform-origin: 59% 27%;
+    animation: rotate 2.3s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+@keyframes leftRight{
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+@keyframes upDown{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-40deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes upDownRotate{
+    0%{
+        transform: rotate(-4deg) translateY(-20px);
+    }
+    100%{
+        transform: rotate(4deg) translateY(-20px);
+    }
 }
 
 .content4moodle.sobre #imageMobile img {
     width: 100%;
     height: 150px;
+    border-radius: calc(var(--default-radius)/2);
     object-fit: cover;
     object-position: center;
 }
@@ -44,7 +122,6 @@
     padding: 50px;
     max-width: 100%;
     background: #fff;
-
     overflow-x: auto;
     gap: 40px;
 }
@@ -62,6 +139,8 @@
     min-width: 400px;
     justify-content: space-between;
     gap: 15px;
+    min-height: 0px;
+    transition-property: opacity, width, height, transform;
 }
 
 #c4mSobreModulos .flexCards .card .imgModulo {
@@ -124,6 +203,10 @@
     #c4mSobreModulos .titulo {
         font-size: 38px;
         max-width: 100%;
+    }
+
+    .content4moodle.sobre{
+        min-height: unset;
     }
 }
 

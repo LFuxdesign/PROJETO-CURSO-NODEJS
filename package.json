@@ -1,10 +1,11 @@
 {
   "name": "nodejs_course",
-  "version": "DEV 1.0",
+  "version": "BETA 1.0",
   "private": true,
   "dependencies": {
     "@babel/helpers": "^7.26.10",
     "@babel/runtime": "^7.26.10",
+    "@lottiefiles/dotlottie-react": "^0.13.4",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",

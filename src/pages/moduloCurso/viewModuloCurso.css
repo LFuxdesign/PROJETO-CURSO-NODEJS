@@ -213,11 +213,25 @@
 
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar span {
     position: absolute;
-    left: 50%;
+    left: 22px;
     top: 50%;
-    transform: translateY(-43%) translateX(-50%);
+    transform: translateY(-43%);
     width: max-content;
 }
+
+.content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightText {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-align: left;
+    transform: translateY(-43%);
+    color: white;
+    border-radius: 7px;
+    transition: all 1s var(--ease-in-out);
+    width: 0;
+    left: 22px;
+    max-width: 126px;
+}
+
 
 .pageControlButton {
     width: 85%;
@@ -241,6 +255,7 @@
 
 .pageControlButton .btn:active {
     transform: scale(0.95);
+    transition-duration: .2s;
 }
 
 .pageControlButton .btn.disabled {

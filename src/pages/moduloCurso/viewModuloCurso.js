@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import Player from "../../components/player/player";
 import { capFirstLetter, cleanHtml } from "../../scripts/scripts";
 import Modal from "../../components/modal/modal";
+import ImgWithText from "../../components/imgWithText/imgWithText";
 
 
 export default function ViewModuloCurso({ content4website }) {
@@ -269,7 +270,7 @@ export default function ViewModuloCurso({ content4website }) {
         <div className="content4moodle moduloCurso flex flexColumn" >
             <div className={"scrollToTopBtn flexCenter" + (!showScrollToTopBtn ? " hide" : "")} title="Ir para o topo" onClick={() => { window.scrollTo(0, 0) }}>
                 <svg width="34" height="18" viewBox="0 0 34 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 17L16.2929 1.70711C16.6834 1.31658 17.3166 1.31658 17.7071 1.70711L33 17" stroke="#212529" stroke-width="2" stroke-linecap="round" />
+                    <path d="M1 17L16.2929 1.70711C16.6834 1.31658 17.3166 1.31658 17.7071 1.70711L33 17" stroke="#212529" strokeWidth="2" strokeLinecap="round" />
                 </svg>
             </div>
             {
@@ -289,11 +290,11 @@ export default function ViewModuloCurso({ content4website }) {
                         moduloAtual.conteudos.sessoes.map((sessao, index) => {
                             const moduloData = viewedModules[idModulo - 1];
                             const sessaoData = moduloData?.sessoes[index];
-
+                            
+                            
                             return (
-                                <Link to={`/view?m=${idModulo}&s=${index + 1}`} onClick={() => window.scrollTo(0, 0)} title="Acessar">
+                                location.pathname === "/view" ? <Link key={index} to={`/view?m=${idModulo}&s=${index + 1}`} onClick={() => window.scrollTo(0, 0)} title="Acessar">
                                     <div
-                                        key={index}
                                         className="cardCurso flexCenter entryAnimation"
                                         style={{
                                             animationDuration: "1s",
@@ -340,6 +341,50 @@ export default function ViewModuloCurso({ content4website }) {
                                         </div>
                                     </div>
                                 </Link>
+                                    : <div key={index} className="cardCurso flexCenter entryAnimation" style={{
+                                        animationDuration: "1s",
+                                        animationDelay: `${0.25 * (index + 1)}s`,
+                                        background: sessao.highlightColor,
+                                        filter: sessaoData?.viewed && animationTimeout ? "saturate(.9)" : undefined,
+                                    }}
+                                    >
+                                        <div className="details">
+                                            <h1 className="titulo" style={{ color: getContrastColor(sessao.highlightColor, "#fff") }}>
+                                                {sessao.titulo}
+                                            </h1>
+                                            <span className="subTitulo" style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessao.descricao}
+                                            </span>
+                                        </div>
+                                        <div className="info flex flexColumn" style={{ gap: "10px" }}>
+                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                {sessaoData?.viewed ? "visto dia" : "não iniciado"}
+                                            </p>
+                                            <div className="dia flexCenter">
+                                                {sessaoData?.timestamp ? (
+                                                    <h1>{new Date(sessaoData.timestamp).getDate().toString().padStart(2, "0")}</h1>
+                                                ) : (
+                                                    <h1>-</h1>
+                                                )}
+                                            </div>
+                                            {
+                                                (() => {
+                                                    const sectionDataViewed = viewedModules[idModulo - 1].sessoes[index];
+                                                    if (sectionDataViewed.timestamp) {
+                                                        const viewedDate = new Date(sectionDataViewed.timestamp);
+                                                        const viewedDay = viewedDate.getDate().toString().padStart(2, '0');
+                                                        const viewedMonth = (viewedDate.getMonth() + 1).toString().padStart(2, '0');
+                                                        const viewedYear = viewedDate.getFullYear().toString().slice(-2);
+                                                        return (
+                                                            <p style={{ color: getContrastColor(sessao.highlightColor) }}>
+                                                                {viewedDay + "/" + viewedMonth + "/" + viewedYear}
+                                                            </p>
+                                                        );
+                                                    }
+                                                })()
+                                            }
+                                        </div>
+                                    </div>
                             );
 
                         })
@@ -349,7 +394,7 @@ export default function ViewModuloCurso({ content4website }) {
                     (() => {
                         var urlSectionId = searchParams.get("s");
                         var sessao = isSectionIndexValid(parseInt(urlSectionId)) ? moduloAtual.conteudos.sessoes[parseInt(urlSectionId) - 1] : moduloAtual.conteudos.sessoes[0];
-
+                        document.title = `${sessao.titulo} - ${Curso.urlTitle}`;
                         return (
                             <div className="conteudoSessao flexCenter flexColumn">
                                 <div className="medias flex flexColumn transition">
@@ -383,6 +428,9 @@ export default function ViewModuloCurso({ content4website }) {
                                                         <span>
                                                             {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
+                                                        <span className="highlightText" style={{width: (animationTimeout && percent - 12.9889 > 0) ? percent-12.9889 + "%" : "0%"}}>
+                                                            {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
+                                                        </span>
                                                     </>
                                                 )
                                             })()}
@@ -392,7 +440,7 @@ export default function ViewModuloCurso({ content4website }) {
                                         (() => {
                                             if (sessao.pathVideoSessao) {
                                                 return (<>
-                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
+                                                    <div className="media entryAnimation" style={{ animationDelay: ".25s" }}>
                                                         <ExpandIcon path={sessao.pathVideoSessao} type={"video"} />
                                                         <Player
                                                             videoPath={sessao.pathVideoSessao}
@@ -402,9 +450,9 @@ export default function ViewModuloCurso({ content4website }) {
                                                 </>)
                                             } else if (sessao.pathImgSessao) {
                                                 return (<>
-                                                    <div className="media useObserver" style={{animationDelay: ".25s"}}>
-                                                        <ExpandIcon path={sessao.pathImgSessao} type={"img"} />
-                                                        <img onClick={() => modalController(true, sessao.pathImgSessao, "img")} loading="lazy" className="imgSessao" src={sessao.pathImgSessao} alt="" />
+                                                    <div className="media entryAnimation flexCenter flexColumn" style={{ animationDelay: ".25s" }}>
+                                                        <ExpandIcon path={sessao.pathImgSessao.path} type={"img"} />
+                                                        <ImgWithText classNam={"imgSessao"} isSectionImage={true} text={sessao.pathImgSessao.description} onClick={() => modalController(true, sessao.pathImgSessao.path, "img")} path={sessao.pathImgSessao.path} />
                                                     </div>
                                                 </>)
                                             }
@@ -418,7 +466,7 @@ export default function ViewModuloCurso({ content4website }) {
                                             return (
                                                 <div key={index}>
                                                     {
-                                                        paragrafo.subtitulo && <><br /><br /><h1 style={{fontSize: "25px"}} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.subtitulo)) }}/><br /></>
+                                                        paragrafo.subtitulo && <><br /><br /><h1 style={{ fontSize: "25px" }} className="useObserver" dangerouslySetInnerHTML={{ __html: capFirstLetter(cleanHtml(paragrafo.subtitulo)) }} /><br /></>
                                                     }
                                                     {
                                                         (() => {
@@ -434,9 +482,9 @@ export default function ViewModuloCurso({ content4website }) {
                                                                 </>)
                                                             } else if (paragrafo.pathImgSuperior) {
                                                                 return (<>
-                                                                    <div className="media useObserver">
-                                                                        <ExpandIcon path={paragrafo.pathImgSuperior} type={"img"} />
-                                                                        <img key={index} onClick={() => modalController(true, paragrafo.pathImgSuperior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgSuperior} style={{ maxHeight: "unset!important" }} alt="" />
+                                                                    <div className="media useObserver flexCenter flexColumn">
+                                                                        <ExpandIcon path={paragrafo.pathImgSuperior.path} type={"img"} />
+                                                                        <ImgWithText key={index} text={paragrafo.pathImgSuperior.description} onClick={() => modalController(true, paragrafo.pathImgSuperior.path, "img")} path={paragrafo.pathImgSuperior.path} />
                                                                     </div>
                                                                 </>)
                                                             }
@@ -463,10 +511,9 @@ export default function ViewModuloCurso({ content4website }) {
                                                                 </>)
                                                             } else if (paragrafo.pathImgInferior) {
                                                                 return (<>
-                                                                    <div className="media useObserver">
-                                                                        <ExpandIcon path={paragrafo.pathImgInferior} type={"img"} />
-                                                                        <img key={index} onClick={() => modalController(true, paragrafo.pathImgInferior, "img")} loading="lazy" className="imgSessao" src={paragrafo.pathImgInferior} style={{ maxHeight: "unset!important" }} alt="" />
-                                                                    </div>
+                                                                    <div className="media useObserver flexCenter flexColumn">
+                                                                        <ExpandIcon path={paragrafo.pathImgInferior.path} type={"img"} />
+                                                                        <ImgWithText key={index} text={paragrafo.pathImgInferior.description} onClick={() => modalController(true, paragrafo.pathImgInferior.path, "img")} path={paragrafo.pathImgInferior.path} />                                                                    </div>
                                                                 </>)
                                                             }
                                                         })()
@@ -550,14 +597,14 @@ export default function ViewModuloCurso({ content4website }) {
 
                                         }
                                         return (
-                                            <div className="pageControlButton flex">
-                                                <div className="btn useObserver disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
+                                            <div className="pageControlButton flex useObserver">
+                                                <div className="btn disabled flexCenter" ref={refBtnPrev} onClick={goToPrevPage}>
                                                     <svg style={{ transform: "rotate(-180deg)" }} width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />
                                                     </svg>
                                                     <span>Voltar</span>
                                                 </div>
-                                                <div className="btn useObserver disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
+                                                <div className="btn disabled flexCenter" ref={refBtnNext} onClick={goToNextPage}>
                                                     <span>Avançar</span>
                                                     <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 13.593C0.89543 13.593 -9.65645e-08 14.4884 0 15.593C9.65645e-08 16.6976 0.895431 17.593 2 17.593L2 13.593ZM53.4142 17.0072C54.1953 16.2262 54.1953 14.9598 53.4142 14.1788L40.6863 1.45088C39.9052 0.66983 38.6389 0.66983 37.8579 1.45088C37.0768 2.23193 37.0768 3.49826 37.8579 4.27931L49.1716 15.593L37.8579 26.9067C37.0768 27.6878 37.0768 28.9541 37.8579 29.7352C38.6389 30.5162 39.9052 30.5162 40.6863 29.7351L53.4142 17.0072ZM2 17.593L52 17.593L52 13.593L2 13.593L2 17.593Z" fill="white" />

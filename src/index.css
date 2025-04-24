@@ -55,6 +55,13 @@ code{
   font-weight: bold;
 }
 
+blockquote{
+  border-left: 3px solid #00000078;
+  padding-left: 25px;
+  color: #00000078;
+  font-weight: bold;
+}
+
 @font-face {
   font-family: 'comfortaa';
   src: url('./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format('truetype-variations');
@@ -93,6 +100,9 @@ th, td {
   text-align: left;
 }
 
+li{
+  text-align: left;
+}
 
 .flexCenter {
   display: flex;
@@ -136,6 +146,10 @@ th, td {
   font-size: 24px;
 }
 
+.noBlur{
+  backdrop-filter: blur(0px);
+}
+
 .App {
   padding-top: 130px;
   align-items: center;
@@ -155,7 +169,7 @@ th, td {
 
 .entryAnimation.opacityAni {
   opacity: 0;
-  animation: forwards entryAniOpacity 1s var(--animations) !important;
+  animation: forwards entryAniOpacity 1s var(--animations);
 }
 
 .outAnimation {

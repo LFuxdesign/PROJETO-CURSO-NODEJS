@@ -6,9 +6,13 @@ import Curso from "../../conteudo/curso.json"
 import { ReactComponent as ImageSection } from "../../assets/imgSobre.svg"
 import Button from "../../components/buttons/buttons";
 import CourseModeSelection from "../../components/courseSelection/courseModeSelection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { cpuThreads } from "../../scripts/scripts";
 
 export default function Sobre({ content4website }) {
+    document.title = Curso.urlTitle;
 
     const viewedModules = () => {
         const LSViewedModules = localStorage.getItem("viewedModules");
@@ -36,13 +40,64 @@ export default function Sobre({ content4website }) {
 
     const [showModalCourseSelection, setShowModalCourseSelection] = useState(false);
 
-    function setShowModal(show){
+    function setShowModal(show) {
         setShowModalCourseSelection(show);
     }
 
+
+    function calcCardHeight() {
+        let maxHeight = 0;
+        function adjust(element) {
+            const cardHeight = element.offsetHeight;
+            if (cardHeight > maxHeight) {
+                maxHeight = cardHeight;
+            }
+        }
+        const cards = document.querySelectorAll("#c4mSobreModulos .flexCards .card");
+
+        cards.forEach(card => {
+            card.style.minHeight = "";
+            adjust(card);
+        })
+        cards.forEach(card => {
+            card.style.minHeight = maxHeight + 10 + "px";
+        })
+    }
+
+    useEffect(() => {
+        function calcAdjustAndUpdate() {
+            calcCardHeight();
+            setTimeout(() => {
+                calcCardHeight();
+            }, 1000);
+        }
+
+        calcAdjustAndUpdate();
+        window.addEventListener("resize", calcAdjustAndUpdate);
+        return () => {
+            window.removeEventListener("resize", calcAdjustAndUpdate)
+        }
+    }, [])
+
     return (<>
-        {showModalCourseSelection && <CourseModeSelection showControl={true} showStatus={(e)=>setShowModal(e)} />}
+        {showModalCourseSelection && <CourseModeSelection showControl={true} showStatus={(e) => setShowModal(e)} />}
         <div className="content4moodle sobre flexCenter transition">
+            <div id="bgSobre" className="entryAnimation">
+                <svg  viewBox="0 0 1670 771" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id={cpuThreads >=4 ?"yellowStar": ""} d="M984.991 211.426L983.545 222.389C983.509 222.652 983.393 222.898 983.212 223.094C983.032 223.289 982.796 223.425 982.536 223.482C982.276 223.539 982.005 223.516 981.759 223.415C981.513 223.314 981.304 223.14 981.16 222.916L975.226 213.585C975.123 213.425 974.986 213.288 974.825 213.186C974.664 213.083 974.483 213.017 974.294 212.991L963.331 211.545C963.067 211.509 962.821 211.392 962.626 211.212C962.43 211.031 962.295 210.796 962.237 210.536C962.18 210.276 962.203 210.005 962.305 209.759C962.406 209.513 962.58 209.304 962.803 209.16L972.134 203.226C972.295 203.123 972.431 202.986 972.534 202.825C972.636 202.664 972.703 202.483 972.729 202.293L974.174 191.33C974.211 191.067 974.327 190.821 974.508 190.626C974.688 190.43 974.924 190.295 975.184 190.237C975.443 190.18 975.714 190.203 975.96 190.304C976.207 190.405 976.416 190.579 976.56 190.803L982.494 200.134C982.597 200.294 982.734 200.431 982.895 200.533C983.056 200.636 983.237 200.703 983.426 200.728L994.389 202.174C994.652 202.21 994.898 202.327 995.094 202.507C995.289 202.688 995.425 202.924 995.482 203.183C995.54 203.443 995.516 203.714 995.415 203.96C995.314 204.206 995.14 204.415 994.917 204.56L985.586 210.493C985.425 210.597 985.289 210.733 985.186 210.894C985.083 211.055 985.017 211.237 984.991 211.426Z" fill="#FFC27A" />
+                    <path className={cpuThreads >=4 ?"greenStar": ""}d="M66.5047 130.68L63.8047 138.006C63.7248 138.222 63.5809 138.407 63.3923 138.538C63.2038 138.669 62.9797 138.74 62.75 138.74C62.5204 138.74 62.2962 138.669 62.1077 138.538C61.9191 138.407 61.7752 138.222 61.6953 138.006L58.9953 130.68C58.9383 130.525 58.8485 130.385 58.7319 130.268C58.6154 130.151 58.475 130.062 58.3203 130.005L50.9938 127.305C50.7785 127.225 50.5928 127.081 50.4616 126.892C50.3305 126.704 50.2602 126.48 50.2602 126.25C50.2602 126.02 50.3305 125.796 50.4616 125.608C50.5928 125.419 50.7785 125.275 50.9938 125.195L58.3203 122.495C58.475 122.438 58.6154 122.348 58.7319 122.232C58.8485 122.115 58.9383 121.975 58.9953 121.82L61.6953 114.494C61.7752 114.278 61.9191 114.093 62.1077 113.962C62.2962 113.83 62.5204 113.76 62.75 113.76C62.9797 113.76 63.2038 113.83 63.3923 113.962C63.5809 114.093 63.7248 114.278 63.8047 114.494L66.5047 121.82C66.5617 121.975 66.6515 122.115 66.7681 122.232C66.8846 122.348 67.025 122.438 67.1797 122.495L74.5063 125.195C74.7216 125.275 74.9072 125.419 75.0384 125.608C75.1695 125.796 75.2398 126.02 75.2398 126.25C75.2398 126.48 75.1695 126.704 75.0384 126.892C74.9072 127.081 74.7216 127.225 74.5063 127.305L67.1797 130.005C67.025 130.062 66.8846 130.151 66.7681 130.268C66.6515 130.385 66.5617 130.525 66.5047 130.68Z" fill="#1A906B" />
+                    <path className={cpuThreads >=4 ?"greenStar": ""} d="M71.75 108.25V115" stroke="#1A906B" strokeWidth="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path className={cpuThreads >=4 ?"greenStar": ""} d="M75.125 111.625H68.375" stroke="#1A906B" strokeWidth="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path className={cpuThreads >=4 ?"greenStar": ""} d="M78.5 116.125V120.625" stroke="#1A906B" strokeWidth="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path className={cpuThreads >=4 ?"greenStar": ""} d="M80.75 118.375H76.25" stroke="#1A906B" strokeWidth="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle id={cpuThreads >=4 ?"redCircle": ""}cx="5" cy="503" r="5" fill="#ED4459" />
+                    <circle id={cpuThreads >=4 ?"purpleCircle2": ""} cx="725" cy="212" r="6" fill="#6D39E9" />
+                    <circle id={cpuThreads >=4 ?"purpleCircle": ""} cx="1229.5" cy="695.022" r="7.5" fill="#6D39E9" />
+                    <circle id={cpuThreads >=4 ?"yellowCircle": ""}cx="1468.5" cy="77.5" r="7.5" fill="#FFC27A" />
+                    <path className={cpuThreads >=4 ?"lines": ""} d="M59 770H260" stroke="#2097F7" strokeWidth="2" stroke-linecap="round" stroke-dasharray="5 8" />
+                    <path className={cpuThreads >=4 ?"lines": ""} d="M1468 1H1669" stroke="#2097F7" strokeWidth="2" stroke-linecap="round" stroke-dasharray="5 8" />
+                </svg>
+            </div>
             <div className="content flex flexColumn transition">
                 <div id="cta">
                     <div id="imageMobile" className="entryAnimation">
@@ -69,7 +124,25 @@ export default function Sobre({ content4website }) {
                     }
                 </div>
             </div>
-            <ImageSection id="imageDesktop" className="entryAnimation" style={{ animationDelay: ".75s" }} alt="" />
+
+            {cpuThreads >= 4 ? <div id="imageDesktop" className="flexCenter entryAnimation" style={{ position: "relative", width: "35%", height: "400px", }}><DotLottieReact
+                src="/assets/lottie/home ani.lottie"
+                autoplay
+                loop
+                speed={.3}
+                style={{
+                    width: '150%',
+                    height: '150%',
+                    top: 0,
+                    left: 0,
+                    transform: 'translateZ(0)',
+                    willChange: 'transform'
+                }}
+                renderConfig={{
+                    autoResize: true
+                }}
+            /></div> : <ImageSection id="imageDesktop" className="entryAnimation" style={{ animationDelay: ".75s" }} alt="" />
+            }
         </div>
         <div id="c4mSobreModulos" className="useObserver">
             <h1 className="titulo">O que você irá aprender neste curso?</h1>
@@ -77,50 +150,100 @@ export default function Sobre({ content4website }) {
                 <div className="flexCards flex transition">
                     {
                         Curso.modulos.map((modulo, index) => {
-                            return (
-                                <div key={index} className="card flex flexColumn transition useObserver">
-                                    <div className="gap flex flexColumn">
-                                        <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url(${modulo.pathImgModulo}) center/cover no-repeat` : modulo.colors.background }} alt="" />
-                                        <div className="info">
-                                            <div className="detail flexCenter">
-                                                <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
-                                                <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                            if (!content4website) {
+                                return (
+                                    <div key={index} className="card flex flexColumn transition useObserver">
+                                        <div className="gap flex flexColumn">
+                                            <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
+                                            <div className="info">
+                                                <div className="detail flexCenter">
+                                                    <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
+                                                    <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                                                </div>
+                                            </div>
+                                            <div className="content flex flexColumn">
+                                                <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
+                                                <span>{modulo.descricao}</span>
                                             </div>
                                         </div>
-                                        <div className="content flex flexColumn">
-                                            <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
-                                            <span>{modulo.descricao}</span>
+
+                                        <div className="andamento flexCenter">
+                                            {
+                                                (() => {
+                                                    let totalSessoes = 0;
+                                                    let viewedCount = 0;
+                                                    const viewedModulesData = viewedModules();
+                                                    viewedModulesData[index].sessoes.forEach(sessao => {
+                                                        totalSessoes++;
+                                                        if (sessao.viewed) {
+                                                            viewedCount++;
+                                                        }
+                                                    });
+                                                    const percent = (viewedCount / totalSessoes) * 100
+
+                                                    return (
+                                                        <>
+                                                            <div className="progressbar">
+                                                                <div style={{ width: percent + "%" }} className="highlightProgressBar" />
+                                                            </div>
+                                                            <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
+                                                        </>
+                                                    )
+                                                })()
+                                            }
+
                                         </div>
                                     </div>
+                                )
+                            } else {
+                                return (
+                                    <Link to={`/view?m=${index + 1}`} style={{ color: "#000" }} key={index}>
+                                        <div style={{ minHeight: "500px" }} className="card flex flexColumn transition useObserver">
+                                            <div className="gap flex flexColumn">
+                                                <div className="imgModulo" style={{ background: modulo.pathImgModulo ? `url('${modulo.pathImgModulo}') center/cover no-repeat` : modulo.colors.background }} alt="" />
+                                                <div className="info">
+                                                    <div className="detail flexCenter">
+                                                        <span className="categ flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.categoria}</span>
+                                                        <span className="duration flexCenter" style={{ background: modulo.colors.background, color: modulo.colors.main }}>{modulo.duracao}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="content flex flexColumn">
+                                                    <h1>{modulo.titulo.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ !?.,]/g, '')}</h1>
+                                                    <span>{modulo.descricao}</span>
+                                                </div>
+                                            </div>
 
-                                    <div className="andamento flexCenter">
-                                        {
-                                            (() => {
-                                                let totalSessoes = 0;
-                                                let viewedCount = 0;
-                                                const viewedModulesData = viewedModules();
-                                                viewedModulesData[index].sessoes.forEach(sessao => {
-                                                    totalSessoes++;
-                                                    if (sessao.viewed) {
-                                                        viewedCount++;
-                                                    }
-                                                });
-                                                const percent = (viewedCount / totalSessoes) * 100
+                                            <div className="andamento flexCenter">
+                                                {
+                                                    (() => {
+                                                        let totalSessoes = 0;
+                                                        let viewedCount = 0;
+                                                        const viewedModulesData = viewedModules();
+                                                        viewedModulesData[index].sessoes.forEach(sessao => {
+                                                            totalSessoes++;
+                                                            if (sessao.viewed) {
+                                                                viewedCount++;
+                                                            }
+                                                        });
+                                                        const percent = (viewedCount / totalSessoes) * 100
 
-                                                return (
-                                                    <>
-                                                        <div className="progressbar">
-                                                            <div style={{ width: percent + "%" }} className="highlightProgressBar" />
-                                                        </div>
-                                                        <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
-                                                    </>
-                                                )
-                                            })()
-                                        }
+                                                        return (
+                                                            <>
+                                                                <div className="progressbar">
+                                                                    <div style={{ width: percent + "%" }} className="highlightProgressBar" />
+                                                                </div>
+                                                                <span>{percent.toFixed(2) % 1 !== 0 ? percent.toFixed(2) + "%" : percent.toFixed(0) + "%"}</span>
+                                                            </>
+                                                        )
+                                                    })()
+                                                }
 
-                                    </div>
-                                </div>
-                            )
+                                            </div>
+                                        </div>
+                                    </Link>
+                                )
+                            }
+
 
                         })
                     }
