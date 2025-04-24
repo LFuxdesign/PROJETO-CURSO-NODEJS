@@ -3055,10 +3055,10 @@
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
-                                "texto": "",
+                                "texto": "Dentro da função de cada bloco <b>app</b> vamos adicionar os métodos básicos <b>writeHead</b>, <b>write</b> e <b>end()</b>. O <b>writeHead</b> tem como seus parâmetros o código de status que você desenvolvedor definiu e o tipo de conteúdo. No <b>write</b> você defini o conteúdo como nos exemplo ao longo do curso. A seguir vemos no código que dentro do write, ele obtém o código que deriva do módulo <b>fs(File-System)</b> e o mesmo está carregando o <b>index.html</b>. Detalhando melhor o <b>gerenarqui( é uma junção de gerenciador de arquivo) – nome definido por mim, não é regra a se seguir!</b> que recebeu os atributos do fs, nas propriedades readFileSync temos em seus parâmetros o <b>__dirname</b> um método que obtém o diretório anterior do seu arquivo index, para melhor compressão o coloque em um <b>console.log()</b>, o ‘/index.html’ é nada mais que a complementação do dirname, o <b>+</b> significa junção aos dois complementos do parâmetro.",
                                 "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/exemplo/Ex-server-express.webp",
+                                    "description": "Exemplo: Código ilustrativo!"
                                 },
                                 "pathVideoInferior": ""
                             },
@@ -3071,8 +3071,8 @@
                                 "pathVideoSuperior": "",
                                 "texto": "",
                                 "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/exemplo/Ex-server-express-resul.webp",
+                                    "description": "Exemplo: Resultado do código ilustrativo!"
                                 },
                                 "pathVideoInferior": ""
                             }
