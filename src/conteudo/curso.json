@@ -1392,8 +1392,8 @@
                             {
                                 "subtitulo": "",
                                 "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/imgNpm.webp",
+                                    "description": "Logo do <a href='https://nodejs.org/pt' target='_blank'>Node.js</a> e do <a href='https://www.npmjs.com/' target='_blank'>NPM</a>"
                                 },
                                 "pathVideoSuperior": "",
                                 "texto": "Ao iniciar um projeto com Node.js, um dos pontos fundamentais que precisamos entender é como funciona o sistema de gerenciamento de pacotes, pois ele é uma parte essencial do desenvolvimento com essa tecnologia.",
@@ -2061,8 +2061,8 @@
                             {
                                 "subtitulo": "<h4>Event Loop (Modelo Assíncrono e Não Bloqueante):</h4>",
                                 "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/imgEventLoop.webp",
+                                    "description": "Imagem Event Loop - Fonte: <a href='https://dev.to/_staticvoid/node-js-por-baixo-dos-panos-3-um-mergulho-no-event-loop-38l9' target='_blank'>https://dev.to/_staticvoid/node-js-por-baixo-dos-panos-3-um-mergulho-no-event-loop-38l9</a>"
                                 },
                                 "pathVideoSuperior": "",
                                 "texto": "O Node.js utiliza o Event Loop como base de sua arquitetura assíncrona. Isso significa que ele não bloqueia a execução enquanto aguarda operações como leitura de arquivos ou chamadas de rede, permitindo que outras tarefas continuem sendo executadas. Esse modelo é ideal para aplicações que fazem uso intensivo de entradas e saídas (I/O), como APIs, chats em tempo real e servidores de arquivos. ",
