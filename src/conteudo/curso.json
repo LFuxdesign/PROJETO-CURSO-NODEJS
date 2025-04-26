@@ -1382,11 +1382,11 @@
                     {
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
                         "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA PACOTES.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
+                        "pathImgSuperior": {
+                                    "path": "/assets/webp/imgNpm.webp",
+                                    "description": "Logo do <a href='https://nodejs.org/pt' target='_blank'>Node.js</a> e do <a href='https://www.npmjs.com/' target='_blank'>NPM</a>"
+                                },
+                        "pathVideoSessao": "https://youtu.be/ysERgYrMxt8?feature=shared",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
@@ -3057,9 +3057,7 @@
                         },
                         "pathVideoSessao": "https://www.youtube.com/watch?v=tRzUHPTWpm0",
                         "highlightColor": "#1283F4",
-                        "paragrafos": [
-                           
-                        ]
+                        "paragrafos": []
                     }
                 ]
             }
@@ -3976,6 +3974,10 @@
                     {
                         "titulo": "Conceitos de API",
                         "descricao": "Entenda o que são APIs, sua importância e como elas permitem a comunicação entre diferentes sistemas e aplicativos.",
+                        "pathImgSessao": {
+                            "path": "/assets/webp/CAPA MOD CONCEITO API.webp",
+                            "description": ""
+                        },
                         "pathVideoSessao": "",
                         "highlightColor": "#EA1A5E",
                         "paragrafos": [
