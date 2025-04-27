@@ -8,11 +8,6 @@
 # testing
 /coverage
 
-# production
-.png
-.jpg
-.jpeg
-
 /build
 /api
 /.cert

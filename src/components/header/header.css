@@ -96,6 +96,7 @@ header .rightItems .hamburgerMenu.open div:last-child{
         width: calc(95vw - 100px); */
         padding: 20px 50px;
         width: calc(95vw - 110px);
+        top: 13px;
     }
     header .profile span{
         display: none;

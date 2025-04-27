@@ -116,7 +116,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "<div class='tableContainer'><table><thead><tr><th>Ano<th>Evento<th>Resumo<tbody><tr><td>2009<td>Criação do Node.js<td>Ryan Dahl lança o Node.js permitindo que o JavaScript fosse executado no lado do servidor<tr><td>2010<td>Lançamento do NPM<td>Isaac Schlueter lança o npm (Node Package Manager), facilitando o gerenciamento de pacotes do Node.js.<tr><td>2011<td>Suporte ao Windows<td>A Microsoft e a Joynet implementaram uma versão nativa do Node.js para Windows<tr><td>2012<td>Transição de liderança<td>Ryan Dahl transfere a liderança do projeto para Isaac Schlueter, criador do npm<tr><td>2014<td>Criação do io.js<td>Desenvolvedores criam o io.js, um fork do Node.js, buscando um desenvolvimento mais ágil e aberto<tr><td>2015<td>Fundação do Node.js<td>A Node.js Foundation é estabelecida para unificar o Node.js e o io.js, promovendo uma governança aberta<tr><td>2018<td>Node.js 10 LTS<td>Lançamento da versão 10 do Node.js com Long Term Support, o que oferece uma estabilidade para aplicações em produção<tr><td>2021<td>Suporte ao Apple Silicon<td>Node.js 16 é lançado com suporte aprimorado para os chips M1 da Apple<tr><td>2023<td>Fim do suporte ao Node.js 16<td>O suporte ao Node.js 16 foi encerrado, coincidindo com o fim do suporte do OpenSSL 1.1.1<tr><td>2024<td>Lançamento da versão 20 do Node.js<td>A versão 20 do Node.js é lançada com suporte de longo prazo, contendo melhorias de desempenho e segurança</table></div>",
+                                "texto": "<div class='tableContainer'><div class='tableContainer'><table cellpadding=5><thead><tr><th>Ano<th>Evento<th>Resumo<tbody><tr><td>2009<td>Criação do Node.js<td>Ryan Dahl lança o Node.js permitindo que o JavaScript fosse executado no lado do servidor<tr><td>2010<td>Lançamento do NPM<td>Isaac Schlueter lança o npm (Node Package Manager), facilitando o gerenciamento de pacotes do Node.js.<tr><td>2011<td>Suporte ao Windows<td>A Microsoft e a Joynet implementaram uma versão nativa do Node.js para Windows<tr><td>2012<td>Transição de liderança<td>Ryan Dahl transfere a liderança do projeto para Isaac Schlueter, criador do npm<tr><td>2014<td>Criação do io.js<td>Desenvolvedores criam o io.js, um fork do Node.js, buscando um desenvolvimento mais ágil e aberto<tr><td>2015<td>Fundação do Node.js<td>A Node.js Foundation é estabelecida para unificar o Node.js e o io.js, promovendo uma governança aberta<tr><td>2018<td>Node.js 10 LTS<td>Lançamento da versão 10 do Node.js com Long Term Support, o que oferece uma estabilidade para aplicações em produção<tr><td>2021<td>Suporte ao Apple Silicon<td>Node.js 16 é lançado com suporte aprimorado para os chips M1 da Apple<tr><td>2023<td>Fim do suporte ao Node.js 16<td>O suporte ao Node.js 16 foi encerrado, coincidindo com o fim do suporte do OpenSSL 1.1.1<tr><td>2024<td>Lançamento da versão 20 do Node.js<td>A versão 20 do Node.js é lançada com suporte de longo prazo, contendo melhorias de desempenho e segurança</table></div></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -1718,7 +1718,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "<table><thead><tr><th>Tarefa<th>Comando<tbody><tr><td>Instalar pacote no projeto<td><code>npm install nome_do_pacote</code><tr><td>Instalar pacote global<td><code>npm install -g nome_do_pacote</code><tr><td>Instalar como dependência dev<td><code>npm install nome_do_pacote --save-dev</code><tr><td>Remover pacote do projeto<td><code>npm remove nome_do_pacote</code></table>",
+                                "texto": "<div class='tableContainer'><table cellpadding=5><thead><tr><th>Tarefa<th>Comando<tbody><tr><td>Instalar pacote no projeto<td><code>npm install nome_do_pacote</code><tr><td>Instalar pacote global<td><code>npm install -g nome_do_pacote</code><tr><td>Instalar como dependência dev<td><code>npm install nome_do_pacote --save-dev</code><tr><td>Remover pacote do projeto<td><code>npm remove nome_do_pacote</code></table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -1900,7 +1900,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "<table><thead><tr><th>Tipo de Dependência<th>Onde é listada<th>Exemplo de pacote<th>Instala automaticamente?<th>Exigida em produção?<tbody><tr><td>Padrão<td><code>dependencies</code><td>express, axios<td>Sim<td>Sim<tr><td>Desenvolvimento<td><code>devDependencies</code><td>eslint, jest<td>Sim<td>Não<tr><td>Opcional<td><code>optionalDependencies</code><td>fsevents<td>Sim (se possível)<td>Não<tr><td>Par (Peer)<td><code>peerDependencies</code><td>react, webpack<td>Não<td>Sim (instala manual)<tr><td>Dependência de funções<td>Dentro de um código escrito<td>Função exportada<td>-<td>-</table>",
+                                "texto": "<div class='tableContainer'><table cellpadding=5><thead><tr><th>Tipo de Dependência<th>Onde é listada<th>Exemplo de pacote<th>Instala automaticamente?<th>Exigida em produção?<tbody><tr><td>Padrão<td><code>dependencies</code><td>express, axios<td>Sim<td>Sim<tr><td>Desenvolvimento<td><code>devDependencies</code><td>eslint, jest<td>Sim<td>Não<tr><td>Opcional<td><code>optionalDependencies</code><td>fsevents<td>Sim (se possível)<td>Não<tr><td>Par (Peer)<td><code>peerDependencies</code><td>react, webpack<td>Não<td>Sim (instala manual)<tr><td>Dependência de funções<td>Dentro de um código escrito<td>Função exportada<td>-<td>-</table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2595,7 +2595,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Apesar de ambos servirem para modularizar o código, existem diferenças importantes entre eles: <table border=1><tr><th>Característica<th>CommonJS<th>ESModules<tr><td>Sintaxe<td>require / module.exports<td>import / export<tr><td>Origem<td>Desenvolvido para o Node.js<td>Padrão oficial do JavaScript (ES6)<tr><td>Carregamento<td>Síncrono (bloqueante)<td>Assíncrono (não bloqueante)<tr><td>Suporte nativo no navegador<td>Não<td>Sim<tr><td>Suporte no Node.js<td>Nativo<td>Sim (com <code>\"type\": \"module\"</code> ou <code>.mjs</code>)<tr><td>Importação dinâmica<td>Suportada via require()<td>Suportada via import() com Promises<tr><td>Análise estática<td>Limitada<td>Suportada (importações são estáticas)</table>",
+                                "texto": "Apesar de ambos servirem para modularizar o código, existem diferenças importantes entre eles: <div class='tableContainer'><table cellpadding=5><tr><th>Característica<th>CommonJS<th>ESModules<tr><td>Sintaxe<td>require / module.exports<td>import / export<tr><td>Origem<td>Desenvolvido para o Node.js<td>Padrão oficial do JavaScript (ES6)<tr><td>Carregamento<td>Síncrono (bloqueante)<td>Assíncrono (não bloqueante)<tr><td>Suporte nativo no navegador<td>Não<td>Sim<tr><td>Suporte no Node.js<td>Nativo<td>Sim (com <code>\"type\": \"module\"</code> ou <code>.mjs</code>)<tr><td>Importação dinâmica<td>Suportada via require()<td>Suportada via import() com Promises<tr><td>Análise estática<td>Limitada<td>Suportada (importações são estáticas)</table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2721,7 +2721,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Esses módulos nativos são essenciais para tarefas comuns em aplicações back-end. Eles proporcionam alto desempenho, segurança, e integração com o sistema operacional, sem depender de bibliotecas externas.<table border=1 cellpadding=5 cellspacing=0><thead><tr><th>Módulo<th>Finalidade Principal<tbody><tr><td><code>fs</code><td>Manipular arquivos e diretórios<tr><td><code>path</code><td>Trabalhar com caminhos de arquivos<tr><td><code>os</code><td>Obter informações do sistema operacional</table><br/>Explorar bem esses módulos é um passo importante para se tornar produtivo com Node.js no desenvolvimento de aplicações robustas e eficientes.",
+                                "texto": "Esses módulos nativos são essenciais para tarefas comuns em aplicações back-end. Eles proporcionam alto desempenho, segurança, e integração com o sistema operacional, sem depender de bibliotecas externas.<div class='tableContainer'><table cellpadding=5><thead><tr><th>Módulo<th>Finalidade Principal<tbody><tr><td><code>fs</code><td>Manipular arquivos e diretórios<tr><td><code>path</code><td>Trabalhar com caminhos de arquivos<tr><td><code>os</code><td>Obter informações do sistema operacional</table></div><br/>Explorar bem esses módulos é um passo importante para se tornar produtivo com Node.js no desenvolvimento de aplicações robustas e eficientes.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3113,7 +3113,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Imagine uma tabela usuários: <br/><table border=1 cellpadding=5 cellspacing=0><thead><tr><th>id<th>nome<th>email<tbody><tr><td>1<td>João Silva<td><a href=mailto:joao@email.com>joao@email.com</a><tr><td>2<td>Maria Souza<td><a href=mailto:maria@email.com>maria@email.com</a></table><br/><br/><li>id: chave primária (identificador único)<li>nome e email: colunas com dados dos usuários",
+                                "texto": "Imagine uma tabela usuários: <br/><div class='tableContainer'><table cellpadding=5><thead><tr><th>id<th>nome<th>email<tbody><tr><td>1<td>João Silva<td><a href=mailto:joao@email.com>joao@email.com</a><tr><td>2<td>Maria Souza<td><a href=mailto:maria@email.com>maria@email.com</a></table></div><br/><br/><li>id: chave primária (identificador único)<li>nome e email: colunas com dados dos usuários",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3211,7 +3211,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "<table border=1 cellpadding=5 cellspacing=0><thead><tr><th>Conceito<th>Explicação<tbody><tr><td><strong>Chave Primária</strong><td>Identifica cada registro de forma única.<tr><td><strong>Chave Estrangeira</strong><td>Cria relação entre duas tabelas (ex: <code>usuario_id</code> em uma tabela pedidos).<tr><td><strong>Normalização</strong><td>Processo para evitar dados duplicados e manter integridade.<tr><td><strong>Relacionamento</strong><td>Conexão entre tabelas (um-para-um, um-para-muitos, muitos-para-muitos).</table>",
+                                "texto": "<div class='tableContainer'><table cellpadding=5><thead><tr><th>Conceito<th>Explicação<tbody><tr><td><strong>Chave Primária</strong><td>Identifica cada registro de forma única.<tr><td><strong>Chave Estrangeira</strong><td>Cria relação entre duas tabelas (ex: <code>usuario_id</code> em uma tabela pedidos).<tr><td><strong>Normalização</strong><td>Processo para evitar dados duplicados e manter integridade.<tr><td><strong>Relacionamento</strong><td>Conexão entre tabelas (um-para-um, um-para-muitos, muitos-para-muitos).</table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3505,7 +3505,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "• Exemplo: Cassandra, HBase<br>• Descrição: Armazenam dados em colunas em vez de linhas, o que permite uma alta performance em consultas em grande escala. Esses bancos são eficazes para aplicações que precisam de grandes quantidades de dados e uma escrita rápida.<br/><br/>Exemplo de dados em uma tabela de coluna:<br/><table border=1 cellpadding=5 cellspacing=0><thead><tr><th>ID<th>Nome<th>Idade<tbody><tr><td>1<td>João<td>30<tr><td>2<td>Maria<td>25</table>",
+                                "texto": "• Exemplo: Cassandra, HBase<br>• Descrição: Armazenam dados em colunas em vez de linhas, o que permite uma alta performance em consultas em grande escala. Esses bancos são eficazes para aplicações que precisam de grandes quantidades de dados e uma escrita rápida.<br/><br/>Exemplo de dados em uma tabela de coluna:<br/><div class='tableContainer'><table cellpadding=5><thead><tr><th>ID<th>Nome<th>Idade<tbody><tr><td>1<td>João<td>30<tr><td>2<td>Maria<td>25</table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3603,7 +3603,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "<table border=1 cellpadding=5 cellspacing=0><thead><tr><th>Característica<th>Bancos de Dados Relacionais (SQL)<th>Bancos de Dados NoSQL<tbody><tr><td>Estrutura de Dados<td>Tabelas e Linhas<td>Documentos, Chave-Valor, Colunas, Grafos<tr><td>Flexibilidade no Modelo<td>Estrutura rígida (Schema)<td>Estrutura flexível (sem esquema fixo)<tr><td>Escalabilidade<td>Vertical (aumentando recursos do servidor)<td>Horizontal (adicionando servidores)<tr><td>Consultas<td>SQL (Structured Query Language)<td>Depende do tipo (ex: consulta por chave, documentos, etc.)<tr><td>Transações ACID<td>Suporta ACID<td>Varia de acordo com o banco (geralmente BASE)<tr><td>Performance<td>Boa para dados estruturados<td>Ótima para grandes volumes de dados e dados não estruturados</table>",
+                                "texto": "<div class='tableContainer'><table cellpadding=5><thead><tr><th>Característica<th>Bancos de Dados Relacionais (SQL)<th>Bancos de Dados NoSQL<tbody><tr><td>Estrutura de Dados<td>Tabelas e Linhas<td>Documentos, Chave-Valor, Colunas, Grafos<tr><td>Flexibilidade no Modelo<td>Estrutura rígida (Schema)<td>Estrutura flexível (sem esquema fixo)<tr><td>Escalabilidade<td>Vertical (aumentando recursos do servidor)<td>Horizontal (adicionando servidores)<tr><td>Consultas<td>SQL (Structured Query Language)<td>Depende do tipo (ex: consulta por chave, documentos, etc.)<tr><td>Transações ACID<td>Suporta ACID<td>Varia de acordo com o banco (geralmente BASE)<tr><td>Performance<td>Boa para dados estruturados<td>Ótima para grandes volumes de dados e dados não estruturados</table></div>",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
