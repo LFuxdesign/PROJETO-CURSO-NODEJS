@@ -28,7 +28,7 @@
                             {
                                 "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
                                 "pathImgInferior": {
-                                    "path": "/assets/webp/Exemplo/resumo Ryan Dahl.webp",
+                                    "path": "/assets/webp/exemplo/resumo Ryan Dahl.webp",
                                     "description": "Imagem de Ryan Dahl, fonte: <a href='https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/' target='_blank'>https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/</a>"
                                 },
                                 "pathVideoInferior": ""
