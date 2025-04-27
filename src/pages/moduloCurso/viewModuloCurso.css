@@ -25,14 +25,21 @@
     min-width: 355px;
     margin-bottom: 30px;
     position: sticky;
-    top: 20px;
     bottom: 20px;
-}
-
-.content4moodle.moduloCurso .runningCourses {
     margin-top: 0px!important;
     top: 120px;
+    max-height: calc(90vh - 120px);
+    overflow-y: auto;
 }
+
+.content4moodle.moduloCurso .runningCourses::-webkit-scrollbar{
+    background: transparent;
+}
+
+.content4moodle.moduloCurso .runningCourses::-webkit-scrollbar-thumb{
+    background: #0002;
+}
+
 .content4moodle.moduloCurso .runningCourses .cardCurso {
     border-radius: var(--default-radius);
     padding: 20px;
@@ -213,10 +220,10 @@
 
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar span {
     position: absolute;
-    left: 22px;
+    width: 100%;
+    text-align: center;
     top: 50%;
     transform: translateY(-43%);
-    width: max-content;
 }
 
 .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar .highlightText {
@@ -227,9 +234,9 @@
     color: white;
     border-radius: 7px;
     transition: all 1s var(--ease-in-out);
-    width: 0;
-    left: 22px;
-    max-width: 126px;
+    width: 100%;
+    text-align: center;
+    clip-path: inset(0 100% 0 0);
 }
 
 
@@ -301,12 +308,12 @@
 }
 
 .scrollToTopBtn:hover{
-    transform: scale(1.03);
+    transform: scale(.89);
     transition: all .2s;
 }
 
 .scrollToTopBtn:active{
-    transform: scale(0.95);
+    transform: scale(0.8);
     transition: all .15s
 }
 
@@ -366,6 +373,7 @@
         width: calc(100% - 40px*2);
         min-width: unset;
         position: unset;
+        max-height: unset!important;
     }
 
     .content4moodle.moduloCurso {
@@ -440,6 +448,9 @@
         height: 0 !important;
         padding: 0!important ;
     }
+    .content4moodle.moduloCurso{
+        padding-top: 1vh;
+    }
 }
 
 @media(width < 415px) {
@@ -475,5 +486,17 @@
 
     .content4moodle.moduloCurso .content .conteudoSessao .medias .infos .progressbar.expand {
         width: 200px;
+    }
+}
+
+@media(height < 720px){
+    .content4moodle.moduloCurso .runningCourses{
+        max-height: calc(87vh - 120px)
+    }
+}
+
+@media(height < 400px){
+    .content4moodle.moduloCurso .runningCourses{
+        max-height: calc(80vh - 120px)
     }
 }

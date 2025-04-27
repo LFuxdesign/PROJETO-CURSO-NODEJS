@@ -428,7 +428,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                         <span>
                                                             {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
-                                                        <span className="highlightText" style={{width: (animationTimeout && percent - 12.9889 > 0) ? percent-12.9889 + "%" : "0%"}}>
+                                                        <span className="highlightText" style={{clipPath: (animationTimeout && percent - 12.9889 > 0) ? `inset(0 ${100 -percent}% 0 0)` : "0%"}}>
                                                             {percent.toFixed(0) + (screenWidth >= 1080 || expandOnDisclaimerHide ? "% concluido" : "%")}
                                                         </span>
                                                     </>
@@ -440,7 +440,7 @@ export default function ViewModuloCurso({ content4website }) {
                                         (() => {
                                             if (sessao.pathVideoSessao) {
                                                 return (<>
-                                                    <div className="media entryAnimation" style={{ animationDelay: ".25s" }}>
+                                                    <div className="media entryAnimation" style={{ animationDelay: ".25s"}}>
                                                         <ExpandIcon path={sessao.pathVideoSessao} type={"video"} />
                                                         <Player
                                                             videoPath={sessao.pathVideoSessao}
@@ -448,10 +448,10 @@ export default function ViewModuloCurso({ content4website }) {
                                                         />
                                                     </div>
                                                 </>)
-                                            } else if (sessao.pathImgSessao) {
+                                            } else if (sessao.pathImgSessao.path) {
                                                 return (<>
                                                     <div className="media entryAnimation flexCenter flexColumn" style={{ animationDelay: ".25s" }}>
-                                                        <ExpandIcon path={sessao.pathImgSessao.path} type={"img"} />
+                                                        <ExpandIcon path={sessao.pathImgSessao?.path} type={"img"} />
                                                         <ImgWithText classNam={"imgSessao"} isSectionImage={true} text={sessao.pathImgSessao.description} onClick={() => modalController(true, sessao.pathImgSessao.path, "img")} path={sessao.pathImgSessao.path} />
                                                     </div>
                                                 </>)
@@ -472,7 +472,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                         (() => {
                                                             if (paragrafo.pathVideoSuperior) {
                                                                 return (<>
-                                                                    <div className="media useObserver">
+                                                                    <div className="media useObserver" >
                                                                         <ExpandIcon path={paragrafo.pathVideoSuperior} type={"video"} />
                                                                         <Player
                                                                             videoPath={paragrafo.pathVideoSuperior}
@@ -480,7 +480,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                                         />
                                                                     </div>
                                                                 </>)
-                                                            } else if (paragrafo.pathImgSuperior) {
+                                                            } else if (paragrafo.pathImgSuperior?.path) {
                                                                 return (<>
                                                                     <div className="media useObserver flexCenter flexColumn">
                                                                         <ExpandIcon path={paragrafo.pathImgSuperior.path} type={"img"} />
@@ -501,7 +501,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                         (() => {
                                                             if (paragrafo.pathVideoInferior) {
                                                                 return (<>
-                                                                    <div className="media useObserver">
+                                                                    <div className="media useObserver" >
                                                                         <ExpandIcon path={paragrafo.pathVideoInferior} type={"video"} />
                                                                         <Player
                                                                             videoPath={paragrafo.pathVideoInferior}
@@ -509,7 +509,7 @@ export default function ViewModuloCurso({ content4website }) {
                                                                         />
                                                                     </div>
                                                                 </>)
-                                                            } else if (paragrafo.pathImgInferior) {
+                                                            } else if (paragrafo.pathImgInferior?.path) {
                                                                 return (<>
                                                                     <div className="media useObserver flexCenter flexColumn">
                                                                         <ExpandIcon path={paragrafo.pathImgInferior.path} type={"img"} />
