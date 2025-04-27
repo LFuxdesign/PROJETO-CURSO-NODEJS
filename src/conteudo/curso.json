@@ -3049,7 +3049,7 @@
                         ]
                     },
                     {
-                        "titulo": "Desenvolva um servidor web com com Node.js Puro",
+                        "titulo": "Desenvolva um servidor web com Node.js Puro",
                         "descricao": "Aprenda a criar um servidor web básico utilizando os módulos nativos do Node.js.",
                         "pathImgSessao": {
                             "path": "/assets/webp/CAPA SRV WEB EXPR.webp",
