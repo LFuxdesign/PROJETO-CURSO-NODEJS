@@ -28,7 +28,7 @@
                             {
                                 "texto": "Node.js é um ambiente de execução JavaScript que permite executar código JavaScript no lado do servidor, proporcionando uma alternativa altamente eficaz para a construção de servidores de aplicação. Criado por Ryan Dahl e lançado em maio de 2009, Node.js utiliza o motor V8 JavaScript da Google e introduz um modelo de programação baseado em um loop de eventos assíncrono, que permite a execução de operações de entrada e saída sem bloqueios.",
                                 "pathImgInferior": {
-                                    "path": "/assets/webp/Exemplo/resumo Ryan Dahl.webp",
+                                    "path": "/assets/webp/exemplo/resumo Ryan Dahl.webp",
                                     "description": "Imagem de Ryan Dahl, fonte: <a href='https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/' target='_blank'>https://www.linkedin.com/pulse/ryan-dahl-nikhil-negi-abg9c/</a>"
                                 },
                                 "pathVideoInferior": ""
@@ -1382,18 +1382,18 @@
                     {
                         "titulo": "Como funciona o sistema de gerenciamento de pacotes do Node.js?",
                         "descricao": "Entenda o papel do npm, como funcionam os pacotes e sua importância na gestão de dependências.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA PACOTES.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
+                        "pathImgSuperior": {
+                                    "path": "/assets/webp/imgNpm.webp",
+                                    "description": "Logo do <a href='https://nodejs.org/pt' target='_blank'>Node.js</a> e do <a href='https://www.npmjs.com/' target='_blank'>NPM</a>"
+                                },
+                        "pathVideoSessao": "https://youtu.be/ysERgYrMxt8?feature=shared",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
                                 "subtitulo": "",
                                 "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/imgNpm.webp",
+                                    "description": "Logo do <a href='https://nodejs.org/pt' target='_blank'>Node.js</a> e do <a href='https://www.npmjs.com/' target='_blank'>NPM</a>"
                                 },
                                 "pathVideoSuperior": "",
                                 "texto": "Ao iniciar um projeto com Node.js, um dos pontos fundamentais que precisamos entender é como funciona o sistema de gerenciamento de pacotes, pois ele é uma parte essencial do desenvolvimento com essa tecnologia.",
@@ -2061,8 +2061,8 @@
                             {
                                 "subtitulo": "<h4>Event Loop (Modelo Assíncrono e Não Bloqueante):</h4>",
                                 "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/imgEventLoop.webp",
+                                    "description": "Imagem Event Loop - Fonte: <a href='https://dev.to/_staticvoid/node-js-por-baixo-dos-panos-3-um-mergulho-no-event-loop-38l9' target='_blank'>https://dev.to/_staticvoid/node-js-por-baixo-dos-panos-3-um-mergulho-no-event-loop-38l9</a>"
                                 },
                                 "pathVideoSuperior": "",
                                 "texto": "O Node.js utiliza o Event Loop como base de sua arquitetura assíncrona. Isso significa que ele não bloqueia a execução enquanto aguarda operações como leitura de arquivos ou chamadas de rede, permitindo que outras tarefas continuem sendo executadas. Esse modelo é ideal para aplicações que fazem uso intensivo de entradas e saídas (I/O), como APIs, chats em tempo real e servidores de arquivos. ",
@@ -3057,9 +3057,7 @@
                         },
                         "pathVideoSessao": "https://www.youtube.com/watch?v=tRzUHPTWpm0",
                         "highlightColor": "#1283F4",
-                        "paragrafos": [
-                           
-                        ]
+                        "paragrafos": []
                     }
                 ]
             }
@@ -3976,6 +3974,10 @@
                     {
                         "titulo": "Conceitos de API",
                         "descricao": "Entenda o que são APIs, sua importância e como elas permitem a comunicação entre diferentes sistemas e aplicativos.",
+                        "pathImgSessao": {
+                            "path": "/assets/webp/CAPA MOD CONCEITO API.webp",
+                            "description": ""
+                        },
                         "pathVideoSessao": "",
                         "highlightColor": "#EA1A5E",
                         "paragrafos": [
@@ -4590,7 +4592,7 @@
                             "path": "/assets/webp/CAPA CRUD.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=dfDCq2sNeHE",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
                             {
@@ -4736,7 +4738,7 @@
                             "path": "/assets/webp/CAPA IMPL CRUD.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=voXTVTW73E8",
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
@@ -4882,7 +4884,7 @@
                             "path": "/assets/webp/CAPA JSON.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=P81dE-tkaaA",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
@@ -5014,7 +5016,7 @@
                             "path": "/assets/webp/CAPA ENV REC JSON.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=w30zWauuoGw",
                         "highlightColor": "#1A88E8",
                         "paragrafos": [
                             {
@@ -5147,7 +5149,7 @@
                             "path": "/assets/webp/CAPA AMB VAR.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://youtu.be/91cu5GhS4JE?feature=shared&t=57",
                         "highlightColor": "#1265E2",
                         "paragrafos": [
                             {
@@ -5237,7 +5239,7 @@
                             "path": "/assets/webp/CAPA DOTENV.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=P0KLeFOhv7o",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
