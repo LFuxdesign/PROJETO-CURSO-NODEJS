@@ -49,18 +49,20 @@ registerRoute(
 // An example runtime caching route for requests that aren't handled by the
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
-  // Adicione outras extensões de arquivo ou critérios de roteamento conforme necessário.
-  ({ url }) => 
-    url.origin === self.location.origin && 
-    (url.pathname.endsWith('.png')  ||
-     url.pathname.endsWith('.jpg')  ||
-     url.pathname.endsWith('.jpeg') ||
-     url.pathname.endsWith('.gif')  ||
-     url.pathname.endsWith('.svg')  ||
-     url.pathname.endsWith('.mp4')  ||
-     url.pathname.endsWith('.mp3')  ||
-     url.pathname.endsWith('.webp') ||
-     url.pathname.endsWith('.ttf')),
+  ({ url }) =>
+    url.origin === self.location.origin &&
+    (url.pathname.endsWith('.png') ||
+      url.pathname.endsWith('.jpg') ||
+      url.pathname.endsWith('.jpeg') ||
+      url.pathname.endsWith('.gif') ||
+      url.pathname.endsWith('.svg') ||
+      url.pathname.endsWith('.mp4') ||
+      url.pathname.endsWith('.mp3') ||
+      url.pathname.endsWith('.webp') ||
+      url.pathname.endsWith('.ttf') ||
+      url.pathname.endsWith(".lottie") ||
+      url.pathname.endsWith(".wasm")
+    ),
   new StaleWhileRevalidate({
     cacheName: 'cacheGeneralSWRK',
     plugins: [
@@ -73,11 +75,10 @@ registerRoute(
 );
 
 registerRoute(
-  ({ url }) => 
-    url.origin === self.location.origin && 
-    (url.pathname.endsWith('.css') || 
-     url.pathname.endsWith('.json')|| 
-     url.pathname.endsWith('.html')),
+  ({ url }) =>
+    url.origin === self.location.origin &&
+    ( url.pathname.endsWith('.css') ||
+      url.pathname.endsWith('.json')),
   new StaleWhileRevalidate({
     cacheName: 'cacheDocsSWRK',
     plugins: [
@@ -89,12 +90,10 @@ registerRoute(
 );
 
 registerRoute(
-  ({ url }) => 
-    url.origin === self.location.origin && 
-    (url.pathname.endsWith('.css') || 
-     url.pathname.endsWith('.json')|| 
-     url.pathname.endsWith('.js')|| 
-     url.pathname.endsWith('.html')),
+  ({ url }) =>
+    url.origin === self.location.origin &&
+    ( url.pathname.endsWith('.js') ||
+      url.pathname.endsWith('.html')),
   new NetworkFirst({
     cacheName: 'cacheJSSWRK',
     plugins: [
