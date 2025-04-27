@@ -12,6 +12,7 @@
 /api
 /.cert
 /src/pages/terms
+sitemap.js
 
 # misc
 .DS_Store
