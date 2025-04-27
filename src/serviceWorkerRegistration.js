@@ -75,6 +75,10 @@ function registerValidSW(swUrl, config) {
               // Execute callback
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
+
+                if (registration.waiting) {
+                  registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+                }
               }
             } else {
               // At this point, everything has been precached.
