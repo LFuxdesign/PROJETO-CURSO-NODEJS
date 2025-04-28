@@ -12,6 +12,8 @@
 /api
 /.cert
 /src/pages/terms
+sitemap.js
+webpConverter.bat
 
 # misc
 .DS_Store

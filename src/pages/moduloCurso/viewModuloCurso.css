@@ -450,6 +450,7 @@
     }
     .content4moodle.moduloCurso{
         padding-top: 1vh;
+        margin-top: 80px !important;
     }
 }
 
