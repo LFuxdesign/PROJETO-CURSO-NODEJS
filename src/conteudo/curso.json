@@ -1936,11 +1936,11 @@
                             {
                                 "subtitulo": "",
                                 "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
+                                    "path": "/assets/webp/exemplo/exemplo - Major Minor Patch.webp",
+                                    "description": "Fonte: <a href='https://medium.com/@sinanozturk/semantic-versioning-what-developers-really-mean-by-those-numbers-74e1772bb5c7' target='_blank'>https://medium.com/@sinanozturk/semantic-versioning-what-developers-really-mean-by-those-numbers-74e1772bb5c7</a>"
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "No ecossistema do Node.js, os pacotes (módulos) são identificados por números de versão que seguem o padrão de Versionamento Semântico: <br/><br/> <strong>MAJOR.MINOR.PATCH</strong> — Exemplo: 4.17.1 <br/><br/> <strong>MAJOR</strong> (versão principal - 4): mudanças grandes, podem quebrar compatibilidade com versões anteriores. <br/> <strong>MINOR</strong> (versão secundária – 17): novas funcionalidades que mantêm compatibilidade. <br/> <strong>PATCH</strong> (correções ou pequenas mudanças - 1): apenas correções de bugs, sem adicionar novas funcionalidades significativas. <br/><br/> Exemplo: se um pacote está na versão 2.3.4, isso significa: <br/><br/> <strong>2</strong> = versão principal <br/> <strong>3</strong> = funcionalidades novas adicionadas sem quebrar o código <br/> <strong>4</strong> = correções de bugs",
+                                "texto": "No ecossistema do Node.js, os pacotes (módulos) são identificados por números de versão que seguem o padrão de Versionamento Semântico: <br/><br/><strong>MAJOR.MINOR.PATCH</strong> — Exemplo: 4.17.1 <br/><br/><strong>MAJOR</strong> (versão principal - 4): mudanças grandes, podem quebrar compatibilidade com versões anteriores.<br/><strong>MINOR</strong> (versão secundária – 17): novas funcionalidades que mantêm compatibilidade. <br/><strong>PATCH</strong> (correções ou pequenas mudanças - 1): apenas correções de bugs, sem adicionar novas funcionalidades significativas. <br/><br/> Exemplo: se um pacote está na versão 2.3.4, isso significa: <br/><br/> <strong>2</strong> = versão principal <br/> <strong>3</strong> = funcionalidades novas adicionadas sem quebrar o código <br/> <strong>4</strong> = correções de bugs",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -2249,7 +2249,7 @@
                             "path": "/assets/webp/CAPA CONCEITOSJS.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=jC5v-0USpc4",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
@@ -2943,8 +2943,8 @@
             }
         },
         {
-            "titulo": "🌐 Criando um Servidor Web e Dicas do Express.js",
-            "descricao": "Desenvolva um servidor web com Express.js, aprenda a definir rotas para diferentes métodos HTTP e utilize middlewares para processar requisições.",
+            "titulo": "🌐 Conceitos do Express.js e criação de API com Express",
+            "descricao": "Neste tópico, você vai conhecer o Express.js, um framework leve e flexível para Node.js. Vamos aprender como criar rotas, lidar com requisições e respostas HTTP e estruturar uma API básica de forma simples e organizada.",
             "pathImgModulo": "/assets/webp/CAPA MOD SRV WEB.webp",
             "categoria": "Express.js",
             "duracao": "1h",
@@ -2961,7 +2961,7 @@
                             "path": "/assets/webp/CAPA INTR EXPR.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=VqwEWICvkWs",
                         "highlightColor": "#7515ED",
                         "paragrafos": [
                             {
@@ -3049,15 +3049,19 @@
                         ]
                     },
                     {
-                        "titulo": "Desenvolva um servidor web com com Node.js Puro",
-                        "descricao": "Aprenda a criar um servidor web básico utilizando os módulos nativos do Node.js.",
+                        "titulo": "Criando uma API simples com Express.js",
+                        "descricao": "Aprenda a criar uma API usando o Express.js e os conceitos do pacote.",
                         "pathImgSessao": {
                             "path": "/assets/webp/CAPA SRV WEB EXPR.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "https://www.youtube.com/watch?v=tRzUHPTWpm0",
+                        "pathVideoSessao": "",
                         "highlightColor": "#1283F4",
-                        "paragrafos": []
+                        "paragrafos": [
+                            {
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=ycIxWTEI908"
+                            }
+                        ]
                     }
                 ]
             }
@@ -3081,7 +3085,7 @@
                             "path": "/assets/webp/CAPA SQL.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=kMznyI7r2Tc",
                         "highlightColor": "#1ABBE8",
                         "paragrafos": [
                             {
@@ -3098,7 +3102,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=tRK4-wkTt9I",
                                 "texto": "É um sistema que organiza dados em tabelas, como se fosse uma planilha. Cada tabela contém linhas (registros) e colunas (campos). Os dados se relacionam entre si através de chaves primárias e chaves estrangeiras.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -3272,7 +3276,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=DzCCYdRdV30",
                                 "texto": "O MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) que usa SQL (Structured Query Language) para manipulação e consulta de dados. Ele é amplamente utilizado em diversas aplicações devido à sua robustez, performance e escalabilidade.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -3281,7 +3285,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Instalar o MySQL no Projeto",
+                                "subtitulo": "Instalar o pacote responsável por gerenciar comandos MySQL no Projeto",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
@@ -3328,7 +3332,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://youtu.be/PhI7bFkUEjI?feature=shared&t=13",
                                 "texto": "Crie a configuração da conexão, passando as credenciais do banco de dados:<br><code>const connection = mysql.createConnection({\n  host: 'localhost',    // Endereço do servidor (geralmente 'localhost')\n  user: 'root',         // Nome de usuário do banco de dados\n  password: 'suaSenha', // Senha do banco de dados\n  database: 'meuBanco'  // Nome do banco de dados\n});</code>",
                                 "pathImgInferior": {
                                     "path": "",
@@ -3356,7 +3360,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=2XBWTEbGw4w",
                                 "texto": "Após a conexão estar estabelecida, você pode consultar o banco de dados com SQL.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -3448,7 +3452,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=DnfcIuqa0xo",
                                 "texto": "NoSQL significa \"Not Only SQL\" (Não Apenas SQL). Isso não significa que os bancos de dados NoSQL não utilizam SQL, mas que eles são projetados para armazenar e manipular dados de maneiras que não dependem da estrutura tabular rígida dos bancos de dados relacionais. Os bancos de dados NoSQL oferecem maior flexibilidade no modelo de dados e são melhor adequados para aplicações que lidam com grandes volumes de dados não estruturados ou semi-estruturados.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -3641,27 +3645,23 @@
                         ]
                     },
                     {
-                        "titulo": "Primeiros passos com Firebase",
-                        "descricao": "Explore o Firebase, sua configuração e como ele pode ser usado para armazenar dados em tempo real no seu projeto.",
+                        "titulo": "Usando o banco de dados MongoDB no Node.js",
+                        "descricao": "Neste tópico, você aprenderá a conectar sua aplicação Node.js ao MongoDB, um banco de dados NoSQL. Vamos explorar como usar bibliotecas como o Mongoose para criar esquemas, manipular dados e realizar operações básicas de forma prática e eficiente.",
                         "pathImgSessao": {
-                            "path": "/assets/webp/CAPA FIREBASE.webp",
+                            "path": "/assets/webp/CAPA MONGODB.webp",
                             "description": ""
                         },
                         "pathVideoSessao": "",
                         "highlightColor": "#68EC13",
                         "paragrafos": [
                             {
-                                "tipo": "simples",
-                                "texto": "O Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web oferecida pelo Google. Uma das suas funcionalidades mais poderosas é o Firestore, um banco de dados NoSQL que permite armazenar e sincronizar dados em tempo real entre os usuários. Neste módulo, vamos explorar como começar a trabalhar com o banco de dados Firebase, configurar seu projeto, integrar o Firebase ao seu aplicativo e realizar operações básicas de leitura e gravação de dados."
-                            },
-                            {
-                                "subtitulo": "O que é o Firebase?",
+                                "subtitulo": "O que é MongoDB?",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
-                                "texto": "Firebase é uma plataforma completa para o desenvolvimento de aplicativos móveis e web. Ele oferece uma variedade de serviços, incluindo autenticação, análise, armazenamento em nuvem, funções serverless, notificações push, entre outros. Um dos componentes mais usados é o Firestore, um banco de dados NoSQL que permite armazenar dados de maneira estruturada em documentos e coleções.",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=4dTI1mVLX3I",
+                                "texto": "O MongoDB é um banco de dados NoSQL orientado a documentos, que armazena dados em formato JSON (JavaScript Object Notation). Ele é altamente escalável e flexível, permitindo que os desenvolvedores armazenem dados de forma não estruturada e realizem consultas complexas de maneira eficiente. O MongoDB é amplamente utilizado em aplicações modernas devido à sua capacidade de lidar com grandes volumes de dados e sua facilidade de uso.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3669,285 +3669,13 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Como Configurar o Firebase em Seu Projeto?",
+                                "subtitulo": "Vendo como o MongoDB funciona na prática",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
-                                "texto": "Criando um Projeto no Firebase Console<br>• Acesse o Firebase Console.<br>• Clique em \"Adicionar projeto\" e siga o assistente de criação de projeto.<br>• Após a criação, você será direcionado para a página do seu novo projeto.<br><br>Adicionando o Firebase ao seu Aplicativo Web<br>• No Firebase Console, dentro do seu projeto, clique em \"Adicionar App\".<br>• Selecione \"Web\" para criar uma versão web do seu aplicativo.<br>• Copie o código de configuração do Firebase fornecido, que incluirá as credenciais necessárias para conectar seu aplicativo ao Firebase. Este código se parecerá com o seguinte:<br><code>const firebaseConfig = {<br>  apiKey: \"YOUR_API_KEY\",<br>  authDomain: \"YOUR_AUTH_DOMAIN\",<br>  projectId: \"YOUR_PROJECT_ID\",<br>  storageBucket: \"YOUR_STORAGE_BUCKET\",<br>  messagingSenderId: \"YOUR_MESSAGING_SENDER_ID\",<br>  appId: \"YOUR_APP_ID\",<br>  measurementId: \"YOUR_MEASUREMENT_ID\"<br>};</code><br><br>Instalando o SDK do Firebase<br>Se você estiver utilizando um projeto com Node.js ou uma aplicação front-end com React, por exemplo, instale o SDK do Firebase:<br><code>npm install firebase</code><br><br>Em seguida, inicialize o Firebase no seu código:<br><code>import { initializeApp } from \"firebase/app\";<br>import { getFirestore } from \"firebase/firestore\";<br><br>// Inicialize o Firebase<br>const app = initializeApp(firebaseConfig);<br><br>// Obtenha a referência do Firestore<br>const db = getFirestore(app);</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Estrutura de Dados no Firestore",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "O Firestore armazena dados em coleções e documentos.<br>• Coleções: São grupos de documentos.<br>• Documentos: Contêm dados no formato de chave-valor, semelhantes a objetos JSON.<br><br>Exemplo de estrutura no Firestore:<br><br/>• Coleção: Usuários<br><b>◦ Documento: Usuário1</b><br>▪ Campo: nome: \"João\"<br>▪ Campo: idade: 30<br>▪ Campo: email: \"joao@exemplo.com\"<br><br/><b>◦ Documento: Usuário2</b><br>▪ Campo: nome: \"Maria\"<br>▪ Campo: idade: 25<br>▪ Campo: email: \"maria@exemplo.com\"",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Operações Básicas no Firestore",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "<b>Adicionar Dados:</b><br>Para adicionar dados a um documento, você pode usar o método <code>setDoc</code>. Aqui está como você pode adicionar um novo documento:<br><code>import { setDoc, doc } from \"firebase/firestore\";<br><br>// Definindo dados para o documento<br>const docRef = doc(db, \"usuarios\", \"usuario1\");<br><br>setDoc(docRef, {<br>  nome: \"João\",<br>  idade: 30,<br>  email: \"joao@exemplo.com\"<br>}).then(() => {<br>  console.log(\"Documento escrito com sucesso!\");<br>});</code><br><br><b>Ler Dados:</b><br>Para ler dados de um documento, você pode usar o método <code>getDoc</code>:<br><code>import { getDoc, doc } from \"firebase/firestore\";<br><br>// Obtendo o documento<br>const docRef = doc(db, \"usuarios\", \"usuario1\");<br><br>getDoc(docRef).then((docSnap) => {<br>  if (docSnap.exists()) {<br>    console.log(\"Dados do Documento:\", docSnap.data());<br>  } else {<br>    console.log(\"Nenhum documento encontrado!\");<br>  }<br>});</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Atualizar Dados:",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Para atualizar os dados de um documento existente, você pode usar o método <code>updateDoc</code>:<br><br><code>import { updateDoc, doc } from \"firebase/firestore\";\n\n// Atualizando dados do documento\nconst docRef = doc(db, \"usuarios\", \"usuario1\");\n\nupdateDoc(docRef, {\n  idade: 31\n}).then(() => {\n  console.log(\"Documento atualizado com sucesso!\");\n});</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Deletar Dados",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Para excluir um documento, você pode usar o método <code>deleteDoc</code>:<br><br><code>import { deleteDoc, doc } from \"firebase/firestore\";\n\n// Deletando o documento\nconst docRef = doc(db, \"usuarios\", \"usuario1\");\n\ndeleteDoc(docRef).then(() => {\n  console.log(\"Documento excluído com sucesso!\");\n});</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Trabalhando com Dados em Tempo Real",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Uma das funcionalidades mais poderosas do Firestore é a sincronização de dados em tempo real. Para escutar mudanças em uma coleção ou documento, você pode usar o método <code>onSnapshot</code>:<br><br><code>import { onSnapshot, doc } from \"firebase/firestore\";\n\n// Escutando alterações em um documento\nconst docRef = doc(db, \"usuarios\", \"usuario1\");\n\nonSnapshot(docRef, (docSnap) => {\n  if (docSnap.exists()) {\n    console.log(\"Dados atualizados:\", docSnap.data());\n  }\n});</code><br><br>Sempre que o documento for alterado, a função de callback será executada, permitindo que seu aplicativo reaja a essas mudanças em tempo real.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Conclusão",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "O Firebase Firestore é uma excelente escolha para armazenar dados em tempo real em aplicações web e móveis. Ele oferece uma maneira fácil de configurar e integrar um banco de dados NoSQL com seu projeto, além de fornecer recursos poderosos como sincronização em tempo real e escalabilidade. Neste módulo, você aprendeu como começar com o Firebase, realizar operações básicas de leitura e escrita, e como utilizar o Firestore para criar aplicativos dinâmicos e interativos.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Conecte sua aplicação ao banco de dados Firebase",
-                        "descricao": "Aprenda a integrar seu aplicativo Node.js com o Firebase para criar e ler dados de forma eficiente.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA CONN FIREBASE.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
-                        "highlightColor": "#F28318",
-                        "paragrafos": [
-                            {
-                                "texto": "Neste módulo, você aprenderá como criar uma conta no Firebase e configurar o acesso ao banco de dados NoSQL do Firebase, o Firestore. O Firestore é um banco de dados NoSQL escalável e flexível, ideal para armazenar dados em tempo real e criar aplicativos que sincronizam dados de forma eficiente.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "O que é o Firebase?",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "O Firebase é uma plataforma desenvolvida pelo Google que oferece uma variedade de ferramentas para ajudar os desenvolvedores a criar, testar e gerenciar aplicativos móveis e web. O banco de dados Firestore é um banco de dados NoSQL altamente escalável que armazena dados em documentos e coleções, oferecendo suporte para leitura, escrita e sincronização em tempo real.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Como Criar uma Conta no Firebase",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Acessar o Firebase Console<br>Para começar, acesse o Firebase Console, que é a interface web do Firebase para gerenciar seus projetos.<br><br>Criar uma Conta Google<br>Se você ainda não tiver uma conta Google, crie uma no site de criação de conta do Google. O Firebase exige uma conta Google para se cadastrar e acessar seus serviços.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Criar um Novo Projeto no Firebase",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "• Após fazer login com sua conta Google, clique em \"Adicionar projeto\" na tela inicial do Firebase Console.<br>• O Firebase pedirá informações como o nome do seu projeto e a região em que o projeto será hospedado. Escolha as configurações de acordo com suas necessidades e clique em \"Criar Projeto\".<br>• O processo de criação de projeto pode levar alguns minutos. Após a criação, você será direcionado para o painel do seu novo projeto no Firebase Console.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Ativar o Firestore no Projeto",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "• No painel do seu projeto, localize a seção \"Firestore Database\" no menu lateral e clique nela.<br>• Clique em \"Criar Banco de Dados\" para ativar o Firestore no seu projeto.<br>• Você será solicitado a escolher entre duas opções para o modo de segurança:<br>o Modo de Teste: Permite acesso irrestrito ao banco de dados, ideal para testes rápidos.<br>o Modo de Produção: Requer autenticação para acessos, ideal para ambientes reais e seguros.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Escolhendo o Modo de Teste",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Escolha o Modo de Teste se estiver apenas explorando e clique em \"Ativar\".",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Como Obter as Credenciais do Firebase para Conectar sua Aplicação",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Após criar a conta e ativar o Firestore, você precisará das credenciais de configuração para conectar sua aplicação ao banco de dados Firebase.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Obter o Código de Configuração do Firebase",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "• Na página do seu projeto, clique em \"Configurações\" no canto superior esquerdo (ícone de engrenagem) e depois em \"Configurações do Projeto\".<br>• No menu à esquerda, clique na opção \"Configuração do App Web\".<br>• O Firebase fornecerá um código de configuração similar ao seguinte:<br><code>const firebaseConfig = {\n  apiKey: \"YOUR_API_KEY\",\n  authDomain: \"YOUR_AUTH_DOMAIN\",\n  projectId: \"YOUR_PROJECT_ID\",\n  storageBucket: \"YOUR_STORAGE_BUCKET\",\n  messagingSenderId: \"YOUR_MESSAGING_SENDER_ID\",\n  appId: \"YOUR_APP_ID\",\n  measurementId: \"YOUR_MEASUREMENT_ID\"\n};</code><br>Esse código contém as credenciais do seu projeto e será utilizado para conectar sua aplicação ao Firebase.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Baixar o Firebase SDK",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "• Para adicionar o Firebase ao seu projeto, você pode usar o Firebase SDK. Se estiver utilizando Node.js ou JavaScript no seu projeto, basta instalar o SDK com o comando:<br><code>npm install firebase</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Inicializar o Firebase na Aplicação",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Com as credenciais em mãos, você pode agora inicializar o Firebase na sua aplicação. No seu arquivo JavaScript ou Node.js, adicione o seguinte código:<br><code>import { initializeApp } from \"firebase/app\";<br>import { getFirestore } from \"firebase/firestore\";<br><br>// Substitua pelo código de configuração que você obteve<br>const firebaseConfig = {\n  apiKey: \"YOUR_API_KEY\",\n  authDomain: \"YOUR_AUTH_DOMAIN\",\n  projectId: \"YOUR_PROJECT_ID\",\n  storageBucket: \"YOUR_STORAGE_BUCKET\",\n  messagingSenderId: \"YOUR_MESSAGING_SENDER_ID\",\n  appId: \"YOUR_APP_ID\",\n  measurementId: \"YOUR_MEASUREMENT_ID\"\n};<br><br>// Inicializando o Firebase<br>const app = initializeApp(firebaseConfig);<br><br>// Inicializando o Firestore<br>const db = getFirestore(app);</code><br>Agora, sua aplicação está conectada ao Firestore e pronta para interagir com o banco de dados.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "O que mais você precisa saber?",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "<b>Regras de Segurança do Firestore</b><br>Por padrão, o Firestore usa regras de segurança para determinar quem pode acessar e modificar os dados. No Modo de Teste, as regras são abertas, permitindo que qualquer pessoa acesse o banco de dados. Para ambientes de produção, é essencial configurar regras de segurança adequadas para proteger os dados de sua aplicação.<br><br>Exemplo de regras de segurança simples:<br><code>service cloud.firestore {\n  match /databases/{database}/documents {\n    match /{document=**} {\n      allow read, write: if true; // Permite leitura e escrita para qualquer um\n    }\n  }\n}</code>",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Limitações e Cotas do Firebase: ",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "O Firebase oferece um plano gratuito, mas com limites de uso. Se o seu aplicativo crescer, você poderá precisar de um plano pago, dependendo do volume de dados lidos, escritos e transferidos.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Conclusão",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Neste módulo, você aprendeu como criar uma conta no Firebase, configurar o Firestore e obter as credenciais necessárias para conectar sua aplicação ao banco de dados NoSQL. O Firebase é uma plataforma poderosa e escalável, ideal para armazenar e gerenciar dados em tempo real. Agora você pode começar a integrar o Firestore em sua aplicação e explorar suas funcionalidades avançadas.",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=lZ1Xa930O6Q",
+                                "texto": "O MongoDB armazena dados em documentos BSON (Binary JSON), que são semelhantes ao JSON, mas com algumas diferenças. Cada documento é armazenado em uma coleção, que é equivalente a uma tabela em um banco de dados relacional. Os documentos podem ter estruturas diferentes dentro da mesma coleção, o que proporciona flexibilidade na modelagem dos dados.<br>Exemplo de um documento no MongoDB:<br><code>{\n  \"_id\": ObjectId(\"60d5f9b2c9e77a001c8b4567\"),\n  \"nome\": \"João\",\n  \"idade\": 30,\n  \"email\": \"\n}",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -3978,7 +3706,7 @@
                             "path": "/assets/webp/CAPA MOD CONCEITO API.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=vGuqKIRWosk",
                         "highlightColor": "#EA1A5E",
                         "paragrafos": [
                             {
@@ -3996,7 +3724,7 @@
                                     "description": ""
                                 },
                                 "pathVideoSuperior": "",
-                                "texto": "Uma API (Interface de Programação de Aplicações) é um conjunto de regras e definições que permite que softwares diferentes interajam entre si. Em termos simples, uma API é uma ponte que facilita a comunicação entre diferentes sistemas ou componentes de software.\nQuando você utiliza um aplicativo no seu smartphone, por exemplo, o aplicativo pode acessar dados de um banco de dados remoto ou interagir com outro serviço na web através de uma API. A API define como essas interações devem ocorrer.",
+                                "texto": "Ja criamos algumas APIs ao longo desse curso, mas não chegamos a falar com mais calma o que é uma API em si, no geral API (Interface de Programação de Aplicações) é um conjunto de regras e definições que permite que softwares diferentes interajam entre si. Em termos simples, uma API é uma ponte que facilita a comunicação entre diferentes sistemas ou componentes de software.\nQuando você utiliza um aplicativo no seu smartphone, por exemplo, o aplicativo pode acessar dados de um banco de dados remoto ou interagir com outro serviço na web através de uma API. A API define como essas interações devem ocorrer.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -4132,7 +3860,7 @@
                             "path": "/assets/webp/CAPA APIREST.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=ghTrp1x_1As",
                         "highlightColor": "#1283F4",
                         "paragrafos": [
                             {
@@ -4333,250 +4061,6 @@
                                 },
                                 "pathVideoSuperior": "",
                                 "texto": "As APIs RESTful são uma escolha popular para o desenvolvimento de sistemas modernos devido à sua simplicidade, escalabilidade e flexibilidade. Elas seguem princípios claros e utilizam o protocolo HTTP para permitir que diferentes sistemas e plataformas se comuniquem de forma eficiente. Neste módulo, você aprendeu o que são APIs RESTful, como elas funcionam e como você pode utilizá-las em seus projetos. Agora, você tem uma base sólida para integrar e criar APIs RESTful em suas aplicações.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            }
-                        ]
-                    },
-                    {
-                        "titulo": "Estruturação de uma API RESTful com Express.js",
-                        "descricao": "Descubra como estruturar uma API RESTful com o Express.js, criando rotas e manipulando requisições e respostas.",
-                        "pathImgSessao": {
-                            "path": "/assets/webp/CAPA API REST EXPR.webp",
-                            "description": ""
-                        },
-                        "pathVideoSessao": "",
-                        "highlightColor": "#E71A1A",
-                        "paragrafos": [
-                            {
-                                "texto": "Neste módulo, vamos aprender como criar uma API RESTful utilizando o framework Express.js, que é um dos mais populares e leves para o desenvolvimento de aplicações web em Node.js. O Express facilita a criação de APIs, tornando o código mais simples e organizado.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "O que é o Express.js?",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Express.js é um framework minimalista e flexível para Node.js que fornece um conjunto robusto de ferramentas para criar aplicações web e APIs. Ele é amplamente utilizado devido à sua simplicidade, flexibilidade e grande comunidade de suporte. Com o Express, é possível criar APIs RESTful de forma rápida, definindo rotas, manipulando requisições e respostas HTTP, e gerenciando middleware para manipulação de dados.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Passos para Estruturar uma API RESTful com Express.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Agora, vamos explorar como estruturar uma API RESTful com Express.js, passando pelos principais componentes e configurando a aplicação.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Instalando o Express.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Para começar a usar o Express, você precisa instalar o pacote via npm (Node Package Manager).\n\nnpm init -y\nnpm install express\n\nIsso cria um projeto Node.js e instala o Express na sua aplicação.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Criando a Estrutura Básica da API",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Agora, vamos criar a estrutura básica de uma API utilizando o Express. Em um arquivo app.js, começamos configurando o Express, criando as rotas e configurando a aplicação.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Exemplo de estrutura básica de um arquivo app.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "const express = require('express');\nconst app = express();\nconst port = 3000;\n\n// Middleware para processar requisições com JSON\napp.use(express.json());\n\n// Rota principal\napp.get('/', (req, res) => {\n  res.send('Bem-vindo à API RESTful com Express.js!');\n});\n\n// Rota para obter todos os usuários\napp.get('/users', (req, res) => {\n  res.json([\n    { id: 1, name: 'João Silva' },\n    { id: 2, name: 'Maria Oliveira' }\n  ]);\n});\n\n// Iniciar o servidor\napp.listen(port, () => {\n  console.log(`API rodando em http://localhost:${port}`);\n});",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "3. Definindo as Rotas RESTful",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Agora, vamos adicionar mais rotas para criar uma API RESTful completa. Para isso, vamos usar os métodos HTTP: GET, POST, PUT e DELETE.",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Exemplo de API RESTful com Express.js para gerenciar usuários",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "// Usando um \"banco de dados\" fictício (array)\nlet users = [\n  { id: 1, name: 'João Silva' },\n  { id: 2, name: 'Maria Oliveira' },\n];\n\n// Obter todos os usuários (GET)\napp.get('/users', (req, res) => {\n  res.json(users);\n});\n\n// Criar um novo usuário (POST)\napp.post('/users', (req, res) => {\n  const { name } = req.body;\n  const newUser = { id: users.length + 1, name };\n  users.push(newUser);\n  res.status(201).json(newUser); // Retorna o novo usuário\n});\n\n// Atualizar um usuário (PUT)\napp.put('/users/:id', (req, res) => {\n  const { id } = req.params;\n  const { name } = req.body;\n  const user = users.find(u => u.id === parseInt(id));\n  if (!user) return res.status(404).send('Usuário não encontrado');\n  user.name = name;\n  res.json(user);\n});\n\n// Deletar um usuário (DELETE)\napp.delete('/users/:id', (req, res) => {\n  const { id } = req.params;\n  users = users.filter(u => u.id !== parseInt(id));\n  res.status(204).send(); // Retorna um status 204 sem corpo\n});",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Conceitos Importantes no Express.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Middleware\nO Express usa middleware para processar requisições e respostas. Middleware pode ser usado para autenticação, validação de dados, log de requisições, entre outros.\nExemplo de middleware para processar o corpo da requisição em JSON:\n\napp.use(express.json());",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Roteamento",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "As rotas no Express são configuradas com os métodos HTTP. Você pode criar rotas dinâmicas, passando parâmetros na URL.\nExemplo de rota dinâmica:\n\napp.get('/users/:id', (req, res) => {\n  const { id } = req.params;\n  const user = users.find(u => u.id === parseInt(id));\n  if (!user) return res.status(404).send('Usuário não encontrado');\n  res.json(user);\n});",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Tratamento de Erros",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "É importante tratar os erros adequadamente para garantir que a API forneça respostas claras e úteis para o cliente. Um exemplo de middleware para captura de erros:\n\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).send('Algo deu errado!');\n});",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Como Testar a API RESTful com Express.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Uma vez que a API esteja em funcionamento, você pode testá-la utilizando ferramentas como Postman ou cURL. Estas ferramentas permitem que você faça requisições HTTP para testar as rotas da sua API.\nExemplo de requisição cURL para criar um novo usuário:\n\ncurl -X POST http://localhost:3000/users -H \"Content-Type: application/json\" -d '{\"name\": \"Carlos Pereira\"}'",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Estruturação da Aplicação",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "À medida que sua aplicação cresce, é importante organizar melhor o código. Uma maneira comum de estruturar o projeto é separando as responsabilidades em diferentes arquivos e pastas.\n\nEstrutura recomendada:\n/project\n  /node_modules\n  /controllers\n    userController.js\n  /routes\n    userRoutes.js\n  app.js\n  package.json",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Exemplo de userController.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "const users = [\n  { id: 1, name: 'João Silva' },\n  { id: 2, name: 'Maria Oliveira' },\n];\n\nexports.getUsers = (req, res) => {\n  res.json(users);\n};\n\nexports.createUser = (req, res) => {\n  const { name } = req.body;\n  const newUser = { id: users.length + 1, name };\n  users.push(newUser);\n  res.status(201).json(newUser);\n};",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Exemplo de userRoutes.js",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "const express = require('express');\nconst router = express.Router();\nconst userController = require('../controllers/userController');\n\nrouter.get('/users', userController.getUsers);\nrouter.post('/users', userController.createUser);\n\nmodule.exports = router;",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Em app.js, você importa as rotas",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "const express = require('express');\nconst app = express();\nconst userRoutes = require('./routes/userRoutes');\n\napp.use(express.json());\napp.use(userRoutes);\n\napp.listen(3000, () => {\n  console.log('API rodando em http://localhost:3000');\n});",
-                                "pathImgInferior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoInferior": ""
-                            },
-                            {
-                                "subtitulo": "Conclusão",
-                                "pathImgSuperior": {
-                                    "path": "",
-                                    "description": ""
-                                },
-                                "pathVideoSuperior": "",
-                                "texto": "Neste módulo, aprendemos como estruturar uma API RESTful utilizando o Express.js. O Express simplifica o desenvolvimento de APIs, tornando o código mais organizado e eficiente. Você aprendeu a configurar rotas, gerenciar requisições e respostas, e a separar as responsabilidades da aplicação para uma melhor manutenção.\nAgora, você está pronto para criar APIs RESTful robustas e escaláveis com Express.js, aproveitando suas funcionalidades e a flexibilidade do Node.js.",
                                 "pathImgInferior": {
                                     "path": "",
                                     "description": ""
@@ -5357,7 +4841,7 @@
                             "path": "/assets/webp/CAPA GIT.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://youtu.be/DqTITcMq68k?feature=shared&t=30",
                         "highlightColor": "#E71A1A",
                         "paragrafos": [
                             {
@@ -5388,7 +4872,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=iQn5vZt0iWI",
                                 "texto": "Versionar código significa registrar cada alteração feita ao longo do desenvolvimento. Isso traz benefícios como:<br>• Segurança: Se um erro acontecer, é possível reverter para uma versão anterior.<br>• Colaboração: Cada desenvolvedor pode trabalhar em sua própria \"versão\" e depois unir as contribuições.<br>• Organização: Permite saber o que mudou, quando mudou, por quem e por quê.<br>• Documentação natural: O histórico funciona como uma linha do tempo do projeto.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -5402,7 +4886,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://youtu.be/GDGMf2bnHlE?feature=shared&t=169",
                                 "texto": "• <strong>Git</strong> é a ferramenta que roda localmente no seu computador.<br>• <strong>GitHub</strong> (ou GitLab, Bitbucket, etc.) é uma plataforma online que hospeda repositórios Git e facilita o trabalho em equipe e o backup na nuvem.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -5439,7 +4923,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Conclusão",
+                                "subtitulo": "",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
@@ -5478,7 +4962,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=EtTk03p66os",
                                 "texto": "O GitHub é como uma rede social de código-fonte onde você pode:<br>• Armazenar seus repositórios Git na nuvem.<br>• Colaborar com outras pessoas em tempo real.<br>• Criar documentação para seu projeto.<br>• Gerenciar tarefas e bugs com issues.<br>• Fazer revisões de código com pull requests.<br>Ele é gratuito para projetos públicos, e possui planos para projetos privados e profissionais.",
                                 "pathImgInferior": {
                                     "path": "",
@@ -5557,7 +5041,7 @@
                                 "pathVideoInferior": ""
                             },
                             {
-                                "subtitulo": "Conclusão",
+                                "subtitulo": "",
                                 "pathImgSuperior": {
                                     "path": "",
                                     "description": ""
@@ -5579,7 +5063,7 @@
                             "path": "/assets/webp/CAPA DEPLOY.webp",
                             "description": ""
                         },
-                        "pathVideoSessao": "",
+                        "pathVideoSessao": "https://www.youtube.com/watch?v=gJw7l2JKpuQ",
                         "highlightColor": "#F28318",
                         "paragrafos": [
                             {
@@ -5638,7 +5122,7 @@
                                     "path": "",
                                     "description": ""
                                 },
-                                "pathVideoSuperior": "",
+                                "pathVideoSuperior": "https://www.youtube.com/watch?v=FZiza5N6BQU",
                                 "texto": "• Deploy automático a partir do GitHub, GitLab ou Bitbucket.<br>• Suporte a projetos Node.js com rotas de API.<br>• Domínio gratuito tipo nomedoseuprojeto.vercel.app.<br>• Integração fácil com CI/CD.<br>• Deploy com rollback (voltar para uma versão anterior se der erro).",
                                 "pathImgInferior": {
                                     "path": "",
